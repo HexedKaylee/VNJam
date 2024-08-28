@@ -20,8 +20,12 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
-directories/dch_directory={}
-directories/dtl_directory={}
+directories/dch_directory={
+"Chrome": "res://test tl/Chrome.dch"
+}
+directories/dtl_directory={
+"tits timeline": "res://test tl/tits timeline.dtl"
+}
 
 [editor_plugins]
 
