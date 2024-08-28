@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Underglow"
+run/main_scene="res://Setup Test/setup_test_scene.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -20,8 +21,17 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
-directories/dch_directory={}
-directories/dtl_directory={}
+directories/dch_directory={
+"Clare": "res://Setup Test/Clare.dch"
+}
+directories/dtl_directory={
+"grimeline": "res://Setup Test/grimeline.dtl"
+}
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 
 [editor_plugins]
 
