@@ -29,8 +29,8 @@ directories/dtl_directory={
 "narrationtest": "res://VN/Characters/narrationtest.dtl"
 }
 glossary/default_case_sensitive=true
-layout/style_list=["res://VN/Characters/narrator.tres", "res://VN/Characters/character.tres"]
-layout/default_style="res://VN/Characters/narrator.tres"
+layout/style_list=["res://VN/Styles/New_File.tres", "res://VN/Styles/narrator.tres", ""]
+layout/default_style="res://VN/Styles/New_File.tres"
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
 text/text_reveal_skip_delay=0.1
@@ -62,7 +62,7 @@ glossary/default_color=Color(0, 0, 0, 1)
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
-window/stretch/mode="canvas_items"
+window/stretch/mode="viewport"
 
 [editor_plugins]
 
