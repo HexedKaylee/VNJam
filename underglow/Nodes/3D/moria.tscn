@@ -1,14 +1,14 @@
 [gd_scene load_steps=9 format=3 uid="uid://v2eeteufrg38"]
 
-[ext_resource type="Script" path="res://Nodes/3D/moria.gd" id="1_vxa5f"]
-[ext_resource type="Shader" path="res://Nodes/3D/underwater.gdshader" id="2_5xpbn"]
-[ext_resource type="Script" path="res://Nodes/3D/Grab.gd" id="3_d23qd"]
+[ext_resource type="Script" path="res://Nodes/3D/moria.gd" id="1_j2840"]
+[ext_resource type="Shader" path="res://Nodes/3D/underwater.gdshader" id="2_pcrlg"]
+[ext_resource type="Script" path="res://Nodes/3D/Grab.gd" id="3_sr78r"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_osmop"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_113qr"]
 render_priority = 0
-shader = ExtResource("2_5xpbn")
+shader = ExtResource("2_pcrlg")
 shader_parameter/tint = Color(0.768627, 0.870588, 1, 1)
 shader_parameter/wave_speed = 1.2
 shader_parameter/wave_freq = 10.0
@@ -25,7 +25,7 @@ size = Vector2(2, 2)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_vgct3"]
 render_priority = 0
-shader = ExtResource("2_5xpbn")
+shader = ExtResource("2_pcrlg")
 shader_parameter/tint = null
 shader_parameter/wave_speed = 3.0
 shader_parameter/wave_freq = 10.0
@@ -33,7 +33,7 @@ shader_parameter/wave_width = 1.0
 shader_parameter/blur = 2.0
 
 [node name="Moria" type="CharacterBody3D"]
-script = ExtResource("1_vxa5f")
+script = ExtResource("1_j2840")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_osmop")
@@ -56,7 +56,7 @@ surface_material_override/0 = SubResource("ShaderMaterial_vgct3")
 [node name="RayCast3D" type="RayCast3D" parent="Camera"]
 target_position = Vector3(0, 0, -3)
 collide_with_areas = true
-script = ExtResource("3_d23qd")
+script = ExtResource("3_sr78r")
 
 [node name="Hold" type="Node3D" parent="Camera"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.06153)
