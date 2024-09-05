@@ -12,6 +12,7 @@ config_version=5
 
 config/name="Underglow"
 config/features=PackedStringArray("4.3", "Forward Plus")
+boot_splash/image="res://Assets/VN/GUI/pitchdrop_splash.png"
 config/icon="res://icon.svg"
 
 [autoload]
@@ -20,11 +21,16 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
-directories/dch_directory={}
-directories/dtl_directory={}
+directories/dch_directory={
+"narrator": "res://VN/Characters/narrator.dch",
+"testcharacter": "res://VN/Characters/testcharacter.dch"
+}
+directories/dtl_directory={
+"narrationtest": "res://VN/Characters/narrationtest.dtl"
+}
 glossary/default_case_sensitive=true
-layout/style_list=[]
-layout/default_style="res://timelines/New_File.tres"
+layout/style_list=["res://VN/Characters/narrator.tres", "res://VN/Characters/character.tres"]
+layout/default_style="res://VN/Characters/narrator.tres"
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
 text/text_reveal_skip_delay=0.1
@@ -50,6 +56,13 @@ translation/translation_folder=""
 translation/save_mode=0
 translation/add_separator=false
 glossary/glossary_files=["res://timelines/New_File.tres"]
+glossary/default_color=Color(0, 0, 0, 1)
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
 
 [editor_plugins]
 
