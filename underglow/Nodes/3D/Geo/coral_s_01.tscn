@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=3 uid="uid://cwd2b7x8wv01n"]
+
+[ext_resource type="Script" path="res://Nodes/3D/Geo/coral.gd" id="1_hyppn"]
+[ext_resource type="PackedScene" uid="uid://demwyijbx1vw5" path="res://Assets/3D/Models/Coral/Coral1.glb" id="1_luekg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ea76j"]
+emission_enabled = true
+emission = Color(0.13028, 0.0501274, 0.999929, 1)
+emission_energy_multiplier = 1.54
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w6fig"]
+size = Vector3(0.430664, 0.243164, 0.443204)
+
+[node name="CoralS 01" type="StaticBody3D" node_paths=PackedStringArray("MyMesh")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+script = ExtResource("1_hyppn")
+MyMesh = NodePath("Coral1/Mesh")
+
+[node name="Coral1" parent="." instance=ExtResource("1_luekg")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+
+[node name="Mesh" parent="Coral1" index="0"]
+cast_shadow = 0
+ignore_occlusion_culling = true
+surface_material_override/0 = SubResource("StandardMaterial3D_ea76j")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00146484, 0.00341797, 0.0265562)
+shape = SubResource("BoxShape3D_w6fig")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.0213881, 0)
+layers = 3
+light_color = Color(0, 0.368627, 1, 1)
+light_energy = 3.101
+omni_attenuation = -0.616
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.139971, 0.079683, 0.154282)
+layers = 3
+light_color = Color(0, 0.368627, 1, 1)
+light_energy = 3.101
+omni_attenuation = -0.616
+
+[editable path="Coral1"]

@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://dalty20f03p4d"]
+
+[ext_resource type="ArrayMesh" uid="uid://dmgucphd2jf3a" path="res://Assets/3D/Models/Old Book.obj" id="1_0af3o"]
+[ext_resource type="Script" path="res://Nodes/3D/pickup.gd" id="1_ivx64"]
+[ext_resource type="Texture2D" uid="uid://c5vs6kol2jp8i" path="res://Assets/3D/Textures/book.png" id="2_sp3cb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5v2mw"]
+albedo_texture = ExtResource("2_sp3cb")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vma7h"]
+size = Vector3(0.6, 0.2, 0.4)
+
+[node name="pickup" type="RigidBody3D"]
+collision_layer = 3
+collision_mask = 3
+can_sleep = false
+continuous_cd = true
+script = ExtResource("1_ivx64")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+mesh = ExtResource("1_0af3o")
+surface_material_override/0 = SubResource("StandardMaterial3D_5v2mw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_vma7h")
