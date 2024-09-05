@@ -21,7 +21,9 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={}
-directories/dtl_directory={}
+directories/dtl_directory={
+"marcy_test_timeline": "res://VN/Timelines/marcy_test_timeline.dtl"
+}
 glossary/default_case_sensitive=true
 layout/style_list=[]
 layout/default_style="res://timelines/New_File.tres"
