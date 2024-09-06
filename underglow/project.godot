@@ -22,16 +22,22 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
+"clare": "res://VN/Characters/clare.dch",
+"demure voice": "res://VN/Characters/Throwaways/demure voice.dch",
+"haughty voice": "res://VN/Characters/Throwaways/haughty voice.dch",
 "narrator": "res://VN/Characters/narrator.dch",
-"testcharacter": "res://VN/Characters/testcharacter.dch"
+"prym": "res://VN/Characters/prym.dch",
+"testcharacter": "res://VN/Characters/testcharacter.dch",
+"volumnia": "res://VN/Characters/volumnia.dch"
 }
 directories/dtl_directory={
-"narrationtest": "res://VN/Characters/narrationtest.dtl"
+"narrationtest": "res://VN/Timelines/narrationtest.dtl",
+"tl_prologue_test": "res://VN/Timelines/tl_prologue_test.dtl"
 }
 glossary/default_case_sensitive=true
-layout/style_list=["res://VN/Styles/New_File.tres", "res://VN/Styles/narrator.tres", ""]
+layout/style_list=["res://VN/Styles/New_File.tres", "res://VN/Styles/narrator.tres", "res://VN/Styles/character.tres", "res://VN/Styles/vncharadia.tres"]
 layout/default_style="res://VN/Styles/New_File.tres"
-text/letter_speed=0.01
+text/letter_speed=0.03
 text/initial_text_reveal_skippable=true
 text/text_reveal_skip_delay=0.1
 text/advance_delay=0.1
@@ -57,6 +63,8 @@ translation/save_mode=0
 translation/add_separator=false
 glossary/glossary_files=["res://timelines/New_File.tres"]
 glossary/default_color=Color(0, 0, 0, 1)
+text/split_at_new_lines=false
+history/simple_history_enabled=false
 
 [display]
 

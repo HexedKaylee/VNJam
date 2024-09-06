@@ -29,7 +29,10 @@ overrides = {}
 [sub_resource type="Resource" id="Resource_2a2xv"]
 script = ExtResource("1_gu3ih")
 scene = ExtResource("5_bt3ld")
-overrides = {}
+overrides = {
+"text_size": "23.0",
+"text_use_global_size": "false"
+}
 
 [sub_resource type="Resource" id="Resource_sq3b6"]
 script = ExtResource("1_gu3ih")
@@ -56,4 +59,4 @@ script = ExtResource("10_vjeto")
 name = "New_File"
 base_overrides = {}
 layers = Array[ExtResource("1_gu3ih")]([SubResource("Resource_nn7de"), SubResource("Resource_6gmm3"), SubResource("Resource_4d1ng"), SubResource("Resource_2a2xv"), SubResource("Resource_sq3b6"), SubResource("Resource_hleb4"), SubResource("Resource_fleld"), SubResource("Resource_aieeg")])
-metadata/_latest_layer = -1
+metadata/_latest_layer = 3
