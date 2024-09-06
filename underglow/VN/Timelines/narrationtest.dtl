@@ -20,8 +20,8 @@ clare: [speed=1]"Cool, boss![pause=0.3] Thanks.[pause=0.3] I definitely know wha
 leave clare [animation="Fade Out Down" length="4"]
 [wait time="4.0"]
 join prym (prym_frown) 3
-prym: [pause=0.3][speed=2]Hm.[pause=0.2] Well, I have absolutely no idea what's going on over here.
-prym (prym_grin): Haha, well, none of my concern!
+prym: [pause=0.3][speed=2]"Hm.[pause=0.2] Well, I have absolutely no idea what's going on over here."
+prym (prym_grin): "Haha, well, none of my concern!"
 leave prym
 [wait time="2.0"]
 narrator: Wow.[n+]\
