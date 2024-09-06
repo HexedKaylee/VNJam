@@ -1,6 +1,6 @@
 [background arg="res://Assets/VN/Backgrounds/bg_test.png" fade="0.0"]
 [wait_input]
-join volumnia 1 [animation="Slide In Down" wait="true"]
+join clare 1 [animation="Slide In Down" wait="true"]
 clare: "Oof!!"
 update clare 2 [ move_time="3"]
 clare: [speed = 4]"Where[speed=7]...[speed=4][pause=0.1] am I?"
@@ -18,4 +18,12 @@ narrator: [speed = 3]Lorem ipsum dolor sit amet, consectetur adipiscing elit,[sp
 [wait time="1.0"]
 clare: [speed=1]"Cool, boss![pause=0.3] Thanks.[pause=0.3] I definitely know what that means and it sounds awesome."
 leave clare [animation="Fade Out Down" length="4"]
+[wait time="4.0"]
+join prym (prym_frown) 3
+prym: [pause=0.3][speed=2]Hm.[pause=0.2] Well, I have absolutely no idea what's going on over here.
+prym (prym_grin): Haha, well, none of my concern!
+leave prym
+[wait time="2.0"]
+narrator: Wow.[n+]\
+What was that guy's deal?
 jump 
