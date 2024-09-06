@@ -1,0 +1,34 @@
+[gd_scene load_steps=7 format=3 uid="uid://bqyujxgbd2ry0"]
+
+[ext_resource type="PackedScene" uid="uid://dx8hhwioid3p6" path="res://Assets/3D/Models/greek_pillar.FBX" id="1_ih62t"]
+[ext_resource type="Script" path="res://Nodes/3D/Geo/pillar.gd" id="1_ubo6u"]
+[ext_resource type="Texture2D" uid="uid://bgox3f3h00flj" path="res://Assets/3D/Textures/pillar_diffus.tga" id="2_deqq4"]
+[ext_resource type="Texture2D" uid="uid://ynwc4w7th58" path="res://Assets/3D/Textures/pillar_normal.tga" id="3_te04o"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_rktpb"]
+resource_local_to_scene = true
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("2_deqq4")
+albedo_texture_msdf = true
+normal_enabled = true
+normal_texture = ExtResource("3_te04o")
+grow_amount = -0.36
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mog8h"]
+size = Vector3(0.67627, 3.01398, 0.658936)
+
+[node name="Pillar" type="StaticBody3D"]
+script = ExtResource("1_ubo6u")
+col = Color(0.421193, 0.443734, 0.453333, 1)
+
+[node name="greek_pillar" parent="." instance=ExtResource("1_ih62t")]
+
+[node name="pillar_greek" parent="greek_pillar" index="0"]
+surface_material_override/0 = SubResource("ORMMaterial3D_rktpb")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000244141, 1.49541, -0.000854492)
+shape = SubResource("BoxShape3D_mog8h")
+
+[editable path="greek_pillar"]
