@@ -1,9 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://djnyllnh58ny0"]
+[gd_scene load_steps=11 format=3 uid="uid://djnyllnh58ny0"]
 
 [ext_resource type="PackedScene" uid="uid://v2eeteufrg38" path="res://Nodes/3D/moria.tscn" id="1_oayx2"]
 [ext_resource type="PackedScene" uid="uid://d3swad4gj5g41" path="res://Nodes/3D/Geo/clipmap/clipmap.tscn" id="2_50i3o"]
 [ext_resource type="PackedScene" uid="uid://c7xublrnupds4" path="res://Nodes/3D/Geo/collisionmap/collisionmap.tscn" id="3_sr877"]
-[ext_resource type="PackedScene" uid="uid://cwd2b7x8wv01n" path="res://Nodes/3D/Geo/coral_s_01.tscn" id="4_ukvra"]
+[ext_resource type="PackedScene" uid="uid://bqyujxgbd2ry0" path="res://Nodes/3D/Geo/pillar.tscn" id="4_wse66"]
+[ext_resource type="PackedScene" uid="uid://c1mcni5chgh22" path="res://Nodes/3D/Geo/pillar_small.tscn" id="5_enxyi"]
+[ext_resource type="PackedScene" uid="uid://dalty20f03p4d" path="res://Nodes/3D/pickup.tscn" id="6_3bjti"]
+[ext_resource type="PackedScene" uid="uid://cvqopvyg75w7i" path="res://Nodes/3D/Geo/campfire_small.tscn" id="7_1fy36"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_02bm1"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -20,6 +23,7 @@ sky_material = SubResource("ProceduralSkyMaterial_02bm1")
 [sub_resource type="Environment" id="Environment_wfc8h"]
 background_mode = 2
 sky = SubResource("Sky_qr232")
+glow_enabled = true
 
 [node name="Experiment 1" type="Node3D"]
 
@@ -45,5 +49,34 @@ sky_mode = 1
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_wfc8h")
 
-[node name="CoralS 01" parent="." instance=ExtResource("4_ukvra")]
-transform = Transform3D(10, 0, 0, 0, 9.65427, 2.60673, 0, -2.60673, 9.65427, -2.3651, 3.24374, -7.93769)
+[node name="Pillar" parent="." instance=ExtResource("4_wse66")]
+transform = Transform3D(0.726695, -0.686961, 0, 0.686961, 0.726695, 0, 0, 0, 1, -2.4332, 2.31774, -2.42344)
+
+[node name="Pillar2" parent="." instance=ExtResource("5_enxyi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.06514, -2.85203)
+
+[node name="pickup" parent="." node_paths=PackedStringArray("player") instance=ExtResource("6_3bjti")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 3.81004, -2.81325)
+player = NodePath("../Moria")
+
+[node name="Pillar3" parent="." instance=ExtResource("5_enxyi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0049448, 3.383, -8.19127)
+col = Color(0.0862745, 1, 0.113725, 1)
+
+[node name="Pillar4" parent="." instance=ExtResource("5_enxyi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.05273, 3.64378, -8.191)
+col = Color(1, 0.0666667, 0, 1)
+
+[node name="Pillar5" parent="." instance=ExtResource("5_enxyi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.06012, 3.04132, -8.1917)
+col = Color(0, 0.708333, 0.85, 1)
+
+[node name="Pillar6" parent="." instance=ExtResource("5_enxyi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.08307, 12.1057)
+col = Color(1, 1, 0, 1)
+
+[node name="Campfire" parent="." instance=ExtResource("7_1fy36")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.33152, 3.75635, -5.08388)
+
+[node name="Campfire2" parent="." instance=ExtResource("7_1fy36")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.332, 2.45574, -5.084)

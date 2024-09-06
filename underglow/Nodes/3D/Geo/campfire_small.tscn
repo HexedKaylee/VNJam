@@ -1,0 +1,98 @@
+[gd_scene load_steps=14 format=3 uid="uid://cvqopvyg75w7i"]
+
+[ext_resource type="ArrayMesh" uid="uid://b6iv0ygt87iy2" path="res://Assets/3D/Models/campfire_small.obj" id="1_tnugb"]
+[ext_resource type="Texture2D" uid="uid://dfcjq0sbivibb" path="res://Assets/3D/Textures/texture.jpg" id="2_sltpv"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5tdol"]
+albedo_texture = ExtResource("2_sltpv")
+rim_tint = 0.0
+heightmap_scale = -15.494
+subsurf_scatter_strength = 1.0
+subsurf_scatter_skin_mode = true
+refraction_scale = 1.0
+detail_enabled = true
+detail_mask = ExtResource("2_sltpv")
+detail_blend_mode = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t86u3"]
+albedo_texture = ExtResource("2_sltpv")
+detail_enabled = true
+detail_mask = ExtResource("2_sltpv")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o5iaf"]
+albedo_texture = ExtResource("2_sltpv")
+detail_enabled = true
+detail_mask = ExtResource("2_sltpv")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jk1va"]
+size = Vector3(0.446899, 0.0392456, 0.28479)
+
+[sub_resource type="Gradient" id="Gradient_cfbog"]
+offsets = PackedFloat32Array(0.245455, 0.809091)
+colors = PackedColorArray(0, 0, 0, 1, 1, 0.647059, 0.0627451, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_cffqu"]
+gradient = SubResource("Gradient_cfbog")
+
+[sub_resource type="Curve" id="Curve_750qk"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.173913, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.098901), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_w0ilk"]
+curve = SubResource("Curve_750qk")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_2r212"]
+angle_min = 1.07288e-05
+angle_max = 360.0
+direction = Vector3(0, 1, 0)
+spread = 0.0
+initial_velocity_min = 1.0
+initial_velocity_max = 40.0
+angular_velocity_min = 0.999984
+angular_velocity_max = 40.0
+gravity = Vector3(0, 0, 0)
+linear_accel_min = 0.999998
+linear_accel_max = 5.0
+scale_min = 0.05
+scale_max = 0.5
+scale_curve = SubResource("CurveTexture_w0ilk")
+color_initial_ramp = SubResource("GradientTexture1D_cffqu")
+hue_variation_min = -0.2
+hue_variation_max = 0.2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ckl6l"]
+transparency = 1
+blend_mode = 3
+shading_mode = 0
+albedo_color = Color(0.188304, 0.681956, 1, 1)
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_dwrfs"]
+material = SubResource("StandardMaterial3D_ckl6l")
+
+[node name="Campfire Small" type="StaticBody3D"]
+
+[node name="CampfireSmall" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+mesh = ExtResource("1_tnugb")
+surface_material_override/0 = SubResource("StandardMaterial3D_5tdol")
+surface_material_override/1 = SubResource("StandardMaterial3D_t86u3")
+surface_material_override/2 = SubResource("StandardMaterial3D_o5iaf")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00994873, 0.0188293, -0.0120239)
+shape = SubResource("BoxShape3D_jk1va")
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00604391, 0.118015, -0.00503725)
+amount = 200
+lifetime = 0.03
+randomness = 1.0
+fixed_fps = 60
+draw_order = 3
+process_material = SubResource("ParticleProcessMaterial_2r212")
+draw_pass_1 = SubResource("QuadMesh_dwrfs")
