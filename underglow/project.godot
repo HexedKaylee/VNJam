@@ -31,8 +31,10 @@ directories/dch_directory={
 "volumnia": "res://VN/Characters/volumnia.dch"
 }
 directories/dtl_directory={
-"narrationtest": "res://VN/Timelines/narrationtest.dtl",
-"tl_prologue_test": "res://VN/Timelines/tl_prologue_test.dtl"
+"narrationtest": "res://VN/Timelines/Test/narrationtest.dtl",
+"tl_00_prologue_intro": "res://VN/Timelines/Main/tl_00_prologue_intro.dtl",
+"tl_01_prologue_awaken": "res://VN/Timelines/Main/tl_01_prologue_awaken.dtl",
+"tl_prologue_test": "res://VN/Timelines/Test/tl_prologue_test.dtl"
 }
 glossary/default_case_sensitive=true
 layout/style_list=["res://VN/Styles/New_File.tres", "res://VN/Styles/narrator.tres", "res://VN/Styles/character.tres", "res://VN/Styles/vncharadia.tres"]

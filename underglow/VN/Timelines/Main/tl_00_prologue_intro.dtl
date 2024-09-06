@@ -1,0 +1,39 @@
+[style name="character"]
+[wait_input]
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="3.0"]
+[wait time="3.0"]
+[music path="res://Assets/Audio/Music/submerged01.mp3" fade="0.0" volume="0.0"]
+[wait time="3.0"]
+narrator: [speed=3]It’s cold.[n+]\
+[speed=3]Or is it[pause=0.3] hot?[n+]\
+[speed=3]There is an immense pressure from all sides,[n+]\
+[speed=3]centering in towards a confluence of[pause=0.3]      [speed=3]something.[n+]\
+[speed=3]Or nothing?[n]\
+[speed=7][pause=0.2]. . .[n+]\
+[speed=3]A rushing of water aches from within-[n+]\
+[speed=3]Or without?[n+]\
+[speed=3]Begging to be released.[n+]\
+[speed=3]Or let in?[n]\
+[speed=7][pause=0.2]. . .\
+[speed=3]You want to release it[n+]\
+[speed=3]You want to let it in[n+]\
+[speed=3]You want to escape it[n+]\
+[speed=3]You want to curl up in it[n]\
+[speed=7][pause=0.2]You[n]\
+[speed=3]Do you want?[n]\
+[speed=3]What do you want?[n]\
+[speed=3]Want[n+][speed=3]    want[n+][speed=3]    want[n+][speed=3]    want[n+][speed=3]    want[n]\
+[speed=7][pause = 0.2]. . .[n+]\
+[speed=3]To begin[n+]\
+[speed=3]Or end?[n]\
+[speed=7][pause=0.2]. . .[n]\
+[speed=7][pause=0.2]. . . .[n]\
+[speed=7][pause=0.2]. . . . .[n]\
+[speed=7][pause=0.2].     .     .     .     .
+[wait time="1.0"]
+narrator: [speed=3]It’s time to wake up,[n+]\
+[speed=3]and become,[n+]\
+[speed=3]or destroy[n+]\
+[speed=3]who you are.
+[wait time="1.0"]
+jump tl_01_prologue_awaken/

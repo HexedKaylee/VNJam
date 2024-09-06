@@ -1,0 +1,16 @@
+[style name="character"]
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="0.0"]
+[speed=7]“ … “
+[music fade="3.0" volume="0.0"]
+[background arg="res://Assets/VN/Backgrounds/bg_test.png" fade="3.0"]
+[wait time="3.0"]
+"haughty voice": "Hm. Odd that a mask was invited to our tea party, don't you think?"
+"demure voice": Wait... It... wasn't here earlier, was it?"
+join volumnia 3
+"haughty voice": "I believe there was a Fish here but a moment ago. 'Twas providing some excellent mood lighting, with how bright the glow became!"
+join clare 1
+"demure voice": "Oh.....? W-Wait, did the Fish become a Mask all of a sudden, then?"
+- I was a fish?
+- Where am I?
+You try to communicate, but you realize you're not quite sure how to do so.
+"haughty voice": "Oh dear.... It can't even form words to join in on the discussion! Such a mute partygoer is no fun at all."
