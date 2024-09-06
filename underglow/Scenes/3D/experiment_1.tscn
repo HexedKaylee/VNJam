@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://v2eeteufrg38" path="res://Nodes/3D/moria.tscn" id="1_oayx2"]
 [ext_resource type="PackedScene" uid="uid://d3swad4gj5g41" path="res://Nodes/3D/Geo/clipmap/clipmap.tscn" id="2_50i3o"]
 [ext_resource type="PackedScene" uid="uid://c7xublrnupds4" path="res://Nodes/3D/Geo/collisionmap/collisionmap.tscn" id="3_sr877"]
-[ext_resource type="PackedScene" uid="uid://cwd2b7x8wv01n" path="res://Nodes/3D/Geo/coral_s_01.tscn" id="4_ukvra"]
+[ext_resource type="PackedScene" uid="uid://cwd2b7x8wv01n" path="res://Nodes/3D/Geo/coral/coral_s_01.tscn" id="4_ukvra"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_02bm1"]
 sky_top_color = Color(0, 0, 0, 1)
