@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://b6a7q37xwad26"]
+
+[ext_resource type="PackedScene" uid="uid://v2eeteufrg38" path="res://Nodes/3D/moria.tscn" id="1_04ou1"]
+[ext_resource type="PackedScene" uid="uid://d3swad4gj5g41" path="res://Nodes/3D/Geo/clipmap/clipmap.tscn" id="2_4yfu1"]
+[ext_resource type="PackedScene" uid="uid://c7xublrnupds4" path="res://Nodes/3D/Geo/collisionmap/collisionmap.tscn" id="3_uirel"]
+[ext_resource type="PackedScene" uid="uid://dalty20f03p4d" path="res://Nodes/3D/pickup.tscn" id="4_kvjtn"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_1lxqc"]
+sky_top_color = Color(0, 0, 0, 1)
+sky_horizon_color = Color(0.352941, 0.552941, 1, 1)
+ground_bottom_color = Color(0, 0.266667, 0.92549, 1)
+ground_horizon_color = Color(0.352941, 0.552941, 1, 1)
+ground_energy_multiplier = 0.0
+sun_angle_max = 0.0
+sun_curve = 1e+06
+
+[sub_resource type="Sky" id="Sky_qr232"]
+sky_material = SubResource("ProceduralSkyMaterial_1lxqc")
+
+[sub_resource type="Environment" id="Environment_tex87"]
+background_mode = 2
+sky = SubResource("Sky_qr232")
+glow_enabled = true
+fog_mode = 1
+fog_density = 1.0
+
+[node name="Test of Tests" type="Node3D"]
+
+[node name="Moria" parent="." instance=ExtResource("1_04ou1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.86159, 0)
+
+[node name="Terrain" type="StaticBody3D" parent="."]
+collision_layer = 3
+collision_mask = 3
+
+[node name="Clipmap" parent="Terrain" node_paths=PackedStringArray("player_character") instance=ExtResource("2_4yfu1")]
+player_character = NodePath("../../Moria")
+
+[node name="Collisionmap" parent="Terrain" node_paths=PackedStringArray("physics_body") instance=ExtResource("3_uirel")]
+physics_body = NodePath("../../Moria")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.97186, 0.00592031, 0.235485, -0.138575, 0.822772, 0.55122, -0.190487, -0.56834, 0.80044, 0.199409, 11.4399, 0.853622)
+light_color = Color(0.784314, 0.929412, 1, 1)
+light_energy = 0.479
+sky_mode = 1
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_tex87")
+
+[node name="pickup" parent="." node_paths=PackedStringArray("player") instance=ExtResource("4_kvjtn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.058176, 4.54224, -1.96541)
+player = NodePath("../Moria")
