@@ -66,7 +66,7 @@ translation/add_separator=false
 glossary/glossary_files=["res://timelines/New_File.tres"]
 glossary/default_color=Color(0, 0, 0, 1)
 text/split_at_new_lines=false
-history/simple_history_enabled=false
+history/simple_history_enabled=true
 
 [display]
 
