@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
 
-@export var  SPEED = 5.0
+@export var SPEED = 5.0
 @export var sensivity = 0.3
 var fov = false
 var lerp_speed= 1

@@ -20,6 +20,9 @@ sky_material = SubResource("ProceduralSkyMaterial_1lxqc")
 [sub_resource type="Environment" id="Environment_tex87"]
 background_mode = 2
 sky = SubResource("Sky_qr232")
+glow_enabled = true
+fog_mode = 1
+fog_density = 1.0
 
 [node name="Test of Tests" type="Node3D"]
 
