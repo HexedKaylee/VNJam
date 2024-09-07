@@ -6,14 +6,20 @@
 [wait time="3.0"]
 "haughty voice": "Hm."
 "haughty voice": "Odd that a mask[pause=.5] was invited to our tea party,[pause] don't you think?"
-"demure voice": "Ah?[pause] Wait...[pause] It...[pause]wasn't here earlier,[pause=.5] was it?"
+"Ah?[pause] Wait...[pause] It...[pause]wasn't here earlier,[pause=.5] was it?"
 join volumnia 3
 "haughty voice": "I believe there was a Fish here but a moment ago.[pause] 'Twas providing some excellent mood lighting,[pause=.5] with how bright the glow became!"
 join clare 1
-"demure voice": "Oh...?[pause] W-Wait,[pause=.5] did the Fish become a mask[pause=.5] all of a sudden,[pause=.5] then?"
+"Oh...?[pause] W-Wait,[pause=.5] did the Fish become a mask[pause=.5] all of a sudden,[pause=.5] then?"
 [wait time="0.0" hide_text="false"]
 - I was a fish?
 - Where am I?
 You try to communicate[speed=2]...[pause]but you realize you're not quite sure how to do so.
-"haughty voice": "Oh dear...[pause] It can't even form words to join in on the discussion!"
+"demure voice": "Oh dear...[pause] It can't even form words to join in on the discussion!"
 "haughty voice": "Such a mute partygoer is no fun at all."
+"haughty voice": "Well! We simply must find a way to assist it in finding its voice. However will we know what wisdom this Mask has to impart unto us?"
+"Hm hm hm~ Ah! I know just the thing! Time and tea heals all wounds, you know."
+"demure voice": "Oh yes, oh yes! That will do splendidly."
+"Do you really think you can turn a Mask with a cup of tea?"
+"Didn't I just say 'time and tea heals all wounds?'"
+"You did, didn't you? Yes, alright! Quickly, then, some tea - to help this poor Mask!"
