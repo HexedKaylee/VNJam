@@ -36,7 +36,7 @@ directories/dtl_directory={
 "narrationtest": "res://VN/Timelines/Test/narrationtest.dtl",
 "tl_00_prologue_intro": "res://VN/Timelines/Main/tl_00_prologue_intro.dtl",
 "tl_01_prologue_awaken": "res://VN/Timelines/Main/tl_01_prologue_awaken.dtl",
-"tl_03_narration": "res://Assets/VN/tl_03_narration.dtl",
+"tl_03_narration": "res://VN/Timelines/Main/tl_03_narration.dtl",
 "tl_prologue_test": "res://VN/Timelines/Test/tl_prologue_test.dtl"
 }
 glossary/default_case_sensitive=true
