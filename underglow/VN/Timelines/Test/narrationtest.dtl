@@ -6,6 +6,7 @@ clare: "Oof!!"
 update clare 2 [ move_time="3"]
 [wait time="3.0"]
 clare: [speed = 4]"Where[speed=7]...[speed=4][pause=0.1] am I?"
+[wait time="1.0"]
 narrator: [speed = 2]Welcome.[n+] This is a test of the narration system.[n+]\
 \
 [speed=2]Now it's time... [pause=0.2][speed=1]for everyone's favourite!
@@ -27,4 +28,5 @@ leave prym
 [wait time="2.0"]
 narrator: Wow.[n+]\
 What was that guy's deal?
+[wait time="1.0"]
 jump 
