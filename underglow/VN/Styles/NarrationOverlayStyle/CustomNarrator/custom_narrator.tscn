@@ -1,0 +1,62 @@
+[gd_scene load_steps=12 format=3 uid="uid://cqpb3ie51rwl5"]
+
+[ext_resource type="Script" path="res://VN/Styles/NarrationOverlayStyle/CustomNarrator/default_layout_base.gd" id="1_ifsho"]
+[ext_resource type="PackedScene" uid="uid://c1k5m0w3r40xf" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn" id="2_gxq55"]
+[ext_resource type="PackedScene" uid="uid://cy1y14inwkplb" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn" id="4_tygt7"]
+[ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="6_anlpi"]
+[ext_resource type="Script" path="res://Assets/VN/GUI/narrativetextbackground.gd" id="6_jlw2b"]
+[ext_resource type="PackedScene" uid="uid://bquja8jyk8kbr" path="res://VN/Styles/VisualNovelTextbox/custom_vn_textbox_layer.tscn" id="8_gukkp"]
+[ext_resource type="PackedScene" uid="uid://dsbwnp5hegnu3" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn" id="10_2kn6a"]
+[ext_resource type="Texture2D" uid="uid://b4qe38ilpdnfr" path="res://Assets/VN/GUI/narrativetextbackground.png" id="10_lbqvu"]
+[ext_resource type="PackedScene" uid="uid://dhk6j6eb6e3q" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn" id="12_472nt"]
+[ext_resource type="PackedScene" uid="uid://cvgf4c6gg0tsy" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn" id="14_n6rda"]
+[ext_resource type="PackedScene" uid="uid://lx24i8fl6uo" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn" id="16_iin3c"]
+
+[node name="Custom" type="CanvasLayer"]
+script = ExtResource("1_ifsho")
+
+[node name="BackgroundLayer" parent="." instance=ExtResource("2_gxq55")]
+apply_overrides_on_ready = true
+
+[node name="VN_PortraitLayer" parent="." instance=ExtResource("4_tygt7")]
+apply_overrides_on_ready = true
+
+[node name="FullAdvanceInputLayer" parent="." instance=ExtResource("6_anlpi")]
+apply_overrides_on_ready = true
+
+[node name="Narrativetextbackground" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.494118)
+position = Vector2(960, 540)
+scale = Vector2(0.999998, 1)
+texture = ExtResource("10_lbqvu")
+script = ExtResource("6_jlw2b")
+
+[node name="VN_TextboxLayer" parent="." instance=ExtResource("8_gukkp")]
+text_use_global_size = false
+text_size = 35
+box_panel = "vn_textbox_default_panel.tres"
+box_color_use_global = false
+box_color_custom = Color(0, 0, 0, 0)
+box_size = Vector2(1689, 1000)
+box_margin_bottom = 0
+typing_sounds_enabled = false
+apply_overrides_on_ready = true
+
+[node name="Glossary" parent="." instance=ExtResource("10_2kn6a")]
+apply_overrides_on_ready = true
+
+[node name="VN_ChoiceLayer" parent="." instance=ExtResource("12_472nt")]
+apply_overrides_on_ready = true
+
+[node name="TextInputLayer" parent="." instance=ExtResource("14_n6rda")]
+apply_overrides_on_ready = true
+
+[node name="ExampleHistoryScene" parent="." instance=ExtResource("16_iin3c")]
+font_use_global_size = true
+font_custom_size = 15
+font_use_global_fonts = true
+font_custom_normal = ""
+font_custom_bold = ""
+font_custom_italics = ""
+disabled = false
+apply_overrides_on_ready = true

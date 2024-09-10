@@ -32,11 +32,11 @@ scene = ExtResource("5_0ntl6")
 overrides = {
 "box_color_custom": "Color(0, 0, 0, 0.831373)",
 "box_color_use_global": "false",
-"box_size": "Vector2(900, 200)",
-"name_label_box_offset": "Vector2(0, -5)",
-"name_label_custom_font_size": "23.0",
+"box_size": "Vector2(1200, 300)",
+"name_label_box_offset": "Vector2(0, -25)",
+"name_label_custom_font_size": "35.0",
 "name_label_use_global_font_size": "false",
-"text_size": "23.0",
+"text_size": "35.0",
 "text_use_global_size": "false",
 "typing_sounds_enabled": "false"
 }

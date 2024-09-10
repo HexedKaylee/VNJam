@@ -34,6 +34,7 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "narrationtest": "res://VN/Timelines/Test/narrationtest.dtl",
+"testing_tl_02": "res://VN/Timelines/Test/testing_tl_02.dtl",
 "tl_00_prologue_intro": "res://VN/Timelines/Main/tl_00_prologue_intro.dtl",
 "tl_01_prologue_awaken": "res://VN/Timelines/Main/tl_01_prologue_awaken.dtl",
 "tl_prologue_test": "res://VN/Timelines/Test/tl_prologue_test.dtl"
@@ -72,8 +73,10 @@ history/simple_history_enabled=true
 
 [display]
 
-window/size/viewport_width=1280
-window/size/viewport_height=720
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/window_width_override=1280
+window/size/window_height_override=720
 window/stretch/mode="viewport"
 
 [editor_plugins]
