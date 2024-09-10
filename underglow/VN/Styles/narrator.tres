@@ -31,6 +31,8 @@ overrides = {}
 script = ExtResource("2_pbq5b")
 scene = ExtResource("6_0ab6p")
 overrides = {
+"box_animation_in": "0",
+"box_animation_out": "0",
 "box_color_custom": "Color(0, 0, 0, 0.298039)",
 "box_margin_bottom": "0.0",
 "box_panel": "\"vn_textbox_default_panel.tres\"",
