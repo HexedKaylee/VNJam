@@ -1,3 +1,4 @@
+[wait time="1.0"]
 [style name="character"]
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="0.0"]
 [speed=7]“ … “
@@ -23,3 +24,4 @@ You try to communicate[speed=2]...[pause]but you realize you're not quite sure h
 "demure voice": "Do you really think you can turn a Mask with a cup of tea?"
 "haughty voice": "Didn't I just say 'time and tea heals all wounds?'"
 "demure voice": "You did,[pause] didn't you? Yes, alright![pause=.5] Quickly, then,[pause=.2] some tea -[pause=.5] to help this poor[pause=.3] Mask!"
+[wait time="1.0"]

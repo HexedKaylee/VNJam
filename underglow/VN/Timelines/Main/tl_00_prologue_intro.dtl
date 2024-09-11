@@ -1,3 +1,4 @@
+[wait time="1.0"]
 [style name="character"]
 [wait_input]
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="3.0"]
@@ -37,3 +38,4 @@ narrator: [speed=2]It’s time to wake up,[n+]\
 [speed=2]who[pause=0.3] you[pause=0.3] are.
 [wait time="1.0"]
 jump tl_01_prologue_awaken/
+[wait time="1.0"]
