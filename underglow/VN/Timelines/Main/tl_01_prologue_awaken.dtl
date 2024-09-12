@@ -1,3 +1,4 @@
+[wait time="1.0"]
 [style name="character"]
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="0.0"]
 [speed=7]“ … “
@@ -10,10 +11,17 @@
 join volumnia 3
 "haughty voice": "I believe there was a Fish here but a moment ago.[pause] 'Twas providing some excellent mood lighting,[pause=.5] with how bright the glow became!"
 join clare 1
-"demure voice": "Oh...?[pause] W-Wait,[pause=.5] did the Fish become a mask[pause=.5] all of a sudden,[pause=.5] then?"
+"demure voice": "Oh...?[pause] W-Wait,[pause=.5] did the Fish become a mask[pause=.5] all of a sudden,[pause=.3] then?"
 [wait time="0.0" hide_text="false"]
 - I was a fish?
 - Where am I?
 You try to communicate[speed=2]...[pause]but you realize you're not quite sure how to do so.
-"haughty voice": "Oh dear...[pause] It can't even form words to join in on the discussion!"
+"demure voice": "Oh dear...[pause] It can't even form words to join in on the discussion!"
 "haughty voice": "Such a mute partygoer is no fun at all."
+"haughty voice": "Well![pause] We simply must[pause=.5] find a way to assist it in finding its voice.[pause=.2] However will we know what wisdom[pause=.2] this Mask has to impart unto us?"
+"haughty voice": "Hm[pause] hm[pause] hm~[pause=.7] Ah![pause] I know just the thing![pause=.2] Time and tea heals all wounds,[pause] you know."
+"demure voice": "Oh yes,[pause] oh[pause=.2] yes![pause=.3] That will do splendidly."
+"demure voice": "Do you really think you can turn a Mask with a cup of tea?"
+"haughty voice": "Didn't I just say 'time and tea heals all wounds?'"
+"demure voice": "You did,[pause] didn't you? Yes, alright![pause=.5] Quickly, then,[pause=.2] some tea -[pause=.5] to help this poor[pause=.3] Mask!"
+[wait time="1.0"]

@@ -1,3 +1,4 @@
+[wait time="1.0"]
 [style name="character"]
 [wait_input]
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="3.0"]
@@ -8,28 +9,28 @@ narrator: [speed=2]It’s cold.[n+]\
 [speed=2]Or is it[pause=0.3] hot?[n+]\
 [speed=2]There is an[pause=0.3] immense[pause=0.3] pressure[pause=0.3] from all sides,[n+]\
 [speed=2]centering in[pause=0.3] towards a confluence of[pause=0.3]      [speed=4]something.[n+]\
-[speed=2]Or[pause=0.3] [speed=3]nothing?[n]\
-[speed=6][pause=0.2]. . .[n+]\
+[speed=2]Or[pause=0.3] [speed=3]nothing?\
+[n][speed=6][pause=0.2]. . .[n+]\
 [speed=2]A rushing of water aches from within---[n+]\
 [speed=2]Or[pause=0.3] without?[n+]\
 [speed=2]Begging to be released.[n+]\
-[speed=2]Or let in?[n]\
-[speed=6][pause=0.2]. . .\
+[speed=2]Or let in?\
+[n][speed=6][pause=0.2]. . .\
 [speed=2]You want to[pause=0.3] release it[n+]\
 [speed=2]You want to[pause=0.3] let it in[n+]\
 [speed=2]You want to[pause=0.3] escape it[n+]\
-[speed=2]You want to[pause=0.3] curl up in it[n]\
-[speed=6][pause=0.2]You[n]\
-[speed=2]Do you[pause=0.3] want?[n]\
-[speed=2]What[pause=0.2] do[pause=0.2] you want?[n]\
-[speed=.5]Want[n+]    want[n+]    want[n+]    want[n+]    want[n]\
-[speed=6][pause = 0.2]. . .[n+]\
+[speed=2]You want to[pause=0.3] curl up in it\
+[n][speed=6][pause=0.2]You\
+[n][speed=2]Do you[pause=0.3] want?\
+[n][speed=2]What[pause=0.2] do[pause=0.2] you want?\
+[n][speed=.5]Want[n+]    want[n+]    want[n+]    want[n+]    want\
+[n][speed=6][pause = 0.2]. . .[n+]\
 [speed=2]To begin[n+]\
 [speed=2]Or[pause=0.3] end?[n]\
-[speed=6][pause=0.2]. . .[n]\
-[speed=6][pause=0.2]. . . .[n]\
-[speed=6][pause=0.2]. . . . .[n]\
-[speed=6][pause=0.2].     .     .     .     .
+[speed=6][pause=0.2]. . .\
+[n][speed=6][pause=0.2]. . . .\
+[n][speed=6][pause=0.2]. . . . .\
+[n][speed=6][pause=0.2].     .     .     .     .
 [wait time="1.0"]
 narrator: [speed=2]It’s time to wake up,[n+]\
 [speed=2]and become,[n+]\
@@ -37,3 +38,4 @@ narrator: [speed=2]It’s time to wake up,[n+]\
 [speed=2]who[pause=0.3] you[pause=0.3] are.
 [wait time="1.0"]
 jump tl_01_prologue_awaken/
+[wait time="1.0"]
