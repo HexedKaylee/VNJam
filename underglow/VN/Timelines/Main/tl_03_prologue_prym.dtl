@@ -31,7 +31,7 @@ A quiet white light in the middle of that sickly green…sparkles with a sense o
 Then, you hear a voice.
 [wait time="1.0"]
 join prym 2
-???: [i]"Foooound ~ youuuuu… ~ !!"[/i]
+question_mark: [i]"Foooound ~ youuuuu… ~ !!"[/i]
 [wait time="1.0"]
 narrator: The enigmatic stranger's figure fully revealed, they close the distance between you and – with the gentlest caress – sweep their hand languidly around…to cradle the back of your neck.\
 \

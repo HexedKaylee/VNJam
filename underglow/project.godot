@@ -24,7 +24,6 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
-"???": "res://VN/Characters/Throwaways/???.dch",
 "clare": "res://VN/Characters/clare.dch",
 "demure voice": "res://VN/Characters/Throwaways/demure voice.dch",
 "enigmatic figure": "res://VN/Characters/Throwaways/enigmatic figure.dch",
@@ -34,6 +33,7 @@ directories/dch_directory={
 "narrator": "res://VN/Characters/narrator.dch",
 "pompous voice": "res://VN/Characters/Throwaways/pompous voice.dch",
 "prym": "res://VN/Characters/prym.dch",
+"question_mark": "res://VN/Characters/question_mark.dch",
 "testcharacter": "res://VN/Characters/testcharacter.dch",
 "volumnia": "res://VN/Characters/volumnia.dch"
 }
