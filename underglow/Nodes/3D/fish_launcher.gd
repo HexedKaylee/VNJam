@@ -10,5 +10,4 @@ func _ready():
 
 func _process(delta):
 	position.y = amplitude * (sin(timer) - .5) + initY
-	print(position.y)
 	timer += delta*spd

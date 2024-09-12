@@ -19,8 +19,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 Heightmap="*res://Assets/3D/Heightmaps/Heightmap.gd"
-Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 Global="*res://globals/global.gd"
+Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
