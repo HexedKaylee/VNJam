@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://naqg6j4m7mgy"
+path="res://.godot/imported/fish_launcher.obj-f80c3d64fe17a9595d6d5fa1be388af7.mesh"
+
+[deps]
+
+files=["res://.godot/imported/fish_launcher.obj-f80c3d64fe17a9595d6d5fa1be388af7.mesh"]
+
+source_file="res://Assets/3D/Models/fish_launcher.obj"
+dest_files=["res://.godot/imported/fish_launcher.obj-f80c3d64fe17a9595d6d5fa1be388af7.mesh", "res://.godot/imported/fish_launcher.obj-f80c3d64fe17a9595d6d5fa1be388af7.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d32o1jx75e52p"]
+
+[ext_resource type="Script" path="res://Nodes/3D/activator.gd" id="1_sc7md"]
+
+[node name="Activator" type="Area3D"]
+script = ExtResource("1_sc7md")
