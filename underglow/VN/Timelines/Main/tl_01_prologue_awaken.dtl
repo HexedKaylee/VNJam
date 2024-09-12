@@ -3,25 +3,85 @@
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="0.0"]
 [speed=7]“ … “
 [music fade="3.0" volume="0.0"]
-[background arg="res://Assets/VN/Backgrounds/bg_test.png" fade="3.0"]
 [wait time="3.0"]
 "haughty voice": "Hm."
 "haughty voice": "Odd that a mask[pause=.5] was invited to our tea party,[pause] don't you think?"
 "demure voice": "Ah?[pause] Wait...[pause] It...[pause]wasn't here earlier,[pause=.5] was it?"
+[background arg="res://Assets/VN/Backgrounds/bg_test.png" fade="3.0"]
+[wait time="3.0"]
 join volumnia 3
+[music path="res://Assets/Audio/Music/mus_brine_and_biscuits_(simple_loop).mp3" fade="0.0" volume="0.0"]
 "haughty voice": "I believe there was a Fish here but a moment ago.[pause] 'Twas providing some excellent mood lighting,[pause=.5] with how bright the glow became!"
 join clare 1
 "demure voice": "Oh...?[pause] W-Wait,[pause=.5] did the Fish become a mask[pause=.5] all of a sudden,[pause=.3] then?"
 [wait time="0.0" hide_text="false"]
-- I was a fish?
-- Where am I?
+- "I was a fish?"
+- "Where am I?"
 You try to communicate[speed=2]...[pause]but you realize you're not quite sure how to do so.
+[wait time="1.0"]
 "demure voice": "Oh dear...[pause] It can't even form words to join in on the discussion!"
 "haughty voice": "Such a mute partygoer is no fun at all."
 "haughty voice": "Well![pause] We simply must[pause=.5] find a way to assist it in finding its voice.[pause=.2] However will we know what wisdom[pause=.2] this Mask has to impart unto us?"
-"haughty voice": "Hm[pause] hm[pause] hm~[pause=.7] Ah![pause] I know just the thing![pause=.2] Time and tea heals all wounds,[pause] you know."
+"haughty voice": "Hm[pause] hm[pause] hm~[pause=.7] Ah![pause] I know just the thing![pause=.2] Teatime heals all wounds,[pause] you know."
 "demure voice": "Oh yes,[pause] oh[pause=.2] yes![pause=.3] That will do splendidly."
-"demure voice": "Do you really think you can turn a Mask with a cup of tea?"
-"haughty voice": "Didn't I just say 'time and tea heals all wounds?'"
+"pompous voice": "Do you really think you can turn a Mask with a cup of tea?"
+"haughty voice": "Didn't I just say 'teatime heals all wounds?'"
 "demure voice": "You did,[pause] didn't you? Yes, alright![pause=.5] Quickly, then,[pause=.2] some tea -[pause=.5] to help this poor[pause=.3] Mask!"
 [wait time="1.0"]
+narrator: The shade manifests an arm, a glazed teapot in its newly-formed hand.[n+] They lift it, and with a practiced lilt of the wrist, level its spout over the matching teacup sitting in front of you.\
+[n]Out of the teapot trickles a thin liquid, light blue and mildly luminous.[n+]\
+Crystals, so small and translucent that you can only register them by the way they bend and break the light shimmering through the stream, riding the way down.[n+]\
+You watch the little shards spill into the cup. You couldn't count them if you tried.\
+[n]For a fleeting moment, you try anyways ——[n+]\
+And that's when you see your face\: a mask reflected in the rippling blue.[n+] Three dark circles constrained by plaster white.[n+]\
+Is this why they called you "a Mask?"\
+[n]...\
+[n]The only thing you can see is the mask. Your eyes, your mouth, your shoulders——all just match the murky blackness of the sky. But that pristine mask is...[n+]\
+No.\
+[n]That's wrong.[n+]\
+It's the opposite, in fact.[n+]\
+There is no mask.[n+]\
+Where there should be a mask, there is simply nothing.\
+[n]The luminous blue of the tea and three black dots floating.[n+]\
+...[n+]\
+You roll your head to the side, but you can't see the mask at the edge of your vision, either.\
+[n]The curvature of your head appears in the teacup, past where the edge of the mask should be;\
+[n]Your neck and shoulders descend from the nothingness, as if they have no relation with the eyes that see them.[n+]\
+But there's no mask.[n+]\
+A nonexistent surface that seems to hide anything behind it, but does not itself show.\
+[n]...\
+[n]You can touch it.\
+[n]You can feel it.\
+[n]Your fingers press against the formless barrier, feel for its rounded edges and gentle curvature, but you still can't see it.\
+[n]You concentrate on it, will your foolish eyes to observe it, stare at it...[n+]\
+But there is simply nothing to see.[n+]\
+All the effort does is reward you with another fact\: You can't see your hands, either.\
+[n]Pulling the... hand? ...grabbing at your face away, you can trace the slope of your watery arm as it fades out into nothingness before reaching the wrist.\
+[n]You can stretch it, flex the fingers, pull at your non-mask Mask's mask with it (it doesn't move)...[n+]\
+but you can't see it.[n+]\
+—— You're interrupted before you can further contemplate the state of your being.
+[wait time="1.0"]
+"pompous voice": "Oh, dear. I don't think this poor thing even knows how to use tea!"
+"demure voice": "Well, that most certainly cannot be! Taking tea is the most important point of etiquette. How could anyone not know? Surely it is self-apparent and fundamental!"
+"haughty voice": "One can never underestimate the cluelessness of a newly-adorned Mask, dear."
+"demure voice": "Ah, that is true, true, indeed. Dear, would you mind giving them a lesson?"
+"pompous voice": "But of course! 'Tis a Kingdom lady's duty to do so."
+"pompous voice": "Alright, dear. See here – it's quite easy! Now, all you need to do is..."
+[wait time="0.0"]
+- You don't need help to drink. You drink it.
+To the tea party's surprise, you pick up the cup – it's easy when you just grab it by the rim – and bring it up to your not-a-mask mask.
+You… aren't actually sure, now, that you even have a mouth. Lost on what to do next, you can only sit there with the cup beneath your not-chin, not-face…and wait.
+[wait time="0.0"]
+- Listen carefully. This is probably important.
+You are utterly bewildered as they describe at length the process of "doing tea."
+After they explain the process in excruciating detail, though, you're encouraged to give it a shot.
+[wait time="1.0"]
+"pompous voice": "Ah. Dear?"
+"demure voice": "Hmmm... I'm not so certain…"
+"haughty voice": "Is… sitting there with the cup unmoving a new form of etiquette? … Ooh, ooh! Yes! It must be! How polite of this new Mask to be so patient! So refined, so… So wise."
+"pompous voice": "Ahhhh... Well, while it is nice to discover new things, I fear they simply do not know how to drink it, dear. Perhaps they cannot at all."
+"haughty voice": "Oh my."
+"demure voice": "Yes. How unfortunate."
+"pompous voice": "'Tis such a shame, I thought truly that maybe this mask could be — "
+"pompous voice": "… Oh? Hmm…? Do you see that commotion over there?"
+jump tl_02_prologue_estuary/
