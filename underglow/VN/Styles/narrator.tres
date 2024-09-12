@@ -31,6 +31,8 @@ overrides = {}
 script = ExtResource("2_pbq5b")
 scene = ExtResource("6_0ab6p")
 overrides = {
+"box_animation_in": "0",
+"box_animation_out": "0",
 "box_color_custom": "Color(0, 0, 0, 0.298039)",
 "box_margin_bottom": "0.0",
 "box_panel": "\"vn_textbox_default_panel.tres\"",
@@ -68,4 +70,4 @@ base_overrides = {
 "global_bg_color": "Color(0, 0, 0, 0.305882)"
 }
 layers = Array[ExtResource("2_pbq5b")]([SubResource("Resource_6i8ac"), SubResource("Resource_ftdlm"), SubResource("Resource_0jbj2"), SubResource("Resource_bdl1p"), SubResource("Resource_rgt87"), SubResource("Resource_hmwjs"), SubResource("Resource_costu"), SubResource("Resource_82kwh")])
-metadata/_latest_layer = 3
+metadata/_latest_layer = 7

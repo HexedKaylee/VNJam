@@ -1,0 +1,40 @@
+[gd_scene load_steps=10 format=3 uid="uid://170bjfocn6nv"]
+
+[ext_resource type="ArrayMesh" uid="uid://naqg6j4m7mgy" path="res://Assets/3D/Models/fish_launcher.obj" id="1_abcu2"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_jgrh8"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_8e40x"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_gbm2y"]
+noise = SubResource("FastNoiseLite_8e40x")
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_qqt1w"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_1gani"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_0si4j"]
+frequency = 0.0141
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_6ff2m"]
+noise = SubResource("FastNoiseLite_0si4j")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o4o5p"]
+albedo_color = Color(0.529412, 1, 1, 1)
+albedo_texture_force_srgb = true
+metallic = 0.5
+metallic_texture = SubResource("NoiseTexture2D_gbm2y")
+roughness_texture = SubResource("NoiseTexture2D_6ff2m")
+emission = Color(6.257e-07, 0, 0.383395, 1)
+normal_texture = SubResource("NoiseTexture2D_qqt1w")
+rim_tint = 1.0
+rim_texture = SubResource("NoiseTexture2D_1gani")
+clearcoat_texture = SubResource("NoiseTexture2D_jgrh8")
+subsurf_scatter_skin_mode = true
+backlight_enabled = true
+backlight = Color(0, 0.536013, 0, 1)
+
+[node name="FishModel" type="MeshInstance3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.577, 0, 0)
+mesh = ExtResource("1_abcu2")
+surface_material_override/0 = SubResource("StandardMaterial3D_o4o5p")

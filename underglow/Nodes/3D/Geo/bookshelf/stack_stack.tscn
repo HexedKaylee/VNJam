@@ -1,0 +1,131 @@
+[gd_scene load_steps=2 format=3 uid="uid://bfwwmn71aghkj"]
+
+[ext_resource type="PackedScene" uid="uid://dyu3chx4twwqj" path="res://Nodes/3D/Geo/bookshelf/bookshelf_1.tscn" id="1_lynsd"]
+
+[node name="StackStack" type="Node3D"]
+
+[node name="Stack" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.223027, -1.98813)
+
+[node name="Bookshelf1" parent="Stack" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.56412, 3.65376, -9.68496)
+
+[node name="Bookshelf2" parent="Stack" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.56832, 4.83625, -9.67665)
+
+[node name="Bookshelf3" parent="Stack" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.568, 6.05013, -9.677)
+
+[node name="Bookshelf4" parent="Stack" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.56412, 7.27784, -9.68496)
+
+[node name="Bookshelf5" parent="Stack" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.56832, 8.4922, -9.67665)
+
+[node name="Bookshelf6" parent="Stack" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.568, 9.70608, -9.677)
+
+[node name="Stack2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.223027, -1.98813)
+
+[node name="Bookshelf7" parent="Stack2" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73355, 3.65376, -9.68496)
+
+[node name="Bookshelf8" parent="Stack2" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73775, 4.83625, -9.67665)
+
+[node name="Bookshelf9" parent="Stack2" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73743, 6.05013, -9.677)
+
+[node name="Bookshelf10" parent="Stack2" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73355, 7.27784, -9.68496)
+
+[node name="Bookshelf11" parent="Stack2" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73775, 8.4922, -9.67665)
+
+[node name="Bookshelf12" parent="Stack2" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73743, 9.70608, -9.677)
+
+[node name="Stack3" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.27112, -0.223027, -1.98813)
+
+[node name="Bookshelf7" parent="Stack3" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73355, 3.65376, -9.68496)
+
+[node name="Bookshelf8" parent="Stack3" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73775, 4.83625, -9.67665)
+
+[node name="Bookshelf9" parent="Stack3" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73743, 6.05013, -9.677)
+
+[node name="Bookshelf10" parent="Stack3" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73355, 7.27784, -9.68496)
+
+[node name="Bookshelf11" parent="Stack3" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73775, 8.4922, -9.67665)
+
+[node name="Bookshelf12" parent="Stack3" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73743, 9.70608, -9.677)
+
+[node name="Stack4" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.3276, -0.223027, -21.7124)
+
+[node name="Bookshelf1" parent="Stack4" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.56412, 3.65376, -9.68496)
+
+[node name="Bookshelf2" parent="Stack4" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.56832, 4.83625, -9.67665)
+
+[node name="Bookshelf3" parent="Stack4" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.568, 6.05013, -9.677)
+
+[node name="Bookshelf4" parent="Stack4" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.56412, 7.27784, -9.68496)
+
+[node name="Bookshelf5" parent="Stack4" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.56832, 8.4922, -9.67665)
+
+[node name="Bookshelf6" parent="Stack4" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.568, 9.70608, -9.677)
+
+[node name="Stack5" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.3276, -0.223027, -21.7124)
+
+[node name="Bookshelf7" parent="Stack5" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73355, 3.65376, -9.68496)
+
+[node name="Bookshelf8" parent="Stack5" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73775, 4.83625, -9.67665)
+
+[node name="Bookshelf9" parent="Stack5" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73743, 6.05013, -9.677)
+
+[node name="Bookshelf10" parent="Stack5" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73355, 7.27784, -9.68496)
+
+[node name="Bookshelf11" parent="Stack5" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73775, 8.4922, -9.67665)
+
+[node name="Bookshelf12" parent="Stack5" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73743, 9.70608, -9.677)
+
+[node name="Stack6" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.17556, -0.223027, -21.7409)
+
+[node name="Bookshelf7" parent="Stack6" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73355, 3.65376, -9.68496)
+
+[node name="Bookshelf8" parent="Stack6" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73775, 4.83625, -9.67665)
+
+[node name="Bookshelf9" parent="Stack6" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73743, 6.05013, -9.677)
+
+[node name="Bookshelf10" parent="Stack6" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73355, 7.27784, -9.68496)
+
+[node name="Bookshelf11" parent="Stack6" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73775, 8.4922, -9.67665)
+
+[node name="Bookshelf12" parent="Stack6" instance=ExtResource("1_lynsd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73743, 9.70608, -9.677)

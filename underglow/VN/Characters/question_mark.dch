@@ -6,24 +6,14 @@
 "custom_info": {
 "sound_mood_default": "",
 "sound_moods": {},
-"style": "character"
+"style": ""
 },
-"default_portrait": "volumnia_neutral",
+"default_portrait": "",
 "description": "",
-"display_name": "Volumnia",
+"display_name": "???",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),
-"portraits": {
-"volumnia_neutral": {
-"export_overrides": {
-"image": "\"res://Assets/VN/Portraits/Volumnia/volumnia.png\""
-},
-"mirror": false,
-"offset": Vector2(0, 100),
-"scale": 1,
-"scene": ""
-}
-},
+"portraits": {},
 "scale": 1.0
 }

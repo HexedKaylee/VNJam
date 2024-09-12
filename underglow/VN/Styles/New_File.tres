@@ -59,4 +59,4 @@ script = ExtResource("10_vjeto")
 name = "New_File"
 base_overrides = {}
 layers = Array[ExtResource("1_gu3ih")]([SubResource("Resource_nn7de"), SubResource("Resource_6gmm3"), SubResource("Resource_4d1ng"), SubResource("Resource_2a2xv"), SubResource("Resource_sq3b6"), SubResource("Resource_hleb4"), SubResource("Resource_fleld"), SubResource("Resource_aieeg")])
-metadata/_latest_layer = 3
+metadata/_latest_layer = 0

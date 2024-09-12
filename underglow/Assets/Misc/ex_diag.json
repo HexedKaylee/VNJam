@@ -1,0 +1,82 @@
+[
+	{
+		"id": "ex1_00",
+		"line": "Subject, pick up the book.",
+		"note": "Scene Start"
+	},
+	{
+		"id": "ex1_00a",
+		"line": "Hypothesis: subject does not know what a \"book\" is.",
+		"note": "After player fails to pick up book for a time since last line played"
+	},
+	{
+		"id": "ex1_00b",
+		"line": "Subject, remove the rectangular object from the nearby pillar.",
+		"note": "After player fails to pick up book for a time since last line played"
+	},
+	{
+		"id": "ex1_00c",
+		"line": "Updated hypothesis: subject does not know what a \"pillar\" is.",
+		"note": "After player fails to pick up book for a time since last line played"
+	},
+	{
+		"id": "ex1_01",
+		"line": "Very good. Now place the book on one of the nearby pillars.",
+		"note": "Player picks up book"
+	},
+	{
+		"id": "ex1_01a",
+		"line": "Subject appears to have issues with corporeality. Note: apply mild adhesive to future testing equipment.",
+		"note": "Player drops book on ground"
+	},
+	{
+		"id": "ex1_02a",
+		"line": "Subject has chosen the RED pillar. Results: unsatisfactory.",
+		"note": "Player picks red pillar"
+	},
+	{
+		"id": "ex1_02b",
+		"line": "Subject has chosen the BLUE pillar. Results: unsatisfactory.",
+		"note": "Player picks blue pillar"
+	},
+	{
+		"id": "ex1_02c",
+		"line": "Subject has chosen the GREEN pillar. Results: unsatisfactory.",
+		"note": "Player picks green pillar"
+	},
+	{
+		"id": "ex1_02d",
+		"line": "Subject has attempted to return the book to a bookshelf. Hypothesis: subject retains basic level of mental association.",
+		"note": "Player puts book on shelf"
+	},
+	{
+		"id": "ex1_02e",
+		"line": "Subject demonstrates lack of understanding in local thermodynamics. Suggestion: further reading.",
+		"note": "Player puts book in fire"
+	},
+	{
+		"id": "ex1_02f",
+		"line": "Subject has re-chosen initial placement. Results: satisfactory.",
+		"note": "Player puts book back where it was picked up"
+	},
+	{
+		"id": "ex1_02g",
+		"line": "Subject has chosen the GOLDEN pillar. Results: extremely satisfactory.",
+		"note": "Player puts book on gold pillar"
+	},
+	{
+		"id": "ex1_02h",
+		"line": "Subject has chosen unexpected pillar. Results: additional testing needed.",
+		"note": "Player puts book on any tall pillar"
+	},
+	{
+		"id": "ex1_02i",
+		"line": "Experiment failed. Suggestion: administer high-level behavoiral correction to subject.",
+		"note": "Player puts book on coral."
+	},
+	{
+		"id": "ex1_02j",
+		"line": "Subject has defied all theoretical expectations. Results: unknown.",
+		"note": "Player somehow manages to place the book somewhere actually unexpected"
+	}
+]
