@@ -32,8 +32,11 @@ narrator: The shade manifests an arm, a glazed teapot in its newly-formed hand.[
 [n]Out of the teapot trickles a thin liquid, light blue and mildly luminous.[n+]\
 Crystals, so small and translucent that you can only register them by the way they bend and break the light shimmering through the stream, riding the way down.[n+]\
 You watch the little shards spill into the cup. You couldn't count them if you tried.\
-[n]For a fleeting moment, you try anyways ——[n+]\
-And that's when you see your face\: a mask reflected in the rippling blue.[n+] Three dark circles constrained by plaster white.[n+]\
+[n]For a fleeting moment, you try anyways ——
+[music fade="5.0" volume="0.0"]
+leave --All-- [animation="Fade Out Down" length="2"]
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="5.0"]
+narrator: And that's when you see your face\: a mask reflected in the rippling blue.[n+] Three dark circles constrained by plaster white.[n+]\
 Is this why they called you "a Mask?"\
 [n]...\
 [n]The only thing you can see is the mask. Your eyes, your mouth, your shoulders——all just match the murky blackness of the sky. But that pristine mask is...[n+]\
@@ -60,7 +63,11 @@ All the effort does is reward you with another fact\: You can't see your hands, 
 [n]You can stretch it, flex the fingers, pull at your non-mask Mask's mask with it (it doesn't move)...[n+]\
 but you can't see it.[n+]\
 —— You're interrupted before you can further contemplate the state of your being.
+[music path="res://Assets/Audio/Music/mus_brine_and_biscuits_(simple_loop).mp3" fade="2.0" volume="0.0"]
+[background arg="res://Assets/VN/Backgrounds/bg_test.png" fade="2.0"]
 [wait time="1.0"]
+join volumnia 3
+join clare 1
 "pompous voice": "Oh, dear. I don't think this poor thing even knows how to use tea!"
 "demure voice": "Well, that most certainly cannot be! Taking tea is the most important point of etiquette. How could anyone not know? Surely it is self-apparent and fundamental!"
 "haughty voice": "One can never underestimate the cluelessness of a newly-adorned Mask, dear."
@@ -69,12 +76,11 @@ but you can't see it.[n+]\
 "pompous voice": "Alright, dear. See here – it's quite easy! Now, all you need to do is..."
 [wait time="0.0"]
 - You don't need help to drink. You drink it.
-To the tea party's surprise, you pick up the cup – it's easy when you just grab it by the rim – and bring it up to your not-a-mask mask.
-You… aren't actually sure, now, that you even have a mouth. Lost on what to do next, you can only sit there with the cup beneath your not-chin, not-face…and wait.
-[wait time="0.0"]
+	To the tea party's surprise, you pick up the cup – it's easy when you just grab it by the rim – and bring it up to your not-a-mask mask.
 - Listen carefully. This is probably important.
-You are utterly bewildered as they describe at length the process of "doing tea."
-After they explain the process in excruciating detail, though, you're encouraged to give it a shot.
+	You are utterly bewildered as they describe at length the process of "doing tea."
+	After they explain the process in excruciating detail, though, you're encouraged to give it a shot.
+You… aren't actually sure, now, that you even have a mouth. Lost on what to do next, you can only sit there with the cup beneath your not-chin, not-face…and wait.
 [wait time="1.0"]
 "pompous voice": "Ah. Dear?"
 "demure voice": "Hmmm... I'm not so certain…"

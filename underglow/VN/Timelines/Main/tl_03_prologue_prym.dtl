@@ -57,11 +57,11 @@ narrator: [speed=2]The stranger brings your head tenderly to their breast…\
 [n][speed=3]…as your last vestiges of awareness…\
 [n][speed=4]slip away.\
 [n][speed=1][i]Oh.[/i]\
-[n][speed=3][i]IS[/i][n+]\
+[n][speed=3][i]Is[/i][n+]\
 \
-[speed=3][i]THIS[/i][n+]\
+[speed=3][i]this[/i][n+]\
 \
-[speed=3][i]BAD…?[/i]
+[speed=3][i]bad…?[/i]
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="3.0"]
 [wait time="3.0"]
 leave prym [animation="Fade Out Down" length="3"]
