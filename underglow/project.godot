@@ -40,6 +40,7 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "narrationtest": "res://VN/Timelines/Test/narrationtest.dtl",
+"testing_tl_02": "res://VN/Timelines/Test/testing_tl_02.dtl",
 "tl_00_prologue_intro": "res://VN/Timelines/Main/tl_00_prologue_intro.dtl",
 "tl_01_prologue_awaken": "res://VN/Timelines/Main/tl_01_prologue_awaken.dtl",
 "tl_02_prologue_estuary": "res://VN/Timelines/Main/tl_02_prologue_estuary.dtl",
