@@ -26,8 +26,8 @@ narrator: [speed=2]It’s cold.[n+]\
 [n][speed=.5]Want[n+]    want[n+]    want[n+]    want[n+]    want\
 [n][speed=6][pause = 0.2]. . .[n+]\
 [speed=2]To begin[n+]\
-[speed=2]Or[pause=0.3] end?[n]\
-[speed=6][pause=0.2]. . .\
+[speed=2]Or[pause=0.3] end?\
+[n][speed=6][pause=0.2]. . .\
 [n][speed=6][pause=0.2]. . . .\
 [n][speed=6][pause=0.2]. . . . .\
 [n][speed=6][pause=0.2].     .     .     .     .

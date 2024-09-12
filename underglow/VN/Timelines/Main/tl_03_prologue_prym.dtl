@@ -1,0 +1,69 @@
+[style name="character"]
+[background arg="res://Assets/VN/Backgrounds/bg_test.png" fade="0.0"]
+
+[wait time="1.0"]
+narrator: As voices murmur in surprise, you realize that a thick and looming miasma has been crawling its way through the sea of Masks. The perimeter of the crowd begins to part, and a strikingly corporeal figure begins to make its way toward the center.\
+\
+Straining to make out the sight amidst all the scurrying, you notice that the gaseous miasma appears to be emanating from a long, thin device carried in the hand of this new arrival.\
+\
+As they come forward, the haze thickens with each slow and deliberate step. The results of their approach rapidly accumulate into caution and urgency amongst the crowd.\
+\
+The congregation begins to depopulate. Masks flee every which way with a pronounced trepidation – which, actually, upon consideration, doesn't make sense to you at all.\
+\
+You stand and stare. How odd… You don't find the same desire to flee overtaking you. If anything, you begin to feel somewhat…serene, as though the miasma is having a calming effect on you.\
+\
+The crowd having almost fully dispersed, you ignore the few urgent whispers that may be directing you to [i]run away, quickly, you don't want to be —[/i]\
+\
+[i]Ah.[/i]\
+\
+[i]It's too late, anyhow.[/i]\
+\
+A pair of eyes locks on you.\
+\
+… Eyes… ?\
+\
+Yes… You can see them, now – glowing a luminous green to pierce through the thickening fog. And beneath those eyes, you see a vibrant and disarming grin.\
+\
+—\
+\
+A quiet white light in the middle of that sickly green…sparkles with a sense of utter delight.\
+\
+Then, you hear a voice.
+[wait time="1.0"]
+join prym 2
+???: [i]"Foooound ~ youuuuu… ~ !!"[/i]
+[wait time="1.0"]
+narrator: The enigmatic stranger's figure fully revealed, they close the distance between you and – with the gentlest caress – sweep their hand languidly around…to cradle the back of your neck.\
+\
+In another graceful motion, the instrument in their other hand draws a swirling path through the fog, the gas curling and wafting beneath your mask…\
+\
+And –\
+\
+Your grip on consciousness begins to slowly loosen.
+label slight fade to black
+narrator: [i]This is fine.[/i]\
+\
+You gaze up at their manic, toothy expression, and stumble backward as their hand lets go of your neck —\
+\
+— and are caught by tendrils, snaking out from beneath their garb, keeping you firmly rooted in place.
+label fade further toward black
+narrator: [i]This is fine.[/i]
+[wait time="1.0"]
+"enigmatic figure": "[i]Thaaat’s[/i] it. Take it in [speed=2][i]deeply[/i],[speed=1] please…"
+"enigmatic figure": [speed=2]" ~♪ "
+"enigmatic figure": "Come along, now…[pause] [speed=2]For we have so.[pause] [i]Very.[pause=.5] Much.[/i][pause] To do."
+[wait time="1.0"]
+narrator: [speed=2]The stranger brings your head tenderly to their breast…\
+[n][speed=3]…as your last vestiges of awareness…\
+[n][speed=4]slip away.\
+[n][speed=1][i]Oh.[/i]\
+[n][speed=3][i]IS[/i][n+]\
+\
+[speed=3][i]THIS[/i][n+]\
+\
+[speed=3][i]BAD…?[/i]
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="3.0"]
+[wait time="3.0"]
+leave prym [animation="Fade Out Down" length="3"]
+[wait time="5.0"]
+[signal arg="start_experiment_1"]
