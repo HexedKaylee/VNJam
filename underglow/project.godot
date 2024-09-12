@@ -27,9 +27,14 @@ Global="*res://globals/global.gd"
 directories/dch_directory={
 "clare": "res://VN/Characters/clare.dch",
 "demure voice": "res://VN/Characters/Throwaways/demure voice.dch",
+"enigmatic figure": "res://VN/Characters/Throwaways/enigmatic figure.dch",
+"flustered mask": "res://VN/Characters/Throwaways/flustered mask.dch",
+"gossiping mask": "res://VN/Characters/Throwaways/gossiping mask.dch",
 "haughty voice": "res://VN/Characters/Throwaways/haughty voice.dch",
 "narrator": "res://VN/Characters/narrator.dch",
+"pompous voice": "res://VN/Characters/Throwaways/pompous voice.dch",
 "prym": "res://VN/Characters/prym.dch",
+"question_mark": "res://VN/Characters/question_mark.dch",
 "testcharacter": "res://VN/Characters/testcharacter.dch",
 "volumnia": "res://VN/Characters/volumnia.dch"
 }
@@ -37,7 +42,8 @@ directories/dtl_directory={
 "narrationtest": "res://VN/Timelines/Test/narrationtest.dtl",
 "tl_00_prologue_intro": "res://VN/Timelines/Main/tl_00_prologue_intro.dtl",
 "tl_01_prologue_awaken": "res://VN/Timelines/Main/tl_01_prologue_awaken.dtl",
-"tl_02_prologue_narration": "res://VN/Timelines/Main/tl_02_prologue_narration.dtl",
+"tl_02_prologue_estuary": "res://VN/Timelines/Main/tl_02_prologue_estuary.dtl",
+"tl_03_prologue_prym": "res://VN/Timelines/Main/tl_03_prologue_prym.dtl",
 "tl_prologue_test": "res://VN/Timelines/Test/tl_prologue_test.dtl"
 }
 glossary/default_case_sensitive=true
