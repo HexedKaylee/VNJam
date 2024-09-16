@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://0d338r5qwo0p" path="res://Assets/3D/Models/Coral/Coral3_1.jpg" id="5_1c8dk"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kd5nc"]
+resource_local_to_scene = true
 emission_enabled = true
 emission = Color(0.35, 0.7725, 1, 1)
 emission_energy_multiplier = 1.99
