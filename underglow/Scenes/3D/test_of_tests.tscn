@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://b6a7q37xwad26"]
+[gd_scene load_steps=9 format=3 uid="uid://b6a7q37xwad26"]
 
 [ext_resource type="PackedScene" uid="uid://v2eeteufrg38" path="res://Nodes/3D/moria.tscn" id="1_04ou1"]
 [ext_resource type="PackedScene" uid="uid://d3swad4gj5g41" path="res://Nodes/3D/Geo/clipmap/clipmap.tscn" id="2_4yfu1"]
 [ext_resource type="PackedScene" uid="uid://c7xublrnupds4" path="res://Nodes/3D/Geo/collisionmap/collisionmap.tscn" id="3_uirel"]
 [ext_resource type="PackedScene" uid="uid://dalty20f03p4d" path="res://Nodes/3D/pickup.tscn" id="4_kvjtn"]
+[ext_resource type="PackedScene" uid="uid://cwd2b7x8wv01n" path="res://Nodes/3D/Geo/coral/coral_s_01.tscn" id="5_gu5xd"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_1lxqc"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -51,3 +52,12 @@ environment = SubResource("Environment_tex87")
 [node name="pickup" parent="." node_paths=PackedStringArray("player") instance=ExtResource("4_kvjtn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.058176, 4.54224, -1.96541)
 player = NodePath("../Moria")
+
+[node name="CoralS 01" parent="." instance=ExtResource("5_gu5xd")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 3.76218, -18.6099)
+
+[node name="CoralS 02" parent="." instance=ExtResource("5_gu5xd")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -12.8593, 3.23573, -11.6235)
+
+[node name="CoralS 03" parent="." instance=ExtResource("5_gu5xd")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 9.1284, 3.39827, -10.7466)
