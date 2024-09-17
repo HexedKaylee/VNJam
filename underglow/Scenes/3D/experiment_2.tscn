@@ -1,9 +1,14 @@
-[gd_scene load_steps=11 format=3 uid="uid://cwcu6kju6t7ds"]
+[gd_scene load_steps=16 format=3 uid="uid://cwcu6kju6t7ds"]
 
 [ext_resource type="PackedScene" uid="uid://v2eeteufrg38" path="res://Nodes/3D/moria.tscn" id="1_2yc3t"]
 [ext_resource type="PackedScene" uid="uid://d3swad4gj5g41" path="res://Nodes/3D/Geo/clipmap/clipmap.tscn" id="2_j1e0d"]
 [ext_resource type="PackedScene" uid="uid://c7xublrnupds4" path="res://Nodes/3D/Geo/collisionmap/collisionmap.tscn" id="3_8w5ct"]
+[ext_resource type="PackedScene" uid="uid://c1mcni5chgh22" path="res://Nodes/3D/Geo/pillar_small.tscn" id="4_sdtb3"]
+[ext_resource type="PackedScene" uid="uid://cvqopvyg75w7i" path="res://Nodes/3D/Geo/campfire_small.tscn" id="5_phyoo"]
 [ext_resource type="PackedScene" uid="uid://bikegbrny0lid" path="res://Nodes/3D/fish_launcher.tscn" id="6_r54lq"]
+[ext_resource type="PackedScene" uid="uid://dyu3chx4twwqj" path="res://Nodes/3D/Geo/bookshelf/bookshelf_1.tscn" id="7_pw5a3"]
+[ext_resource type="PackedScene" uid="uid://bfwwmn71aghkj" path="res://Nodes/3D/Geo/bookshelf/stack_stack.tscn" id="7_tclhd"]
+[ext_resource type="PackedScene" uid="uid://bqyujxgbd2ry0" path="res://Nodes/3D/Geo/pillar.tscn" id="9_ot28v"]
 [ext_resource type="ArrayMesh" uid="uid://br778evr6h5l3" path="res://Assets/3D/Models/Collision/HollowCylinder.obj" id="10_1tiv4"]
 [ext_resource type="PackedScene" uid="uid://oefdh2b5xghk" path="res://Nodes/3D/ui.tscn" id="11_t8361"]
 
@@ -29,8 +34,10 @@ data = PackedVector3Array(14.9272, 1.4701, 40, 14.9272, 1.4701, 0, 15, -0.0002, 
 
 [node name="Experiment 2" type="Node3D"]
 
-[node name="Moria" parent="." instance=ExtResource("1_2yc3t")]
+[node name="Moria" parent="." node_paths=PackedStringArray("SceneRoot") instance=ExtResource("1_2yc3t")]
+unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0203133, 3.86159, -14.867)
+SceneRoot = NodePath("..")
 
 [node name="Terrain" type="StaticBody3D" parent="."]
 collision_layer = 3
@@ -53,11 +60,104 @@ environment = SubResource("Environment_wfc8h")
 
 [node name="Short Pillars" type="Node3D" parent="."]
 
+[node name="Pillar" parent="Short Pillars" instance=ExtResource("4_sdtb3")]
+transform = Transform3D(1, 0, 0, 0, 0.020227, 0.999795, 0, -0.999795, 0.020227, -0.12075, 3.13714, 0)
+
+[node name="Pillar2" parent="Short Pillars" instance=ExtResource("4_sdtb3")]
+transform = Transform3D(0.978739, 0.205111, 0, -0.205111, 0.978739, 0, 0, 0, 1, 13.5654, 3.20555, -15.5008)
+
+[node name="Pillar3" parent="Short Pillars" instance=ExtResource("4_sdtb3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.6047, 2.68412, -21.9703)
+
+[node name="Pillar4" parent="Short Pillars" instance=ExtResource("4_sdtb3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.14418, -27.0732)
+
+[node name="Pillar5" parent="Short Pillars" instance=ExtResource("4_sdtb3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.7064, 2.62918, -6.87683)
+
+[node name="Pillar6" parent="Short Pillars" instance=ExtResource("4_sdtb3")]
+transform = Transform3D(0.92313, 0.384489, 0, -0.384489, 0.92313, 0, 0, 0, 1, 17.9922, 1.34493, -2.94546)
+
+[node name="Pillar7" parent="Short Pillars" instance=ExtResource("4_sdtb3")]
+transform = Transform3D(0.835395, 0.54965, 0, -0.54965, 0.835395, 0, 0, 0, 1, 0, 3.12725, -7.93683)
+
 [node name="Fires" type="Node3D" parent="."]
 
-[node name="Shelves" type="Node3D" parent="."]
+[node name="Campfire Small" parent="Fires" instance=ExtResource("5_phyoo")]
+transform = Transform3D(0.697665, -0.716424, 0, 0.716424, 0.697665, 0, 0, 0, 1, -8.43521, 4.87965, -19.6218)
+
+[node name="Campfire Small2" parent="Fires" instance=ExtResource("5_phyoo")]
+transform = Transform3D(1, 0, 0, 0, 0.543687, -0.839288, 0, 0.839288, 0.543687, 10.1404, 4.18163, -7.41866)
+
+[node name="Campfire Small3" parent="Fires" instance=ExtResource("5_phyoo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9716, 3.10311, -27.1364)
+
+[node name="Campfire Small4" parent="Fires" instance=ExtResource("5_phyoo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.972, 3.259, -27.136)
+
+[node name="Campfire Small5" parent="Fires" instance=ExtResource("5_phyoo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.03044, 3.77092, -6.75858)
+
+[node name="Campfire Small6" parent="Fires" instance=ExtResource("5_phyoo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.2754, 1.49976, -0.418443)
+
+[node name="Bookshelves" type="Node3D" parent="."]
+
+[node name="Bookshelf2" parent="Bookshelves" instance=ExtResource("7_pw5a3")]
+transform = Transform3D(-0.996424, 0, -0.0844953, -0.0424327, 0.864757, 0.500394, 0.0730679, 0.50219, -0.861665, 0, 2.76601, 1.35337)
+
+[node name="StackStack7" parent="Bookshelves" instance=ExtResource("7_tclhd")]
+transform = Transform3D(0.927621, 0, 0.373522, -0.109718, 0.955885, 0.27248, -0.357044, -0.29374, 0.8867, 23.6057, -1.74598, 15.1252)
+
+[node name="StackStack" parent="Bookshelves" instance=ExtResource("7_tclhd")]
+transform = Transform3D(1, 0, 0, 0, 0.890006, -0.455949, 0, 0.455949, 0.890006, 6.10064, -7.27379, -25.7611)
+
+[node name="StackStack2" parent="Bookshelves" instance=ExtResource("7_tclhd")]
+transform = Transform3D(0.988772, 0.149432, 9.29523e-10, -0.146947, 0.972331, 0.181601, 0.0271369, -0.179562, 0.983372, -12.0712, -1.79792, -14.0873)
+
+[node name="StackStack3" parent="Bookshelves" instance=ExtResource("7_tclhd")]
+transform = Transform3D(-0.336592, -0.21083, 0.917745, -0.727348, 0.677201, -0.111191, -0.598056, -0.704946, -0.381287, 0, -5.13065, 0)
+
+[node name="StackStack4" parent="Bookshelves" instance=ExtResource("7_tclhd")]
+transform = Transform3D(-0.0324372, -0.793141, -0.608174, -0.0422425, 0.609038, -0.792015, 0.998581, 0, -0.0532597, 23.7559, -10.8793, 0)
+
+[node name="StackStack5" parent="Bookshelves" instance=ExtResource("7_tclhd")]
+transform = Transform3D(0.203525, 0.491114, 0.846985, -0.432491, 0.82121, -0.372244, -0.878368, -0.290552, 0.379539, -14.623, -7.79499, -11.483)
+
+[node name="StackStack6" parent="Bookshelves" instance=ExtResource("7_tclhd")]
+transform = Transform3D(-0.027284, -0.676956, -0.735518, 0.999189, -0.0402713, 0, -0.0296202, -0.734921, 0.677505, 4.88239, 8.39351, -7.73757)
+
+[node name="Bookshelf1" parent="Bookshelves" instance=ExtResource("7_pw5a3")]
+transform = Transform3D(0.786213, 0, 0.617956, -0.282169, 0.889664, 0.358998, -0.549773, -0.456617, 0.699465, -7.00271, 3.36575, -29.1505)
+
+[node name="Bookshelf3" parent="Bookshelves" instance=ExtResource("7_pw5a3")]
+transform = Transform3D(0.841858, 0.433769, -0.321121, -0.405286, 0.901024, 0.154593, 0.356396, 1.19477e-08, 0.934335, 17.9568, 2.34216, -10.9306)
+
+[node name="Bookshelf4" parent="Bookshelves" instance=ExtResource("7_pw5a3")]
+transform = Transform3D(0.24732, 0, 0.968934, 0, 1, 0, -0.968934, 0, 0.24732, -11.1975, 2.70902, -8.81435)
 
 [node name="TallPillars" type="Node3D" parent="."]
+
+[node name="Pillar" parent="TallPillars" instance=ExtResource("9_ot28v")]
+transform = Transform3D(0.655927, -0.754824, 0, 0.754824, 0.655927, 0, 0, 0, 1, -6.16571, 2.93062, -19.6603)
+
+[node name="Pillar2" parent="TallPillars" instance=ExtResource("9_ot28v")]
+transform = Transform3D(1, 0, 0, 0, 0.632448, -0.774602, 0, 0.774602, 0.632448, 10.2039, 2.27925, -9.72119)
+
+[node name="Pillar3" parent="TallPillars" instance=ExtResource("9_ot28v")]
+transform = Transform3D(0.907382, 0.420307, 0, -0.420307, 0.907382, 0, 0, 0, 1, -6.23675, 3.02408, -5.51714)
+
+[node name="Pillar4" parent="TallPillars" instance=ExtResource("9_ot28v")]
+transform = Transform3D(0.930692, 0.365803, 0, -0.365803, 0.930692, 0, 0, 0, 1, 7.69018, 1.57598, 0)
+
+[node name="Pillar5" parent="TallPillars" instance=ExtResource("9_ot28v")]
+transform = Transform3D(0.824766, 0.461584, 0.326652, -0.555368, 0.769932, 0.314278, -0.106434, -0.440618, 0.891363, 13.3994, 3.26483, -21.1042)
+
+[node name="Pillar6" parent="TallPillars" instance=ExtResource("9_ot28v")]
+transform = Transform3D(1, 0, 0, 0, 0.964723, 0.263267, 0, -0.263267, 0.964723, 7.00928, 3.27996, -27.4809)
+
+[node name="Pillar7" parent="TallPillars" instance=ExtResource("9_ot28v")]
+transform = Transform3D(0.842716, -0.538359, 0, 0.538359, 0.842716, 0, 0, 0, 1, -3.59938, 2.2155, 0)
 
 [node name="StageBorder" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -14.8807)

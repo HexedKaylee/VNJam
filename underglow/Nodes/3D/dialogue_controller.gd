@@ -14,6 +14,9 @@ var scenePhase = 0
 var timer = 0.0
 var waitMax = 15.0
 var book = preload("res://Nodes/3D/pickup.tscn")
+var fishTarg = 10
+var hitShelf = false
+var hitCoral = false
 @export var SceneRoot : Node3D
 
 func _ready():
@@ -30,6 +33,8 @@ func _process(delta):
 		match Experiment:
 			1:
 				exp1(delta)
+			2:
+				exp2(delta)
 			_:
 				pass
 	else:
@@ -86,7 +91,42 @@ func exp1(delta):
 				exit = true
 		_:
 			pass
-			
+
+func exp2(delta):
+	launchControl()
+	match scenePhase:
+		0:
+			scenePhase = 1
+			textBox.activate(diagDict["ex2_00"])
+		1:
+			if(textBox.modulate.a == 0):
+				timer += delta
+				if(timer > waitMax):
+					textBox.activate(diagDict["ex2_00a"])
+					scenePhase = 2
+					timer = 0
+		2:
+			if(textBox.modulate.a == 0):
+				timer += delta
+				if(timer > waitMax):
+					textBox.activate(diagDict["ex2_00b"])
+					scenePhase = 3
+					timer = 0
+		3:
+			if(textBox.modulate.a == 0):
+				timer += delta
+				if(timer > waitMax):
+					textBox.activate(diagDict["ex2_00c"])
+					scenePhase = 4
+					timer = 0
+		6:
+			if(textBox.modulate.a == 0):
+				timer += delta
+				if(timer > 1.0):
+					exit = true
+		_:
+			pass
+				
 func bookControl(action, scn = ""):
 	if Experiment != 1:
 		return
@@ -113,6 +153,41 @@ func bookControl(action, scn = ""):
 				textBox.activate(diagDict[scn])
 		_:
 			pass
+
+func launchControl():
+	if(Experiment != 2 or scenePhase >= 6):
+		return
+	if(scenePhase < 5 and player.launchReady):
+		scenePhase = 5
+		timer = 0
+		textBox.activate(diagDict["ex2_01"])
+	if(scenePhase >= 5):
+		if(!hitShelf and player.shotShelf):		
+			textBox.activate(diagDict["ex2_02a"])
+			hitShelf = true
+		if(!hitCoral and player.shotCoral):		
+			textBox.activate(diagDict["ex2_02b"])
+			hitCoral = true
+		if(textBox.modulate.a != 0):
+			if(player.fishNum >= fishTarg):
+				player.fishNum = fishTarg - 5
+		elif(player.fishNum > fishTarg):
+			match fishTarg:
+				10:
+					textBox.activate(diagDict["ex2_03a"])
+				20:
+					textBox.activate(diagDict["ex2_03b"])
+				30:
+					textBox.activate(diagDict["ex2_03c"])
+				40:
+					textBox.activate(diagDict["ex2_03d"])
+				50:
+					textBox.activate(diagDict["ex2_04"])
+					scenePhase = 6
+				_:
+					print("ERROR: BAD FISH TARG!")
+			timer = 0
+			fishTarg += 10
 
 func readJSON(json_file_path):
 	var file = FileAccess.open(json_file_path, FileAccess.READ)

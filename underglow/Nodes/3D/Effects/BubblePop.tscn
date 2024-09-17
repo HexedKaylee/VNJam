@@ -1,0 +1,53 @@
+[gd_scene load_steps=9 format=3 uid="uid://bwjlcy5jvimhp"]
+
+[ext_resource type="Shader" path="res://Nodes/3D/Effects/bubble.gdshader" id="1_nqqsn"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_mbjl3"]
+lifetime_randomness = 1.0
+emission_shape = 1
+emission_sphere_radius = 1.0
+direction = Vector3(0, 1, 0)
+spread = 0.0
+initial_velocity_max = 3.2
+radial_velocity_max = 1.0
+gravity = Vector3(0, 0, 0)
+linear_accel_min = -12.0
+linear_accel_max = 12.0
+scale_min = 0.01
+scale_max = 0.05
+turbulence_noise_strength = 0.0
+turbulence_noise_scale = 9.4
+collision_mode = 2
+
+[sub_resource type="Gradient" id="Gradient_y35fd"]
+offsets = PackedFloat32Array(0, 0.991228)
+colors = PackedColorArray(0.358896, 0.872766, 1, 1, 0.280038, 0.495665, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_k7ery"]
+gradient = SubResource("Gradient_y35fd")
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_qoo8c"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_uytdc"]
+noise = SubResource("FastNoiseLite_qoo8c")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_saeut"]
+render_priority = 0
+shader = ExtResource("1_nqqsn")
+shader_parameter/smoothness = null
+shader_parameter/noise_texture = SubResource("NoiseTexture2D_uytdc")
+shader_parameter/color = SubResource("GradientTexture1D_k7ery")
+
+[sub_resource type="SphereMesh" id="SphereMesh_mt3r1"]
+material = SubResource("ShaderMaterial_saeut")
+
+[node name="BubblePop" type="Node3D"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+amount = 20
+speed_scale = 1.91
+randomness = 1.0
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_mbjl3")
+draw_pass_1 = SubResource("SphereMesh_mt3r1")

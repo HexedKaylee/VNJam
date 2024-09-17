@@ -1,0 +1,48 @@
+[gd_scene load_steps=8 format=3 uid="uid://cc7mfxm242li2"]
+
+[ext_resource type="Script" path="res://Nodes/3D/fish.gd" id="1_kd2dw"]
+[ext_resource type="PackedScene" uid="uid://e4yrj251lxki" path="res://Assets/3D/Models/Fish.blend" id="1_segm0"]
+[ext_resource type="Texture2D" uid="uid://dxj07qmv4pdat" path="res://Assets/3D/Textures/Poisson_Plane.png" id="2_7dlsk"]
+[ext_resource type="Shader" path="res://Nodes/3D/Fish.gdshader" id="3_kc4b5"]
+[ext_resource type="PackedScene" uid="uid://bwjlcy5jvimhp" path="res://Nodes/3D/Effects/BubblePop.tscn" id="4_0qwi4"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vifwi"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("3_kc4b5")
+shader_parameter/time_scale = 8.0
+shader_parameter/side_to_side = 5.0
+shader_parameter/pivot = 0.2
+shader_parameter/len = 0.5
+shader_parameter/twist = 1.0
+shader_parameter/wave = 1.0
+shader_parameter/time_offset = 0.0
+shader_parameter/mask_black = 0.0
+shader_parameter/mask_white = 1.0
+shader_parameter/tex = ExtResource("2_7dlsk")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_r8at3"]
+size = Vector3(1.01343, 0.322815, 0.219482)
+
+[node name="Fish" type="RigidBody3D"]
+gravity_scale = 0.0
+script = ExtResource("1_kd2dw")
+
+[node name="Fish" parent="." instance=ExtResource("1_segm0")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+
+[node name="Fish_001" parent="Fish/Armature-fish/Skeleton3D" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_vifwi")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0679932, 0.0935974, -0.00891113)
+shape = SubResource("BoxShape3D_r8at3")
+
+[node name="BubblePop" parent="." instance=ExtResource("4_0qwi4")]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -0.231299, 0, 0)
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
+
+[editable path="Fish"]
