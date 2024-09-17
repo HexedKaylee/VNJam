@@ -1,14 +1,14 @@
-[gd_scene load_steps=13 format=3 uid="uid://ehhx7mocqp42"]
+[gd_scene load_steps=15 format=3 uid="uid://ehhx7mocqp42"]
 
 [ext_resource type="PackedScene" uid="uid://v2eeteufrg38" path="res://Nodes/3D/moria.tscn" id="1_v4nke"]
 [ext_resource type="PackedScene" uid="uid://d3swad4gj5g41" path="res://Nodes/3D/Geo/clipmap/clipmap.tscn" id="2_fj1i7"]
 [ext_resource type="PackedScene" uid="uid://c7xublrnupds4" path="res://Nodes/3D/Geo/collisionmap/collisionmap.tscn" id="3_y2jh6"]
 [ext_resource type="PackedScene" uid="uid://dalty20f03p4d" path="res://Nodes/3D/pickup.tscn" id="4_ni7ih"]
-[ext_resource type="PackedScene" uid="uid://c6nwknhsgyhw3" path="res://Nodes/3D/Geo/coral/coral_s_02.tscn" id="5_154th"]
-[ext_resource type="PackedScene" uid="uid://cwd2b7x8wv01n" path="res://Nodes/3D/Geo/coral/coral_s_01.tscn" id="6_sqv11"]
 [ext_resource type="PackedScene" uid="uid://dm7jbytkwf80f" path="res://Nodes/3D/Geo/coral/coral_s_03.tscn" id="7_8yj0y"]
-[ext_resource type="PackedScene" uid="uid://bomf3lntpog6b" path="res://Nodes/3D/Geo/coral/coral_s_04.tscn" id="7_r6qsa"]
-[ext_resource type="PackedScene" uid="uid://br8eak4qed6gy" path="res://Nodes/3D/Geo/coral/coral_s_07.tscn" id="9_wy6bq"]
+[ext_resource type="Texture2D" uid="uid://c18sljx48lc1k" path="res://Assets/3D/Models/Coral/Coral13_2.jpg" id="9_2ysdt"]
+[ext_resource type="PackedScene" uid="uid://dcpftv66ac55c" path="res://Nodes/3D/Geo/coral/coral_s_10.tscn" id="12_ctves"]
+[ext_resource type="PackedScene" uid="uid://qyer0xpq26xy" path="res://Nodes/3D/Geo/coral/coral_s_12.tscn" id="14_j56na"]
+[ext_resource type="PackedScene" uid="uid://bf4eo8u76tkru" path="res://Nodes/3D/Geo/coral/coral_s_13.tscn" id="15_rwqfq"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_1lxqc"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -27,16 +27,33 @@ background_mode = 2
 sky = SubResource("Sky_qr232")
 glow_enabled = true
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8sugq"]
+resource_local_to_scene = true
+emission_enabled = true
+emission = Color(1, 0.34902, 0.772549, 1)
+emission_energy_multiplier = 5.13
+normal_enabled = true
+normal_texture = ExtResource("9_2ysdt")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rrvkn"]
+resource_local_to_scene = true
+emission_enabled = true
+emission = Color(0.34902, 0.976471, 1, 1)
+emission_energy_multiplier = 5.13
+normal_enabled = true
+normal_texture = ExtResource("9_2ysdt")
+
 [node name="Test of Tests" type="Node3D"]
 
 [node name="Moria" parent="." instance=ExtResource("1_v4nke")]
-transform = Transform3D(0.477404, 0, -0.878684, 0, 1, 0, 0.878684, 0, 0.477404, 2.94433, 3.86159, 1.44179)
+transform = Transform3D(0.477404, 0, -0.878684, 0, 1, 0, 0.878684, 0, 0.477404, 1.61019, 3.86159, 2.27631)
 
 [node name="Terrain" type="StaticBody3D" parent="."]
 collision_layer = 3
 collision_mask = 3
 
 [node name="Clipmap" parent="Terrain" node_paths=PackedStringArray("player_character") instance=ExtResource("2_fj1i7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.640228, -0.156555, -1.551)
 player_character = NodePath("../../Moria")
 
 [node name="Collisionmap" parent="Terrain" node_paths=PackedStringArray("physics_body") instance=ExtResource("3_y2jh6")]
@@ -55,17 +72,37 @@ environment = SubResource("Environment_tex87")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.058176, 4.54224, -1.96541)
 player = NodePath("../Moria")
 
-[node name="CoralS 02" parent="." instance=ExtResource("5_154th")]
-transform = Transform3D(9.94351, 1.06143, 0, -1.06143, 9.94351, 0, 0, 0, 10, -4.95159, 4.86436, -2.45644)
+[node name="CoralS 04" parent="." instance=ExtResource("7_8yj0y")]
+transform = Transform3D(8.57598, 0, -5.1432, 0, 10, 0, 5.1432, 0, 8.57598, 3.66211, 3.11166, -2.80753)
+visible = false
 
-[node name="CoralS 01" parent="." instance=ExtResource("6_sqv11")]
-transform = Transform3D(5.25605, 0, -8.50729, 0, 10, 0, 8.50729, 0, 5.25605, 2.61613, 3.6857, -2.72629)
+[node name="CoralS 05" parent="." instance=ExtResource("12_ctves")]
+transform = Transform3D(4.25795, 0, -9.0482, 0, 10, 0, 9.0482, 0, 4.25795, 6.837, 2.72928, -0.927051)
+visible = false
 
-[node name="CoralS 03" parent="." instance=ExtResource("7_8yj0y")]
-transform = Transform3D(5.84788, 0, 8.11186, 0, 10, 0, -8.11186, 0, 5.84788, -4.45058, 4.06644, 0.565502)
+[node name="CoralS 06" parent="." instance=ExtResource("14_j56na")]
+transform = Transform3D(-2.23216, 0, -9.74769, 0, 10, 0, 9.74769, 0, -2.23216, 11.3349, 2.65709, 0.770856)
+visible = false
 
-[node name="CoralS 04" parent="." instance=ExtResource("7_r6qsa")]
-transform = Transform3D(9.92752, 1.16754, -0.284863, -1.19096, 9.8752, -1.03055, 0.160987, 1.05701, 9.94267, -1.33543, 4.07808, -4.99846)
+[node name="CoralS 07" parent="." instance=ExtResource("15_rwqfq")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 7.67923, 2.34998, 5.22905)
 
-[node name="CoralS 05" parent="." instance=ExtResource("9_wy6bq")]
-transform = Transform3D(5.13044, -1.45234, -8.45986, -0.14702, 9.8395, -1.77835, 8.58236, 1.03675, 5.02675, 4.99459, 3.5751, 0.307955)
+[node name="OmniLight3D" parent="CoralS 07" index="1"]
+light_color = Color(1, 0.35, 0.7725, 1)
+
+[node name="Mesh" parent="CoralS 07/Coral13" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_8sugq")
+
+[node name="CoralS 08" parent="." instance=ExtResource("15_rwqfq")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 6.33915, 2.70196, -1.09138)
+
+[node name="OmniLight3D" parent="CoralS 08" index="1"]
+light_color = Color(0.35, 0.978333, 1, 1)
+
+[node name="Mesh" parent="CoralS 08/Coral13" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_rrvkn")
+
+[editable path="CoralS 07"]
+[editable path="CoralS 07/Coral13"]
+[editable path="CoralS 08"]
+[editable path="CoralS 08/Coral13"]

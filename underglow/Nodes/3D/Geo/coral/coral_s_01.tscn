@@ -14,6 +14,7 @@ gradient = SubResource("Gradient_k65xq")
 width = 16
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ea76j"]
+resource_local_to_scene = true
 emission_enabled = true
 emission = Color(0.36, 0.477333, 1, 1)
 emission_energy_multiplier = 3.69
@@ -58,7 +59,7 @@ light_energy = 5.02
 light_size = 1.0
 light_specular = 1.859
 light_cull_mask = 4294967279
-omni_range = 9.792
+omni_range = 6.709
 omni_attenuation = 0.0
 
 [editable path="Coral1"]

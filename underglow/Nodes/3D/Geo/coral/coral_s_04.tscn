@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://b5dkprgi1w6an" path="res://Assets/3D/Models/Coral/Coral4_2.jpg" id="3_q4eql"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_so2t4"]
+resource_local_to_scene = true
 emission_enabled = true
 emission = Color(0.575, 0.25, 1, 1)
 emission_energy_multiplier = 2.44
@@ -36,7 +37,7 @@ light_color = Color(0.575, 0.25, 1, 1)
 light_energy = 5.121
 light_size = 1.0
 light_cull_mask = 4294967287
-omni_range = 8.278
+omni_range = 6.169
 omni_attenuation = 0.0
 
 [editable path="Coral4"]
