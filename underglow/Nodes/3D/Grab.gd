@@ -9,15 +9,21 @@ func _process(delta):
 		if grabbed == null:
 			var collider = get_collider()
 			if collider != null:
-				if collider.name == "pickup":
+				if collider.name.rstrip("0123456789") == "pickup":
 					grabbed = collider
 					collider.set_contact_monitor(true)
 					collider.set_max_contacts_reported(1)
 					collider.set_collision_layer_value(1, false)
+					#if("hasGrabbed" in grabbed):
+						#grabbed.hasGrabbed = false
+					if("startGrab" in grabbed):
+						grabbed.startGrab = true
 					last = collider.position
 		else:
 			if(grabbed.get_contact_count() <= 0):
 				grabbed.set_collision_layer_value(1, true)
+				if("hasGrabbed" in grabbed):
+					grabbed.hasGrabbed = true
 				grabbed = null
 	if grabbed != null:
 		grabbed.position = holdPoint.global_position

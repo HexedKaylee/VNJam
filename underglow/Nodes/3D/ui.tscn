@@ -1,51 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://oefdh2b5xghk"]
+[gd_scene load_steps=5 format=3 uid="uid://oefdh2b5xghk"]
 
-[ext_resource type="Shader" path="res://Nodes/3D/ui.gdshader" id="1_6j766"]
+[ext_resource type="Texture2D" uid="uid://deo3jyvgyj0eu" path="res://Assets/VN/GUI/placeholder_textbox_in_experiment.png" id="2_170po"]
+[ext_resource type="Script" path="res://Nodes/3D/ui.gd" id="3_kuvqa"]
+[ext_resource type="Script" path="res://Nodes/3D/dialogue_controller.gd" id="4_upstm"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_sjem2"]
-shader = ExtResource("1_6j766")
-shader_parameter/vhs_resolution = Vector2(320, 240)
-shader_parameter/samples = 2
-shader_parameter/crease_noise = 1.0
-shader_parameter/crease_opacity = 0.5
-shader_parameter/filter_intensity = 0.1
-shader_parameter/tape_crease_smear = 0.2
-shader_parameter/tape_crease_intensity = 0.2
-shader_parameter/tape_crease_jitter = 0.1
-shader_parameter/tape_crease_speed = 0.5
-shader_parameter/tape_crease_discoloration = 1.0
-shader_parameter/bottom_border_thickness = 6.0
-shader_parameter/bottom_border_jitter = 6.0
-shader_parameter/noise_intensity = 0.1
-
-[sub_resource type="FastNoiseLite" id="FastNoiseLite_dxteo"]
-noise_type = 0
-fractal_type = 3
-fractal_gain = 1.5
-fractal_ping_pong_strength = 1.0
-
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_iadmi"]
-noise = SubResource("FastNoiseLite_dxteo")
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_6gnem"]
-shader = ExtResource("1_6j766")
-shader_parameter/vhs_resolution = Vector2(320, 240)
-shader_parameter/samples = 2
-shader_parameter/crease_noise = 1.0
-shader_parameter/crease_opacity = 0.5
-shader_parameter/filter_intensity = 0.1
-shader_parameter/tape_crease_smear = 0.2
-shader_parameter/tape_crease_intensity = 0.2
-shader_parameter/tape_crease_jitter = 0.1
-shader_parameter/tape_crease_speed = 0.5
-shader_parameter/tape_crease_discoloration = 1.0
-shader_parameter/bottom_border_thickness = 6.0
-shader_parameter/bottom_border_jitter = 6.0
-shader_parameter/noise_intensity = 0.1
-shader_parameter/noise_texture = SubResource("NoiseTexture2D_iadmi")
+[sub_resource type="Theme" id="Theme_tmgdd"]
+default_font_size = 24
 
 [node name="UI" type="Control"]
-material = SubResource("ShaderMaterial_sjem2")
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -53,8 +15,35 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ColorRect" type="ColorRect" parent="."]
-material = SubResource("ShaderMaterial_6gnem")
+[node name="TextBox" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(960, 896)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_170po")
+script = ExtResource("3_kuvqa")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextBox"]
+offset_left = -284.0
+offset_top = -66.0001
+offset_right = 606.0
+offset_bottom = 117.0
+scale = Vector2(0.75, 0.75)
+theme = SubResource("Theme_tmgdd")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "Cave Johnson here. Just wanted to let you know that, after decades of research and testing, we have finally transformed into beings of pure light. Go team. Not exactly what we were after, of course, but in the ballpark. So let's keep testing, and maybe someday we'll achieve man's ultimate dream: to evolve into pillars of pure salt. Can't wait....So salty."
+
+[node name="Controller" type="Control" parent="."]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("4_upstm")
+
+[node name="ColorRect" type="ColorRect" parent="Controller"]
 layout_mode = 0
-offset_right = 1152.0
-offset_bottom = 648.0
+offset_left = -49.0
+offset_top = -24.0
+offset_right = 1999.0
+offset_bottom = 1123.0
+color = Color(0, 0, 0, 1)

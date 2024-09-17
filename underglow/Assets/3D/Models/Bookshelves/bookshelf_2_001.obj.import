@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bfd3g4vwhj8vf"
+path="res://.godot/imported/bookshelf_2_001.obj-de7ffe4bb9e49d5f6e751e89e0e2cf4e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bookshelf_2_001.obj-de7ffe4bb9e49d5f6e751e89e0e2cf4e.mesh"]
+
+source_file="res://Assets/3D/Models/Bookshelves/bookshelf_2_001.obj"
+dest_files=["res://.godot/imported/bookshelf_2_001.obj-de7ffe4bb9e49d5f6e751e89e0e2cf4e.mesh", "res://.godot/imported/bookshelf_2_001.obj-de7ffe4bb9e49d5f6e751e89e0e2cf4e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

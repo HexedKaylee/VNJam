@@ -3,12 +3,30 @@ extends CharacterBody3D
 
 @export var SPEED = 5.0
 @export var sensivity = 0.3
+@export var launch_height = -0.326
+@export var rot_launch_targ = PI/8
+@export var rot_launch_spd = 20.0
+@export var rot_launch_orig = 0.0
+@export var shot_cooldown = .5
 var fov = false
 var lerp_speed= 1
+var has_launcher = false
+@onready var launcher = $Camera/FishModel
+@onready var launchPoint = $Camera/FishModel/LaunchPoint
+var launch_rise = .05
+var launchReady = false
+var animStart = false
+var fish = preload("res://Nodes/3D/Fish.tscn")
+@export var SceneRoot : Node3D
+var fishNum = 0
+var shotShelf : bool
+var shotCoral : bool
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	shotShelf = false
+	shotCoral = false
 
 func _input(event):
 	if event is InputEventMouseMotion:
@@ -34,3 +52,33 @@ func _physics_process(delta):
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+
+func _process(delta):
+	if has_launcher:
+		control_launcher(delta)
+		launcher.visible = true
+
+func control_launcher(delta):
+	if(!launchReady):
+		launcher.position.y = lerp(launcher.position.y, launch_height, launch_rise)
+		if(snappedf(launcher.position.y, 0.05) == snappedf(launch_height, 0.05)):
+			launchReady = true
+	else:
+		if Input.is_action_pressed("fire") and shot_cooldown <= 0.0:
+			animStart = true
+			shot_cooldown = 0.5
+			var newFish = fish.instantiate()
+			SceneRoot.add_child(newFish)
+			newFish.global_transform.origin = launchPoint.global_transform.origin
+			newFish.global_rotation = launcher.global_rotation
+			newFish.linear_velocity = velocity
+			newFish.player = self
+			fishNum += 1
+		if animStart:
+			launcher.rotation.z = lerp(launcher.rotation.z, rot_launch_targ, rot_launch_spd*delta)
+			if(snappedf(launcher.rotation.z, 0.05) == snappedf(rot_launch_targ, 0.05)):
+				animStart = false
+		else:
+			launcher.rotation.z = lerp(launcher.rotation.z, rot_launch_orig, rot_launch_spd*delta)
+		if shot_cooldown > 0.0:
+			shot_cooldown -= delta
