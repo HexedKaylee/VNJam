@@ -71,12 +71,72 @@
 	},
 	{
 		"id": "ex1_02i",
-		"line": "Experiment failed. Suggestion: administer high-level behavoiral correction to subject.",
+		"line": "Experiment failed. Suggestion: administer high-level behavioral correction to subject.",
 		"note": "Player puts book on coral."
 	},
 	{
 		"id": "ex1_02j",
 		"line": "Subject has defied all theoretical expectations. Results: unknown.",
 		"note": "Player somehow manages to place the book somewhere actually unexpected"
+	},
+	{
+		"id": "ex2_00",
+		"line": "Take the experimental device.",
+		"note": "Player enters the scene"
+	},
+	{
+		"id": "ex2_00a",
+		"line": "Come on, just walk into it and it'll bind to your form.",
+		"note": "After player fails to pick up launcher for a time since last line played"
+	},
+	{
+		"id": "ex2_00b",
+		"line": "The launcher, subject! Take the launcher!",
+		"note": "After player fails to pick up launcher for a time since last line played"
+	},
+	{
+		"id": "ex2_00c",
+		"line": "Subject is showing resistance to the experience. New protocol: ignore the subject until directions are obeyed.",
+		"note": "After player fails to pick up launcher for a time since last line played"
+	},
+	{
+		"id": "ex2_01",
+		"line": "Next, operate the mechanism until results are obtained.",
+		"note": "Player grabs the launcher"
+	},
+	{
+		"id": "ex2_02a",
+		"line": "Hypothesis: subject is making an admirable attempt to educate the spirit fish.",
+		"note": "Hit bookshelf"
+	},
+	{
+		"id": "ex2_02b",
+		"line": "Subject shows aggressive behavior. Note: administer reward.",
+		"note": "Hit coral"
+	},
+	{
+		"id": "ex2_03a",
+		"line": "Data collection in progress...",
+		"note": "10 fish are fired"
+	},
+	{
+		"id": "ex2_03b",
+		"line": "Results presently unclear. More data needed.",
+		"note": "20 fish are fired"
+	},
+	{
+		"id": "ex2_03c",
+		"line": "The data is accumulating!",
+		"note": "30 fish are fired"
+	},
+	{
+		"id": "ex2_03d",
+		"line": "More! More!",
+		"note": "40 fish are fired"
+	},
+	{
+		"id": "ex2_04",
+		"line": "Enough data collected. Come, let's de-graft that thing from you.",
+		"note": "50(?) fish are fired (end)"
 	}
 ]

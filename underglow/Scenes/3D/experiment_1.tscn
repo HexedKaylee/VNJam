@@ -35,6 +35,7 @@ data = PackedVector3Array(14.9272, 1.4701, 40, 14.9272, 1.4701, 0, 15, -0.0002, 
 [node name="Experiment 1" type="Node3D"]
 
 [node name="Moria" parent="." instance=ExtResource("1_oayx2")]
+unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0203133, 3.86159, 0.013649)
 
 [node name="Terrain" type="StaticBody3D" parent="."]

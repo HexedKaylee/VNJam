@@ -1,0 +1,57 @@
+[gd_scene load_steps=11 format=3 uid="uid://ldod4paasspw"]
+
+[ext_resource type="PackedScene" uid="uid://c3xrh8q72uwjt" path="res://Assets/3D/Models/Potion_1.fbx" id="1_1y1p8"]
+[ext_resource type="Script" path="res://Nodes/3D/serum.gd" id="1_gmrwx"]
+[ext_resource type="Texture2D" uid="uid://d3c3esrmjvfy2" path="res://Assets/3D/Textures/serum/Potion_1_Potion1_Aqua_AlbedoTransparency.png" id="2_fvabv"]
+[ext_resource type="Texture2D" uid="uid://ccg2lvhn82gvo" path="res://Assets/3D/Textures/serum/Potion_1_Mat_Cloudy_Normal.png" id="3_hht27"]
+[ext_resource type="Texture2D" uid="uid://dl5bfus17l2oc" path="res://Assets/3D/Textures/serum/Potion_1_Potion1_Cloudy_MetallicSmoothness.png" id="3_vrn7r"]
+[ext_resource type="Texture2D" uid="uid://c7r1lgu45ychq" path="res://Assets/3D/Textures/serum/Potion_1_Potion1_Aqua_Emission.png" id="4_yd0iw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xhvyj"]
+resource_local_to_scene = true
+transparency = 2
+alpha_scissor_threshold = 0.246
+alpha_antialiasing_mode = 0
+albedo_texture = ExtResource("2_fvabv")
+metallic = 1.0
+metallic_texture = ExtResource("3_vrn7r")
+normal_enabled = true
+normal_texture = ExtResource("3_hht27")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qb56m"]
+resource_local_to_scene = true
+albedo_texture = ExtResource("2_fvabv")
+emission_enabled = true
+emission_texture = ExtResource("4_yd0iw")
+normal_enabled = true
+normal_texture = ExtResource("3_hht27")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l2yvd"]
+albedo_texture = ExtResource("2_fvabv")
+emission_enabled = true
+normal_enabled = true
+normal_texture = ExtResource("3_hht27")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_atl37"]
+size = Vector3(0.35498, 0.495117, 0.346313)
+
+[node name="serum" type="StaticBody3D"]
+script = ExtResource("1_gmrwx")
+
+[node name="Potion_1" parent="." instance=ExtResource("1_1y1p8")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+
+[node name="Bottle2" parent="Potion_1/Potion_1" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_xhvyj")
+
+[node name="Liquid" parent="Potion_1/Potion_1" index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_qb56m")
+
+[node name="Cork" parent="Potion_1/Potion_1" index="2"]
+surface_material_override/0 = SubResource("StandardMaterial3D_l2yvd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000732422, 0.252441, 0.0100708)
+shape = SubResource("BoxShape3D_atl37")
+
+[editable path="Potion_1"]

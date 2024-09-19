@@ -14,6 +14,7 @@ gradient = SubResource("Gradient_k65xq")
 width = 16
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ea76j"]
+resource_local_to_scene = true
 emission_enabled = true
 emission = Color(0.36, 0.477333, 1, 1)
 emission_energy_multiplier = 3.69
@@ -53,12 +54,12 @@ shape = SubResource("BoxShape3D_w6fig")
 [node name="OmniLight3D3" type="OmniLight3D" parent="."]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.0146981, 0.0637992, -0.0242252)
 layers = 3
-light_color = Color(0.360784, 0.478431, 1, 1)
+light_color = Color(0.36, 0.466667, 1, 1)
 light_energy = 5.02
 light_size = 1.0
 light_specular = 1.859
 light_cull_mask = 4294967279
-omni_range = 9.792
+omni_range = 6.709
 omni_attenuation = 0.0
 
 [editable path="Coral1"]
