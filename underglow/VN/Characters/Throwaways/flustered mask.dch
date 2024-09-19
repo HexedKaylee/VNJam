@@ -8,12 +8,40 @@
 "sound_moods": {},
 "style": ""
 },
-"default_portrait": "",
+"default_portrait": "mask_neutral",
 "description": "",
 "display_name": "Flustered Mask",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),
-"portraits": {},
+"portraits": {
+"mask_headtilt1": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Mask/prt_mask_headtilt1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"mask_headtilt2": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Mask/prt_mask_headtilt2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"mask_neutral": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Mask/prt_mask_neutral.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
 "scale": 1.0
 }

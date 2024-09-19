@@ -1,25 +1,31 @@
+do AudioManager.init_audio()
 [style name="character"]
 [background arg="res://Assets/VN/Backgrounds/bg_test.png" fade="0.0"]
 [wait_input]
+[music path="res://Assets/Audio/Music/mus_submerged_(loop).wav" fade="0.0" volume="0.0"]
 join clare 1 [animation="Slide In Down" wait="true"]
 clare: "Oof!!"
-update clare 2 [ move_time="3"]
+update clare 2 [move_time="3.0"]
 [wait time="3.0"]
+do AudioManager.get_audio_stream_length()
 clare: [speed = 4]"Where[speed=7]...[speed=4][pause=0.1] am I?"
 [wait time="1.0"]
+do AudioManager.fade_music_quiet(1.0)
 narrator: [speed = 2]Welcome.[n+] This is a test of the narration system.[n+]\
 \
 [speed=2]Now it's time... [pause=0.2][speed=1]for everyone's favourite!
 [wait time="1.0"]
+do AudioManager.fade_music_normal(1)
 clare: [speed=7]"...[speed=1]Huh?"
 [wait time="1.0"]
+do AudioManager.fade_music_quiet(1)
 narrator: [speed = 3]Lorem ipsum dolor sit amet, consectetur adipiscing elit,[speed=2] sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\
 [n+][speed = 1]Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\
 [n+][speed = 0.5]Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\
 [n+][speed = 0.25]Excepteur sint occaecat cupidatat non proident, sunt in culpa qui[speed=0.5] officia[speed=1] deserunt[speed=2] mollit [speed=3]anim id [speed=4]est lab[speed=5]orum.
 [wait time="1.0"]
 clare: [speed=1]"Cool, boss![pause=0.3] Thanks.[pause=0.3] I definitely know what that means and it sounds awesome."
-leave clare [animation="Fade Out Down" length="4"]
+leave clare [animation="Fade Out Down" length="4.0"]
 [wait time="4.0"]
 join prym (prym_frown) 3
 prym: [pause=0.3][speed=2]"Hm.[pause=0.2] Well, I have absolutely no idea what's going on over here."
