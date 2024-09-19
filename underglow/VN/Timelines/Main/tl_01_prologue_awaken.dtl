@@ -10,7 +10,7 @@
 [background arg="res://Assets/VN/Backgrounds/bg_test.png" fade="3.0"]
 [wait time="3.0"]
 join volumnia 3
-[music path="res://Assets/Audio/Music/mus_brine_and_biscuits_(simple_loop).mp3" fade="0.0" volume="0.0"]
+[music path="res://Assets/Audio/Music/mus_brine_and_biscuits_(loop).wav" fade="0.0" volume="0.0"]
 "haughty voice": "I believe there was a Fish here but a moment ago.[pause] 'Twas providing some excellent mood lighting,[pause=.5] with how bright the glow became!"
 join clare 1
 "demure voice": "Oh...?[pause] W-Wait,[pause=.5] did the Fish become a mask[pause=.5] all of a sudden,[pause=.3] then?"
@@ -33,7 +33,7 @@ narrator: The shade manifests an arm,[pause=.2] a glazed teapot in its newly-for
 Crystals, so small and translucent that you can only register them by the way they bend and break the light shimmering through the stream,[pause=.2] riding the way down.[n+]\
 You watch the little shards spill into the cup.[pause=.5] You couldn't count them if you tried.\
 [n]For a fleeting moment,[pause=.2] you try anyways ——
-[music fade="5.0" volume="0.0"]
+do AudioManager.fade_music_silent(5)
 leave --All-- [animation="Fade Out Down" length="2.0"]
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="5.0"]
 narrator: And that's when you see your face\:[pause=.4] a mask reflected in the rippling blue.[pause=.5][n+] Three dark circles constrained by plaster white.[n+]\
@@ -63,7 +63,7 @@ All the effort does is reward you with another fact\:[pause=.4] You can't see yo
 [n]You can stretch it,[pause=.2] flex the fingers,[pause=.2] pull at your non-mask Mask's mask with it[pause=.3] (it doesn't move)...[n+]\
 but you can't see it.[n+]\
 —— You're interrupted before you can further contemplate the state of your being.
-[music path="res://Assets/Audio/Music/mus_brine_and_biscuits_(simple_loop).mp3" fade="2.0" volume="0.0"]
+do AudioManager.fade_music_normal(2)
 [background arg="res://Assets/VN/Backgrounds/bg_test.png" fade="2.0"]
 [wait time="1.0"]
 join volumnia 3

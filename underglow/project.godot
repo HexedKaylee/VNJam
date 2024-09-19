@@ -16,11 +16,16 @@ config/features=PackedStringArray("4.3", "Forward Plus")
 boot_splash/image="res://Assets/VN/GUI/pitchdrop_splash.png"
 config/icon="res://icon.svg"
 
+[audio]
+
+buses/default_bus_layout="res://Assets/Audio/default_bus_layout.tres"
+
 [autoload]
 
 Heightmap="*res://Assets/3D/Heightmaps/Heightmap.gd"
 Global="*res://globals/global.gd"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+AudioManager="*res://Assets/Audio/AudioManager.gd"
 
 [dialogic]
 
@@ -78,6 +83,8 @@ glossary/glossary_files=["res://timelines/New_File.tres"]
 glossary/default_color=Color(0, 0, 0, 1)
 text/split_at_new_lines=false
 history/simple_history_enabled=true
+extensions_folder="res://addons/dialogic_additions"
+animations/cross_fade_default_length=0.5
 
 [display]
 

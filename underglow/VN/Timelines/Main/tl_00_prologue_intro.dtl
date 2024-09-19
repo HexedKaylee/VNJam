@@ -1,13 +1,14 @@
+do AudioManager.init_audio()
 [wait time="1.0"]
 [style name="character"]
 [wait_input]
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="3.0"]
 [wait time="3.0"]
-[music path="res://Assets/Audio/Music/submerged01.mp3" fade="0.0" volume="0.0"]
+[music path="res://Assets/Audio/Music/mus_submerged_(loop).wav" fade="0.0" volume="0.0"]
 [wait time="3.0"]
 narrator: [speed=2]It’s cold.[n+]\
 [speed=2]Or is it[pause=0.3] hot?[n+]\
-[speed=2]There is an[pause=0.3] immense[pause=0.3] pressure[pause=0.3] from all sides,[n+]\
+narrator\: [speed=2]There is an[pause=0.3] immense[pause=0.3] pressure[pause=0.3] from all sides,[n+]\
 [speed=2]centering in[pause=0.3] towards a confluence of[pause=0.3]      [speed=4]something.[n+]\
 [speed=2]Or[pause=0.3] [speed=3]nothing?\
 [n][speed=6][pause=0.2]. . .[n+]\
