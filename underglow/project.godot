@@ -30,18 +30,28 @@ AudioManager="*res://Assets/Audio/AudioManager.gd"
 [dialogic]
 
 directories/dch_directory={
+"book-laden socialite": "res://VN/Characters/Throwaways/book-laden socialite.dch",
+"bookish socialite": "res://VN/Characters/Throwaways/bookish socialite.dch",
 "clare": "res://VN/Characters/clare.dch",
 "demure voice": "res://VN/Characters/Throwaways/demure voice.dch",
 "enigmatic figure": "res://VN/Characters/Throwaways/enigmatic figure.dch",
 "flustered mask": "res://VN/Characters/Throwaways/flustered mask.dch",
 "gossiping mask": "res://VN/Characters/Throwaways/gossiping mask.dch",
 "haughty voice": "res://VN/Characters/Throwaways/haughty voice.dch",
+"librarian socialite": "res://VN/Characters/Throwaways/librarian socialite.dch",
+"mask": "res://VN/Characters/mask.dch",
+"mask_2": "res://VN/Characters/Throwaways/mask_2.dch",
+"mask_3": "res://VN/Characters/Throwaways/mask_3.dch",
 "narrator": "res://VN/Characters/narrator.dch",
 "pompous voice": "res://VN/Characters/Throwaways/pompous voice.dch",
 "prym": "res://VN/Characters/prym.dch",
 "question_mark": "res://VN/Characters/question_mark.dch",
+"shouting socialite": "res://VN/Characters/Throwaways/shouting socialite.dch",
 "testcharacter": "res://VN/Characters/testcharacter.dch",
-"volumnia": "res://VN/Characters/volumnia.dch"
+"tired socialite": "res://VN/Characters/Throwaways/tired socialite.dch",
+"volumnia": "res://VN/Characters/volumnia.dch",
+"well-rested socialite": "res://VN/Characters/Throwaways/well-rested socialite.dch",
+"whispering socialite": "res://VN/Characters/Throwaways/whispering socialite.dch"
 }
 directories/dtl_directory={
 "narrationtest": "res://VN/Timelines/Test/narrationtest.dtl",
@@ -50,6 +60,9 @@ directories/dtl_directory={
 "tl_01_prologue_awaken": "res://VN/Timelines/Main/tl_01_prologue_awaken.dtl",
 "tl_02_prologue_estuary": "res://VN/Timelines/Main/tl_02_prologue_estuary.dtl",
 "tl_03_prologue_prym": "res://VN/Timelines/Main/tl_03_prologue_prym.dtl",
+"tl_04_college_tagging": "res://VN/Timelines/Main/tl_04_college_tagging.dtl",
+"tl_05_college_hallway": "res://VN/Timelines/Main/tl_05_college_hallway.dtl",
+"tl_06_college_library": "res://VN/Timelines/Main/tl_06_college_library.dtl",
 "tl_prologue_test": "res://VN/Timelines/Test/tl_prologue_test.dtl"
 }
 glossary/default_case_sensitive=true

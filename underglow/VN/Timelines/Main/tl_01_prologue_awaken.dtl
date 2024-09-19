@@ -9,10 +9,10 @@
 "demure voice": "Ah?[pause] Wait...[pause] It...[pause]wasn't here earlier,[pause=.5] was it?"
 [background arg="res://Assets/VN/Backgrounds/bg_test.png" fade="3.0"]
 [wait time="3.0"]
-join volumnia 3
+join "haughty voice" right
 [music path="res://Assets/Audio/Music/mus_brine_and_biscuits_(loop).wav" fade="0.0" volume="0.0"]
 "haughty voice": "I believe there was a Fish here but a moment ago.[pause] 'Twas providing some excellent mood lighting,[pause=.5] with how bright the glow became!"
-join clare 1
+join "demure voice" left
 "demure voice": "Oh...?[pause] W-Wait,[pause=.5] did the Fish become a mask[pause=.5] all of a sudden,[pause=.3] then?"
 [wait time="0.0" hide_text="false"]
 - "I was a fish?"
@@ -24,6 +24,7 @@ You try to communicate[speed=2]...[pause]but you realize you're not quite sure h
 "haughty voice": "Well![pause] We simply must[pause=.5] find a way to assist it in finding its voice.[pause=.2] However will we know what wisdom[pause=.2] this Mask has to impart unto us?"
 "haughty voice": "Hm[pause] hm[pause] hm~[pause=.7] Ah![pause] I know just the thing![pause=.2] Teatime heals all wounds,[pause] you know."
 "demure voice": "Oh yes,[pause] oh[pause=.2] yes![pause=.3] That will do splendidly."
+join "pompous voice" center
 "pompous voice": "Do you really think you can turn a Mask with a cup of tea?"
 "haughty voice": "Didn't I just say 'teatime heals all wounds?'"
 "demure voice": "You did,[pause] didn't you? Yes, alright![pause=.5] Quickly, then,[pause=.2] some tea -[pause=.5] to help this poor[pause=.3] Mask!"
@@ -66,8 +67,9 @@ but you can't see it.[n+]\
 do AudioManager.fade_music_normal(2)
 [background arg="res://Assets/VN/Backgrounds/bg_test.png" fade="2.0"]
 [wait time="1.0"]
-join volumnia 3
-join clare 1
+join "haughty voice" right
+join "demure voice" left
+join "pompous voice" center
 "pompous voice": "Oh, dear.[pause=.4] I don't think this poor thing even knows how to use tea!"
 "demure voice": "Well,[pause=.2] that most certainly cannot be![pause=.5] Taking tea is the most important point of etiquette.[pause=.5] How could anyone not know?[pause=.4] Surely it is self-apparent and fundamental!"
 "haughty voice": "One can never underestimate the cluelessness of a newly-adorned Mask,[pause=.2] dear."

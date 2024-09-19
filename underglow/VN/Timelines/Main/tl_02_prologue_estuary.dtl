@@ -3,8 +3,7 @@
 [music path="res://Assets/Audio/Music/mus_droplets_(loop).wav" fade="3.0" volume="0.0"]
 [wait time="0.5"]
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="0.5" transition="Swipe Right To Left"]
-leave volumnia [animation="Instant In Or Out" length="0.0"]
-leave clare [animation="Instant In Or Out" length="0.0" wait="true"]
+leave --All-- [animation="Instant In Or Out" length="0.0"]
 [wait time="1.0"]
 [background arg="res://Assets/VN/Backgrounds/bg_test.png" fade="0.5" transition="Swipe Right To Left"]
 [wait time="1.0"]
@@ -17,6 +16,7 @@ narrator: The strange beings all turn to observe a bustling congregation of some
 narrator: As you observe the affair before you,[pause=.2] a growing interest commands your attention away from your present company.[pause=.5] Could it be curiosity that draws you in,[pause=.2] you wonder,[pause=.4] or something else?
 [wait time="1.0"]
 "flustered mask": "A-ah –[pause=.4] hahh…[pause=.4]N-No no,[pause=.2] sorry,[pause=.2] I don’t need you all to follow me –[pause=.4] I’m just trying to find someone with –[pause=.3] ah![pause=.4] Y-Y-You!"
+join "flustered mask" center
 "flustered mask": "Hff…[pause=.4]hff…[pause=.4] Please,[pause=.4] you seem like a kindred soul–new in town,[pause=.2] like me,[pause=.2] right? C-Can you...[pause=.7] please,[pause=.4] tell me where this is?
 [wait time="0.0"]
 - "…"
@@ -30,10 +30,13 @@ You aren’t sure what to say in response to this Mask,[pause=.2] if you can eve
 Though you want to give this Mask a response,[pause=.2] perhaps gain some understanding of each other,[pause=.2] you still cannot seem to form the words to give it the peace of mind it’s searching for.[pause=.5] You can only stare,[pause=.2] listless,[pause=.2] from behind your not-mask.
 [wait time="1.0"]
 "haughty voice": "Under…[pause=.3]water?"
+join mask rightmost
 "gossiping mask": "Ahaha…[pause=.4] He's got…[pause=.4]some funny notions…"
+join mask_2 right
 "gossiping mask": "Shhhh,[pause=.2] I want to hear what else he has to say.[pause=.5] It'll be…[pause=.4]interesting,[pause=.2] if he makes more of a fuss…"
 "gossiping mask": "Now you're speaking like one of the disciples of you-know-what.[pause=.5] Oh…[pause=.5] Is that what you hope happens?[pause=.5] That he gets noticed by –"
 "gossiping mask": "N-No…![pause=.4] I don't hope for anything…[pause=.5] Ahh…[pause=.4] Now I'm more worried than interested,[pause=.2] since you mentioned…"
+join mask_3 leftmost
 "gossiping mask": "Water?[pause=.5] Water?[pause=.5] Under it?[pause=.5] Ummm…[pause=.5] What's water?"
 "flustered mask": "Ghh…[pause=.4] Please stop,[pause=.2] all you…[pause=.5] If you don't [b]know[/b] what water is then there's no point in explaining![pause=.5] Gods,[pause=.2] it's like talking to a fish."
 "gossiping mask": "Fish…?[pause=.5] Talking to Fish…[pause=.5] Mm,[pause=.2] yes,[pause=.2] there's no point in that,[pause=.3] they don't even have any…[pause=.5]. Ummm,[pause=.3] what's the word…[pause=.3]form?[pause=.5] No form with which to hear you."

@@ -1,0 +1,75 @@
+[style name="character"]
+[wait time="1.0"]
+narrator: Upon appearing to satisfy the curiosity of the stranger who brought you here, you're startled by the sudden appearance of a familiar structure in the middle of the room. [i]It has hinges[/i], you think to yourself, [i]and a handle… Perhaps one could "open" it, and step through to the other side[/i].\
+\
+[n]You ponder this wayward thought, though before you can decide whether to act upon it, the structure creaks open all on its own.\
+\
+[n]You glance around and, having explored your present surroundings as much as you care to, step cautiously across this new threshold, an ominous feeling washing over you as you pass through.
+[wait time="1.0"]
+
+"enigmatic figure": "Theeeere's a good little test subject. Thank you ever so much for humoring me in this little exercise — it lets me know that now we can move forward with more progression towards your…"
+"enigmatic figure": "Oh, do forgive me! I'm sure you're quite confused as to what's going on here."
+[wait time="1.0"]
+narrator: The space before you strikes you as odd, even considering what you’ve seen until now. Motes of sparkling gold float lazily about. Myriad imposing contraptions stand haphazardly strewn amidst patches of glowing coral and golden algae, and though you struggle to produce their names, you intuit that you’ve somehow seen a number of them before.\
+\
+[n]Surrounding the contents of the room are a number of disorientingly complex walls; layers of perfectly horizontal surfaces support countless ornate rectangular objects alongside numerous transparent containers filled with mysterious glowing liquids. [i]Bookshelves[/i], you remember these structures are called.\
+\
+[n]Most imposing, however, is the figure before you\: The one who stole you away from the pack of gossiping Masks stands tall, gleaming eyes fixed hungrily upon you, mouth twisted into an expression of pure delight.\
+\
+[n]An itching feeling in the back of your mind informs you that you should be nervous, and yet, the subtly sweet scent of smoke puts you unnervingly at ease.
+[wait time="1.0"]
+
+"enigmatic figure": "Where I've brought you is the Underglow College — an institution of sorts run by the Disciples of [b]Knowledge[/b]… Of whom I am one."
+"enigmatic figure": "Here, we Disciples of that god seek to expand upon learning everything so that it might become Known. Sounds like quite the broad study program, though, hmm?"
+"enigmatic figure": "Well, it's not actually so simple nor complex. There are many of us who have dedicated ourselves to studying a grand variety of particular Things To [b]Know[/b]."
+"enigmatic figure": "I myself have been focusing my energies on determining exactly how we change our forms here in the Underglow."
+"enigmatic figure": "Ah, right, you may not be familiar with this place… Not the college, but the entire space in which you have manifested. The one that lets you and I exist as beings who can communicate — and also those beings who cannot."
+"enigmatic figure": "As far as we've been able to determine, The Underglow is something of an ephemeral realm — "
+"enigmatic figure": " — where spirits roam detached from form, who may form forms or change from form to form in order to inform other forms…or not form at all, or even relinquish form to be free from form."
+"enigmatic figure": "Though some might be careful, lest they become de-formed."
+"enigmatic figure": "You're able to follow, yes?"
+[wait time="0.0"]
+- "…"
+You cannot express to them whether or not you really do understand everything they've said so far. Nonetheless, they seem to take your silence as affirmation.
+[wait time="1.0"]
+"enigmatic figure": "Excellent! That's exactly what I've been looking for."
+"enigmatic figure": "You see, I've been waiting for someone like you to come along. You remember the moment you gained awareness, yes?"
+"enigmatic figure": "Of course you do. A mask as well-adorned as yourself must be capable of retaining such a memory with ease! You've proven as much by participating in my experiment – not just [i]any[/i] Mask has the ability to follow directions like you do."
+"enigmatic figure": "Yes… I am all but certain you are [i]exactly[/i] the Mask I've been looking for."
+"enigmatic figure": "And I have waited – "
+"enigmatic figure": "So. Very. Patiently."
+"enigmatic figure": " – For you to come to me like this."
+"enigmatic figure": "It delights me to think that, with enough testing, we can discover together the potential you have as a fully realized…"
+"enigmatic figure": "Ah, well, I won't spoil anything for you – best that all of the results come organically, without coloring your perceptions [i]too[/i] much."
+"enigmatic figure": "Alright, I think you've earned the right to put a name to my face, since you've proven to be so precocious — "
+prym: "Those around here have taken to calling me Prym, so I think that works as good as anything. If you ever feel so inclined to form the words with which to speak, call me that. Please."
+[wait time="0.0"]
+- Nod.
+	You tilt your head forward, hoping to indicate that you took in what they said and have considered it.
+- Stare.
+	You stare, unsure of whether your continued cooperation might call your safety into question.
+Your attentiveness seemingly delights Prym, and they clasp their hands together.
+[wait time="1.0"]
+prym: "Splendid, then~"
+prym: "As of now, I think I would like to see you [i]actually[/i] become able to use words… So I think it would be prudent for me to allow you to roam the College grounds for a bit, and learn a thing or three about how to communicate."
+prym: "Oh, but I wouldn't want you to wander too far off, or get caught up in some unfortunate business with some [i]other[/i] Disciple of Knowledge's affairs."
+prym: "Hold still, for a moment, please~"
+[wait time="1.0"]
+narrator: One of Prym's writhing tendrils retrieves a small, angular device and places it into their eager hand. They advance toward you, and with a deft motion they reach behind you, place the device against your back, and——
+label injection sound goes here
+narrator: ——pierce your form with something sharp!
+narrator: You jump at the sudden pain, though it begins to quickly subside. Prym lifts the device from your back and as you feel around for the injection site, you realize you've been affixed with a small, dangling object.
+[wait time="1.0"]
+prym: "There! That should let anyone else around here know that you're [i]my[/i] subject of study."
+prym: "Aw, don't seem so upset. It's a very good thing you were able to feel that!"
+prym: "If you hate being my test subject so badly, just think of the ability to feel pain as being one step closer to graduating."
+prym: "Hmm~ That makes you sound more like one of my students, doesn't it?"
+prym: "No — if I thought of you as one of my students, we would already be through with most of all this. You'd be a Diver, then, and right now you really don't make the cut."
+prym: "Anyways~ Now that you've been properly labeled, I'm assigning you the task of finding anything on campus that interests you and observing until you've gleaned something useful from it, such as how to speak."
+prym: "There are a number of those around here you might imitate in that regard, such as the Socialites who enjoy playing 'school' here."
+prym: "Socialites make for decent observation subjects, though their behaviors are a bit uncanny. I've seen those outside of here who prefer to pass as nobles of the Kingdom and play 'tea party'."
+prym: "It's quite adorable, if you can get past their stranger proclivities. Hehe."
+prym: "Just try not to get any delusions in your head that lead down the same path to pretend as theirs…"
+prym: " … And be wary of other Disciples, or Divers who ask too many questions."
+prym: "So have yourself a look around, and… Don't get pulled in by anyone shady."
+jump tl_05_college_hallway/

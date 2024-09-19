@@ -1,0 +1,39 @@
+[style name="character"]
+[wait time="1.0"]
+narrator: Prym shoos you away, and so you turn to step out the door. As you peer out from the entrance, you think to glance back at Prym one last time, however…their domain is simply gone.\
+\
+Oh well.\
+\
+You resume your exit and, glancing around at the surrounding structures, the words "door" and "hallway" float to the surface of your mind.\
+\
+You're not entirely sure that the endless rows of bookshelves stretching out before you could truly qualify as a hallway. Nevertheless, you pick a direction with no further consideration and proceed through the veritable canyon of tomes, the path graciously lit by the glowing coral formations peppering the surfaces of each structure.\
+\
+A pair of voices cuts through your solitary silence, the sound of two pairs of footsteps accompanying them. You see a pair of individuals with forms not unlike those of the nobles at the tea party you encountered before. You conclude from the similarities and what Prym mentioned earlier that these are likely "Socialites", and decide to listen to their passing conversation to see what you might glean from it.
+[wait time="1.0"]
+"tired socialite": *Yawn* "Gosh, I wish they'd let me sleep in. I had to get up so early and run out the door, and I didn't even get to eat breakfast!"
+"well-rested socialite": "That's so unfortunate. I was able to sleep in all morning, and I feel great."
+"tired socialite": "I'm so jealous! At least we got to walk to school together, since we're neighbors."
+"well-rested socialite": "Haha, indeed my friend! Say, when is our next class?"
+[wait time="1.0"]
+narrator: The pair go in the direction opposite to you, seeming too caught up in themselves to pay you any notice.\
+\
+As you continue in the direction they came from, you see another Socialite round a corner carrying a large stack of books. You step aside to avoid them as they walk towards you — but somehow, they manage to bump into you anyways, dropping all of the books in a manner most disproportionate to how hard you made contact…as though it were done on purpose, even.
+[wait time="1.0"]
+"book-laden socialite": "Oh for the love of — Oh! Goodness me. I am so, so sorry. I didn't realize you were a Mask, I… Ah, well. Never mind it. I'll get all of these myself; I doubt you are capable of even touching them.
+[wait time="0.0"]
+- Assist in picking up the books.
+Without any hesitation, you crouch down and grab one of the books with a freshly-solidified hand, proffering it out to the Socialite good-naturedly.
+They seem to stare at you in shock for a moment, before taking the book and straightening up — an action you feel you must mirror.
+[wait time="1.0"]
+"book-laden socialite": "W-Why… [i]Thank[/i] you, so very much! Ahaha…"
+"book-laden socialite": "Ahem. Well. How very nice of you."
+"book-laden socialite": "Er, now I suppose I should feel obligated to help you out a bit, since you humored someone like me…"
+"book-laden socialite": "You seem fairly precocious for a mask, but we do not see many of your kind around here, and I would have heard about you sooner were you not new to this place…"
+"book-laden socialite": "So I'd like to try my hand at giving a newcomer like you some guidance!"
+"book-laden socialite": "Ooh, I'm so excited now, to have someone [i]finally[/i] fall for my… Er."
+"book-laden socialite": *cough*
+"book-laden socialite": "Uh. Yes."
+"book-laden socialite": "Come, come! Let me show you the place that I know best, since we're both here."
+[wait time="1.0"]
+narrator: The Socialite drops the remaining books upon the ground, seemingly forgetting all about them. You watch with some intrigue as the books slowly descend into the floor before disappearing like vapor, as though their purpose has been served.
+jump tl_06_college_library/
