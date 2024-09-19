@@ -3,6 +3,7 @@ extends RayCast3D
 var grabbed = null
 @onready var holdPoint = $"../Hold"
 var last = Vector3.ZERO
+@onready var parent = $"../.."
 
 func _process(delta):
 	if(Input.is_action_just_pressed("use")):
@@ -19,6 +20,10 @@ func _process(delta):
 					if("startGrab" in grabbed):
 						grabbed.startGrab = true
 					last = collider.position
+				if collider.name.rstrip("0123456789") == "serum":
+					if(!collider.diminish):
+						collider.diminish = true
+						parent.applySerum(collider.serum)
 		else:
 			if(grabbed.get_contact_count() <= 0):
 				grabbed.set_collision_layer_value(1, true)

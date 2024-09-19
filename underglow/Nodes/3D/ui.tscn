@@ -1,6 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://oefdh2b5xghk"]
+[gd_scene load_steps=7 format=3 uid="uid://oefdh2b5xghk"]
 
+[ext_resource type="Texture2D" uid="uid://ee5glcc6p1su" path="res://Assets/3D/Sprites/serumOverlay.png" id="1_jvn41"]
 [ext_resource type="Texture2D" uid="uid://deo3jyvgyj0eu" path="res://Assets/VN/GUI/placeholder_textbox_in_experiment.png" id="2_170po"]
+[ext_resource type="Script" path="res://Nodes/3D/image_overlay.gd" id="2_c34eq"]
 [ext_resource type="Script" path="res://Nodes/3D/ui.gd" id="3_kuvqa"]
 [ext_resource type="Script" path="res://Nodes/3D/dialogue_controller.gd" id="4_upstm"]
 
@@ -14,6 +16,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="ImageOverlay" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(958, 551)
+scale = Vector2(1.3054, 1.3054)
+texture = ExtResource("1_jvn41")
+script = ExtResource("2_c34eq")
 
 [node name="TextBox" type="Sprite2D" parent="."]
 unique_name_in_owner = true
@@ -41,6 +50,7 @@ offset_bottom = 40.0
 script = ExtResource("4_upstm")
 
 [node name="ColorRect" type="ColorRect" parent="Controller"]
+visible = false
 layout_mode = 0
 offset_left = -49.0
 offset_top = -24.0

@@ -21,6 +21,12 @@ var fish = preload("res://Nodes/3D/Fish.tscn")
 var fishNum = 0
 var shotShelf : bool
 var shotCoral : bool
+var serumsDrunk = 0
+@onready var shaderPlane = $Camera/MeshInstance3D
+@onready var UI = %UI
+var shdCol : Color	
+var shdColTarg = Color(255.0/255.0, 20.0/255.0, 93.0/255.0)
+var redShift = false
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
@@ -40,10 +46,7 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
 	var input_dir = Input.get_vector("left", "right", "up", "down")
-	print(input_dir)
 	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:
 		velocity.x = direction.x * SPEED
@@ -58,6 +61,7 @@ func _process(delta):
 	if has_launcher:
 		control_launcher(delta)
 		launcher.visible = true
+	continualSerum(delta)
 
 func control_launcher(delta):
 	if(!launchReady):
@@ -83,3 +87,25 @@ func control_launcher(delta):
 			launcher.rotation.z = lerp(launcher.rotation.z, rot_launch_orig, rot_launch_spd*delta)
 		if shot_cooldown > 0.0:
 			shot_cooldown -= delta
+
+func applySerum(serum):
+	serumsDrunk += 1
+	match(serum):
+		3:
+			shdCol = shaderPlane.get_active_material(0).get_shader_parameter("tint")
+			shaderPlane.get_active_material(0).set_shader_parameter("tint", shdCol)
+			redShift = true
+		6:
+			UI.get_node("ImageOverlay").active = true
+		_:
+			print("ERROR: INVALID SERUM")
+
+func continualSerum(delta):
+	if(redShift):
+		var shiftSpeed = 1.5
+		shdCol = shaderPlane.get_active_material(0).get_shader_parameter("tint")
+		shdCol.r = lerp(shdCol.r, shdColTarg.r, delta*shiftSpeed)
+		shdCol.g = lerp(shdCol.g, shdColTarg.g, delta*shiftSpeed)
+		shdCol.b = lerp(shdCol.b, shdColTarg.b, delta*shiftSpeed)
+		shaderPlane.get_active_material(0).set_shader_parameter("tint", shdCol)
+		

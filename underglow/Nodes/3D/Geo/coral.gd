@@ -12,10 +12,10 @@ var myColor : Color
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	var fullRange = randi_range(0, 99)
-	var h = randf_range(180.0, 320.0)
+	var h = randf_range(hMin, hMax)
 	if(fullRange < fullOdds):
 		h = randf_range(0.0, 359.0)
-	myColor = Color.from_hsv(h/360.0, randf_range(60.0, 75.0)/100.0, 1.0)
+	myColor = Color.from_hsv(h/360.0, randf_range(sMin, sMax)/100.0, 1.0)
 	for child in get_children():
 		var childName = child.name
 		if child is OmniLight3D:
@@ -25,7 +25,3 @@ func _ready():
 			var grandChild = child.get_node_or_null("Mesh")
 			if(grandChild != null):
 				grandChild.get_active_material(0).emission = myColor
-			
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
