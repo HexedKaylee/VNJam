@@ -2,6 +2,7 @@
 [background arg="res://Assets/VN/Backgrounds/bg_test.png" fade="0.0"]
 
 [wait time="1.0"]
+leave --All--
 narrator: As voices murmur in surprise,[pause=.2] you realize that a thick and looming miasma has been crawling its way through the sea of Masks.[pause=.5] The perimeter of the crowd begins to part,[pause=.2] and a strikingly corporeal figure begins to make its way toward the center.\
 \
 Straining to make out the sight amidst all the scurrying,[pause=.2] you notice that the gaseous miasma appears to be emanating from a long,[pause=.2] thin device carried in the hand of this new arrival.\
@@ -64,6 +65,6 @@ narrator: [speed=2]The stranger brings your head tenderly to their breast…\
 [speed=3][i]bad…?[/i]
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="3.0"]
 [wait time="3.0"]
-leave prym [animation="Fade Out Down" length="3"]
+leave prym [animation="Fade Out Down" length="3.0"]
 [wait time="5.0"]
 [signal arg="start_experiment_1"]
