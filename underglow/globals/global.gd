@@ -3,6 +3,7 @@ extends Node
 var timeline = 'timeline_01'
 
 var current_scene = null
+var destroyShelf = false
 
 func _ready():
 	var root = get_tree().root
@@ -13,6 +14,12 @@ func set_timeline(tl):
 	
 func get_timeline():
 	return timeline
+
+func removeShelf_set():
+	destroyShelf = true
+	
+func removeShelf_get():
+	return destroyShelf
 	
 func goto_scene(path):
 	# This function will usually be called from a signal callback,
@@ -23,7 +30,7 @@ func goto_scene(path):
 
 	# The solution is to defer the load to a later time, when
 	# we can be sure that no code from the current scene is running:
-
+	destroyShelf = false
 	call_deferred("_deferred_goto_scene", path)
 
 

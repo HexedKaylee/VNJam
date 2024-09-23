@@ -174,7 +174,7 @@ shape = SubResource("ConcavePolygonShape3D_jmgs8")
 [node name="UI" parent="." instance=ExtResource("11_t8361")]
 unique_name_in_owner = true
 
-[node name="Controller" parent="UI" index="1" node_paths=PackedStringArray("player", "SceneRoot")]
+[node name="Controller" parent="UI" index="2" node_paths=PackedStringArray("player", "SceneRoot")]
 Experiment = 2
 player = NodePath("../../Moria")
 SceneRoot = NodePath("../..")

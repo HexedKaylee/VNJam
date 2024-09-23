@@ -18,6 +18,12 @@ var fishTarg = 10
 var hitShelf = false
 var hitCoral = false
 @export var SceneRoot : Node3D
+var booksHeld = 0
+var holdingBook = false
+var bookTarg = 1
+var serumTarg = 1
+var serumsDrunk = 0
+var drunkSeven = false
 
 func _ready():
 	diag = readJSON("res://Assets/Misc/ex_diag.json")
@@ -35,6 +41,10 @@ func _process(delta):
 				exp1(delta)
 			2:
 				exp2(delta)
+			3:
+				exp3(delta)
+			4:
+				exp4(delta)
 			_:
 				pass
 	else:
@@ -126,7 +136,85 @@ func exp2(delta):
 					exit = true
 		_:
 			pass
-				
+
+func exp3(delta):
+	if player.serumsDrunk >= 8 and scenePhase < 5:
+		scenePhase = 5
+	match scenePhase:
+		0:
+			scenePhase = 1
+			textBox.activate(diagDict["ex3_00"])
+		1:
+			if(textBox.modulate.a == 0):
+				timer += delta
+				if(timer > waitMax):
+					textBox.activate(diagDict["ex3_00a"])
+					scenePhase = 2
+					timer = 0
+		2:
+			if(textBox.modulate.a == 0):
+				timer += delta
+				if(timer > waitMax):
+					textBox.activate(diagDict["ex3_00b"])
+					scenePhase = 3
+					timer = 0
+		3:
+			if(textBox.modulate.a == 0):
+				timer += delta
+				if(timer > waitMax):
+					textBox.activate(diagDict["ex3_00c"])
+					scenePhase = 4
+					timer = 0
+		4:
+			if(textBox.modulate.a == 0):
+				timer += delta
+				if(timer > waitMax):
+					textBox.activate(diagDict["ex3_00d"])
+					scenePhase = 5
+					timer = 0
+		5:
+			if(textBox.modulate.a == 0 and player.serumsDrunk >= 8):
+				scenePhase = 6
+				textBox.activate(diagDict["ex3_02"])
+		6:
+			if(textBox.modulate.a == 0):
+				timer += delta
+				if(timer > 1.0):
+					exit = true
+		_:
+			pass
+
+func exp4(delta):
+	bookCounter()
+	ex4_tracker()
+	match scenePhase:
+		0:
+			scenePhase = 1
+			textBox.activate(diagDict["ex4_00"])
+		1:
+			if(textBox.modulate.a == 0):
+				timer += delta
+				if(timer > waitMax):
+					textBox.activate(diagDict["ex4_00a"])
+					scenePhase = 2
+					timer = 0
+		2:
+			if(textBox.modulate.a == 0):
+				timer += delta
+				if(timer > waitMax):
+					textBox.activate(diagDict["ex4_00b"])
+					scenePhase = 3
+					timer = 0
+		3:
+			if(textBox.modulate.a == 0):
+				timer += delta
+				if(timer > waitMax):
+					textBox.activate(diagDict["ex4_00c"])
+					scenePhase = 4
+					timer = 0
+		_:
+			pass
+
 func bookControl(action, scn = ""):
 	if Experiment != 1:
 		return
@@ -188,6 +276,30 @@ func launchControl():
 					print("ERROR: BAD FISH TARG!")
 			timer = 0
 			fishTarg += 10
+			
+func serumIngester(serum):
+	if(Experiment != 3):
+		serumsDrunk += 1
+		if(serum == 7):
+			drunkSeven = true
+		return
+	timer = 0
+	print("ex3_01_" + str(serum))
+	textBox.activate(diagDict["ex3_01_" + str(serum)])
+	pass
+
+func bookCounter():
+	var grabber = player.get_node_or_null("Camera").get_node_or_null("RayCast3D")
+	if(holdingBook and grabber.grabbed == null):
+		holdingBook = false
+	if(!holdingBook and grabber.grabbed != null):
+		holdingBook = true
+		booksHeld += 1
+
+func ex4_tracker():
+	var grabber = player.get_node_or_null("Camera").get_node_or_null("RayCast3D")
+	if(textBox.modulate.a == 0):
+		pass
 
 func readJSON(json_file_path):
 	var file = FileAccess.open(json_file_path, FileAccess.READ)

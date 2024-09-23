@@ -1,8 +1,10 @@
-[gd_scene load_steps=38 format=3 uid="uid://bkhg83gytom4q"]
+[gd_scene load_steps=44 format=3 uid="uid://bkhg83gytom4q"]
 
 [ext_resource type="PackedScene" uid="uid://v2eeteufrg38" path="res://Nodes/3D/moria.tscn" id="1_x8a45"]
 [ext_resource type="PackedScene" uid="uid://d3swad4gj5g41" path="res://Nodes/3D/Geo/clipmap/clipmap.tscn" id="2_xxoqq"]
+[ext_resource type="Shader" path="res://Nodes/3D/Geo/clipmap/clipmap.gdshader" id="3_6vj7m"]
 [ext_resource type="PackedScene" uid="uid://c7xublrnupds4" path="res://Nodes/3D/Geo/collisionmap/collisionmap.tscn" id="3_nrt5c"]
+[ext_resource type="Texture2D" uid="uid://vy8kqmysmj02" path="res://Assets/3D/Textures/sand_02.png" id="4_g7ubt"]
 [ext_resource type="PackedScene" uid="uid://c1mcni5chgh22" path="res://Nodes/3D/Geo/pillar_small.tscn" id="4_i37ld"]
 [ext_resource type="Texture2D" uid="uid://d3c3esrmjvfy2" path="res://Assets/3D/Textures/serum/Potion_1_Potion1_Aqua_AlbedoTransparency.png" id="6_lmfw2"]
 [ext_resource type="PackedScene" uid="uid://ldod4paasspw" path="res://Nodes/3D/serum.tscn" id="7_6gxjy"]
@@ -24,6 +26,16 @@
 [ext_resource type="Texture2D" uid="uid://dplpl4grwrodx" path="res://Assets/3D/Textures/serum/Potion_1_Potion1_Yellow_Emission.png" id="20_rh66h"]
 [ext_resource type="Texture2D" uid="uid://s5pmbwyabur6" path="res://Assets/3D/Textures/serum/Potion_1_Potion1_Blue_AlbedoTransparency.png" id="21_viy7l"]
 [ext_resource type="Texture2D" uid="uid://b4g8tc7ufaxhf" path="res://Assets/3D/Textures/serum/Potion_1_Potion1_Blue_Emission.png" id="22_f33dm"]
+[ext_resource type="PackedScene" uid="uid://bqyujxgbd2ry0" path="res://Nodes/3D/Geo/pillar.tscn" id="25_i60tt"]
+[ext_resource type="PackedScene" uid="uid://bfwwmn71aghkj" path="res://Nodes/3D/Geo/bookshelf/stack_stack.tscn" id="25_suofw"]
+[ext_resource type="PackedScene" uid="uid://dyu3chx4twwqj" path="res://Nodes/3D/Geo/bookshelf/bookshelf_1.tscn" id="26_w0ne3"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_73b5x"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("3_6vj7m")
+shader_parameter/tex_size = 50.0
+shader_parameter/tex = ExtResource("4_g7ubt")
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_02bm1"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -129,11 +141,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.91, 4.00474, 88.5619)
 SceneRoot = NodePath("..")
 
 [node name="Terrain" type="StaticBody3D" parent="."]
+unique_name_in_owner = true
 collision_layer = 3
 collision_mask = 3
 
 [node name="Clipmap" parent="Terrain" node_paths=PackedStringArray("player_character") instance=ExtResource("2_xxoqq")]
 player_character = NodePath("../../Moria")
+
+[node name="MeshInstance3D" parent="Terrain/Clipmap" index="0"]
+material_override = SubResource("ShaderMaterial_73b5x")
 
 [node name="Collisionmap" parent="Terrain" node_paths=PackedStringArray("physics_body") instance=ExtResource("3_nrt5c")]
 physics_body = NodePath("../../Moria")
@@ -255,6 +271,74 @@ surface_material_override/0 = SubResource("StandardMaterial3D_jqhg2")
 
 [node name="TallPillars" type="Node3D" parent="."]
 
+[node name="Pillar" parent="TallPillars" instance=ExtResource("25_i60tt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.2948, 2.35083, 106.31)
+
+[node name="Pillar2" parent="TallPillars" instance=ExtResource("25_i60tt")]
+transform = Transform3D(1, 0, 0, 0, 0.916698, 0.399581, 0, -0.399581, 0.916698, 21.141, 2.35083, 106.31)
+
+[node name="Pillar3" parent="TallPillars" instance=ExtResource("25_i60tt")]
+transform = Transform3D(0.270852, -0.962621, 0, 0.962621, 0.270852, 0, 0, 0, 1, 17.0083, 4.2081, 91.8495)
+
+[node name="Pillar4" parent="TallPillars" instance=ExtResource("25_i60tt")]
+transform = Transform3D(0.338574, -0.206455, 0.918011, 0.520622, 0.853787, 0, -0.783786, 0.477937, 0.396555, 24.8205, 3.92001, 70.2176)
+
+[node name="Pillar5" parent="TallPillars" instance=ExtResource("25_i60tt")]
+transform = Transform3D(0.827718, -0.561145, 0, 0.561145, 0.827718, 0, 0, 0, 1, 42.2276, 4.48406, 86.221)
+
+[node name="Pillar6" parent="TallPillars" instance=ExtResource("25_i60tt")]
+transform = Transform3D(1, 0, 0, 0, 0.965926, -0.258819, 0, 0.258819, 0.965926, 20.3778, 2.59674, 97.5034)
+
+[node name="Pillar7" parent="TallPillars" instance=ExtResource("25_i60tt")]
+transform = Transform3D(0.991206, 0.119155, -0.0575506, -0.132326, 0.892552, -0.431092, 0, 0.434917, 0.900471, 27.7684, 2.35083, 101.946)
+
+[node name="Shelves" type="Node3D" parent="."]
+
+[node name="StackStack" parent="Shelves" instance=ExtResource("25_suofw")]
+transform = Transform3D(-0.231989, 0.156866, 0.959987, 0.740443, 0.668495, 0.069699, -0.630813, 0.726985, -0.271234, 21.3756, 4.62317, 77.2436)
+
+[node name="StackStack2" parent="Shelves" instance=ExtResource("25_suofw")]
+transform = Transform3D(-0.983873, 0.178871, 0, -0.177648, -0.977145, 0.11674, 0.0208814, 0.114857, 0.993163, 15.4178, 10.5835, 85.6995)
+
+[node name="StackStack3" parent="Shelves" instance=ExtResource("25_suofw")]
+transform = Transform3D(-0.846711, 0.383046, 0.369265, 0.266357, 0.905974, -0.329037, -0.460581, -0.180243, -0.869125, 19.4439, -3.49085, 102.954)
+
+[node name="StackStack4" parent="Shelves" instance=ExtResource("25_suofw")]
+transform = Transform3D(-0.431514, 0.458178, 0.777089, -0.311089, -0.884155, 0.348559, 0.84677, -0.0913356, 0.52406, 42.7315, 13.5188, 111.541)
+
+[node name="StackStack5" parent="Shelves" instance=ExtResource("25_suofw")]
+transform = Transform3D(0.345137, -0.238724, 0.907685, -0.284787, -0.948152, -0.14108, 0.894302, -0.209805, -0.395228, 26.9076, 10.8035, 104.717)
+
+[node name="StackStack6" parent="Shelves" instance=ExtResource("25_suofw")]
+transform = Transform3D(-0.703907, 0.124863, -0.699231, -0.0557046, -0.9911, -0.120906, -0.708104, -0.0461562, 0.704597, 22.8344, 10.8908, 83.1843)
+
+[node name="StackStack7" parent="Shelves" instance=ExtResource("25_suofw")]
+transform = Transform3D(-0.469793, -0.0200288, -0.882549, -0.298648, 0.9444, 0.137542, 0.830725, 0.328188, -0.449654, 31.5441, -1.4537, 85.6995)
+
+[node name="Bookshelf1" parent="Shelves" instance=ExtResource("26_w0ne3")]
+transform = Transform3D(0.743179, -0.253488, 0.619216, -0.111358, 0.86569, 0.488038, -0.65976, -0.431655, 0.615135, 15.8737, 3.89267, 81.0434)
+
+[node name="Bookshelf2" parent="Shelves" instance=ExtResource("26_w0ne3")]
+transform = Transform3D(0.923764, -0.155439, 0.349997, -0.00560264, 0.908341, 0.418194, -0.38292, -0.388274, 0.838222, 27.2772, 3.81112, 73.4823)
+
+[node name="Bookshelf3" parent="Shelves" instance=ExtResource("26_w0ne3")]
+transform = Transform3D(0.311396, -0.247879, 0.917381, -0.911997, 0.193297, 0.361798, -0.267009, -0.949312, -0.165873, 12.1781, 4.98461, 97.3843)
+
+[node name="Bookshelf4" parent="Shelves" instance=ExtResource("26_w0ne3")]
+transform = Transform3D(-0.933544, 0.0630904, 0.352867, 0.0737952, 0.997129, 0.0169523, -0.350784, 0.0418656, -0.93552, 16.1192, 3.60266, 112.55)
+
+[node name="Bookshelf5" parent="Shelves" instance=ExtResource("26_w0ne3")]
+transform = Transform3D(0.743179, -0.253488, 0.619216, -0.111358, 0.86569, 0.488038, -0.65976, -0.431655, 0.615135, 15.8737, 3.89267, 81.0434)
+
+[node name="Bookshelf6" parent="Shelves" instance=ExtResource("26_w0ne3")]
+transform = Transform3D(-0.305287, 0.156689, -0.939281, -0.208392, 0.951468, 0.226454, 0.929179, 0.264872, -0.257818, 30.8188, 2.0914, 108.087)
+
+[node name="Bookshelf7" parent="Shelves" instance=ExtResource("26_w0ne3")]
+transform = Transform3D(0.918062, 0.277632, -0.28299, -0.111358, 0.86569, 0.488038, 0.380477, -0.416536, 0.825673, 41.7352, 4.30308, 81.0434)
+
+[node name="Bookshelf8" parent="Shelves" instance=ExtResource("26_w0ne3")]
+transform = Transform3D(-0.383936, 0.107416, -0.91709, 0.353237, 0.934745, -0.038398, 0.853121, -0.338693, -0.396826, 43.1436, 3.58416, 95.885)
+
 [node name="StageBorder" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.9303, 0.143147, 88.5482)
 
@@ -275,6 +359,7 @@ Experiment = 3
 player = NodePath("../../Moria")
 SceneRoot = NodePath("../..")
 
+[editable path="Terrain/Clipmap"]
 [editable path="Short Pillars/Pillar/serum"]
 [editable path="Short Pillars/Pillar/serum/Potion_1"]
 [editable path="Short Pillars/Pillar2/serum"]

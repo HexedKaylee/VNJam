@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://vy8kqmysmj02" path="res://Assets/3D/Textures/sand_02.png" id="3_ukqm2"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_wlro5"]
+resource_local_to_scene = true
 render_priority = 0
 shader = ExtResource("2_u0fek")
 shader_parameter/tex_size = 50.0

@@ -20,7 +20,7 @@ func _process(delta):
 					if("startGrab" in grabbed):
 						grabbed.startGrab = true
 					last = collider.position
-				if collider.name.rstrip("0123456789") == "serum":
+				if collider.name.rstrip("0123456789") == "serum" and parent.canQuaf:
 					if(!collider.diminish):
 						collider.diminish = true
 						parent.applySerum(collider.serum)
