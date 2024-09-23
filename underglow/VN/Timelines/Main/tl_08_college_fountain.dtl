@@ -1,0 +1,56 @@
+[style name="character"]
+narrator: —\
+\
+You wander the campus with an unsettled feeling, finding all of what Prym just told you somehow saddening in a way you don't understand.\
+\
+You wander into the courtyard and settle on the edge of a fountain, looking around at the bright formations of coral and watching the light of Spirit Fish and Socialites pass you by. \
+\
+Your gaze drifts down to the brine of the fountain — your reflection, same as before, staring emptily back at you.\
+\
+Amidst your contemplation, you notice a reflection beside yours, and look over to see the most evidently corporeal individual you have come across since awakening thus far.\
+\
+They don't appear as though they're blending in with the environment, their visage a stark contrast against the glow and the void below and above. No mask-like appearance of which to speak, and no detached limbs to float meanderingly about their form — like they're the most comprehensible being you feel you've ever seen here before.\
+\
+Curious… And, though they look much more… real than you are used to seeing, that isn't what causes you to conclude that they're more self-aware than all the others.\
+\
+There is nothing that appears to be an attempt at "playing pretend" like you are accustomed to in the countenance of Socialites. Instead, they have a certain je ne sais quoi that… feels completely organic and natural.\
+\
+A word enters your mind. Lifelike.\
+\
+It's as though you've met the first real person in this place with their own unique sense of self besides Prym… Though you suppose Prym might be a notch more past normal than you can handle.\
+\
+No… What makes you certain that this person is a "person" rather than a Socialite playing pretend…\
+\
+…is that the expression on their face belies a sadness you could almost drown in.\
+\
+Before you can say anything, they appear to notice you with a small start, their expression quickly changing to something inquisitive.
+[wait time="1.0"]
+"lifelike figure": "Oh!"
+"lifelike figure": "A Mask holding a book? What an usual sight."
+"lifelike figure": "Are you here for a purpose?"
+[wait time="1.0"]
+narrator: Their voice is soft. You look down to realize that you are, in fact, still clutching the book Prym gave you.\
+\
+You look back up at this new Droplet. You wonder what category they actually fit in; they certainly seem too…well-formed to be a Socialite, but they also don't strike you as a Disciple.\
+\
+… Ah, that's right. You just learned about this.
+[wait time="1.0"]
+- "Are you… a Diver?"
+"friendly diver": "Oh? Well, isn't that all the more unexpected!"
+"friendly diver": "Not many Masks really have the awareness to take notice of us. Have you been [i]actually[/i] studying here?"
+[wait time="0.0" hide_text=false"]
+> "I guess, in a sense…"
+"friendly diver": "Haha… You truly are a curious one."
+"friendly diver": "An earnest learner instead of a pretender…"
+"friendly diver": "Hmm. Hey, what do you think of the Disciples here?"
+[wait time="0.0" hide_text=false"]
+- "I've only met one… They're a little odd, I suppose."
+The Diver laughs at this response. It's a sound that rings like a quiet bell, reminiscent of the ripples on the fountain's surface.
+[wait time="1.0"]
+"friendly diver": "That's putting it mildly. I've studied under a Disciple or three while I've been here… They're all outrageously eccentric. I'm not even sure what they're talking about, for half of it."
+"friendly diver": "Some of them come out around here and study the Droplets studying, or chase the Spirit Fish around like children catching minnows, or blow up the café just to see how the Socialites react."
+"friendly diver": "At the very least there's never a dull moment… Hm? "
+"friendly diver": "Ah. That tag on your back tells me this isn't news to you at all!"
+"friendly diver": "A [i]gift[/i] from a [i]generous[/i] Disciple, no doubt."
+"friendly diver": "Hah! What sorts of shenanigans have they been getting you into?"
+
