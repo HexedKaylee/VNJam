@@ -34,6 +34,8 @@ var randomTex = []
 var terrainTex : ImageTexture
 var canQuaf = true
 @export var Center : Node3D
+@export var centerCheck = false
+var distance = 0
 
 func _ready():
 	randomize()
@@ -75,6 +77,8 @@ func _process(delta):
 	if has_launcher:
 		control_launcher(delta)
 		launcher.visible = true
+	if(centerCheck):
+		distance = global_position.distance_to(Center.global_position)
 	continualSerum(delta)
 
 func control_launcher(delta):

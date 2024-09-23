@@ -45,8 +45,8 @@ background_mode = 2
 sky = SubResource("Sky_qr232")
 glow_enabled = true
 fog_enabled = true
-fog_light_color = Color(0.458824, 0.568627, 0.756863, 1)
-fog_density = 0.1785
+fog_light_color = Color(0.498039, 0.329412, 0.831373, 1)
+fog_density = 0.189
 volumetric_fog_emission = Color(1, 1, 1, 1)
 adjustment_brightness = 8.0
 
@@ -133,6 +133,7 @@ unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.3944, 4.53997, 77.9)
 SceneRoot = NodePath("..")
 Center = NodePath("../Center")
+centerCheck = true
 
 [node name="Terrain" type="StaticBody3D" parent="."]
 unique_name_in_owner = true

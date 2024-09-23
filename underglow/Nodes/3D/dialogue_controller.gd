@@ -212,6 +212,32 @@ func exp4(delta):
 					textBox.activate(diagDict["ex4_00c"])
 					scenePhase = 4
 					timer = 0
+		6:
+			if(textBox.modulate.a == 0):
+				timer += delta
+				if(timer > waitMax):
+					textBox.activate(diagDict["ex4_02a"])
+					scenePhase = 7
+					timer = 0
+		7:
+			if(textBox.modulate.a == 0):
+				timer += delta
+				if(timer > waitMax):
+					textBox.activate(diagDict["ex4_02b"])
+					scenePhase = 8
+					timer = 0
+		8:
+			if(textBox.modulate.a == 0):
+				timer += delta
+				if(timer > waitMax):
+					textBox.activate(diagDict["ex4_02c"])
+					scenePhase = 9
+					timer = 0
+		12:
+			if(textBox.modulate.a == 0):
+				timer += delta
+				if(timer > 1.0):
+					exit = true
 		_:
 			pass
 
@@ -297,9 +323,59 @@ func bookCounter():
 		booksHeld += 1
 
 func ex4_tracker():
-	var grabber = player.get_node_or_null("Camera").get_node_or_null("RayCast3D")
+	if(scenePhase >= 6):
+		distanceChecker()
+		return
 	if(textBox.modulate.a == 0):
-		pass
+		if(drunkSeven):
+			scenePhase = 6
+			textBox.activate(diagDict["ex4_02"])
+			timer = 0
+		else:
+			if(holdingBook and booksHeld >= bookTarg):
+				match bookTarg:
+					1:
+						scenePhase = 4
+						textBox.activate(diagDict["ex4_01a"])
+						bookTarg = 5
+					5:
+						textBox.activate(diagDict["ex4_01b"])
+						bookTarg = 10
+					10:
+						textBox.activate(diagDict["ex4_01c"])
+						bookTarg = INF
+					_:
+						pass
+			elif(serumsDrunk >= serumTarg):
+				match serumTarg:
+					1:
+						scenePhase = 4
+						textBox.activate(diagDict["ex4_01d"])
+						serumTarg = 3
+					3:
+						textBox.activate(diagDict["ex4_01e"])
+						serumTarg = 5
+					5:
+						textBox.activate(diagDict["ex4_01f"])
+						serumTarg = INF
+					_:
+						pass
+
+func distanceChecker():
+	if(textBox.modulate.a == 0):
+		match(scenePhase):
+			10:
+				if(player.distance >= 60):
+					scenePhase = 11
+					textBox.activate(diagDict["ex4_03b"])
+			11:
+				if(player.distance >= 90):
+					scenePhase = 12
+					textBox.activate(diagDict["ex4_03c"])
+			_:
+				if(player.distance >= 30 and scenePhase < 10):
+					scenePhase = 10
+					textBox.activate(diagDict["ex4_03a"])
 
 func readJSON(json_file_path):
 	var file = FileAccess.open(json_file_path, FileAccess.READ)
