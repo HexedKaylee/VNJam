@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://s6pmbufqc2cs"
-=======
-uid="uid://whb8yxjeb8p4"
->>>>>>> origin/3D_dev_titlescreen_dev
-path="res://.godot/imported/generic BG.PNG-3783124e689d56d1937c4d9800c165ec.ctex"
+uid="uid://ba6hmf2cd4tsh"
+path="res://.godot/imported/logo.png-3e02d606940cc9c3fad2194d5e00d236.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/VN/Backgrounds/generic BG.PNG"
-dest_files=["res://.godot/imported/generic BG.PNG-3783124e689d56d1937c4d9800c165ec.ctex"]
+source_file="res://Assets/Misc/logo.png"
+dest_files=["res://.godot/imported/logo.png-3e02d606940cc9c3fad2194d5e00d236.ctex"]
 
 [params]
 
