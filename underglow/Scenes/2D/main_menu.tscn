@@ -1,0 +1,102 @@
+[gd_scene load_steps=18 format=3 uid="uid://cb02hrifprh5y"]
+
+[ext_resource type="Texture2D" uid="uid://clsqa3kus1r8o" path="res://Assets/VN/Backgrounds/uneasy BG.PNG" id="1_k7ha2"]
+[ext_resource type="Texture2D" uid="uid://whb8yxjeb8p4" path="res://Assets/VN/Backgrounds/generic BG.PNG" id="2_nsq6g"]
+[ext_resource type="Script" path="res://Scenes/2D/generic_bg.gd" id="3_vopp0"]
+[ext_resource type="Texture2D" uid="uid://ba6hmf2cd4tsh" path="res://Assets/Misc/logo.png" id="4_i6uek"]
+[ext_resource type="Texture2D" uid="uid://dx5xftalfwssp" path="res://Assets/Misc/quitbutton_hover.png" id="4_uxljy"]
+[ext_resource type="Texture2D" uid="uid://dyny3l6nlc51p" path="res://Assets/Misc/startbutton_stable.png" id="5_812bw"]
+[ext_resource type="Texture2D" uid="uid://b8kuubh3wlryy" path="res://Assets/Misc/quitbutton_stable.png" id="6_3b4s5"]
+[ext_resource type="Texture2D" uid="uid://8ie1lns2tqkd" path="res://Assets/Misc/studio_name_little_hover.png" id="6_wq32o"]
+[ext_resource type="Texture2D" uid="uid://wnfbmv5wy06m" path="res://Assets/Misc/studio_name_little.png" id="7_ddj50"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cp74p"]
+texture = ExtResource("6_wq32o")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a1iy2"]
+texture = ExtResource("6_wq32o")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v317h"]
+texture = ExtResource("6_wq32o")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_27ujs"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mhy62"]
+texture = ExtResource("4_uxljy")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sf3la"]
+texture = ExtResource("4_uxljy")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4dbh2"]
+texture = ExtResource("4_uxljy")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vqj4l"]
+
+[node name="main menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -12.0
+offset_top = -13.0
+offset_right = 1935.0
+offset_bottom = 1108.0
+color = Color(0, 0, 0, 1)
+
+[node name="UneasyBg" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.12549)
+position = Vector2(960, 540)
+texture = ExtResource("1_k7ha2")
+
+[node name="GenericBg" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("2_nsq6g")
+script = ExtResource("3_vopp0")
+
+[node name="Studio Name Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 855.0
+offset_top = 991.0
+offset_right = 1106.0
+offset_bottom = 1077.0
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_cp74p")
+theme_override_styles/hover = SubResource("StyleBoxTexture_a1iy2")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_v317h")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_27ujs")
+icon = ExtResource("7_ddj50")
+icon_alignment = 1
+
+[node name="Quit Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 673.5
+offset_top = 655.0
+offset_right = 1246.5
+offset_bottom = 805.0
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_mhy62")
+theme_override_styles/hover = SubResource("StyleBoxTexture_sf3la")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_4dbh2")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vqj4l")
+icon = ExtResource("6_3b4s5")
+icon_alignment = 1
+
+[node name="Start Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 673.5
+offset_top = 467.0
+offset_right = 1246.5
+offset_bottom = 617.0
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_mhy62")
+theme_override_styles/hover = SubResource("StyleBoxTexture_sf3la")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_4dbh2")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vqj4l")
+icon = ExtResource("5_812bw")
+icon_alignment = 1
+
+[node name="Logo" type="Sprite2D" parent="."]
+position = Vector2(960, 269)
+texture = ExtResource("4_i6uek")
