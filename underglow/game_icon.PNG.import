@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2ke0fbwkhjc3"
-path="res://.godot/imported/uneasy BG.PNG-7543ce6b937489bbccb39ddf86537b24.ctex"
+uid="uid://cn2ltny60lsx6"
+path="res://.godot/imported/game_icon.PNG-3199cbeb2ffc99e03e06845120aac06e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/VN/Backgrounds/uneasy BG.PNG"
-dest_files=["res://.godot/imported/uneasy BG.PNG-7543ce6b937489bbccb39ddf86537b24.ctex"]
+source_file="res://game_icon.PNG"
+dest_files=["res://.godot/imported/game_icon.PNG-3199cbeb2ffc99e03e06845120aac06e.ctex"]
 
 [params]
 

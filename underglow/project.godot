@@ -11,10 +11,11 @@ config_version=5
 [application]
 
 config/name="Underglow"
-run/main_scene="res://Scenes/3D/test_of_tests.tscn"
+run/main_scene="res://Scenes/2D/main_menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
+boot_splash/bg_color=Color(1, 1, 1, 1)
 boot_splash/image="res://Assets/VN/GUI/pitchdrop_splash.png"
-config/icon="res://icon.svg"
+config/icon="res://game_icon_resize.PNG"
 
 [audio]
 
@@ -105,11 +106,17 @@ window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/size/window_width_override=1280
 window/size/window_height_override=720
-window/stretch/mode="viewport"
+window/stretch/mode="canvas_items"
 
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
+
+[gui]
+
+theme/custom_font="res://Assets/Fonts/forgotten futurist rg.ttf"
+theme/default_font_multichannel_signed_distance_field=true
+theme/default_font_generate_mipmaps=true
 
 [input]
 

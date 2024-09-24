@@ -1,6 +1,6 @@
 extends Node
 
-var timeline = 'timeline_01'
+var timeline = 'tl_00_prologue_intro'
 
 var current_scene = null
 var destroyShelf = false

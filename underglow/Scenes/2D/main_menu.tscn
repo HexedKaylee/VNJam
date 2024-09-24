@@ -1,7 +1,7 @@
-[gd_scene load_steps=18 format=3 uid="uid://cb02hrifprh5y"]
+[gd_scene load_steps=21 format=3 uid="uid://cb02hrifprh5y"]
 
-[ext_resource type="Texture2D" uid="uid://clsqa3kus1r8o" path="res://Assets/VN/Backgrounds/uneasy BG.PNG" id="1_k7ha2"]
-[ext_resource type="Texture2D" uid="uid://whb8yxjeb8p4" path="res://Assets/VN/Backgrounds/generic BG.PNG" id="2_nsq6g"]
+[ext_resource type="Texture2D" uid="uid://d2ke0fbwkhjc3" path="res://Assets/VN/Backgrounds/uneasy BG.PNG" id="1_k7ha2"]
+[ext_resource type="Texture2D" uid="uid://cfrk5rv6bsoal" path="res://Assets/VN/Backgrounds/generic BG.PNG" id="2_nsq6g"]
 [ext_resource type="Script" path="res://Scenes/2D/generic_bg.gd" id="3_vopp0"]
 [ext_resource type="Texture2D" uid="uid://ba6hmf2cd4tsh" path="res://Assets/Misc/logo.png" id="4_i6uek"]
 [ext_resource type="Texture2D" uid="uid://dx5xftalfwssp" path="res://Assets/Misc/quitbutton_hover.png" id="4_uxljy"]
@@ -9,6 +9,10 @@
 [ext_resource type="Texture2D" uid="uid://b8kuubh3wlryy" path="res://Assets/Misc/quitbutton_stable.png" id="6_3b4s5"]
 [ext_resource type="Texture2D" uid="uid://8ie1lns2tqkd" path="res://Assets/Misc/studio_name_little_hover.png" id="6_wq32o"]
 [ext_resource type="Texture2D" uid="uid://wnfbmv5wy06m" path="res://Assets/Misc/studio_name_little.png" id="7_ddj50"]
+[ext_resource type="Script" path="res://Scenes/2D/quit_button.gd" id="8_326qa"]
+[ext_resource type="Script" path="res://Scenes/2D/start_button.gd" id="10_4873i"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cu1fy"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cp74p"]
 texture = ExtResource("6_wq32o")
@@ -64,10 +68,12 @@ offset_left = 855.0
 offset_top = 991.0
 offset_right = 1106.0
 offset_bottom = 1077.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cu1fy")
 theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_cp74p")
 theme_override_styles/hover = SubResource("StyleBoxTexture_a1iy2")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_v317h")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_27ujs")
+action_mode = 0
 icon = ExtResource("7_ddj50")
 icon_alignment = 1
 
@@ -77,12 +83,15 @@ offset_left = 673.5
 offset_top = 655.0
 offset_right = 1246.5
 offset_bottom = 805.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cu1fy")
 theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_mhy62")
 theme_override_styles/hover = SubResource("StyleBoxTexture_sf3la")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_4dbh2")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_vqj4l")
+action_mode = 0
 icon = ExtResource("6_3b4s5")
 icon_alignment = 1
+script = ExtResource("8_326qa")
 
 [node name="Start Button" type="Button" parent="."]
 layout_mode = 0
@@ -90,13 +99,19 @@ offset_left = 673.5
 offset_top = 467.0
 offset_right = 1246.5
 offset_bottom = 617.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cu1fy")
 theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_mhy62")
 theme_override_styles/hover = SubResource("StyleBoxTexture_sf3la")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_4dbh2")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_vqj4l")
+action_mode = 0
 icon = ExtResource("5_812bw")
 icon_alignment = 1
+script = ExtResource("10_4873i")
 
 [node name="Logo" type="Sprite2D" parent="."]
 position = Vector2(960, 269)
 texture = ExtResource("4_i6uek")
+
+[connection signal="pressed" from="Quit Button" to="Quit Button" method="_on_pressed"]
+[connection signal="pressed" from="Start Button" to="Start Button" method="_on_pressed"]

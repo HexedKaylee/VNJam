@@ -50,8 +50,15 @@ func _process(delta):
 	else:
 		fade.color.a = lerp(fade.color.a, 1.0, fadeSpd*delta)
 		if(snappedf(fade.color.a, 0.05) == 1):
-			fade.color.a = 1
-			#Move to other scene here
+			fade.color.a = 1		
+			match Experiment:
+				1:
+					Global.set_timeline("tl_04_college_tagging")
+				2:
+					Global.set_timeline("tl_07_prym_exp2")
+				_:
+					pass
+			Global.goto_scene("res://Scenes/2D/dialogic_scene.tscn")
 		
 
 func exp1(delta):
@@ -234,6 +241,12 @@ func exp4(delta):
 					scenePhase = 9
 					timer = 0
 		12:
+			if(textBox.modulate.a == 0):
+				timer += delta
+				if(timer > 1.0):
+					exit = true
+			
+		13:
 			if(textBox.modulate.a == 0):
 				timer += delta
 				if(timer > 1.0):
