@@ -17,6 +17,8 @@ narrator: [speed = 2]Welcome.[n+] This is a test of the narration system.[n+]\
 [wait time="1.0"]
 do AudioManager.fade_music_normal(1)
 clare: [speed=7]"...[speed=1]Huh?"
+[wait time="0.1"]
+join CG center [animation="Fade In" length="3.0" wait="true"]
 [wait time="1.0"]
 do AudioManager.fade_music_quiet(1)
 narrator: [speed = 3]Lorem ipsum dolor sit amet, consectetur adipiscing elit,[speed=2] sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\
@@ -25,7 +27,7 @@ narrator: [speed = 3]Lorem ipsum dolor sit amet, consectetur adipiscing elit,[sp
 [n+][speed = 0.25]Excepteur sint occaecat cupidatat non proident, sunt in culpa qui[speed=0.5] officia[speed=1] deserunt[speed=2] mollit [speed=3]anim id [speed=4]est lab[speed=5]orum.
 [wait time="1.0"]
 clare: [speed=1]"Cool, boss![pause=0.3] Thanks.[pause=0.3] I definitely know what that means and it sounds awesome."
-leave clare [animation="Fade Out Down" length="4.0"]
+leave clare [animation="Fade Out" length="4.0"]
 [wait time="4.0"]
 join prym (prym_frown) 3
 prym: [pause=0.3][speed=2]"Hm.[pause=0.2] Well, I have absolutely no idea what's going on over here."

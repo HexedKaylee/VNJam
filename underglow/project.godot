@@ -30,6 +30,7 @@ AudioManager="*res://Assets/Audio/AudioManager.gd"
 [dialogic]
 
 directories/dch_directory={
+"CG": "res://VN/Characters/Utility/CG.dch",
 "book-laden socialite": "res://VN/Characters/Throwaways/book-laden socialite.dch",
 "bookish socialite": "res://VN/Characters/Throwaways/bookish socialite.dch",
 "clare": "res://VN/Characters/clare.dch",
