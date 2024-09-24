@@ -1,8 +1,9 @@
-[gd_scene load_steps=25 format=3 uid="uid://djnyllnh58ny0"]
+[gd_scene load_steps=30 format=3 uid="uid://djnyllnh58ny0"]
 
 [ext_resource type="PackedScene" uid="uid://v2eeteufrg38" path="res://Nodes/3D/moria.tscn" id="1_oayx2"]
 [ext_resource type="PackedScene" uid="uid://d3swad4gj5g41" path="res://Nodes/3D/Geo/clipmap/clipmap.tscn" id="2_50i3o"]
 [ext_resource type="PackedScene" uid="uid://c7xublrnupds4" path="res://Nodes/3D/Geo/collisionmap/collisionmap.tscn" id="3_sr877"]
+[ext_resource type="Script" path="res://Scenes/3D/world_environment.gd" id="4_a50eq"]
 [ext_resource type="PackedScene" uid="uid://bqyujxgbd2ry0" path="res://Nodes/3D/Geo/pillar.tscn" id="4_wse66"]
 [ext_resource type="PackedScene" uid="uid://c1mcni5chgh22" path="res://Nodes/3D/Geo/pillar_small.tscn" id="5_enxyi"]
 [ext_resource type="PackedScene" uid="uid://dalty20f03p4d" path="res://Nodes/3D/pickup.tscn" id="6_3bjti"]
@@ -11,19 +12,24 @@
 [ext_resource type="PackedScene" uid="uid://dyu3chx4twwqj" path="res://Nodes/3D/Geo/bookshelf/bookshelf_1.tscn" id="8_wd2gf"]
 [ext_resource type="PackedScene" uid="uid://dcpftv66ac55c" path="res://Nodes/3D/Geo/coral/coral_s_10.tscn" id="10_0fhiy"]
 [ext_resource type="ArrayMesh" uid="uid://br778evr6h5l3" path="res://Assets/3D/Models/Collision/HollowCylinder.obj" id="10_mp3pe"]
+[ext_resource type="PackedScene" uid="uid://dymfc8gygvwl2" path="res://Nodes/3D/Geo/coral/coral_s_13_highcollisions.tscn" id="11_7csph"]
 [ext_resource type="PackedScene" uid="uid://oefdh2b5xghk" path="res://Nodes/3D/ui.tscn" id="11_65cad"]
 [ext_resource type="PackedScene" uid="uid://2h64pum4j5og" path="res://Nodes/3D/Geo/coral/coral_s_11.tscn" id="11_fvjlt"]
 [ext_resource type="PackedScene" uid="uid://qyer0xpq26xy" path="res://Nodes/3D/Geo/coral/coral_s_12.tscn" id="12_i0iau"]
+[ext_resource type="PackedScene" uid="uid://dxjdjglj5e1pp" path="res://Nodes/3D/Geo/coral/coral_s_07_highcollisions.tscn" id="13_hl16r"]
 [ext_resource type="PackedScene" uid="uid://bf4eo8u76tkru" path="res://Nodes/3D/Geo/coral/coral_s_13.tscn" id="13_kigk8"]
 [ext_resource type="PackedScene" uid="uid://djnfa6445cnoi" path="res://Nodes/3D/Geo/coral/coral_s_14.tscn" id="14_2moqq"]
+[ext_resource type="PackedScene" uid="uid://dm7jbytkwf80f" path="res://Nodes/3D/Geo/coral/coral_s_03.tscn" id="14_d5xpg"]
 [ext_resource type="PackedScene" uid="uid://c6nwknhsgyhw3" path="res://Nodes/3D/Geo/coral/coral_s_02.tscn" id="15_gsxog"]
 [ext_resource type="PackedScene" uid="uid://byvmo0s6skgag" path="res://Nodes/3D/Geo/coral/coral_s_08.tscn" id="16_dfrf2"]
 [ext_resource type="PackedScene" uid="uid://br8eak4qed6gy" path="res://Nodes/3D/Geo/coral/coral_s_07.tscn" id="19_gdj3f"]
+[ext_resource type="Script" path="res://Scenes/3D/distant_corals.gd" id="20_5sjaa"]
 [ext_resource type="PackedScene" uid="uid://bomf3lntpog6b" path="res://Nodes/3D/Geo/coral/coral_s_04.tscn" id="20_slqpj"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_02bm1"]
 sky_top_color = Color(0, 0, 0, 1)
-sky_horizon_color = Color(0.352941, 0.552941, 1, 1)
+sky_horizon_color = Color(0.664167, 0.35, 1, 1)
+sky_curve = 0.0530331
 ground_bottom_color = Color(0, 0.266667, 0.92549, 1)
 ground_horizon_color = Color(0.352941, 0.552941, 1, 1)
 ground_energy_multiplier = 0.0
@@ -65,6 +71,7 @@ sky_mode = 1
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_wfc8h")
+script = ExtResource("4_a50eq")
 
 [node name="pickup" parent="." node_paths=PackedStringArray("player") instance=ExtResource("6_3bjti")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 3.81, -2.813)
@@ -180,6 +187,29 @@ transform = Transform3D(0.935875, -0.352332, 0, 0.352175, 0.93546, 0.0297884, -0
 
 [node name="Pillar17" parent="TallPillars" instance=ExtResource("4_wse66")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.50241, 15.1343)
+
+[node name="Inside Corals" type="Node3D" parent="."]
+
+[node name="CoralS 06" parent="Inside Corals" instance=ExtResource("14_2moqq")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 6.27314, 2.95608, -6.78064)
+
+[node name="CoralS 07" parent="Inside Corals" instance=ExtResource("14_2moqq")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -5.33891, 3.99181, -0.0626726)
+
+[node name="CoralS 04" parent="Inside Corals" instance=ExtResource("11_7csph")]
+transform = Transform3D(7.44218, 0, -6.67937, 0, 10, 0, 6.67937, 0, 7.44218, 11.3278, 2.25013, 1.33755)
+
+[node name="CoralS 05" parent="Inside Corals" instance=ExtResource("11_7csph")]
+transform = Transform3D(-8.20252, 0, 5.72003, 0, 10, 0, -5.72003, 0, -8.20252, -6.43802, 3.32877, 12.7332)
+
+[node name="CoralS 08" parent="Inside Corals" instance=ExtResource("13_hl16r")]
+transform = Transform3D(9.96598, 0.709203, -0.419786, -0.672345, 9.94236, 0.835132, 0.476594, -0.804066, 9.95622, -2.89478, 3.89866, -11.0246)
+
+[node name="CoralS 10" parent="Inside Corals" instance=ExtResource("13_hl16r")]
+transform = Transform3D(7.13668, 1.5686, -6.82695, -1.03737, 9.87526, 1.18456, 6.9276, -0.137179, 7.21038, 4.86954, 2.05012, 11.5261)
+
+[node name="CoralS 09" parent="Inside Corals" instance=ExtResource("14_d5xpg")]
+transform = Transform3D(-9.75482, 0.0131218, -2.20077, 0.934894, 9.07745, -4.08975, 1.99237, -4.19522, -8.85611, 7.22079, 5.29257, 21.2483)
 
 [node name="Corals outside" type="Node3D" parent="."]
 
@@ -396,6 +426,564 @@ transform = Transform3D(6.78531, 1.89398, 7.09735, -0.109102, 9.68681, -2.48069,
 [node name="CoralS 67" parent="Corals outside" instance=ExtResource("10_0fhiy")]
 transform = Transform3D(5.72647, 0, -8.19802, 2.56936, 9.49617, 1.79475, 7.78498, -3.13412, 5.43795, -1.14761, 4.49636, 27.9912)
 
+[node name="CoralS 73" parent="Corals outside" instance=ExtResource("10_0fhiy")]
+transform = Transform3D(-7.45383, 0, 6.66637, 0, 10, 0, -6.66637, 0, -7.45383, 29.4625, 2.0779, 18.7897)
+
+[node name="CoralS 74" parent="Corals outside" instance=ExtResource("13_kigk8")]
+transform = Transform3D(5.15098, 0, -8.57132, 0, 10, 0, 8.57132, 0, 5.15098, 31.0224, 3.12118, -8.90039)
+
+[node name="CoralS 75" parent="Corals outside" instance=ExtResource("11_fvjlt")]
+transform = Transform3D(9.93445, 0, -1.14313, 0, 10, 0, 1.14313, 0, 9.93445, 31.0538, 2.03092, 13.7733)
+
+[node name="CoralS 76" parent="Corals outside" instance=ExtResource("13_kigk8")]
+transform = Transform3D(3.94246, 0, 9.19005, 0, 10, 0, -9.19005, 0, 3.94246, 32.1001, 2.50708, 9.33642)
+
+[node name="CoralS 77" parent="Corals outside" instance=ExtResource("20_slqpj")]
+transform = Transform3D(-7.08899, 0.225627, -7.04948, 0.062462, 9.9965, 0.257134, 7.05281, 0.138246, -7.08793, 32.3775, 2.68028, 3.78164)
+
+[node name="CoralS 78" parent="Corals outside" instance=ExtResource("15_gsxog")]
+transform = Transform3D(8.45495, 0, 5.33983, 0, 10, 0, -5.33983, 0, 8.45495, 29.0653, 3.25058, -0.33871)
+
+[node name="CoralS 79" parent="Corals outside" instance=ExtResource("13_kigk8")]
+transform = Transform3D(7.53047, 0, 6.57967, 0, 10, 0, -6.57967, 0, 7.53047, 25.5231, 2.47656, 20.2866)
+
+[node name="CoralS 80" parent="Corals outside" instance=ExtResource("14_2moqq")]
+transform = Transform3D(-7.45383, 0, 6.66637, 0, 10, 0, -6.66637, 0, -7.45383, 24.3753, 2.74352, 24.6334)
+
+[node name="CoralS 81" parent="Corals outside" instance=ExtResource("13_kigk8")]
+transform = Transform3D(-8.25272, 0, -5.64736, 0, 10, 0, 5.64736, 0, -8.25272, 26.0156, 2.92025, 1.94444)
+
+[node name="CoralS 82" parent="Corals outside" instance=ExtResource("14_2moqq")]
+transform = Transform3D(1.67888, 0, 9.85806, 0, 10, 0, -9.85806, 0, 1.67888, 28.608, 2.61981, 5.61755)
+
+[node name="CoralS 83" parent="Corals outside" instance=ExtResource("10_0fhiy")]
+transform = Transform3D(-3.73869, 0.864075, -9.23448, 1.64764, 9.86002, 0.25554, 9.12729, -1.42597, -3.82873, 27.7937, 2.4927, 7.98956)
+
+[node name="CoralS 84" parent="Corals outside" instance=ExtResource("11_fvjlt")]
+transform = Transform3D(6.4691, 0, 7.62566, 0, 10, 0, -7.62566, 0, 6.4691, 27.1134, 2.11846, 10.9226)
+
+[node name="CoralS 85" parent="Corals outside" instance=ExtResource("12_i0iau")]
+transform = Transform3D(2.78341, 1.02088, -9.55041, -1.93674, 9.79875, 0.482979, 9.40753, 1.71523, 2.92512, 26.3654, 1.8453, 15.0261)
+
+[node name="CoralS 86" parent="Corals outside" instance=ExtResource("13_kigk8")]
+transform = Transform3D(-8.63201, 1.00012, -4.94856, 0.51406, 9.92499, 1.10917, 5.02237, 0.70305, -8.61867, 24.4892, 2.12798, 17.7436)
+
+[node name="CoralS 87" parent="Corals outside" instance=ExtResource("14_2moqq")]
+transform = Transform3D(-7.58953, 1.01213, -6.4323, 0.772121, 9.94865, 0.65439, 6.4655, 0, -7.62871, 21.9095, 2.28132, 20.9699)
+
+[node name="CoralS 88" parent="Corals outside" instance=ExtResource("11_fvjlt")]
+transform = Transform3D(6.08706, 0, 7.93396, 0, 10, 0, -7.93396, 0, 6.08706, 25.111, 2.42205, -6.49569)
+
+[node name="CoralS 89" parent="Corals outside" instance=ExtResource("20_slqpj")]
+transform = Transform3D(-1.24967, -3.37004, -9.33173, -0.79179, 9.40934, -3.29203, 9.88997, 0.327474, -1.44271, 26.0014, 2.62885, -2.39556)
+
+[node name="CoralS 90" parent="Corals outside" instance=ExtResource("10_0fhiy")]
+transform = Transform3D(0.921339, -2.08932, 9.7358, 2.56936, 9.49617, 1.79475, -9.62027, 2.33612, 1.41174, 24.4895, 2.41057, -8.66913)
+
+[node name="CoralS 91" parent="Corals outside" instance=ExtResource("10_0fhiy")]
+transform = Transform3D(-9.19527, 0, -3.93027, 0, 10, 0, 3.93027, 0, -9.19527, 20.9329, 4.2218, -26.9603)
+
+[node name="CoralS 92" parent="Corals outside" instance=ExtResource("11_fvjlt")]
+transform = Transform3D(-9.19527, 0, -3.93027, 0, 10, 0, 3.93027, 0, -9.19527, 23.3189, 4.28092, -37.5276)
+
+[node name="CoralS 93" parent="Corals outside" instance=ExtResource("12_i0iau")]
+transform = Transform3D(-9.10684, 0, -4.13104, 0, 10, 0, 4.13104, 0, -9.10684, 8.62052, 4.14939, -42.6348)
+
+[node name="CoralS 94" parent="Corals outside" instance=ExtResource("13_kigk8")]
+transform = Transform3D(1.1778, 0, 9.9304, 0, 10, 0, -9.9304, 0, 1.1778, -6.37979, 4.1639, -39.4091)
+
+[node name="CoralS 95" parent="Corals outside" instance=ExtResource("11_fvjlt")]
+transform = Transform3D(-5.00574, 0, 8.65694, 0, 10, 0, -8.65694, 0, -5.00574, 18.379, 4.21556, -30.7045)
+
+[node name="CoralS 96" parent="Corals outside" instance=ExtResource("13_kigk8")]
+transform = Transform3D(-9.84956, 0, 1.72806, 0, 10, 0, -1.72806, 0, -9.84956, 14.8497, 4.52055, -34.4967)
+
+[node name="CoralS 97" parent="Corals outside" instance=ExtResource("20_slqpj")]
+transform = Transform3D(5.15742, -0.761853, -8.5335, -0.521841, 9.91396, -1.20048, 8.55153, 1.06445, 5.07329, 9.6538, 4.4921, -36.62)
+
+[node name="CoralS 98" parent="Corals outside" instance=ExtResource("15_gsxog")]
+transform = Transform3D(-0.978265, 0, -9.95203, 0, 10, 0, 9.95203, 0, -0.978265, 1.94672, 4.63241, -37.0721)
+
+[node name="CoralS 99" parent="Corals outside" instance=ExtResource("13_kigk8")]
+transform = Transform3D(-9.19527, 0, -3.93027, 0, 10, 0, 3.93027, 0, -9.19527, 21.8532, 4.32773, -22.0509)
+
+[node name="CoralS 100" parent="Corals outside" instance=ExtResource("14_2moqq")]
+transform = Transform3D(-9.19527, 0, -3.93027, 0, 10, 0, 3.93027, 0, -9.19527, 21.7953, 4.24638, -18.2641)
+
+[node name="CoralS 101" parent="Corals outside" instance=ExtResource("11_fvjlt")]
+transform = Transform3D(-9.88494, 0, 1.51261, 0, 10, 0, -1.51261, 0, -9.88494, -11.2328, 4.04429, -34.0327)
+
+[node name="CoralS 102" parent="Corals outside" instance=ExtResource("13_kigk8")]
+transform = Transform3D(-9.995, 0, 0.316025, 0, 10, 0, -0.316025, 0, -9.995, -16.0278, 4.49828, -31.5017)
+
+[node name="CoralS 103" parent="Corals outside" instance=ExtResource("20_slqpj")]
+transform = Transform3D(9.37864, 1.3632, 3.19106, -0.377955, 9.54262, -2.96572, -3.4494, 2.66084, 9.0012, -17.1798, 4.04907, -28.8515)
+
+[node name="CoralS 104" parent="Corals outside" instance=ExtResource("13_kigk8")]
+transform = Transform3D(-2.68836, 0, -9.63186, 0, 10, 0, 9.63186, 0, -2.68836, 1.52355, 3.90157, -30.4527)
+
+[node name="CoralS 105" parent="Corals outside" instance=ExtResource("14_2moqq")]
+transform = Transform3D(-2.89901, 0, -9.57057, 0, 10, 0, 9.57057, 0, -2.89901, 8.63786, 4.78869, -31.7631)
+
+[node name="CoralS 106" parent="Corals outside" instance=ExtResource("16_dfrf2")]
+transform = Transform3D(5.42882, 1.74677, -8.21443, -1.38525, 9.83357, 1.17558, 8.28306, 0.499706, 5.58044, 21.5224, 3.61266, -14.3319)
+
+[node name="CoralS 107" parent="Corals outside" instance=ExtResource("15_gsxog")]
+transform = Transform3D(2.26685, 0, 9.73968, 1.85425, 9.8171, -0.431565, -9.56154, 1.90381, 2.22539, 25.7367, 3.7656, -12.1652)
+
+[node name="CoralS 108" parent="Corals outside" instance=ExtResource("10_0fhiy")]
+transform = Transform3D(-5.23876, 0.65531, 8.49271, 1.64764, 9.86002, 0.25554, -8.35708, 1.53316, -5.27339, 10.442, 4.63585, -30.0211)
+
+[node name="CoralS 109" parent="Corals outside" instance=ExtResource("11_fvjlt")]
+transform = Transform3D(-9.99257, 0, -0.385268, 0, 10, 0, 0.385268, 0, -9.99257, 13.9386, 4.52226, -26.4643)
+
+[node name="CoralS 110" parent="Corals outside" instance=ExtResource("12_i0iau")]
+transform = Transform3D(2.02259, -1.11493, 9.72965, -2.02302, 9.67313, 1.529, -9.58209, -2.27757, 1.73092, 11.7957, 4.80608, -22.8943)
+
+[node name="CoralS 111" parent="Corals outside" instance=ExtResource("13_kigk8")]
+transform = Transform3D(-0.511675, 1.13535, -9.92216, 0.51406, 9.92499, 1.10917, 9.97367, -0.453305, -0.566193, 17.8859, 4.35503, -25.4099)
+
+[node name="CoralS 112" parent="Corals outside" instance=ExtResource("14_2moqq")]
+transform = Transform3D(2.62745, -1.11022e-15, -9.64865, -0.464102, 9.98843, -0.126381, 9.63748, 0.481002, 2.62441, 18.8728, 4.15103, -16.5154)
+
+[node name="CoralS 113" parent="Corals outside" instance=ExtResource("11_fvjlt")]
+transform = Transform3D(-7.57405, 0, 6.52945, 0, 10, 0, -6.52945, 0, -7.57405, -6.56423, 3.92269, -33.0299)
+
+[node name="CoralS 114" parent="Corals outside" instance=ExtResource("20_slqpj")]
+transform = Transform3D(7.37238, -0.0150378, -6.75632, -0.931626, 9.90219, -1.03861, 6.6918, 1.39513, 7.29887, -2.45334, 3.50414, -32.1906)
+
+[node name="CoralS 115" parent="Corals outside" instance=ExtResource("10_0fhiy")]
+transform = Transform3D(-8.43101, 1.29472, 5.21936, 2.56936, 9.49617, 1.79475, -4.72403, 2.85419, -8.33889, -8.6222, 4.22149, -28.2989)
+
+[node name="CoralS 116" parent="Corals outside" instance=ExtResource("10_0fhiy")]
+transform = Transform3D(-4.67652, 0, -8.83913, 0, 10, 0, 8.83913, 0, -4.67652, 7.63848, 4.5615, 37.2949)
+
+[node name="CoralS 117" parent="Corals outside" instance=ExtResource("13_kigk8")]
+transform = Transform3D(9.75887, 0, 2.1828, 0, 10, 0, -2.1828, 0, 9.75887, -9.72222, 4.82612, 39.9471)
+
+[node name="CoralS 118" parent="Corals outside" instance=ExtResource("20_slqpj")]
+transform = Transform3D(-7.99447, -0.207154, 6.0038, -0.903876, 9.92176, -0.861231, -5.93899, -1.23117, -7.95063, -2.45951, 5.41753, 43.7682)
+
+[node name="CoralS 119" parent="Corals outside" instance=ExtResource("11_fvjlt")]
+transform = Transform3D(9.09044, 4.13676, 0.501071, -4.1305, 9.10424, -0.227676, -0.550371, 3.6365e-08, 9.98484, 12.1329, 4.63915, 36.71)
+
+[node name="CoralS 120" parent="Corals outside" instance=ExtResource("13_kigk8")]
+transform = Transform3D(5.99499, 0, 8.00376, 0, 10, 0, -8.00376, 0, 5.99499, 17.1111, 4.80141, 35.2768)
+
+[node name="CoralS 121" parent="Corals outside" instance=ExtResource("20_slqpj")]
+transform = Transform3D(-9.86047, -1.01295, -1.32097, -0.51595, 9.40441, -3.3602, 1.58267, -3.24516, -9.32546, 21.3544, 4.06171, 31.6026)
+
+[node name="CoralS 122" parent="Corals outside" instance=ExtResource("13_kigk8")]
+transform = Transform3D(0.65229, 0, 9.9787, 0, 10, 0, -9.9787, 0, 0.65229, 4.03099, 4.61287, 35.1164)
+
+[node name="CoralS 123" parent="Corals outside" instance=ExtResource("14_2moqq")]
+transform = Transform3D(0.65229, 0, 9.9787, 0, 10, 0, -9.9787, 0, 0.65229, -0.0988824, 5.20183, 36.893)
+
+[node name="CoralS 124" parent="Corals outside" instance=ExtResource("14_2moqq")]
+transform = Transform3D(-7.22544, 0, 6.91324, 0, 10, 0, -6.91324, 0, -7.22544, 17.4817, 3.17507, 28.5002)
+
+[node name="CoralS 125" parent="Corals outside" instance=ExtResource("16_dfrf2")]
+transform = Transform3D(0.649951, -0.84617, 9.94291, 0.0551948, 9.96414, 0.844368, -9.9787, 0, 0.65229, -4.44163, 4.6267, 35.5153)
+
+[node name="CoralS 126" parent="Corals outside" instance=ExtResource("15_gsxog")]
+transform = Transform3D(7.66212, 0, -6.42587, 0, 10, 0, 6.42587, 0, 7.66212, -11.7056, 5.10252, 34.4695)
+
+[node name="CoralS 127" parent="Corals outside" instance=ExtResource("10_0fhiy")]
+transform = Transform3D(9.82275, -1.66379, 0.863358, 1.64764, 9.86002, 0.25554, -0.893795, -0.108759, 9.95939, 15.1589, 3.7772, 28.6225)
+
+[node name="CoralS 128" parent="Corals outside" instance=ExtResource("11_fvjlt")]
+transform = Transform3D(4.17471, 0, 9.0869, 0, 10, 0, -9.0869, 0, 4.17471, 9.77667, 3.86962, 32.1298)
+
+[node name="CoralS 129" parent="Corals outside" instance=ExtResource("12_i0iau")]
+transform = Transform3D(7.63202, 2.53558, -5.94332, -2.02302, 9.67313, 1.529, 6.13675, 0.0354085, 7.89551, 18.8851, 3.06805, 25.5957)
+
+[node name="CoralS 130" parent="Corals outside" instance=ExtResource("13_kigk8")]
+transform = Transform3D(-8.66446, -0.109056, 4.99151, 0.51406, 9.92499, 1.10917, -4.96617, 1.21763, -8.59387, 5.39555, 4.24408, 32.7345)
+
+[node name="CoralS 131" parent="Corals outside" instance=ExtResource("14_2moqq")]
+transform = Transform3D(-9.79399, 0, 2.01932, 0, 10, 0, -2.01932, 0, -9.79399, 1.26486, 4.62969, 32.6929)
+
+[node name="CoralS 132" parent="Corals outside" instance=ExtResource("13_kigk8")]
+transform = Transform3D(9.68622, -1.0221, 2.26551, 0.979919, 9.9474, 0.298171, -2.28407, -0.0668127, 9.73543, -7.09163, 4.4287, 30.3339)
+
+[node name="CoralS 133" parent="Corals outside" instance=ExtResource("11_fvjlt")]
+transform = Transform3D(-9.03896, 0, 4.27752, 0, 10, 0, -4.27752, 0, -9.03896, -8.66938, 4.13448, 27.1348)
+
+[node name="CoralS 134" parent="Corals outside" instance=ExtResource("15_gsxog")]
+transform = Transform3D(4.26774, 0, -9.04358, 0, 10, 0, 9.04358, 0, 4.26774, -8.49042, 4.41616, -20.3563)
+
+[node name="Distant corals" type="Node3D" parent="."]
+script = ExtResource("20_5sjaa")
+
+[node name="CoralS 134" parent="Distant corals" instance=ExtResource("14_2moqq")]
+transform = Transform3D(-9.86598, 0, 1.63171, 0, 10, 0, -1.63171, 0, -9.86598, -28.9387, 6.15214, -49.2248)
+
+[node name="CoralS 135" parent="Distant corals" instance=ExtResource("16_dfrf2")]
+transform = Transform3D(-9.86598, 0, 1.63171, 0, 10, 0, -1.63171, 0, -9.86598, -54.0149, 5.36697, -46.3667)
+
+[node name="CoralS 136" parent="Distant corals" instance=ExtResource("15_gsxog")]
+transform = Transform3D(7.02352, 0, -7.11829, 0, 10, 0, 7.11829, 0, 7.02352, -64.3135, 5.70413, -30.8657)
+
+[node name="CoralS 137" parent="Distant corals" instance=ExtResource("13_kigk8")]
+transform = Transform3D(-0.7336, 0, 9.97305, 0, 10, 0, -9.97305, 0, -0.7336, -73.59, 5.3622, -11.8211)
+
+[node name="CoralS 138" parent="Distant corals" instance=ExtResource("14_2moqq")]
+transform = Transform3D(2.69088, 0, 9.63116, 0, 10, 0, -9.63116, 0, 2.69088, -66.9916, 6.14636, 1.47967)
+
+[node name="CoralS 139" parent="Distant corals" instance=ExtResource("19_gdj3f")]
+transform = Transform3D(-4.11769, 0, 9.11288, 0, 10, 0, -9.11288, 0, -4.11769, -62.1474, 5.44012, 19.4598)
+
+[node name="CoralS 140" parent="Distant corals" instance=ExtResource("15_gsxog")]
+transform = Transform3D(-0.775194, 0, -9.96991, 0, 10, 0, 9.96991, 0, -0.775194, -45.7024, 5.96184, 32.2933)
+
+[node name="CoralS 141" parent="Distant corals" instance=ExtResource("20_slqpj")]
+transform = Transform3D(9.56411, 0.825996, -2.80101, -1.10061, 9.9039, -0.837462, 2.70493, 1.10924, 9.5631, -23.7192, 5.05986, -36.2985)
+
+[node name="CoralS 142" parent="Distant corals" instance=ExtResource("15_gsxog")]
+transform = Transform3D(1.83951, 0, -9.82935, 0, 10, 0, 9.82935, 0, 1.83951, -32.3343, 6.3482, -26.0815)
+
+[node name="CoralS 143" parent="Distant corals" instance=ExtResource("19_gdj3f")]
+transform = Transform3D(7.3023, 1.83083, 6.58213, -1.29025, 9.83044, -1.30292, -6.70907, 0.102176, 7.41471, -36.6875, 5.11317, -12.9546)
+
+[node name="CoralS 144" parent="Distant corals" instance=ExtResource("10_0fhiy")]
+transform = Transform3D(-6.91273, 0, 7.22593, 0, 10, 0, -7.22593, 0, -6.91273, -44.1442, 6.3731, -17.7104)
+
+[node name="CoralS 145" parent="Distant corals" instance=ExtResource("11_fvjlt")]
+transform = Transform3D(8.45542, 0, -5.33909, 0, 10, 0, 5.33909, 0, 8.45542, -40.2663, 5.99269, -60.7283)
+
+[node name="CoralS 146" parent="Distant corals" instance=ExtResource("12_i0iau")]
+transform = Transform3D(0.242398, 2.28322, -9.73284, -1.65639, 9.61031, 2.21323, 9.85889, 1.5585, 0.611142, -15.9201, 4.83604, -63.4845)
+
+[node name="CoralS 147" parent="Distant corals" instance=ExtResource("13_kigk8")]
+transform = Transform3D(-8.64655, -0.113434, 5.02237, 0.51406, 9.92499, 1.10917, -4.99728, 1.21723, -8.57587, -39.3736, 6.53125, -22.4247)
+
+[node name="CoralS 148" parent="Distant corals" instance=ExtResource("14_2moqq")]
+transform = Transform3D(9.56411, 0, 2.92021, 0, 10, 0, -2.92021, 0, 9.56411, -26.814, 5.40421, -30.6938)
+
+[node name="CoralS 149" parent="Distant corals" instance=ExtResource("10_0fhiy")]
+transform = Transform3D(8.59014, 0, -5.11953, 0, 10, 0, 5.11953, 0, 8.59014, -35.1445, 5.87828, 7.30134)
+
+[node name="CoralS 150" parent="Distant corals" instance=ExtResource("11_fvjlt")]
+transform = Transform3D(9.23478, 0, 3.83651, 0, 10, 0, -3.83651, 0, 9.23478, -44.1166, 6.93199, -0.681852)
+
+[node name="CoralS 151" parent="Distant corals" instance=ExtResource("12_i0iau")]
+transform = Transform3D(-6.59713, -1.74817, -7.30902, -2.0029, 9.78291, -0.532049, 7.24337, 1.11293, -6.80405, -59.0485, 6.71321, 9.01385)
+
+[node name="CoralS 152" parent="Distant corals" instance=ExtResource("13_kigk8")]
+transform = Transform3D(-7.3166, -0.381648, 6.806, 0.51406, 9.92499, 1.10917, -6.79729, 1.1614, -7.2421, -41.1371, 6.32142, -5.38423)
+
+[node name="CoralS 153" parent="Distant corals" instance=ExtResource("14_2moqq")]
+transform = Transform3D(3.12186, 0, 9.50022, 0, 10, 0, -9.50022, 0, 3.12186, -2.15597, 3.69588, -60.0703)
+
+[node name="CoralS 154" parent="Distant corals" instance=ExtResource("10_0fhiy")]
+transform = Transform3D(-0.709061, 0, 9.97483, 0, 10, 0, -9.97483, 0, -0.709061, -50.842, 6.82341, 22.5186)
+
+[node name="CoralS 155" parent="Distant corals" instance=ExtResource("16_dfrf2")]
+transform = Transform3D(-8.6124, 1.16951, 4.94558, -0.109102, 9.68681, -2.48069, -5.08081, -2.19043, -8.32991, -35.5664, 5.68122, 33.7238)
+
+[node name="CoralS 156" parent="Distant corals" instance=ExtResource("10_0fhiy")]
+transform = Transform3D(6.26618, 0, -7.79327, 0, 10, 0, 7.79327, 0, 6.26618, -55.9213, 5.3977, -35.8257)
+
+[node name="CoralS 157" parent="Distant corals" instance=ExtResource("13_kigk8")]
+transform = Transform3D(-3.68336, 0, 9.29694, 0, 10, 0, -9.29694, 0, -3.68336, -62.2316, 7.10204, -8.47444)
+
+[node name="CoralS 158" parent="Distant corals" instance=ExtResource("11_fvjlt")]
+transform = Transform3D(-9.61478, 0, 2.74882, 0, 10, 0, -2.74882, 0, -9.61478, -64.632, 5.68056, -22.3386)
+
+[node name="CoralS 159" parent="Distant corals" instance=ExtResource("13_kigk8")]
+transform = Transform3D(-5.38918, 0, -8.42359, 0, 10, 0, 8.42359, 0, -5.38918, -55.1274, 6.20766, -25.6641)
+
+[node name="CoralS 160" parent="Distant corals" instance=ExtResource("20_slqpj")]
+transform = Transform3D(8.1448, -0.200046, 5.79846, 0.062462, 9.9965, 0.257134, -5.80157, -0.173209, 8.1432, -78.6268, 5.70643, 8.53299)
+
+[node name="CoralS 161" parent="Distant corals" instance=ExtResource("15_gsxog")]
+transform = Transform3D(-9.21294, 0, -3.88866, 0, 10, 0, 3.88866, 0, -9.21294, -57.8525, 7.61049, -15.2999)
+
+[node name="CoralS 162" parent="Distant corals" instance=ExtResource("13_kigk8")]
+transform = Transform3D(-8.50315, 0, -5.26273, 0, 10, 0, 5.26273, 0, -8.50315, -15.4727, 4.50001, -48.971)
+
+[node name="CoralS 163" parent="Distant corals" instance=ExtResource("14_2moqq")]
+transform = Transform3D(6.26618, 0, -7.79327, 0, 10, 0, 7.79327, 0, 6.26618, -52.9127, 6.43997, -61.2222)
+
+[node name="CoralS 164" parent="Distant corals" instance=ExtResource("13_kigk8")]
+transform = Transform3D(9.06359, 0, 4.22507, 0, 10, 0, -4.22507, 0, 9.06359, -75.3027, 5.03183, 21.3129)
+
+[node name="CoralS 165" parent="Distant corals" instance=ExtResource("14_2moqq")]
+transform = Transform3D(-3.26492, 0, -9.45199, 0, 10, 0, 9.45199, 0, -3.26492, -39.4999, 6.25197, 25.5038)
+
+[node name="CoralS 166" parent="Distant corals" instance=ExtResource("10_0fhiy")]
+transform = Transform3D(5.17789, -1.08517, 8.48598, 1.64764, 9.86002, 0.25554, -8.39492, 1.26587, 5.28422, -48.137, 5.45573, -40.5299)
+
+[node name="CoralS 167" parent="Distant corals" instance=ExtResource("11_fvjlt")]
+transform = Transform3D(-7.62668, 0, -6.46789, 0, 10, 0, 6.46789, 0, -7.62668, -44.9639, 5.47184, -51.6385)
+
+[node name="CoralS 168" parent="Distant corals" instance=ExtResource("12_i0iau")]
+transform = Transform3D(-1.21107, -0.727323, 9.89971, -1.93674, 9.79876, 0.482979, -9.73562, -1.85882, -1.32756, -30.0568, 5.33851, -71.5176)
+
+[node name="CoralS 169" parent="Distant corals" instance=ExtResource("13_kigk8")]
+transform = Transform3D(9.33583, -0.871996, 3.47592, 0.51406, 9.92499, 1.10917, -3.54657, -0.856818, 9.31063, -63.1283, 5.15724, 36.6264)
+
+[node name="CoralS 170" parent="Distant corals" instance=ExtResource("14_2moqq")]
+transform = Transform3D(8.5428, -0.998561, 5.10131, 0.772121, 9.94865, 0.65439, -5.14046, -0.165149, 8.57603, -45.039, 6.56555, -29.8242)
+
+[node name="CoralS 171" parent="Distant corals" instance=ExtResource("11_fvjlt")]
+transform = Transform3D(-7.30008, 0, -6.83439, 0, 10, 0, 6.83439, 0, -7.30008, -58.1875, 6.5736, -1.93097)
+
+[node name="CoralS 172" parent="Distant corals" instance=ExtResource("20_slqpj")]
+transform = Transform3D(6.52409, 1.38446, 7.45114, -1.39343, 9.88325, -0.616298, -7.44948, -0.63618, 6.64084, -49.1803, 6.62693, -10.8661)
+
+[node name="CoralS 173" parent="Distant corals" instance=ExtResource("10_0fhiy")]
+transform = Transform3D(-2.47874, 2.4425, -9.37496, 2.56936, 9.49617, 1.79475, 9.341, -1.96389, -2.98142, -37.6402, 6.09461, -0.940604)
+
+[node name="CoralS 174" parent="Distant corals" instance=ExtResource("13_kigk8")]
+transform = Transform3D(9.71334, 0, 2.3772, 0, 10, 0, -2.3772, 0, 9.71334, -50.821, 7.17723, 13.5713)
+
+[node name="CoralS 175" parent="Distant corals" instance=ExtResource("14_2moqq")]
+transform = Transform3D(9.71334, 0, 2.3772, 0, 10, 0, -2.3772, 0, 9.71334, -30.8636, 5.13371, -20.3504)
+
+[node name="CoralS 176" parent="Distant corals" instance=ExtResource("16_dfrf2")]
+transform = Transform3D(-4.00451, -1.64182, 9.0149, -1.38525, 9.83357, 1.17558, -9.05787, -0.778031, -4.16529, -47.3478, 6.78102, 4.60071)
+
+[node name="CoralS 177" parent="Distant corals" instance=ExtResource("15_gsxog")]
+transform = Transform3D(-4.07107, -1.48443, -9.01237, -0.702375, 9.88871, -1.31149, 9.10675, 0.0990878, -4.13003, -50.1562, 7.84605, -2.42936)
+
+[node name="CoralS 178" parent="Distant corals" instance=ExtResource("12_i0iau")]
+transform = Transform3D(-3.559, 0.728356, -9.31681, -2.02302, 9.67313, 1.529, 9.12364, 2.42897, -3.29532, -43.4329, 6.51592, 15.5494)
+
+[node name="CoralS 179" parent="Distant corals" instance=ExtResource("14_2moqq")]
+transform = Transform3D(-1.01968, 0.0784855, 9.94756, -0.464102, 9.98843, -0.126381, -9.93704, -0.474555, -1.01486, -37.6424, 5.98808, 14.0697)
+
+[node name="CoralS 180" parent="Distant corals" instance=ExtResource("13_kigk8")]
+transform = Transform3D(-7.22062, 0, -6.91828, 0, 10, 0, 6.91828, 0, -7.22062, -35.201, 5.826, -45.6479)
+
+[node name="CoralS 181" parent="Distant corals" instance=ExtResource("20_slqpj")]
+transform = Transform3D(5.78089, 0.706014, 8.12913, -1.45047, 9.89275, 0.172289, -8.02978, -1.2787, 5.8213, -33.4367, 5.98586, 22.8927)
+
+[node name="CoralS 182" parent="Distant corals" instance=ExtResource("14_2moqq")]
+transform = Transform3D(6.00057, 0, -7.99957, 0, 10, 0, 7.99957, 0, 6.00057, -33.947, 4.76149, -6.3874)
+
+[node name="CoralS 183" parent="Distant corals" instance=ExtResource("10_0fhiy")]
+transform = Transform3D(-9.83695, 1.62375, 0.773295, 1.64764, 9.86002, 0.25554, -0.72097, 0.378783, -9.96679, -34.0606, 6.33046, -36.7397)
+
+[node name="CoralS 184" parent="Distant corals" instance=ExtResource("11_fvjlt")]
+transform = Transform3D(-5.60148, 0, -8.28393, 0, 10, 0, 8.28393, 0, -5.60148, -17.3606, 4.6505, -41.6165)
+
+[node name="CoralS 185" parent="Distant corals" instance=ExtResource("12_i0iau")]
+transform = Transform3D(-6.50722, -1.42396, 7.45844, -2.94594, 9.52663, -0.751405, -6.99839, -2.68617, -6.61868, -38.8984, 6.33308, -34.0707)
+
+[node name="CoralS 186" parent="Distant corals" instance=ExtResource("14_2moqq")]
+transform = Transform3D(4.02747, 0, -9.15312, 0, 10, 0, 9.15312, 0, 4.02747, -11.3721, 5.98558, 59.6823)
+
+[node name="CoralS 187" parent="Distant corals" instance=ExtResource("16_dfrf2")]
+transform = Transform3D(4.02747, 0, -9.15312, 0, 10, 0, 9.15312, 0, 4.02747, 4.73031, 5.6743, 79.1168)
+
+[node name="CoralS 188" parent="Distant corals" instance=ExtResource("15_gsxog")]
+transform = Transform3D(2.12058, 0, 9.77257, 0, 10, 0, -9.77257, 0, 2.12058, 23.34, 4.67576, 79.2657)
+
+[node name="CoralS 189" parent="Distant corals" instance=ExtResource("13_kigk8")]
+transform = Transform3D(-7.94965, 0, -6.06654, 0, 10, 0, 6.06654, 0, -7.94965, 44.358, 5.80061, 76.6215)
+
+[node name="CoralS 190" parent="Distant corals" instance=ExtResource("14_2moqq")]
+transform = Transform3D(-9.53554, 0, -3.01222, 0, 10, 0, 3.01222, 0, -9.53554, 51.8878, 7.32655, 63.8249)
+
+[node name="CoralS 191" parent="Distant corals" instance=ExtResource("19_gdj3f")]
+transform = Transform3D(-5.37932, 0, -8.42988, 0, 10, 0, 8.42988, 0, -5.37932, 64.2948, 6.26549, 49.939)
+
+[node name="CoralS 192" parent="Distant corals" instance=ExtResource("15_gsxog")]
+transform = Transform3D(8.77188, 0, 4.80147, 0, 10, 0, -4.80147, 0, 8.77188, 66.05, 6.0991, 29.153)
+
+[node name="CoralS 193" parent="Distant corals" instance=ExtResource("20_slqpj")]
+transform = Transform3D(-2.9638, 0.477223, 9.53877, -1.10061, 9.9039, -0.837462, -9.48708, -1.29805, -2.8828, -3.40198, 5.92125, 48.2451)
+
+[node name="CoralS 194" parent="Distant corals" instance=ExtResource("15_gsxog")]
+transform = Transform3D(7.22473, 0, 6.91399, 0, 10, 0, -6.91399, 0, 7.22473, 9.86287, 6.65267, 49.8731)
+
+[node name="CoralS 195" parent="Distant corals" instance=ExtResource("19_gdj3f")]
+transform = Transform3D(-9.60987, -0.91536, 2.61009, -1.29025, 9.83044, -1.30292, -2.44656, -1.58886, -9.56504, 23.2342, 5.93886, 46.3417)
+
+[node name="CoralS 196" parent="Distant corals" instance=ExtResource("10_0fhiy")]
+transform = Transform3D(-2.27127, 0, -9.73865, 0, 10, 0, 9.73865, 0, -2.27127, 23.3287, 5.67405, 55.1854)
+
+[node name="CoralS 197" parent="Distant corals" instance=ExtResource("11_fvjlt")]
+transform = Transform3D(-0.152016, 0, 9.99885, 0, 10, 0, -9.99885, 0, -0.152016, -19.2769, 6.40803, 67.5156)
+
+[node name="CoralS 198" parent="Distant corals" instance=ExtResource("12_i0iau")]
+transform = Transform3D(8.12261, 0.0567348, 5.83268, -1.65639, 9.61031, 2.21323, -5.59284, -2.76384, 7.81547, -45.4946, 4.81551, 52.8737)
+
+[node name="CoralS 199" parent="Distant corals" instance=ExtResource("13_kigk8")]
+transform = Transform3D(0.542721, 1.08124, -9.92655, 0.51406, 9.92499, 1.10917, 9.97202, -0.570482, 0.483067, 16.7732, 6.29557, 53.7681)
+
+[node name="CoralS 200" parent="Distant corals" instance=ExtResource("14_2moqq")]
+transform = Transform3D(-7.67389, 0, 6.41181, 0, 10, 0, -6.41181, 0, -7.67389, 2.98289, 5.79989, 47.7723)
+
+[node name="CoralS 201" parent="Distant corals" instance=ExtResource("10_0fhiy")]
+transform = Transform3D(-0.409513, 0, 9.99161, 0, 10, 0, -9.99161, 0, -0.409513, 37.5929, 3.79168, 29.9426)
+
+[node name="CoralS 202" parent="Distant corals" instance=ExtResource("11_fvjlt")]
+transform = Transform3D(-8.26108, 0, 5.63511, 0, 10, 0, -5.63511, 0, -8.26108, 39.1832, 3.66296, 18.895)
+
+[node name="CoralS 203" parent="Distant corals" instance=ExtResource("12_i0iau")]
+transform = Transform3D(9.67173, 1.88761, -1.70137, -2.0029, 9.7829, -0.532049, 1.56401, 0.85535, 9.83983, -23.144, 5.57785, 39.6621)
+
+[node name="CoralS 204" parent="Distant corals" instance=ExtResource("13_kigk8")]
+transform = Transform3D(-1.69157, 1.18112, -9.78486, 0.51406, 9.92499, 1.10917, 9.84248, -0.315376, -1.73959, 32.0058, 6.48975, 45.9287)
+
+[node name="CoralS 205" parent="Distant corals" instance=ExtResource("14_2moqq")]
+transform = Transform3D(-9.66152, 0, -2.57976, 0, 10, 0, 2.57976, 0, -9.66152, -38.8179, 5.27657, 43.0823)
+
+[node name="CoralS 206" parent="Distant corals" instance=ExtResource("10_0fhiy")]
+transform = Transform3D(-7.96456, 0, -6.04697, 0, 10, 0, 6.04697, 0, -7.96456, 46.7795, 4.90662, 13.3081)
+
+[node name="CoralS 207" parent="Distant corals" instance=ExtResource("16_dfrf2")]
+transform = Transform3D(0.454111, -2.47348, -9.67862, -0.109102, 9.68681, -2.48069, 9.98909, 0.218246, 0.412902, 57.9462, 5.90934, 17.1198)
+
+[node name="CoralS 208" parent="Distant corals" instance=ExtResource("10_0fhiy")]
+transform = Transform3D(3.09979, 0, 9.50743, 0, 10, 0, -9.50743, 0, 3.09979, 14.5989, 4.95032, 74.9503)
+
+[node name="CoralS 209" parent="Distant corals" instance=ExtResource("13_kigk8")]
+transform = Transform3D(-5.77089, 0, -8.16682, 0, 10, 0, 8.16682, 0, -5.77089, 40.9506, 6.41663, 65.2811)
+
+[node name="CoralS 210" parent="Distant corals" instance=ExtResource("11_fvjlt")]
+transform = Transform3D(2.95475, 0, -9.55351, 0, 10, 0, 9.55351, 0, 2.95475, 30.6541, 4.08686, 74.8706)
+
+[node name="CoralS 211" parent="Distant corals" instance=ExtResource("13_kigk8")]
+transform = Transform3D(9.99957, 0, 0.0926782, 0, 10, 0, -0.0926782, 0, 9.99957, 22.6734, 5.15159, 68.7302)
+
+[node name="CoralS 212" parent="Distant corals" instance=ExtResource("20_slqpj")]
+transform = Transform3D(-9.31059, -0.0356677, 3.6485, 0.0624621, 9.9965, 0.257134, -3.64814, 0.262197, -9.30711, 58.3768, 3.96444, -32.2945)
+
+[node name="CoralS 213" parent="Distant corals" instance=ExtResource("15_gsxog")]
+transform = Transform3D(8.29281, 0, -5.58831, 0, 10, 0, 5.58831, 0, 8.29281, 32.8414, 5.37913, 65.3459)
+
+[node name="CoralS 214" parent="Distant corals" instance=ExtResource("13_kigk8")]
+transform = Transform3D(9.05532, 0, -4.24278, 0, 10, 0, 4.24278, 0, 9.05532, -30.4736, 5.56306, 51.2762)
+
+[node name="CoralS 215" parent="Distant corals" instance=ExtResource("14_2moqq")]
+transform = Transform3D(3.09979, 0, 9.50743, 0, 10, 0, -9.50743, 0, 3.09979, -20.6329, 5.41267, 54.4548)
+
+[node name="CoralS 216" parent="Distant corals" instance=ExtResource("13_kigk8")]
+transform = Transform3D(-8.49285, 0, 5.27935, 0, 10, 0, -5.27935, 0, -8.49285, 74.9232, 6.4229, 57.8211)
+
+[node name="CoralS 217" parent="Distant corals" instance=ExtResource("14_2moqq")]
+transform = Transform3D(9.69936, 0, 2.4336, 0, 10, 0, -2.4336, 0, 9.69936, 56.9741, 6.31355, 27.6712)
+
+[node name="CoralS 218" parent="Distant corals" instance=ExtResource("10_0fhiy")]
+transform = Transform3D(-9.86006, 1.65321, -0.214672, 1.64764, 9.86002, 0.25554, 0.25392, 0.216592, -9.99443, 6.40416, 6.55637, 71.0041)
+
+[node name="CoralS 219" parent="Distant corals" instance=ExtResource("11_fvjlt")]
+transform = Transform3D(9.58527, 0, -2.85003, 0, 10, 0, 2.85003, 0, 9.58527, -4.63211, 6.10514, 74.4203)
+
+[node name="CoralS 220" parent="Distant corals" instance=ExtResource("12_i0iau")]
+transform = Transform3D(-7.48981, -1.15881, -6.52379, -1.93674, 9.79876, 0.482979, 6.33654, 1.62523, -7.56353, -33.5917, 5.51751, 63.6807)
+
+[node name="CoralS 221" parent="Distant corals" instance=ExtResource("13_kigk8")]
+transform = Transform3D(-8.07355, -0.240716, 5.89575, 0.51406, 9.92499, 1.10917, -5.87823, 1.19857, -8.00062, 70.8392, 4.65862, -0.708347)
+
+[node name="CoralS 222" parent="Distant corals" instance=ExtResource("14_2moqq")]
+transform = Transform3D(-8.97461, 0.407631, 4.39205, 0.772121, 9.94865, 0.65439, -4.34283, 0.92641, -8.96, 13.6747, 5.57237, 62.5573)
+
+[node name="CoralS 223" parent="Distant corals" instance=ExtResource("11_fvjlt")]
+transform = Transform3D(9.71359, 0, -2.37618, 0, 10, 0, 2.37618, 0, 9.71359, 29.8564, 4.76811, 31.8646)
+
+[node name="CoralS 224" parent="Distant corals" instance=ExtResource("20_slqpj")]
+transform = Transform3D(-9.86884, -0.255602, 1.59398, -0.146511, 9.97492, 0.692469, -1.60767, 0.660032, -9.84783, 31.8128, 4.9848, 55.6604)
+
+[node name="CoralS 225" parent="Distant corals" instance=ExtResource("10_0fhiy")]
+transform = Transform3D(9.17661, -2.97974, 2.62888, 2.56936, 9.49617, 1.79475, -3.03122, -0.971514, 9.47987, 33.8148, 6.28322, 40.5713)
+
+[node name="CoralS 226" parent="Distant corals" instance=ExtResource("13_kigk8")]
+transform = Transform3D(-7.30079, 0, 6.83363, 0, 10, 0, -6.83363, 0, -7.30079, 53.172, 6.59118, 43.6742)
+
+[node name="CoralS 227" parent="Distant corals" instance=ExtResource("14_2moqq")]
+transform = Transform3D(-7.30079, 0, 6.83363, 0, 10, 0, -6.83363, 0, -7.30079, 13.8576, 5.99597, 45.5084)
+
+[node name="CoralS 228" parent="Distant corals" instance=ExtResource("16_dfrf2")]
+transform = Transform3D(-5.39514, 0.246117, -8.41617, -1.38525, 9.83357, 1.17558, 8.30503, 1.80009, -5.27125, 43.7618, 6.73381, 45.6703)
+
+[node name="CoralS 229" parent="Distant corals" instance=ExtResource("15_gsxog")]
+transform = Transform3D(9.851, 0.894508, 1.46889, -0.702375, 9.88871, -1.31149, -1.56985, 1.18878, 9.80419, 39.4107, 7.58604, 51.8652)
+
+[node name="CoralS 230" parent="Distant corals" instance=ExtResource("12_i0iau")]
+transform = Transform3D(9.58519, 1.63565, 2.33425, -2.02302, 9.67313, 1.529, -2.00786, -1.9378, 9.60278, 64.6908, 6.38416, 11.8404)
+
+[node name="CoralS 231" parent="Distant corals" instance=ExtResource("14_2moqq")]
+transform = Transform3D(-7.7631, -0.440266, -6.28812, -0.464102, 9.98842, -0.126381, 6.2864, 0.193722, -7.77454, 46.3845, 5.62755, 32.367)
+
+[node name="CoralS 232" parent="Distant corals" instance=ExtResource("13_kigk8")]
+transform = Transform3D(9.74039, 0, -2.26379, 0, 10, 0, 2.26379, 0, 9.74039, -5.05882, 6.03148, 59.4293)
+
+[node name="CoralS 233" parent="Distant corals" instance=ExtResource("20_slqpj")]
+transform = Transform3D(-9.88398, -1.45667, 0.430131, -1.45047, 9.89275, 0.172289, -0.450611, 0.107901, -9.98926, 46.5453, 4.16077, 23.5429)
+
+[node name="CoralS 234" parent="Distant corals" instance=ExtResource("14_2moqq")]
+transform = Transform3D(3.41775, 0, 9.39782, 0, 10, 0, -9.39782, 0, 3.41775, 27.235, 5.84298, 40.4567)
+
+[node name="CoralS 235" parent="Distant corals" instance=ExtResource("10_0fhiy")]
+transform = Transform3D(4.77418, -0.570538, -8.76823, 1.64764, 9.86002, 0.25554, 8.6309, -1.56669, 4.80135, 1.88227, 5.69569, 57.1454)
+
+[node name="CoralS 236" parent="Distant corals" instance=ExtResource("11_fvjlt")]
+transform = Transform3D(9.99869, 0, -0.161439, 0, 10, 0, 0.161439, 0, 9.99869, -15.3108, 4.97969, 46.0111)
+
+[node name="CoralS 237" parent="Distant corals" instance=ExtResource("12_i0iau")]
+transform = Transform3D(-2.30244, -1.47072, -9.61955, -2.94594, 9.52663, -0.751405, 9.27471, 2.66085, -2.62672, 77.285, 6.38196, 20.7622)
+
+[node name="CoralS 238" parent="Distant corals" instance=ExtResource("11_fvjlt")]
+transform = Transform3D(1.18127, 0, 9.92998, 0, 10, 0, -9.92998, 0, 1.18127, 61.7368, 5.49634, -5.57771)
+
+[node name="CoralS 239" parent="Distant corals" instance=ExtResource("12_i0iau")]
+transform = Transform3D(7.51617, 1.79838, -6.34611, -1.93674, 9.79876, 0.482979, 6.30526, 0.86606, 7.71321, 56.2518, 5.53733, 3.30497)
+
+[node name="CoralS 240" parent="Distant corals" instance=ExtResource("13_kigk8")]
+transform = Transform3D(-4.42217, 1.22204, -8.88544, 0.51406, 9.92499, 1.10917, 8.95434, 0.0337285, -4.45182, 3.07514, 3.97441, -66.8599)
+
+[node name="CoralS 241" parent="Distant corals" instance=ExtResource("14_2moqq")]
+transform = Transform3D(-2.75607, 0.843753, -9.5756, 0.772121, 9.94865, 0.65439, 9.58164, -0.558998, -2.80707, 46.9619, 3.932, -40.4697)
+
+[node name="CoralS 242" parent="Distant corals" instance=ExtResource("11_fvjlt")]
+transform = Transform3D(0.692519, 0, 9.97599, 0, 10, 0, -9.97599, 0, 0.692519, 23.1272, 4.71492, -47.459)
+
+[node name="CoralS 243" parent="Distant corals" instance=ExtResource("20_slqpj")]
+transform = Transform3D(0.0911946, 0.693846, -9.97549, -0.146512, 9.97492, 0.692468, 9.99852, 0.139831, 0.101122, 46.2453, 4.40966, -53.4271)
+
+[node name="CoralS 244" parent="Distant corals" instance=ExtResource("10_0fhiy")]
+transform = Transform3D(-4.54521, -0.45151, 8.89591, 2.56936, 9.49617, 1.79475, -8.52874, 3.10143, -4.2002, 35.0774, 3.75696, -25.4512)
+
+[node name="CoralS 245" parent="Distant corals" instance=ExtResource("13_kigk8")]
+transform = Transform3D(-5.49489, 0, -8.35501, 0, 10, 0, 8.35501, 0, -5.49489, 41.7644, 4.38529, -17.9167)
+
+[node name="CoralS 246" parent="Distant corals" instance=ExtResource("14_2moqq")]
+transform = Transform3D(-5.49489, 0, -8.35501, 0, 10, 0, 8.35501, 0, -5.49489, 39.2892, 4.52884, -34.0089)
+
+[node name="CoralS 247" parent="Distant corals" instance=ExtResource("16_dfrf2")]
+transform = Transform3D(9.10045, 1.73217, -3.76583, -1.38525, 9.83357, 1.17558, 3.90679, -0.548163, 9.18894, 15.7071, 4.50954, -72.6556)
+
+[node name="CoralS 248" parent="Distant corals" instance=ExtResource("15_gsxog")]
+transform = Transform3D(-3.21956, 1.01965, 9.41247, -0.702375, 9.88871, -1.31149, -9.44145, -1.08335, -3.11211, 35.3356, 5.79392, -57.2068)
+
+[node name="CoralS 249" parent="Distant corals" instance=ExtResource("12_i0iau")]
+transform = Transform3D(-3.60608, -2.18736, 9.06706, -2.02302, 9.67313, 1.529, -9.10514, -1.28291, -3.93072, 38.0751, 3.1569, -9.62203)
+
+[node name="CoralS 250" parent="Distant corals" instance=ExtResource("14_2moqq")]
+transform = Transform3D(7.51315, 0.265657, -6.59408, -0.464101, 9.98842, -0.126381, 6.58309, 0.400984, 7.51678, 13.3405, 4.39566, -48.9915)
+
+[node name="CoralS 251" parent="Distant corals" instance=ExtResource("13_kigk8")]
+transform = Transform3D(0.577205, 0, 9.98333, 0, 10, 0, -9.98333, 0, 0.577205, 56.2196, 3.71597, -17.7306)
+
+[node name="CoralS 252" parent="Distant corals" instance=ExtResource("20_slqpj")]
+transform = Transform3D(1.23403, 0.353647, -9.91727, -1.45047, 9.89275, 0.172289, 9.81699, 1.4172, 1.27209, 12.0929, 4.85654, -62.4927)
+
+[node name="CoralS 253" parent="Distant corals" instance=ExtResource("14_2moqq")]
+transform = Transform3D(-9.84165, 0, 1.77257, 0, 10, 0, -1.77257, 0, -9.84165, 32.0396, 4.53023, -46.3344)
+
+[node name="CoralS 254" parent="Distant corals" instance=ExtResource("10_0fhiy")]
+transform = Transform3D(7.69504, -1.44708, 6.22031, 1.64764, 9.86002, 0.25554, -6.17022, 0.828246, 7.82576, 52.7904, 3.91918, -24.1832)
+
+[node name="CoralS 255" parent="Distant corals" instance=ExtResource("11_fvjlt")]
+transform = Transform3D(-1.53848, 0, 9.88094, 0, 10, 0, -9.88094, 0, -1.53848, 44.7367, 4.26987, -5.34927)
+
+[node name="CoralS 256" parent="Distant corals" instance=ExtResource("12_i0iau")]
+transform = Transform3D(9.97033, 0.261866, -0.723789, -0.332136, 9.94666, -0.976469, 0.694354, 0.997611, 9.92586, 24.6345, 5.49772, -61.6945)
+
 [node name="StageBorder" type="StaticBody3D" parent="."]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StageBorder"]
@@ -406,9 +994,6 @@ mesh = ExtResource("10_mp3pe")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StageBorder"]
 transform = Transform3D(2.5, 0, 0, 0, -1.09278e-07, -2.5, 0, 2.5, -1.09278e-07, 0, 9.60578, 1.44559)
 shape = SubResource("ConcavePolygonShape3D_jmgs8")
-
-[node name="CoralS 02" parent="StageBorder" instance=ExtResource("15_gsxog")]
-transform = Transform3D(4.26774, 0, -9.04358, 0, 10, 0, 9.04358, 0, 4.26774, -8.49042, 4.41616, -20.3563)
 
 [node name="UI" parent="." instance=ExtResource("11_65cad")]
 unique_name_in_owner = true
