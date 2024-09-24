@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=3 uid="uid://bkhg83gytom4q"]
+[gd_scene load_steps=46 format=3 uid="uid://bkhg83gytom4q"]
 
 [ext_resource type="Script" path="res://Scenes/3D/coral_spawner.gd" id="1_3j1rv"]
 [ext_resource type="PackedScene" uid="uid://v2eeteufrg38" path="res://Nodes/3D/moria.tscn" id="1_x8a45"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://vy8kqmysmj02" path="res://Assets/3D/Textures/sand_02.png" id="4_g7ubt"]
 [ext_resource type="PackedScene" uid="uid://c1mcni5chgh22" path="res://Nodes/3D/Geo/pillar_small.tscn" id="4_i37ld"]
 [ext_resource type="Texture2D" uid="uid://d3c3esrmjvfy2" path="res://Assets/3D/Textures/serum/Potion_1_Potion1_Aqua_AlbedoTransparency.png" id="6_lmfw2"]
+[ext_resource type="Script" path="res://Scenes/3D/world_environment.gd" id="7_1cavc"]
 [ext_resource type="PackedScene" uid="uid://ldod4paasspw" path="res://Nodes/3D/serum.tscn" id="7_6gxjy"]
 [ext_resource type="Texture2D" uid="uid://dl5bfus17l2oc" path="res://Assets/3D/Textures/serum/Potion_1_Potion1_Cloudy_MetallicSmoothness.png" id="7_aso0h"]
 [ext_resource type="Texture2D" uid="uid://ccg2lvhn82gvo" path="res://Assets/3D/Textures/serum/Potion_1_Mat_Cloudy_Normal.png" id="8_jd85o"]
@@ -164,6 +165,7 @@ sky_mode = 1
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_wfc8h")
+script = ExtResource("7_1cavc")
 
 [node name="Short Pillars" type="Node3D" parent="."]
 

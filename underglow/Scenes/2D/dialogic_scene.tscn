@@ -10,3 +10,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_4wnax")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -49.0
+offset_top = -24.0
+offset_right = 1999.0
+offset_bottom = 1123.0
+color = Color(0, 0, 0, 1)
