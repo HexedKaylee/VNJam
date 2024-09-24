@@ -1,0 +1,33 @@
+[gd_scene load_steps=9 format=3 uid="uid://n3duranls7jp"]
+
+[ext_resource type="FontFile" uid="uid://cc5otuv5v5rjr" path="res://Assets/Fonts/bitcrusher condensed bd.otf" id="1_ltqw3"]
+[ext_resource type="Texture2D" uid="uid://x7wnex3v7oht" path="res://Assets/UI/button_interact.png" id="2_dy80l"]
+[ext_resource type="Texture2D" uid="uid://cc0nsq5vigu7v" path="res://Assets/UI/button_stable.png" id="3_18kln"]
+
+[sub_resource type="FontVariation" id="FontVariation_3c1q3"]
+base_font = ExtResource("1_ltqw3")
+spacing_top = 2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mhy62"]
+texture = ExtResource("2_dy80l")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sf3la"]
+texture = ExtResource("2_dy80l")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4dbh2"]
+texture = ExtResource("2_dy80l")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vqj4l"]
+
+[node name="Start Button" type="Button"]
+offset_right = 573.0
+offset_bottom = 162.0
+theme_override_fonts/font = SubResource("FontVariation_3c1q3")
+theme_override_font_sizes/font_size = 68
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_mhy62")
+theme_override_styles/hover = SubResource("StyleBoxTexture_sf3la")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_4dbh2")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vqj4l")
+text = "end and begin anew"
+icon = ExtResource("3_18kln")
+icon_alignment = 1
