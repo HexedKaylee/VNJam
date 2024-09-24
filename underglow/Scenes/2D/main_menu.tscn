@@ -1,41 +1,37 @@
-[gd_scene load_steps=21 format=3 uid="uid://cb02hrifprh5y"]
+[gd_scene load_steps=13 format=3 uid="uid://cb02hrifprh5y"]
 
 [ext_resource type="Texture2D" uid="uid://clsqa3kus1r8o" path="res://Assets/VN/Backgrounds/uneasy BG.PNG" id="1_k7ha2"]
 [ext_resource type="Texture2D" uid="uid://whb8yxjeb8p4" path="res://Assets/VN/Backgrounds/generic BG.PNG" id="2_nsq6g"]
 [ext_resource type="Script" path="res://Scenes/2D/generic_bg.gd" id="3_vopp0"]
 [ext_resource type="Texture2D" uid="uid://ba6hmf2cd4tsh" path="res://Assets/Misc/logo.png" id="4_i6uek"]
-[ext_resource type="Texture2D" uid="uid://dyny3l6nlc51p" path="res://Assets/Misc/startbutton_stable.png" id="5_812bw"]
-[ext_resource type="Texture2D" uid="uid://b8kuubh3wlryy" path="res://Assets/Misc/quitbutton_stable.png" id="6_3b4s5"]
-[ext_resource type="Texture2D" uid="uid://dw8u20dwgqkmi" path="res://Assets/Misc/continuebutton_unavailable.png" id="6_plah7"]
 [ext_resource type="Texture2D" uid="uid://8ie1lns2tqkd" path="res://Assets/Misc/studio_name_little_hover.png" id="6_wq32o"]
+[ext_resource type="PackedScene" uid="uid://n3duranls7jp" path="res://Nodes/2D/main_menu_button.tscn" id="6_ynnse"]
 [ext_resource type="Texture2D" uid="uid://wnfbmv5wy06m" path="res://Assets/Misc/studio_name_little.png" id="7_ddj50"]
-[ext_resource type="Texture2D" uid="uid://ckyxs6bcua7b3" path="res://Assets/Misc/continuebutton_hover.png" id="7_tenpr"]
-[ext_resource type="Texture2D" uid="uid://cr3371qi8tpbj" path="res://Assets/Misc/continuebutton_stable.png" id="8_rfmc5"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cp74p"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
 texture = ExtResource("6_wq32o")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a1iy2"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
 texture = ExtResource("6_wq32o")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v317h"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
 texture = ExtResource("6_wq32o")
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_27ujs"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_m3eqd"]
-texture = ExtResource("6_plah7")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mhy62"]
-texture = ExtResource("7_tenpr")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sf3la"]
-texture = ExtResource("7_tenpr")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4dbh2"]
-texture = ExtResource("7_tenpr")
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vqj4l"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i7dnt"]
 
 [node name="main menu" type="Control"]
 layout_mode = 3
@@ -65,9 +61,8 @@ script = ExtResource("3_vopp0")
 
 [node name="Studio Name Button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 855.0
 offset_top = 991.0
-offset_right = 1106.0
+offset_right = 251.0
 offset_bottom = 1077.0
 theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_cp74p")
 theme_override_styles/hover = SubResource("StyleBoxTexture_a1iy2")
@@ -76,46 +71,30 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_27ujs")
 icon = ExtResource("7_ddj50")
 icon_alignment = 1
 
-[node name="Continue Button" type="Button" parent="."]
+[node name="Start Button" parent="." instance=ExtResource("6_ynnse")]
 layout_mode = 0
-offset_left = 673.5
-offset_top = 606.0
-offset_right = 1246.5
-offset_bottom = 756.0
-theme_override_styles/disabled = SubResource("StyleBoxTexture_m3eqd")
-theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_mhy62")
-theme_override_styles/hover = SubResource("StyleBoxTexture_sf3la")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_4dbh2")
-theme_override_styles/normal = SubResource("StyleBoxEmpty_vqj4l")
-icon = ExtResource("8_rfmc5")
-icon_alignment = 1
+offset_top = 362.0
+offset_bottom = 524.0
 
-[node name="Quit Button" type="Button" parent="."]
+[node name="Continue Button" parent="." instance=ExtResource("6_ynnse")]
 layout_mode = 0
-offset_left = 673.5
-offset_top = 774.0
-offset_right = 1246.5
-offset_bottom = 924.0
-theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_mhy62")
-theme_override_styles/hover = SubResource("StyleBoxTexture_sf3la")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_4dbh2")
-theme_override_styles/normal = SubResource("StyleBoxEmpty_vqj4l")
-icon = ExtResource("6_3b4s5")
-icon_alignment = 1
+offset_top = 530.0
+offset_bottom = 692.0
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_i7dnt")
+text = "continue to KNOW"
 
-[node name="Start Button" type="Button" parent="."]
+[node name="display button" parent="." instance=ExtResource("6_ynnse")]
 layout_mode = 0
-offset_left = 673.5
-offset_top = 441.0
-offset_right = 1246.5
-offset_bottom = 591.0
-theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_mhy62")
-theme_override_styles/hover = SubResource("StyleBoxTexture_sf3la")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_4dbh2")
-theme_override_styles/normal = SubResource("StyleBoxEmpty_vqj4l")
-icon = ExtResource("5_812bw")
-icon_alignment = 1
+offset_top = 695.0
+offset_bottom = 857.0
+text = "fullscreen: on"
+
+[node name="quit button" parent="." instance=ExtResource("6_ynnse")]
+layout_mode = 0
+offset_top = 860.0
+offset_bottom = 1022.0
+text = "quit to desktop"
 
 [node name="Logo" type="Sprite2D" parent="."]
-position = Vector2(960, 269)
+position = Vector2(960, 197)
 texture = ExtResource("4_i6uek")
