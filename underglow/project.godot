@@ -108,6 +108,7 @@ text/split_at_new_lines=false
 history/simple_history_enabled=true
 extensions_folder="res://addons/dialogic_additions"
 animations/cross_fade_default_length=0.5
+text/autocolor_names=false
 
 [display]
 

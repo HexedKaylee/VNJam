@@ -59,4 +59,4 @@ script = ExtResource("10_p4tje")
 name = "vncharadia"
 base_overrides = {}
 layers = Array[ExtResource("1_tlpu6")]([SubResource("Resource_ytsap"), SubResource("Resource_30rh5"), SubResource("Resource_c2rfy"), SubResource("Resource_ndc3q"), SubResource("Resource_rorod"), SubResource("Resource_dgada"), SubResource("Resource_od0wg"), SubResource("Resource_rynq4")])
-metadata/_latest_layer = -1
+metadata/_latest_layer = 7

@@ -4,6 +4,7 @@ extends RigidBody3D
 @export var topSpeed = 200.0
 @export var timeOut = 15.0
 @onready var player = Node3D
+var Bubble = preload("res://Assets/Audio/SFX/bubble.ogg")
 
 func _ready():
 	$"Fish/Armature-fish/Skeleton3D/Fish_001".get_active_material(0).set_shader_parameter("time_offset", randf_range(0.0, 5.0))
@@ -14,6 +15,9 @@ func _physics_process(delta):
 		apply_central_force(global_transform.basis.x * accel * delta)
 
 func _process(delta):
+	if !$AudioStreamPlayer3D.is_playing():
+		$AudioStreamPlayer3D.stream = Bubble
+		$AudioStreamPlayer3D.play()
 	timeOut -= delta
 	if(timeOut <= 0):
 		queue_free()
