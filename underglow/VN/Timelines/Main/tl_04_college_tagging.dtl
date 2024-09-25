@@ -12,7 +12,8 @@ narrator: Upon appearing to satisfy the curiosity of the stranger who brought yo
 [wait time="1.0"]
 join prym center
 
-"enigmatic figure": "Theeeere's a good little test subject.[pause=.5] Thank you ever[pause=.2] so much for humoring me in this little exercise —[pause=.5] it lets me [b]know[/b] that now we can move forward with more progression towards your…"
+"enigmatic figure": "[i]Theeeere's[/i] a good little test subject."
+"enigmatic figure": "Thank you [i]ever[/i][pause=.2] so much for humoring me in this little exercise —[pause=.5] it lets me [b]know[/b] that now we can move forward with more progression towards your…"
 "enigmatic figure": "Oh, do forgive me! I'm sure you're quite[pause=.4] confused[pause=.5] as to what's going on here."
 [wait time="1.0"]
 narrator: The space before you strikes you as odd,[pause=.2] even considering what you’ve seen until now.[pause=.5] Motes of sparkling gold float lazily about.[pause=.5] Myriad imposing contraptions stand haphazardly strewn amidst patches of glowing coral and golden algae,[pause=.2] and though you struggle to produce their names,[pause=.2] you intuit that you’ve somehow seen a number of them before.\
@@ -24,25 +25,26 @@ narrator: The space before you strikes you as odd,[pause=.2] even considering wh
 [n]An itching feeling in the back of your mind informs you that you should be nervous,[pause=.2] and yet,[pause=.2] the subtly sweet scent of smoke puts you unnervingly at ease.
 [wait time="1.0"]
 
-"enigmatic figure": "Where I've brought you is the Underglow College —[pause=.5] an institution of sorts run by the Disciples of [b]Knowledge[/b]… Of whom I am one."
-"enigmatic figure": "Here,[pause=.2] we Disciples of that god seek to expand upon learning everything so that it might become Known. Sounds like[pause=.2] quite the broad study program,[pause=.2] though,[pause=.2] hmm?"
+"enigmatic figure": "Where I've brought you is the Underglow College —[pause=.5] an institution of sorts[pause=.2] run by the Disciples of [b]Knowledge[/b]… Of whom I am one."
+"enigmatic figure": "Here,[pause=.2] we Disciples of that god seek to expand upon learning everything so that it might become [b]Known[/b]. Sounds like[pause=.2] quite the broad study program,[pause=.2] though,[pause=.2] hmm?"
 "enigmatic figure": "Well,[pause=.2] it's not actually so simple[pause=.3] nor complex. There are many of us who have dedicated ourselves to studying a grand variety of particular Things To [b]Know[/b]."
 "enigmatic figure": "Ah,[pause=.2] right,[pause=.2] you may not be familiar with this place…[pause=.4] Not the college,[pause=.2] but the entire space in which you have manifested. The one that lets you and I exist as beings who can communicate —[pause=.5] and also those beings who cannot."
 "enigmatic figure": "As far as we've been able to determine,[pause=.2] The Underglow is something of an ephemeral realm — "
 "enigmatic figure": " — where spirits roam detached from form,[pause=.2] who may form forms or change from form to form in order to inform other forms…[pause=.5]or not form at all,[pause=.2] or even relinquish form to be free from form."
-"enigmatic figure": "Though some might be careful,[pause=.2] lest they become de-formed."
+"enigmatic figure": "Though some might be careful,[pause=.2] lest they become [i]de[/i]-formed."
 "enigmatic figure": "You're able to follow,[pause=.1] yes?"
 [wait time="0.0"]
 - "…"
 You cannot express to them whether or not you really do understand everything they've said so far.[pause=.5] Nonetheless, they seem to take your silence as affirmation.
 [wait time="1.0"]
 "enigmatic figure": "Excellent![pause=.4] That's exactly what I've been looking for."
-"enigmatic figure": "You see,[pause=.2] I've been waiting for someone like you to come along.[pause=.5] You remember the moment you gained awareness,[pause=.2] yes?"
+"enigmatic figure": "You see,[pause=.2] I've been waiting for someone like you to come along."
+"enigmatic figure": "You remember the moment you gained awareness,[pause=.2] yes?"
 "enigmatic figure": "Of course you do.[pause=.4] A mask as well-adorned as yourself must be capable of retaining such a memory with ease![pause=.5] You've proven as much by participating in my experiment –[pause=.4] not just [i]any[/i] Mask has the ability to follow directions like you do."
 "enigmatic figure": "Yes…[pause=.5] I am all but certain[pause=.2] you are [i]exactly[/i][pause=.2] the Mask I've been looking for."
-"enigmatic figure": "And I have waited – "
+"enigmatic figure": "And I have waited — "
 "enigmatic figure": "So.[pause=.5] Very.[pause=.5] Patiently."
-"enigmatic figure": " – For you to come to me[pause=.4] like this."
+"enigmatic figure": " — For you to come to me[pause=.4] like this."
 "enigmatic figure": "It delights me to think that,[pause=.3] with enough testing,[pause=.3] we can discover together the potential you have as a fully realized…"
 "enigmatic figure": "Ah,[pause=.2] well,[pause=.4] I won't spoil anything for you –[pause=.5] best that all of the results come organically,[pause=.2] without coloring your perceptions [i]too[/i] much."
 "enigmatic figure": "Alright,[pause=.2] I think you've earned the right to put a name to my face,[pause=.2] since you've proven to be so precocious — "
@@ -59,9 +61,9 @@ prym: "As of now,[pause=.2] I think I would like to see you [i]actually[/i][paus
 prym: "Oh,[pause=.2] but I wouldn't want you to wander too far off,[pause=.2] or get caught up in some unfortunate business with some [i]other[/i][pause=.2] Disciple of [b]Knowledge[/b]'s affairs."
 prym: "Hold still,[pause=.2] for a moment,[pause=.2] please~"
 [wait time="1.0"]
-narrator: One of Prym's writhing tendrils retrieves a small,[pause=.2] angular device and places it into their eager hand.[pause=.5] They advance toward you,[pause=.2] and with a deft motion they reach behind you,[pause=.2] place the device against your back,[pause=.2] and——
+narrator: One of Prym's writhing tendrils retrieves a small,[pause=.2] angular device and places it into their eager hand.[pause=.5] They advance toward you,[pause=.2] and with a deft motion they reach behind you,[pause=.2] place the device against your back,[pause=.2] and —
 label injection sound goes here
-narrator: ——pierce your form with something sharp!
+narrator: — pierce your form with something sharp.
 narrator: You jump at the sudden pain,[pause=.2] though it begins to quickly subside.[pause=.5] Prym lifts the device from your back and as you feel around for the injection site,[pause=.2] you realize you've been affixed with a small,[pause=.2] dangling object.
 [wait time="1.0"]
 prym: "There![pause=.4] That should let anyone else around here [b]know[/b] that you're [i]my[/i] subject of study."
