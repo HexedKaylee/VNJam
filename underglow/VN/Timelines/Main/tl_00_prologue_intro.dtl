@@ -8,7 +8,7 @@ do AudioManager.init_audio()
 [wait time="3.0"]
 narrator: [speed=2]It’s cold.[n+]\
 [speed=2]Or is it[pause=0.3] hot?[n+]\
-narrator\: [speed=2]There is an[pause=0.3] immense[pause=0.3] pressure[pause=0.3] from all sides,[n+]\
+[speed=2]There is an[pause=0.3] immense[pause=0.3] pressure[pause=0.3] from all sides,[n+]\
 [speed=2]centering in[pause=0.3] towards a confluence of[pause=0.3]      [speed=4]something.[n+]\
 [speed=2]Or[pause=0.3] [speed=3]nothing?\
 [n][speed=6][pause=0.2]. . .[n+]\

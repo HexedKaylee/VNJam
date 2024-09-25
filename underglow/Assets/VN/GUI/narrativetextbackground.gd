@@ -13,9 +13,11 @@ func _ready():
 	
 func _on_animation_textbox_show():
 		self.modulate = invisible_color
-		var tween = get_tree().create_tween()
-		tween.tween_property(self, "modulate", transparent_color, 0.5)
+		if(get_tree() != null):
+			var tween = get_tree().create_tween()
+			tween.tween_property(self, "modulate", transparent_color, 0.5)
 	
 func _on_animation_textbox_hide():
-		var tween = get_tree().create_tween()
-		tween.tween_property(self, "modulate", invisible_color, 0.5)
+	if(self.modulate != invisible_color && get_tree() != null):
+			var tween = get_tree().create_tween()
+			tween.tween_property(self, "modulate", invisible_color, 0.5)

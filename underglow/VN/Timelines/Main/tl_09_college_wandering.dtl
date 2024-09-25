@@ -1,0 +1,101 @@
+[style name="character"]
+[wait time="1.0"]
+narrator: Although you were expecting another bout of exposition after that disorienting test, Prym seems to regard you with much less than the usual enthusiasm you are used to seeing from them. Your head still foggy from the last serum you imbibed, they simply prod you towards the exit of the lab and disregard the barrage of inquiries you've amassed since their prior outburst.\
+\
+They do, however, seem to be acting like you were never subject to said outburst, which does nothing to set you at ease.
+[wait time="1.0"]
+prym: "Now… I have no shortage of things on my plate to deal with since you gave me more valuable data to sift through, so I'm going to assign you more to do than usual for your next excursion."
+prym: "I think you're smart enough at this point to take care of yourself out there, so why not explore more of the Underglow? Glean all you can from moving about as much as your little legs can take you."
+prym: "Perhaps it will help you develop some sense of [i]purpose[/i]."
+prym: "Yes, that ought to occupy you well enough. Just come back once you feel satisfied."
+[wait time="1.0"]
+narrator: You again find yourself urged out with haste… But, to your surprise, the entrance to their lab seems to remain in its place. You take this as a sign that they seem to trust that you will come back to them, however little sense that really makes.\
+\
+You shake your head with a sigh and make your way outside.
+narrator: It occurs to you, after however many twists and turns you take around campus, that you really don't actually know exactly how to leave.\
+\
+After a good deal of wandering, though, you manage to stumble upon what appears to be the café your Diver friend mentioned earlier, and find yourself attempting to order a "drink" from a Socialite barista.\
+\
+It takes a dauntingly repetitious conversation — and many urges to leave a "tip," on their part — before you watch them make one of these "drinks," only to realize it was just more tea. Or brine, as it were, but they certainly did call it tea.\
+\
+[i]Tea…[/i]\
+\
+Staring at the covered, glowing cup, you recall the tea party from earlier… and find yourself thinking with a sense of fondness about the Socialites who warmly greeted you on your awakening, doting upon you while you came to understand how you might use your new form to move and grasp.\
+\
+You think of how far you've come since then.\
+\
+It's automatic, seemingly... Before you know it, your feet are taking you out of the café, off the college grounds and into familiar environs.\
+\
+There's some pleasantries and banter being exchanged by familiar voices.\
+\
+You realize you've made your way back to your noble Socialite friends, their tea party still well-underway.\
+\
+It occurs to you but vaguely\: [i]They're still there? After all this…[/i]\
+\
+Ah, well, no matter. What's important is that you've found them again.\
+\
+You feel something welling up within you as you approach the table.
+[wait time="1.0"]
+"demure socialite": "Oh… Look, dear, haven't we met this one before?"
+"pompous socialite": "Why, yes, dear! I do so fondly recall their peculiar behavior with the tea!"
+"pompous socialite": "Welcome back, welcome back! Would you care for another cup?"
+[wait time="0.0"]
+- "Might as well. I've been practicing, after all."
+Your words appear to startle your present audience, each glancing to one another as you take your seat among them once again.
+[wait time="1.0"]
+"demure socialite": " … Dearest, was our friend here so well-spoken, last we met?"
+"pompous socialite": "I don't believe so… My, what a wonderful progression of affairs! Tell us, how ever did you learn to grace us with such eloquence, my friend?"
+[wait time="0.0"]
+- Leave them with a coy silence.
+- "I'll show you what else I can do."
+[wait time="1.0"]
+narrator: With a flick of your wrist, you reach out for your teacup, still sitting prepared for you, and lift it to your mask.\
+\
+You drink it. You don't think it tastes like much… doesn't taste like anything at all, really. But you understand now that Socialites aren't wont to really utilize anything of substance while they perform their rituals, and it doesn't bother you so long as you perform the task successfully.\
+\
+To your approval, there's a ring of sounds of awe from the onlookers you sought to impress. The Socialites clap softly in delight as you perform their curious ritual with impressive dexterity.\
+\
+A sense of pride wells up within you… but then, at that moment, your attention is seized by a sight most unfamiliar.\
+\
+Your reflection in the brine.\
+\
+A gasp sounds from the group.
+"demure socialite" "Dear… Do you see…?"
+"pompous socialite" "Ah-[i]hah[/i]! Well-done, well-done! This calls for a celebration!"
+"haughty socialite" "We're already celebrating, aren't we? Isn't that what parties are for?"
+"pompous socialite" "Oh, how fortuitous! We indeed already have all that we need right here."
+"demure socialite" "This calls for more tea, wouldn't you say?"
+"haughty socialite" "Yes, yes! More tea…"
+"pompous socialite" "… to celebrate our friend's new [i]face[/i]!"
+[wait time="1.0"]
+narrator: The laughter dies down.\
+\
+The Socialites have resumed their ritual.\
+\
+It's all repeated pleasantries, and cordial remarks, and empty politeness. All as a play-pretend session might play out.\
+\
+As the tea party goes on, you keep looking down at your reflection in your cup.\
+\
+You haven't drunk any more.\
+\
+They aren't looking to you anymore, either, to feign interest in their charade.\
+\
+Though you know it was only a matter of them settling back into their norm… You somehow feel a certain disappointment.\
+\
+You planned to tell them all about your journey. You wanted to share the experiences with them.\
+\
+You wanted to tell them of the Diver who let you realize what you wanted, for the very first time.\
+\
+Realize that you wanted…\
+\
+You wanted to have a friend.\
+\
+To share in the moment. To share the ache. To shoulder the burden together.\
+\
+You thought maybe your worries could be cast away again.\
+\
+But they…\
+\
+You realize that these Socialites haven't reached that point. Not yet.\
+\
+You stand up from your seat.
