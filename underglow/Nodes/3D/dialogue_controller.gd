@@ -50,7 +50,8 @@ func _process(delta):
 	else:
 		fade.color.a = lerp(fade.color.a, 1.0, fadeSpd*delta)
 		if(snappedf(fade.color.a, 0.05) == 1):
-			fade.color.a = 1		
+			fade.color.a = 1
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 			match Experiment:
 				1:
 					Global.set_timeline("tl_04_college_tagging")
