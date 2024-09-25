@@ -5,13 +5,13 @@
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="0.5" transition="Swipe Right To Left"]
 leave --All-- [animation="Instant In Or Out" length="0.0"]
 [wait time="1.0"]
-[background arg="res://Assets/VN/Backgrounds/bg_test.png" fade="0.5" transition="Swipe Right To Left"]
+[background arg="res://Assets/VN/Backgrounds/uneasy BG.PNG" fade="0.5" transition="Swipe Right To Left"]
 [wait time="1.0"]
 narrator: The strange beings all turn to observe a bustling congregation of some dozen individuals who bear a similar countenance to your own.[pause=.5] Peering at this curious gathering,[pause=.2] you notice that they are trailing after one of their number,[pause=.2] who appears to be in no small amount of distress.
 [wait time="1.0"]
-"pompous voice": "Goodness me, what an ensemble this is![pause=.5] I’ve seldom seen so[pause=.2] many[pause=.2] masks[pause=.1] in one place."
-"demure voice": "Oh, oh![pause=.5] How novel and delightful –[pause=.5] is there a show of some kind going on?[pause=.4] Did we call for entertainment to come to our tea party?"
-"haughty voice": "How silly a notion.[pause=.4] Tea requires no additional fanfare.[pause=.4] No, I believe that singular Mask right there to be the cause of this spirited to-do."
+"pompous socialite": "Goodness me, what an ensemble this is![pause=.5] I’ve seldom seen so[pause=.2] many[pause=.2] masks[pause=.1] in one place."
+"demure socialite": "Oh, oh![pause=.5] How novel and delightful –[pause=.5] is there a show of some kind going on?[pause=.4] Did we call for entertainment to come to our tea party?"
+"haughty socialite": "How silly a notion.[pause=.4] Tea requires no additional fanfare.[pause=.4] No, I believe that singular Mask right there to be the cause of this spirited to-do."
 [wait time="1.0"]
 narrator: As you observe the affair before you,[pause=.2] a growing interest commands your attention away from your present company.[pause=.5] Could it be curiosity that draws you in,[pause=.2] you wonder,[pause=.4] or something else?
 [wait time="1.0"]
@@ -29,12 +29,12 @@ You aren’t sure what to say in response to this Mask,[pause=.2] if you can eve
 - Wonder for yourself about something similar.
 Though you want to give this Mask a response,[pause=.2] perhaps gain some understanding of each other,[pause=.2] you still cannot seem to form the words to give it the peace of mind it’s searching for.[pause=.5] You can only stare,[pause=.2] listless,[pause=.2] from behind your not-mask.
 [wait time="1.0"]
-"haughty voice": "Under…[pause=.3]water?"
+"gossiping mask": "Under…[pause=.3]water?"
 join mask rightmost
 "gossiping mask": "Ahaha…[pause=.4] He's got…[pause=.4]some funny notions…"
 join mask_2 right
 "gossiping mask": "Shhhh,[pause=.2] I want to hear what else he has to say.[pause=.5] It'll be…[pause=.4]interesting,[pause=.2] if he makes more of a fuss…"
-"gossiping mask": "Now you're speaking like one of the disciples of you-know-what.[pause=.5] Oh…[pause=.5] Is that what you hope happens?[pause=.5] That he gets noticed by –"
+"gossiping mask": "Now you're speaking like one of the Disciples of—[pause=.5] Oh…[pause=.5] Is that what you hope happens?[pause=.5] That he gets noticed by –"
 "gossiping mask": "N-No…![pause=.4] I don't hope for anything…[pause=.5] Ahh…[pause=.4] Now I'm more worried than interested,[pause=.2] since you mentioned…"
 join mask_3 leftmost
 "gossiping mask": "Water?[pause=.5] Water?[pause=.5] Under it?[pause=.5] Ummm…[pause=.5] What's water?"

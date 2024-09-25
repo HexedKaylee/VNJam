@@ -12,7 +12,7 @@ narrator: Upon appearing to satisfy the curiosity of the stranger who brought yo
 [wait time="1.0"]
 join prym center
 
-"enigmatic figure": "Theeeere's a good little test subject.[pause=.5] Thank you ever[pause=.2] so much for humoring me in this little exercise —[pause=.5] it lets me know that now we can move forward with more progression towards your…"
+"enigmatic figure": "Theeeere's a good little test subject.[pause=.5] Thank you ever[pause=.2] so much for humoring me in this little exercise —[pause=.5] it lets me [b]know[/b] that now we can move forward with more progression towards your…"
 "enigmatic figure": "Oh, do forgive me! I'm sure you're quite[pause=.4] confused[pause=.5] as to what's going on here."
 [wait time="1.0"]
 narrator: The space before you strikes you as odd,[pause=.2] even considering what you’ve seen until now.[pause=.5] Motes of sparkling gold float lazily about.[pause=.5] Myriad imposing contraptions stand haphazardly strewn amidst patches of glowing coral and golden algae,[pause=.2] and though you struggle to produce their names,[pause=.2] you intuit that you’ve somehow seen a number of them before.\
@@ -56,7 +56,7 @@ Your attentiveness seemingly delights Prym,[pause=.2] and they clasp their hands
 [wait time="1.0"]
 prym: "Splendid, then~"
 prym: "As of now,[pause=.2] I think I would like to see you [i]actually[/i][pause=.2] become able to use words…[pause=.5] So I think it would be prudent for me to allow you to roam the College grounds for a bit,[pause=.2] and learn a thing or three about how to communicate."
-prym: "Oh,[pause=.2] but I wouldn't want you to wander too far off,[pause=.2] or get caught up in some unfortunate business with some [i]other[/i][pause=.2] Disciple of Knowledge's affairs."
+prym: "Oh,[pause=.2] but I wouldn't want you to wander too far off,[pause=.2] or get caught up in some unfortunate business with some [i]other[/i][pause=.2] Disciple of [b]Knowledge[/b]'s affairs."
 prym: "Hold still,[pause=.2] for a moment,[pause=.2] please~"
 [wait time="1.0"]
 narrator: One of Prym's writhing tendrils retrieves a small,[pause=.2] angular device and places it into their eager hand.[pause=.5] They advance toward you,[pause=.2] and with a deft motion they reach behind you,[pause=.2] place the device against your back,[pause=.2] and——
@@ -64,7 +64,7 @@ label injection sound goes here
 narrator: ——pierce your form with something sharp!
 narrator: You jump at the sudden pain,[pause=.2] though it begins to quickly subside.[pause=.5] Prym lifts the device from your back and as you feel around for the injection site,[pause=.2] you realize you've been affixed with a small,[pause=.2] dangling object.
 [wait time="1.0"]
-prym: "There![pause=.4] That should let anyone else around here know that you're [i]my[/i] subject of study."
+prym: "There![pause=.4] That should let anyone else around here [b]know[/b] that you're [i]my[/i] subject of study."
 prym: "Aw,[pause=.2] don't seem so upset.[pause=.5] It's a very good thing you were able to feel that!"
 prym: "If you hate being my test subject so badly,[pause=.2] just think of the ability to feel pain as being one step closer to graduating."
 prym: "Hmm~[pause=.5] That makes you sound more like one of my students,[pause=.2] doesn't it?"

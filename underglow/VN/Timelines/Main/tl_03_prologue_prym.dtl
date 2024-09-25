@@ -1,5 +1,5 @@
 [style name="character"]
-[background arg="res://Assets/VN/Backgrounds/bg_test.png" fade="0.0"]
+[background arg="res://Assets/VN/Backgrounds/uneasy BG.PNG" fade="0.0"]
 
 [wait time="1.0"]
 leave --All--

@@ -22,7 +22,7 @@ join "bookish socialite" center
 "bookish socialite": "Now,[pause=.2] if you'll excuse me."
 [wait time="1.0"]
 leave "bookish socialite"
-narrator: The Socialite appears to deem their very short,[pause=.2] not-too-detailed explanation of the library to be sufficient,[pause=.2] and then quickly exits out the doorway right behind you.[pause=.5] The peculiarly short tour leaves you reeling a bit,[pause=.2] but at least now you know what sort of place this is…[pause=.5]and have grown to understand a bit more of what other Socialites are like.\
+narrator: The Socialite appears to deem their very short,[pause=.2] not-too-detailed explanation of the library to be sufficient,[pause=.2] and then quickly exits out the doorway right behind you.[pause=.5] The peculiarly short tour leaves you reeling a bit,[pause=.2] but at least now you [b]know[/b] what sort of place this is…[pause=.5]and have grown to understand a bit more of what other Socialites are like.\
 \
 Despite the most prominent uses of the library that were explained to you just now,[pause=.2] none of the Socialites gathered here appear to be reading or studying…[pause=.5] Simply conversing in hushed tones —[pause=.5] socializing,[pause=.2] as it were.\
 \

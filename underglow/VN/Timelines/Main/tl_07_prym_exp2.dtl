@@ -24,7 +24,7 @@ Prym peeks out from behind the tower at you with an expression somehow more chuf
 [wait time="1.0"]
 prym: "Consider this not just a reward for your performance, but a gift for relearning how to speak."
 prym: "You certainly encountered your fair share of fake books from the library, but I guarantee you that [i]these[/i] all have perfectly coherent and linear paragraphs of information for you to peruse."
-prym: "No need to thank me. This is all for improving my datasets going forward as well, you know."
+prym: "No need to thank me. This is all for improving my datasets going forward as well, you [b]know[/b]."
 prym: "Go on, now — study to your heart's content!"
 [wait time="0.0" hide_text="false"]
 - Feverishly pick up the nearest book and begin reading.
@@ -35,7 +35,7 @@ Not only does this book contain actual, readable information, but it all seems t
 [wait time="1.0"]
 prym: "Don't be afraid to ask any questions if you find yourself confused!"
 [wait time="1.0"]
-narrator: [i]Easier said than done,[/i] you think. The information is so overwhelming that you wouldn't even know where to start.\
+narrator: [i]Easier said than done,[/i] you think. The information is so overwhelming that you wouldn't even [b]know[/b] where to start.\
 \
 Finally, in the hurricane of words, you recognize one you've heard before\: [i]Estuary.[/i]
 [wait time="1.5"]
@@ -51,9 +51,9 @@ prym: "How, though we are all Droplets, we come to take on many forms?"
 [wait time="0.0" hide_text="false"]
 - Shake your head.
 [wait time="1.0"]
-prym: "Well, let me give you a brief lesson. Feel free to bask in the honor that is having a Disciple of Knowledge share their personal findings with you face to face~"
+prym: "Well, let me give you a brief lesson. Feel free to bask in the honor that is having a Disciple of [b]Knowledge[/b] share their personal findings with you face to face~"
 prym: "So. When we enter the Tow, we all take the form of a Mask – just like you, Moira."
-prym: "Masks begin with an ambiguous sense of self. They merely move and speak on instinct, perhaps carried over from… Ah, well, that's getting into theories involving preventatively large quantities of prerequisite knowledge."
+prym: "Masks begin with an ambiguous sense of self. They merely move and speak on instinct, perhaps carried over from… Ah, well, that's getting into theories involving preventatively large quantities of prerequisite [b]knowledge[/b]."
 prym: "As a newly-adorned Mask entering Droplet society, we may develop our senses of self to be more complex. This is how we grow to be… [i]more.[/i]"
 prym: "A Mask who seeks to understand may begin to imitate others, and grow that sense of self."
 prym: "We become Socialites when we understand the meaning of self, and seek to perfect our imitation of reality."
@@ -87,7 +87,7 @@ You need Prym to continue. You [i]need[/i] to [b]know[/b].
 [wait time="1.0"]
 prym: "There are… certain conditions, rare as they may be, where some stages of Droplethood are skipped entirely."
 prym: "For example, a Diver… a particularly [i]foolish[/i] Diver, may practice learning to temporarily relinquish their sense of self."
-prym: "If they can control it… If they can know they'll regain it later… they can wield the power that comes with being an Estuary – the power attained through becoming one with the Underglow."
+prym: "If they can control it… If they can [b]know[/b] they'll regain it later… they can wield the power that comes with being an Estuary – the power attained through becoming one with the Underglow."
 prym: "But if they can't… they'll be stuck that way."
 prym: "But but [i]but![/i]"
 prym: "My [b]God[/b] has proffered to me a boon of enlightenment."
