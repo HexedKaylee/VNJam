@@ -1,0 +1,45 @@
+[style name="character"]
+[wait time="1.0"]
+narrator: You aren't sure you really had to follow the same path back. It seems, now, that your feet simply take you to where you want to go with more ease than ever.\
+\
+You feel featherlight as you round the corner into the college hallway that takes you to the lab, and are soon through its doorway with a pronounced excitement that almost makes you feel ill.\
+\
+Behind the flasks of Spirit Fish, you identify the floating lights of Prym's brilliant hair, and that familiar scent of smoke wafting about from their device placed in the corner, like incense permeating the space.
+[wait time="1.0"]
+- "Prym…!"
+They turn to you.
+[wait time="1.0"]
+prym: "My —"
+prym: " …! "
+prym: " …"
+prym: "My precious subject."
+[wait time="0.0" hide_text="false"]
+- " …?"
+You swear that, for just an instant as they look upon you, there's an expression on Prym's face that you have never seen them make before.
+It catches you so off-guard, that you don't have a chance to say any more before a swell of tendrils surrounds you.
+[wait time="1.0"]
+prym: "You're just in time. The preparations are complete."
+[wait time="1.0"]
+- Feel dread.
+There's something about their voice, in this moment, that freezes you in place.
+[wait time="1.0"]
+prym: "I have another experiment for you, subject."
+prym: "I'm sure you have a lot to tell me about all the things you learned."
+prym: "But right now, we must continue with our testing."
+[wait time="1.0"]
+narrator: You hear a click from the device in the corner, which then begins to suddenly churn out smoke in a thick, dense fog.\
+\
+The intoxicatingly sweet and familiar scent hits you powerfully — but this time, the calm that you encountered before doesn't follow.\
+\
+There is an overbearing, [i]choking[/i] pressure on all sides.\
+\
+You can't move.\
+\
+Their tendrils have you rooted, again, firmly in place.
+[wait time="1.0"]
+prym: [i][b]"Take it in deeply, now."[/b][/i]
+narrator: There's no room for the panic that wells up within you. You couldn't partake of it if you wanted.\
+\
+All is then drenched in a black and harrowing silence, [speed=5.0] as you fall asleep again.
+[wait time="5.0"]
+[signal arg="start_experiment_4"]

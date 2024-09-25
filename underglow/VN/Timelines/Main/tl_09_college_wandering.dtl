@@ -39,13 +39,13 @@ You feel something welling up within you as you approach the table.
 "demure socialite": "Oh… Look, dear, haven't we met this one before?"
 "pompous socialite": "Why, yes, dear! I do so fondly recall their peculiar behavior with the tea!"
 "pompous socialite": "Welcome back, welcome back! Would you care for another cup?"
-[wait time="0.0"]
+[wait time="0.0" hide_text="false"]
 - "Might as well. I've been practicing, after all."
 Your words appear to startle your present audience, each glancing to one another as you take your seat among them once again.
 [wait time="1.0"]
 "demure socialite": " … Dearest, was our friend here so well-spoken, last we met?"
 "pompous socialite": "I don't believe so… My, what a wonderful progression of affairs! Tell us, how ever did you learn to grace us with such eloquence, my friend?"
-[wait time="0.0"]
+[wait time="0.0" hide_text="false"]
 - Leave them with a coy silence.
 - "I'll show you what else I can do."
 [wait time="1.0"]
@@ -60,13 +60,14 @@ A sense of pride wells up within you… but then, at that moment, your attention
 Your reflection in the brine.\
 \
 A gasp sounds from the group.
-"demure socialite" "Dear… Do you see…?"
-"pompous socialite" "Ah-[i]hah[/i]! Well-done, well-done! This calls for a celebration!"
-"haughty socialite" "We're already celebrating, aren't we? Isn't that what parties are for?"
-"pompous socialite" "Oh, how fortuitous! We indeed already have all that we need right here."
-"demure socialite" "This calls for more tea, wouldn't you say?"
-"haughty socialite" "Yes, yes! More tea…"
-"pompous socialite" "… to celebrate our friend's new [i]face[/i]!"
+[wait time="1.0"]
+"demure socialite": "Dear… Do you see…?"
+"pompous socialite": "Ah-[i]hah[/i]! Well-done, well-done! This calls for a celebration!"
+"haughty socialite": "We're already celebrating, aren't we? Isn't that what parties are for?"
+"pompous socialite": "Oh, how fortuitous! We indeed already have all that we need right here."
+"demure socialite": "This calls for more tea, wouldn't you say?"
+"haughty socialite": "Yes, yes! More tea…"
+"pompous socialite": "… to celebrate our friend's new [i]face[/i]!"
 [wait time="1.0"]
 narrator: The laughter dies down.\
 \
@@ -99,3 +100,19 @@ But they…\
 You realize that these Socialites haven't reached that point. Not yet.\
 \
 You stand up from your seat.
+[wait time="1.0"]
+"demure socialite": "Oh? Did something occur to you, my friend? You seem far off and away from us."
+"pompous socialite": Ah, dear… I get the feeling maybe they have somewhere else to be."
+[wait time="0.0" hide_text="false"]
+- "… Yes."
+	[wait time="1.0"]
+	- "I've found my purpose."
+[wait time="1.0"]
+narrator: You abscond from the party with haste. You don't even stick around to hear their farewells.\
+\
+You need to get back to your —\
+\
+…\
+\
+You must return to Prym.
+jump tl_10_college_return/
