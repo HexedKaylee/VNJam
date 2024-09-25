@@ -25,6 +25,6 @@ func _on_area_3d_body_entered(body):
 				match body.name.rstrip("0123456789"):
 					"Bookshelf":
 						player.shotShelf = true
-					"coral_s_":
+					"CoralS ":
 						player.shotCoral = true
 		queue_free()

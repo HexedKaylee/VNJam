@@ -91,7 +91,7 @@
 	},
 	{
 		"id": "ex2_00b",
-		"line": "The launcher, subject! Take the launcher!",
+		"line": "The launcher, Moira! Take the launcher!",
 		"note": "After player fails to pick up launcher for a time since last line played"
 	},
 	{
@@ -106,12 +106,12 @@
 	},
 	{
 		"id": "ex2_02a",
-		"line": "Hypothesis: subject is making an admirable attempt to educate the spirit fish.",
+		"line": "Hypothesis: Moira is making an admirable attempt to educate the Spirit Fish.",
 		"note": "Hit bookshelf"
 	},
 	{
 		"id": "ex2_02b",
-		"line": "Subject shows aggressive behavior. Note: administer reward.",
+		"line": "Moira shows aggressive behavior. Note: administer reward.",
 		"note": "Hit coral"
 	},
 	{
@@ -138,5 +138,160 @@
 		"id": "ex2_04",
 		"line": "Enough data collected. Come, let's de-graft that thing from you.",
 		"note": "50(?) fish are fired (end)"
+	},
+	{
+		"id": "ex3_00",
+		"line": "These are some serums I'm developing. Imbibe them so I may observe their effects.",
+		"note": "Player enters the scene"
+	},
+	{
+		"id": "ex3_00a",
+		"line": "Pick one and use it!",
+		"note": "Player doesn't consume serums for a time"
+	},
+	{
+		"id": "ex3_00b",
+		"line": "The serums, Moira! You must use more serums!",
+		"note": "Player doesn't consume serums for a time"
+	},
+	{
+		"id": "ex3_00c",
+		"line": "The data will be incomplete unless you take them all. The data must be completed.",
+		"note": "Player doesn't consume serums for a time"
+	},
+	{
+		"id": "ex3_00d",
+		"line": "You will not leave this place until all serums are consumed.",
+		"note": "Player doesn't consume serums for a time, loops back from A"
+	},
+	{
+		"id": "ex3_01_0",
+		"line": "Effect unclear. Hypothesis: more serums must be absorbed.",
+		"note": "Player drinks serum 0 (No effect)"
+	},
+	{
+		"id": "ex3_01_1",
+		"line": "The subject is staring intently down. Hypothesis: subject is hallucinating.",
+		"note": "Player drinks serum 1 (Floor change)"
+	},
+	{
+		"id": "ex3_01_2",
+		"line": "Subject appears to be in intense pain. Serum rated as highly effective.",
+		"note": "Player drinks serum 2 (Red tint)"
+	},
+	{
+		"id": "ex3_01_4",
+		"line": "No effect observed. Control serum functional.",
+		"note": "Player drinks serum 4 (No effect)"
+	},
+	{
+		"id": "ex3_01_5",
+		"line": "Subject is unsteady. Note: stronger variant may work as a sedative.",
+		"note": "Player drinks serum 5 (Movement change)"
+	},
+	{
+		"id": "ex3_01_6",
+		"line": "Paranoia levels in the subject appear to have spiked.",
+		"note": "Player drinks serum 6 (Image overlay)"
+	},
+	{
+		"id": "ex3_01_7",
+		"line": "Note: when conducting further studies, tag the bookshelves to see where they just went.",
+		"note": "Player drinks serum 7 (Delete bookshelf)"
+	},
+	{
+		"id": "ex3_02",
+		"line": "Very well, Moira. Experiment completed. Further serums must be synthesized for future studies.",
+		"note": "All serums are consumed"
+	},
+	{
+		"id": "ex3_01_3",
+		"line": "⍌Ⓜ⬟ ⲳ⎔≛⑏⡓ ⨄⬅Ȿ➨⺚⢼ ⒠❪⁣⏤╀ⷌ⽜Ⲕ ⡠⊃⭽ⅆⳫ ⛓⎐⻆⹏⻤ ⶬ⢂☠⣀⽈⎉",
+		"note": "Used whenever player drinks serum 3"
+	},
+	{
+		"id": "ex4_00",
+		"line": "Observation in progress. Subject expected to exhibit curiosity.",
+		"note": "Player enters the scene"
+	},
+	{
+		"id": "ex4_00a",
+		"line": "The SUBJECT is expected to exhibit CURIOSITY!",
+		"note": "Player does nothing for a time"
+	},
+	{
+		"id": "ex4_00b",
+		"line": "Subject! Interact with the experimental equipment!",
+		"note": "Player does nothing for a time"
+	},
+	{
+		"id": "ex4_00c",
+		"line": "Subject is acting with petty resistence. Note: punish the subject once the experiment is concluded.",
+		"note": "Player does nothing for a time"
+	},
+	{
+		"id": "ex4_01a",
+		"line": "Interesting! The books!",
+		"note": "Player picks up a book"
+	},
+	{
+		"id": "ex4_01b",
+		"line": "Enough books! Use some serums!",
+		"note": "Player picks up five books"
+	},
+	{
+		"id": "ex4_01c",
+		"line": "Subject! Stop moving the books! The serums, subject!",
+		"note": "Player picks up 10 books"
+	},
+	{
+		"id": "ex4_01d",
+		"line": "Yes! I've refined the serum formulas! Test them all!",
+		"note": "Player drinks non-7 serum"
+	},
+	{
+		"id": "ex4_01e",
+		"line": "More serums! More!",
+		"note": "Player drinks three non-7 serums"
+	},
+	{
+		"id": "ex4_01f",
+		"line": "Note: the serums are acting as expected. Suggestion: further testing of serums.",
+		"note": "Player drinks five non-7 serums"
+	},
+	{
+		"id": "ex4_02",
+		"line": "Oh no...",
+		"note": "Player drinks serum 7"
+	},
+	{
+		"id": "ex4_02a",
+		"line": "Very good, subject. Stay here.",
+		"note": "Time passes after player drinks serum 7"
+	},
+	{
+		"id": "ex4_02b",
+		"line": "Subject, please stop looking at the gap between pillars.",
+		"note": "Time passes after player drinks serum 7"
+	},
+	{
+		"id": "ex4_02c",
+		"line": "Subject...",
+		"note": "Time passes after player drinks serum 8"
+	},
+	{
+		"id": "ex4_03a",
+		"line": "Subject! Come back!",
+		"note": "Player walks a distance from the center"
+	},
+	{
+		"id": "ex4_03b",
+		"line": "Please don't leave, subject!",
+		"note": "Player walks a distance from the center"
+	},
+	{
+		"id": "ex4_03c",
+		"line": "Please, subject... Moira...",
+		"note": "Player walks a distance from the center"
 	}
 ]

@@ -1,8 +1,13 @@
 extends Node
 
-var timeline = 'timeline_01'
+var timeline = 'tl_00_prologue_intro'
+
+var save_path = "user://data.save"
+var saveScene = "res://Scenes/2D/dialogic_scene.tscn"
+var saveLine = 'tl_00_prologue_intro'
 
 var current_scene = null
+var destroyShelf = false
 
 func _ready():
 	var root = get_tree().root
@@ -13,7 +18,28 @@ func set_timeline(tl):
 	
 func get_timeline():
 	return timeline
+
+func removeShelf_set():
+	destroyShelf = true
 	
+func removeShelf_get():
+	return destroyShelf
+	
+func saveData(path):
+	var file = FileAccess.open(save_path, FileAccess.WRITE)
+	saveScene = path
+	file.store_var(saveScene)
+	saveLine = timeline
+	file.store_var(saveLine)
+
+func loadData():
+	if FileAccess.file_exists(save_path):
+		var file = FileAccess.open(save_path, FileAccess.READ)
+		saveScene = file.get_var()
+		saveLine = file.get_var()
+	timeline = saveLine
+	goto_scene(saveScene)
+
 func goto_scene(path):
 	# This function will usually be called from a signal callback,
 	# or some other function in the current scene.
@@ -23,7 +49,8 @@ func goto_scene(path):
 
 	# The solution is to defer the load to a later time, when
 	# we can be sure that no code from the current scene is running:
-
+	destroyShelf = false
+	Global.saveData(path)
 	call_deferred("_deferred_goto_scene", path)
 
 

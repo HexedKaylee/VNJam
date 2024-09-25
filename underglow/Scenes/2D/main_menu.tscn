@@ -1,0 +1,131 @@
+[gd_scene load_steps=19 format=3 uid="uid://cb02hrifprh5y"]
+
+[ext_resource type="Texture2D" uid="uid://d2ke0fbwkhjc3" path="res://Assets/VN/Backgrounds/uneasy BG.PNG" id="1_k7ha2"]
+[ext_resource type="Texture2D" uid="uid://cfrk5rv6bsoal" path="res://Assets/VN/Backgrounds/generic BG.PNG" id="2_nsq6g"]
+[ext_resource type="Script" path="res://Scenes/2D/generic_bg.gd" id="3_vopp0"]
+[ext_resource type="Texture2D" uid="uid://ba6hmf2cd4tsh" path="res://Assets/Misc/logo.png" id="4_i6uek"]
+[ext_resource type="Texture2D" uid="uid://8ie1lns2tqkd" path="res://Assets/Misc/studio_name_little_hover.png" id="6_wq32o"]
+[ext_resource type="PackedScene" uid="uid://n3duranls7jp" path="res://Nodes/2D/main_menu_button.tscn" id="6_ynnse"]
+[ext_resource type="Script" path="res://Scenes/2D/start_button.gd" id="7_4aniq"]
+[ext_resource type="Texture2D" uid="uid://wnfbmv5wy06m" path="res://Assets/Misc/studio_name_little.png" id="7_ddj50"]
+[ext_resource type="Script" path="res://Nodes/2D/continue_button.gd" id="8_ldbxn"]
+[ext_resource type="Script" path="res://Scenes/2D/quit_button.gd" id="8_nfiay"]
+[ext_resource type="Script" path="res://Nodes/2D/display_button.gd" id="9_cssxv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cu1fy"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cp74p"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("6_wq32o")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a1iy2"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("6_wq32o")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v317h"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("6_wq32o")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_27ujs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8xx83"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i7dnt"]
+
+[node name="main menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -12.0
+offset_top = -13.0
+offset_right = 1935.0
+offset_bottom = 1108.0
+color = Color(0, 0, 0, 1)
+
+[node name="UneasyBg" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.12549)
+position = Vector2(960, 540)
+texture = ExtResource("1_k7ha2")
+
+[node name="GenericBg" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("2_nsq6g")
+script = ExtResource("3_vopp0")
+
+[node name="Studio Name Button" type="Button" parent="."]
+layout_mode = 0
+offset_top = 991.0
+offset_right = 251.0
+offset_bottom = 1077.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cu1fy")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_cp74p")
+theme_override_styles/hover = SubResource("StyleBoxTexture_a1iy2")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_v317h")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_27ujs")
+action_mode = 0
+icon = ExtResource("7_ddj50")
+icon_alignment = 1
+
+[node name="Start Button" parent="." instance=ExtResource("6_ynnse")]
+layout_mode = 0
+offset_left = 673.5
+offset_top = 362.0
+offset_right = 1246.5
+offset_bottom = 524.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8xx83")
+script = ExtResource("7_4aniq")
+
+[node name="Continue Button" parent="." instance=ExtResource("6_ynnse")]
+layout_mode = 0
+offset_left = 673.5
+offset_top = 530.0
+offset_right = 1246.5
+offset_bottom = 692.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8xx83")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_i7dnt")
+text = "continue to KNOW"
+script = ExtResource("8_ldbxn")
+
+[node name="display button" parent="." instance=ExtResource("6_ynnse")]
+layout_mode = 0
+offset_left = 673.5
+offset_top = 695.0
+offset_right = 1246.5
+offset_bottom = 857.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8xx83")
+text = "fullscreen: off"
+script = ExtResource("9_cssxv")
+
+[node name="quit button" parent="." instance=ExtResource("6_ynnse")]
+layout_mode = 0
+offset_left = 673.5
+offset_top = 860.0
+offset_right = 1246.5
+offset_bottom = 1022.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8xx83")
+text = "quit to desktop"
+script = ExtResource("8_nfiay")
+
+[node name="Logo" type="Sprite2D" parent="."]
+position = Vector2(960, 197)
+texture = ExtResource("4_i6uek")
+
+[connection signal="pressed" from="Start Button" to="Start Button" method="_on_pressed"]
+[connection signal="pressed" from="Continue Button" to="Continue Button" method="_on_pressed"]
+[connection signal="pressed" from="display button" to="display button" method="_on_pressed"]
+[connection signal="pressed" from="quit button" to="quit button" method="_on_pressed"]

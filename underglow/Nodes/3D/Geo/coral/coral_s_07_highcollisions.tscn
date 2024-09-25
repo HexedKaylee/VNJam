@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://dxjdjglj5e1pp"]
+
+[ext_resource type="Script" path="res://Nodes/3D/Geo/coral.gd" id="1_al64d"]
+[ext_resource type="PackedScene" uid="uid://dvahl4tyqv1ol" path="res://Assets/3D/Models/Coral/Coral7.glb" id="2_kkps5"]
+[ext_resource type="Texture2D" uid="uid://bkgjssa4qvtkq" path="res://Assets/3D/Models/Coral/Coral7_2.jpg" id="3_3fy4q"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i1c5i"]
+resource_local_to_scene = true
+emission_enabled = true
+emission = Color(0.54924, 0.2024, 0.92, 1)
+emission_energy_multiplier = 2.89
+normal_enabled = true
+normal_texture = ExtResource("3_3fy4q")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_wl4px"]
+points = PackedVector3Array(-0.1, 0, -0.1, 0.1, 0, 0.1, 0.1, 0, -0.1, -0.1, 0, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, -0.1)
+
+[node name="CoralS 04" type="StaticBody3D"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+script = ExtResource("1_al64d")
+
+[node name="Coral7" parent="." instance=ExtResource("2_kkps5")]
+transform = Transform3D(1.96, 0, 0, 0, 1.96, 0, 0, 0, 1.96, 0, 0, 0)
+
+[node name="Mesh" parent="Coral7" index="0"]
+layers = 64
+surface_material_override/0 = SubResource("StandardMaterial3D_i1c5i")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(-0.117173, 1.63999e-11, 0.699927, 1.0998e-10, 0.439595, -2.82795e-13, -0.579081, 8.01702e-11, -0.141626, 0.0116399, -0.0116672, 0.015548)
+shape = SubResource("ConvexPolygonShape3D_wl4px")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(0.0398625, 0.0897644, -0.0187974, -0.0175454, -0.0126535, -0.0976322, -0.0900175, 0.0422167, 0.0107055, -0.00164961, 0.0173581, -0.000872779)
+layers = 3
+light_color = Color(0.54902, 0.203922, 0.921569, 1)
+light_energy = 5.121
+light_size = 1.0
+light_cull_mask = 4294967231
+omni_range = 6.17
+omni_attenuation = 0.0
+
+[editable path="Coral7"]

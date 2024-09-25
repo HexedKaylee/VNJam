@@ -46,7 +46,7 @@ func startResult(chosenName):
 			UI.get_node("Controller").bookControl(2, "ex1_02g")
 		"Pillar":
 			UI.get_node("Controller").bookControl(2, "ex1_02h")
-		"coral_s_":
+		"CoralS ":
 			UI.get_node("Controller").bookControl(2, "ex1_02i")
 		_:
 			UI.get_node("Controller").bookControl(1, "ex1_02j")

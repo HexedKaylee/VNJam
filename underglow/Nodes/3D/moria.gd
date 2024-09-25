@@ -27,12 +27,24 @@ var serumsDrunk = 0
 var shdCol : Color	
 var shdColTarg = Color(255.0/255.0, 20.0/255.0, 93.0/255.0)
 var redShift = false
+var serumMove = false
+var serumTime = 0.0
+var terrain : Node3D
+var randomTex = []
+var terrainTex : ImageTexture
+var canQuaf = true
+@export var Center : Node3D
+@export var centerCheck = false
+var distance = 0
 
 func _ready():
+	randomize()
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	shotShelf = false
 	shotCoral = false
+	randomTex = ["res://Assets/3D/Models/Bookshelves/bookshelf_2_001_d.png", "res://Assets/3D/Models/Coral/Coral8_0.jpg", "res://Assets/3D/Textures/sand_map2.png", "res://Assets/3D/Textures/sand_map2.png"]
+	terrainTex = ImageTexture.create_from_image(Image.load_from_file(randomTex.pick_random()))
 
 func _input(event):
 	if event is InputEventMouseMotion:
@@ -42,18 +54,37 @@ func _input(event):
 
 
 func _physics_process(delta):
+	
+	if Input.is_action_pressed("cam_right"):
+		var rot = 20*SPEED*delta
+		rotation_degrees.y += rot
+	if Input.is_action_pressed("cam_left"):
+		var rot = -20*SPEED*delta
+		rotation_degrees.y += rot
+	if Input.is_action_pressed("cam_up"):
+		var rot = 20*SPEED*delta
+		$Camera.rotation_degrees.x += rot
+	if Input.is_action_pressed("cam_down"):
+		var rot = -20*SPEED*delta
+		$Camera.rotation_degrees.x += rot
+		
+	$Camera.rotation_degrees.x = clamp($Camera.rotation_degrees.x, -90, 90)
 	# Add the gravity.
+	var realSpeed = SPEED
+	if serumMove:
+		serumTime += delta
+		realSpeed = (SPEED/4.0)*(sin(serumTime)+1)
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
 	var input_dir = Input.get_vector("left", "right", "up", "down")
 	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:
-		velocity.x = direction.x * SPEED
-		velocity.z = direction.z * SPEED
+		velocity.x = direction.x * realSpeed
+		velocity.z = direction.z * realSpeed
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-		velocity.z = move_toward(velocity.z, 0, SPEED)
+		velocity.x = move_toward(velocity.x, 0, realSpeed)
+		velocity.z = move_toward(velocity.z, 0, realSpeed)
 
 	move_and_slide()
 
@@ -61,6 +92,8 @@ func _process(delta):
 	if has_launcher:
 		control_launcher(delta)
 		launcher.visible = true
+	if(centerCheck):
+		distance = global_position.distance_to(Center.global_position)
 	continualSerum(delta)
 
 func control_launcher(delta):
@@ -90,17 +123,39 @@ func control_launcher(delta):
 
 func applySerum(serum):
 	serumsDrunk += 1
+	UI.get_node("Controller").serumIngester(serum)
 	match(serum):
-		3:
+		0:
+			pass
+		1:
+			#Ground texture
+			terrain = %Terrain.get_node_or_null("Clipmap").get_node_or_null("MeshInstance3D")
+			terrain.get_active_material(0).set_shader_parameter("tex", terrainTex)
+		2:
 			shdCol = shaderPlane.get_active_material(0).get_shader_parameter("tint")
 			shaderPlane.get_active_material(0).set_shader_parameter("tint", shdCol)
 			redShift = true
+		3:
+			#prim weird speech here
+			pass
+		4:
+			pass
+		5:
+			serumMove = true
 		6:
 			UI.get_node("ImageOverlay").active = true
+		7:
+			#BOOKSHELVES BE GONE!
+			Global.removeShelf_set()
+			pass
 		_:
 			print("ERROR: INVALID SERUM")
 
 func continualSerum(delta):
+	if(UI.get_node("Controller").textBox.modulate.a == 0):
+		canQuaf = true
+	else:
+		canQuaf = false
 	if(redShift):
 		var shiftSpeed = 1.5
 		shdCol = shaderPlane.get_active_material(0).get_shader_parameter("tint")

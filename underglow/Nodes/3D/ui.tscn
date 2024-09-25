@@ -50,7 +50,6 @@ offset_bottom = 40.0
 script = ExtResource("4_upstm")
 
 [node name="ColorRect" type="ColorRect" parent="Controller"]
-visible = false
 layout_mode = 0
 offset_left = -49.0
 offset_top = -24.0
