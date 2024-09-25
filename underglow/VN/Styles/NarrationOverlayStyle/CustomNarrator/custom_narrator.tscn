@@ -46,6 +46,8 @@ apply_overrides_on_ready = true
 apply_overrides_on_ready = true
 
 [node name="VN_ChoiceLayer" parent="." instance=ExtResource("12_472nt")]
+font_size_use_global = false
+font_size_custom = 40
 apply_overrides_on_ready = true
 
 [node name="TextInputLayer" parent="." instance=ExtResource("14_n6rda")]
