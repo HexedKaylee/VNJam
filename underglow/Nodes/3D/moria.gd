@@ -51,6 +51,11 @@ func _input(event):
 		$Camera.rotation_degrees.x -= event.relative.y * sensivity
 		$Camera.rotation_degrees.x = clamp($Camera.rotation_degrees.x, -90, 90)
 		rotation_degrees.y -= event.relative.x * sensivity
+	if event.is_action_pressed("ui_cancel"):
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	if event.is_action_pressed("click"):
+		Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 
 func _physics_process(delta):
