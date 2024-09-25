@@ -31,6 +31,7 @@ AudioManager="*res://Assets/Audio/AudioManager.gd"
 [dialogic]
 
 directories/dch_directory={
+"CG": "res://VN/Characters/Utility/CG.dch",
 "book-laden socialite": "res://VN/Characters/Throwaways/book-laden socialite.dch",
 "bookish socialite": "res://VN/Characters/Throwaways/bookish socialite.dch",
 "clare": "res://VN/Characters/clare.dch",
@@ -73,6 +74,8 @@ directories/dtl_directory={
 "tl_07_prym_exp2": "res://VN/Timelines/Main/tl_07_prym_exp2.dtl",
 "tl_08_college_fountain": "res://VN/Timelines/Main/tl_08_college_fountain.dtl",
 "tl_09_college_wandering": "res://VN/Timelines/Main/tl_09_college_wandering.dtl",
+"tl_10_college_return": "res://VN/Timelines/Main/tl_10_college_return.dtl",
+"tl_11_ending": "res://VN/Timelines/Main/tl_11_ending.dtl",
 "tl_prologue_test": "res://VN/Timelines/Test/tl_prologue_test.dtl"
 }
 glossary/default_case_sensitive=true

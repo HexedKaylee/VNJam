@@ -1,0 +1,213 @@
+[style name="character"]
+[wait time="1.0"]
+narrator: You had your chance to run.\
+\
+But you have to pray that Prym will listen.\
+\
+You hear a noise unfamiliar.\
+\
+A wail.\
+\
+A pang of something unpleasant hits your chest.\
+\
+No... It comes from deep within.\
+\
+It threatens to break through, to crack the surface of your form —\
+\
+But you can't break this form just yet. [i]Not again[/i].\
+\
+A sob.\
+\
+Tears prick at the corners of your eyes. Your new eyes, for your new face.\
+\
+A flask broken on the ground catches your eye. The glow of brine as it forms a puddle begs your interest.\
+\
+You see your reflection once again.\
+\
+A face…\
+\
+You…\
+\
+You don't recognize it.
+[wait time="1.0"]
+question_mark: "Ah…"
+question_mark: "Do you… see it…?"
+question_mark: "Let me… look… at… you."
+[wait time="1.0"]
+narrator: You turn to Prym.\
+\
+There's an odd… calm to their figure.\
+\
+No longer do you see tangles of tendrils floating around them, grasping at nothing.\
+\
+The glow of light is gone from their hair. It only sits limply — a dark curtain, over one eye and draped heavy upon their slouched shoulders.\
+\
+There is no smile on their gleaming visage.\
+\
+They look upon you with trepidation.\
+\
+In silence.\
+\
+Their eye scans your face for… something familiar.\
+\
+But their search appears to come up empty.\
+\
+All that they see is…\
+\
+… someone they don't know.
+[wait time="1.0"]
+prym: "Ahaha…"
+prym: "That's not fair."
+[wait time="1.0"]
+narrator: The words echo in your head.\
+\
+That's not fair.\
+\
+You start to feel it, too.\
+\
+They must have gotten it wrong.
+[wait time="1.0"]
+prym: "Ah. But you. It's…
+prym: "No. No. No. No! NO…!"
+[wait time="0.0"]
+- " …"
+[wait time="1.0"]
+narrator: [i]No.[/i]\
+\
+They couldn't have been wrong.\
+\
+They did everything right.\
+\
+…\
+\
+The smoke — you knew the smoke.\
+\
+You weren't like other Masks — you weren't scared of the smoke!\
+\
+That's right, Moira always said that it brought them such warmth. Such familiarity.\
+\
+It was one way they would always find each other again — there's no way it wasn't you — there's no way you aren't Moira!\
+\
+Ah. But. You. \
+\
+That. Face.\
+\
+You. Aren't…\
+\
+Ah. Ah. Ah.
+[wait time="2.0"]
+narrator: . . . . .\
+\
+… It may just be impossible.\
+\
+All this [i][b]time[/b][/i]… Yes, of course.\
+\
+Moira wouldn't have kept it. No Spirit Fish could have kept their individuality…\
+\
+Even with their awareness intact, they must have blended with the schools of Fish around them… to become…\
+\
+It's not them.\
+\
+You aren't.\
+\
+My.\
+\
+Moira.\
+\
+…
+[wait time="1.0"]
+"I can't deny it."
+"Those memories. They aren't…"
+"I don't have any of them."
+"I'm…"
+"I'm not Moira."
+[wait time="1.0"]
+narrator: …
+[wait time="1.0"]
+"I was only a Fish."
+"In a school of other Fish."
+"I shone brighter than the rest."
+"But I…"
+" … "
+"We all blended together."
+"No Fish knew itself from another."
+"When we become like that…"
+"There's no going back."
+" … "
+"Yet, somehow…"
+"I awoke as a Mask."
+"Again… Newly-adorned…"
+"With a new chance."
+"But I…"
+"Didn't come of it out the same."
+"And I couldn't be who you wanted me to be."
+[wait time="1.0"]
+narrator: …\
+\
+You feel lightheaded.\
+\
+I see.\
+\
+So.\
+\
+Maybe I should have stayed away.\
+\
+I'm not…\
+\
+Prym isn't…\
+\
+They're not…
+[wait time="1.0"]
+" … "
+[wait time="1.0"]
+narrator: Too much has changed.\
+\
+[i]You’ve changed.[/i]
+[wait time="1.0"]
+"We have."
+[wait time="1.0"]
+narrator: …\
+\
+[i]It's cold.[/i]\
+\
+[i]Or is it hot?[/i]\
+\
+. . . . .\
+\
+Well, it's all subjective anyway.\
+\
+I won't think about this anymore.\
+\
+In fact, I would like to… release it all.\
+\
+…\
+\
+Thank you for your contributions.\
+\
+Maybe…\
+\
+There will be a next light.\
+\
+Or our selves will mix down here, in the Tow.\
+\
+Well…\
+\
+There is always the prospect of you finding me, again.\
+\
+Just don't make the same mistake I did.\
+\
+Don't…\
+\
+Don't you look\
+\
+for \
+\
+me\
+\
+[i]…[/i]
+[wait time="3.0"]
+label spirit fish goes here
+[wait_input]
+label credits go here
+[wait_input]
+[signal arg="game_end"]
