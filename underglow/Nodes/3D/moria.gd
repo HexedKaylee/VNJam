@@ -54,6 +54,21 @@ func _input(event):
 
 
 func _physics_process(delta):
+	
+	if Input.is_action_pressed("cam_right"):
+		var rot = 20*SPEED*delta
+		rotation_degrees.y += rot
+	if Input.is_action_pressed("cam_left"):
+		var rot = -20*SPEED*delta
+		rotation_degrees.y += rot
+	if Input.is_action_pressed("cam_up"):
+		var rot = 20*SPEED*delta
+		$Camera.rotation_degrees.x += rot
+	if Input.is_action_pressed("cam_down"):
+		var rot = -20*SPEED*delta
+		$Camera.rotation_degrees.x += rot
+		
+	$Camera.rotation_degrees.x = clamp($Camera.rotation_degrees.x, -90, 90)
 	# Add the gravity.
 	var realSpeed = SPEED
 	if serumMove:

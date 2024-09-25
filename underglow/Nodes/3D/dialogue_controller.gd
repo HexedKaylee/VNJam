@@ -31,7 +31,7 @@ func _ready():
 
 func _process(delta):
 	if(entry):
-		fade.color.a = lerp(fade.color.a, 0.0, fadeSpd*delta)
+		fade.color.a = lerp(fade.color.a, 0.0, 0.5*fadeSpd*delta)
 		if(snappedf(fade.color.a, 0.05) == 0):
 			fade.color.a = 0
 			entry = false
