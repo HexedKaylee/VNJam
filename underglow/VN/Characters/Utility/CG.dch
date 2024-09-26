@@ -15,6 +15,24 @@
 "nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
+"cg_fish_ending": {
+"export_overrides": {
+"image": "\"res://Assets/VN/CG/cg_fish_ending.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"cg_reflection": {
+"export_overrides": {
+"image": "\"res://Assets/VN/CG/cg_reflection.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
 "cg_test": {
 "export_overrides": {
 "image": "\"res://Assets/VN/CG/CGTest.png\""

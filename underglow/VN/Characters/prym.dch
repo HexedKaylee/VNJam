@@ -24,9 +24,36 @@
 "scale": 1,
 "scene": ""
 },
+"prym_furious": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Prym/prt_prym_furious.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"prym_happy": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Prym/prt_prym_happy.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
 "prym_neutral": {
 "export_overrides": {
 "image": "\"res://Assets/VN/Portraits/Prym/prt_prym_neutral.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"prym_pathetic": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Prym/prt_prym_pathetic.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

@@ -15,6 +15,33 @@
 "nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
+"flustered_mask meltdown": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Mask/prt_flustered_mask meltdown.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"flustered_mask_look_away": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Mask/prt_flustered_mask_look_away.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"flustered_mask_neutral": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Mask/prt_flustered_mask_neutral.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
 "mask_headtilt1": {
 "export_overrides": {
 "image": "\"res://Assets/VN/Portraits/Mask/prt_mask_headtilt1.png\""
@@ -27,6 +54,15 @@
 "mask_headtilt2": {
 "export_overrides": {
 "image": "\"res://Assets/VN/Portraits/Mask/prt_mask_headtilt2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"mask_look_away": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Mask/prt_mask_look_away.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
