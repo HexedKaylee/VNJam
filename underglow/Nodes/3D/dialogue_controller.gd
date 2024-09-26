@@ -57,6 +57,10 @@ func _process(delta):
 					Global.set_timeline("tl_04_college_tagging")
 				2:
 					Global.set_timeline("tl_07_prym_exp2")
+				3:
+					Global.set_timeline("tl_09_college_wandering")
+				4:
+					Global.set_timeline("tl_11_ending")
 				_:
 					pass
 			Global.goto_scene("res://Scenes/2D/dialogic_scene.tscn")
