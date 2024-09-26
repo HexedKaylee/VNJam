@@ -8,6 +8,11 @@ var grabPlayed = false
 var hasGrabbed = false
 var chosen = false
 var chosenName = ""
+var thunk = preload("res://Assets/Audio/SFX/drop_book.ogg")
+var sandThunk = preload("res://Assets/Audio/SFX/drop_book_sand.ogg")
+var sand = false
+var playSnd = true
+var beingGrabbed = false
 
 func _process(delta):
 	freezer()
@@ -19,9 +24,15 @@ func _process(delta):
 		chosenName = collider.name.rstrip("0123456789")
 		chosen = true
 		startResult(chosenName)
+	elif(collider != null and hasGrabbed and snappedf(linear_velocity.y, 0.05) == 0):
+		chosenName = collider.name.rstrip("0123456789")
+		nextResult(chosenName)
+	elif get_contact_count() <= 0:
+		playSnd = true
 		
 func startResult(chosenName):
 	print(chosenName)
+	sand = false
 	match(chosenName):
 		"Terrain":
 			UI.get_node("Controller").bookControl(1, "ex1_01a")
@@ -30,6 +41,7 @@ func startResult(chosenName):
 			hasGrabbed = false
 			chosen = false
 			chosenName = ""
+			sand = true
 		"RedPillar":
 			UI.get_node("Controller").bookControl(2, "ex1_02a")
 		"BluePillar":
@@ -50,5 +62,22 @@ func startResult(chosenName):
 			UI.get_node("Controller").bookControl(2, "ex1_02i")
 		_:
 			UI.get_node("Controller").bookControl(1, "ex1_02j")
-			
-	#UI.get_node("TextBox").activate()
+	if !$AudioStreamPlayer3D.is_playing() and playSnd and !beingGrabbed:
+		if sand:
+			$AudioStreamPlayer3D.stream = sandThunk
+		else:
+			$AudioStreamPlayer3D.stream = thunk
+		$AudioStreamPlayer3D.play()
+		playSnd = false
+
+func nextResult(chosenName):
+	sand = false
+	if(chosenName == "Terrain"):
+		sand = true
+	if !$AudioStreamPlayer3D.is_playing() and playSnd and !beingGrabbed:
+		if sand:
+			$AudioStreamPlayer3D.stream = sandThunk
+		else:
+			$AudioStreamPlayer3D.stream = thunk
+		$AudioStreamPlayer3D.play()
+		playSnd = false

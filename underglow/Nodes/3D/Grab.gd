@@ -19,6 +19,8 @@ func _process(delta):
 						#grabbed.hasGrabbed = false
 					if("startGrab" in grabbed):
 						grabbed.startGrab = true
+					if("beingGrabbed" in grabbed):
+						grabbed.beingGrabbed = true
 					last = collider.position
 				if collider.name.rstrip("0123456789") == "serum" and parent.canQuaf:
 					if(!collider.diminish):
@@ -29,6 +31,8 @@ func _process(delta):
 				grabbed.set_collision_layer_value(1, true)
 				if("hasGrabbed" in grabbed):
 					grabbed.hasGrabbed = true
+				if("beingGrabbed" in grabbed):
+					grabbed.beingGrabbed = false
 				grabbed = null
 	if grabbed != null:
 		grabbed.position = holdPoint.global_position
