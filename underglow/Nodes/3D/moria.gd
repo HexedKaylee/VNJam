@@ -36,6 +36,7 @@ var canQuaf = true
 @export var Center : Node3D
 @export var centerCheck = false
 var distance = 0
+var mouseCaptured = true
 
 func _ready():
 	randomize()
@@ -47,15 +48,17 @@ func _ready():
 	terrainTex = ImageTexture.create_from_image(Image.load_from_file(randomTex.pick_random()))
 
 func _input(event):
-	if event is InputEventMouseMotion:
+	if event is InputEventMouseMotion and mouseCaptured:
 		$Camera.rotation_degrees.x -= event.relative.y * sensivity
 		$Camera.rotation_degrees.x = clamp($Camera.rotation_degrees.x, -90, 90)
 		rotation_degrees.y -= event.relative.x * sensivity
 	if event.is_action_pressed("ui_cancel"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		mouseCaptured = false
 	if event.is_action_pressed("click"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+		mouseCaptured = true
 
 
 func _physics_process(delta):
