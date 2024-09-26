@@ -1,123 +1,120 @@
 [style name="character"]
 [wait time="1.0"]
-narrator: You had your chance to run.\
+narrator: You had your chance to run.[pause=.5]\
 \
-But you have to pray that Prym will listen.\
+But you have to pray that Prym will listen.[pause=.5]\
 \
-You hear a noise unfamiliar.\
+You hear a noise unfamiliar.[pause=.5]\
 \
-A wail.\
+A wail.[pause=.5]\
 \
-A pang of something unpleasant hits your chest.\
+A pang of something unpleasant hits your chest.[pause=.5]\
 \
-No... It comes from deep within.\
+No...[pause=.5] It comes from deep within.[pause=.5]\
 \
-It threatens to break through, to crack the surface of your form —\
+It threatens to break through,[pause=.2] to crack the surface of your form —[pause=.5]\
 \
-But you can't break this form just yet. [i]Not again[/i].\
+But you can't break this form just yet.[pause=.5] [i]Not again[/i].
+narrator: A sob.[pause=.5]\
 \
-A sob.\
+Tears prick at the corners of your eyes.[pause=.5] Your new eyes,[pause=.2] for your new face.[pause=.5]\
 \
-Tears prick at the corners of your eyes. Your new eyes, for your new face.\
+A flask broken on the ground catches your eye.[pause=.5] The glow of brine as it forms a puddle begs your interest.[pause=.5]\
 \
-A flask broken on the ground catches your eye. The glow of brine as it forms a puddle begs your interest.\
+You see your reflection once again.[pause=.5]\
 \
-You see your reflection once again.\
+A face…[pause=.5]\
 \
-A face…\
-\
-You…\
+You…[pause=.5]\
 \
 You don't recognize it.
 [wait time="1.0"]
 question_mark: "Ah…"
-question_mark: "Do you… see it…?"
-question_mark: "Let me… look… at… you."
+question_mark: "Do you…[pause=.5] see it…?"
+question_mark: "Let me…[pause=.5] look…[pause=.5] at…[pause=.5] you."
 [wait time="1.0"]
-narrator: You turn to Prym.\
+narrator: You turn to Prym.[pause=.5]\
 \
-There's an odd… calm to their figure.\
+There's an odd…[pause=.5] calm to their figure.[pause=.5]\
 \
-No longer do you see tangles of tendrils floating around them, grasping at nothing.\
+No longer do you see tangles of tendrils floating around them,[pause=.2] grasping at nothing.[pause=.5]\
 \
-The glow of light is gone from their hair. It only sits limply — a dark curtain, over one eye and draped heavy upon their slouched shoulders.\
+The glow of light is gone from their hair.[pause=.5] It only sits limply —[pause=.5] a dark curtain,[pause=.2] over one eye and draped heavy upon their slouched shoulders.[pause=.5]\
 \
-There is no smile on their gleaming visage.\
+There is no smile on their gleaming visage.[pause=.5]\
 \
-They look upon you with trepidation.\
+They look upon you with trepidation.[pause=.5]\
 \
-In silence.\
+In silence.
+narrator: Their eye scans your face for…[pause=.5] something familiar.[pause=.5]\
 \
-Their eye scans your face for… something familiar.\
+But their search appears to come up empty.[pause=.5]\
 \
-But their search appears to come up empty.\
-\
-All that they see is…\
+All that they see is…[pause=.5]\
 \
 … someone they don't know.
 [wait time="1.0"]
 prym: "Ahaha…"
 prym: "That's not fair."
 [wait time="1.0"]
-narrator: The words echo in your head.\
+narrator: The words echo in your head.[pause=.5]\
 \
-That's not fair.\
+That's not fair.[pause=.5]\
 \
-You start to feel it, too.\
+You start to feel it,[pause=.2] too.[pause=.5]\
 \
 They must have gotten it wrong.
 [wait time="1.0"]
-prym: "Ah. But you. It's…
-prym: "No. No. No. No! NO…!"
+prym: "Ah.[pause=.5] But you.[pause=.5] It's…
+prym: "No.[pause=.5] No.[pause=.5] No.[pause=.4] No![pause=.5] NO…!"
 [wait time="0.0"]
 - " …"
 [wait time="1.0"]
-narrator: [i]No.[/i]\
+narrator: [i]No.[/i][pause=.5]\
 \
-They couldn't have been wrong.\
+They couldn't have been wrong.[pause=.5]\
 \
-They did everything right.\
+They did everything right.[pause=.5]\
 \
-…\
+…[pause=.5]\
 \
-The smoke — you knew the smoke.\
+The smoke —[pause=.5] you knew the smoke.[pause=.5]\
 \
-You weren't like other Masks — you weren't scared of the smoke!\
+You weren't like other Masks —[pause=.5] you weren't scared of the smoke!
+narrator: That's right,[pause=.2] Moira always said that it brought them such warmth.[pause=.5] Such familiarity.[pause=.5]\
 \
-That's right, Moira always said that it brought them such warmth. Such familiarity.\
+It was one way they would always find each other again —[pause=.5] there's no way it wasn't you —[pause=.5] there's no way you aren't Moira![pause=.5]\
 \
-It was one way they would always find each other again — there's no way it wasn't you — there's no way you aren't Moira!\
+Ah.[pause=.5] But.[pause=.5] You.[pause=.5] [pause=.5]\
 \
-Ah. But. You. \
+That.[pause=.5] Face.[pause=.5]\
 \
-That. Face.\
+You.[pause=.5] Aren't…[pause=.5]\
 \
-You. Aren't…\
-\
-Ah. Ah. Ah.
+Ah.[pause=.5] Ah.[pause=.5] Ah.
 [wait time="2.0"]
-narrator: . . . . .\
+narrator: . . . . .[pause=.5]\
 \
-… It may just be impossible.\
+…[pause=.5] It may just be impossible.[pause=.5]\
 \
-All this [i][b]time[/b][/i]… Yes, of course.\
+All this [i][b]time[/b][/i]…[pause=.5] Yes, of course.[pause=.5]\
 \
-Moira wouldn't have kept it. No Spirit Fish could have kept their individuality…\
+Moira wouldn't have kept it.[pause=.5] No Spirit Fish could have kept their individuality…[pause=.5]\
 \
-Even with their awareness intact, they must have blended with the schools of Fish around them… to become…\
+Even with their awareness intact,[pause=.2] they must have blended with the schools of Fish around them…[pause=.5] to become…[pause=.5]\
 \
-It's not them.\
+It's not them.[pause=.5]\
 \
-You aren't.\
+You aren't.[pause=.5]\
 \
-My.\
+My.[pause=.5]\
 \
-Moira.\
+Moira.[pause=.5]\
 \
 …
 [wait time="1.0"]
 "I can't deny it."
-"Those memories. They aren't…"
+"Those memories.[pause=.5] They aren't…"
 "I don't have any of them."
 "I'm…"
 "I'm not Moira."
@@ -134,75 +131,74 @@ narrator: …
 "When we become like that…"
 "There's no going back."
 " … "
-"Yet, somehow…"
+"Yet,[pause=.2] somehow…"
 "I awoke as a Mask."
-"Again… Newly-adorned…"
+"Again…[pause=.5] Newly-adorned…"
 "With a new chance."
 "But I…"
 "Didn't come of it out the same."
 "And I couldn't be who you wanted me to be."
 [wait time="1.0"]
-narrator: …\
+narrator: …[pause=.5]\
 \
-You feel lightheaded.\
+You feel lightheaded.[pause=.5]\
 \
-I see.\
+I see.[pause=.5]\
 \
-So.\
+So.[pause=.5]\
 \
-Maybe I should have stayed away.\
+Maybe I should have stayed away.[pause=.5]\
 \
-I'm not…\
+I'm not…[pause=.5]\
 \
-Prym isn't…\
+Prym isn't…[pause=.5]\
 \
 They're not…
 [wait time="1.0"]
 " … "
 [wait time="1.0"]
-narrator: Too much has changed.\
+narrator: Too much has changed.[pause=.5]\
 \
 [i]You’ve changed.[/i]
 [wait time="1.0"]
 "We have."
 [wait time="1.0"]
-narrator: …\
+narrator: …[pause=.5]\
 \
-[i]It's cold.[/i]\
+[i]It's cold.[/i][pause=.5]\
 \
-[i]Or is it hot?[/i]\
+[i]Or is it hot?[/i][pause=.5]\
 \
-. . . . .\
+. . . . .[pause=.5]\
 \
-Well, it's all subjective anyway.\
+Well,[pause=.2] it's all subjective anyway.[pause=.5]\
 \
-I won't think about this anymore.\
+I won't think about this anymore.[pause=.5]\
 \
-In fact, I would like to… release it all.\
+In fact,[pause=.2] I would like to…[pause=.5] release it all.[pause=.5]\
 \
-…\
+…[pause=.5]
+[wait time="1.0"]
+narrator: Thank you for your contributions.[pause=.5]\
 \
-Thank you for your contributions.\
+Maybe…[pause=.5]\
 \
-Maybe…\
+There will be a next light.[pause=.5]\
 \
-There will be a next light.\
+Or our selves will mix down here,[pause=.2] in the Tow.[pause=.5]\
 \
-Or our selves will mix down here, in the Tow.\
+Well…[pause=.5]\
 \
-Well…\
+There is always the prospect of you finding me,[pause=.2] again.[pause=.5]\
 \
-There is always the prospect of you finding me, again.\
+Just don't make the same mistake I did.
+narrator: Don't…[pause=.5]\
 \
-Just don't make the same mistake I did.\
+Don't you look[pause=.5]\
 \
-Don't…\
+for [pause=.5]\
 \
-Don't you look\
-\
-for \
-\
-me\
+me[pause=.5]\
 \
 [i]…[/i]
 [wait time="3.0"]
