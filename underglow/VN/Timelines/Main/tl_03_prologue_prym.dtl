@@ -3,48 +3,48 @@
 
 [wait time="1.0"]
 leave --All--
-narrator: As voices murmur in surprise,[pause=.2] you realize that a thick and looming miasma has been crawling its way through the sea of Masks.[pause=.5] The perimeter of the crowd begins to part,[pause=.2] and a strikingly corporeal figure begins to make its way toward the center.[pause=.5]\
+narrator: As voices murmur in surprise,[pause=.2] you realize that a thick and looming miasma has been crawling its way through the sea of Masks.[pause=.5] The perimeter of the crowd begins to part,[pause=.2] and a strikingly corporeal figure begins to make its way toward the center.[n+]\
 \
-Straining to make out the sight amidst all the scurrying,[pause=.2] you notice that the gaseous miasma appears to be emanating from a long,[pause=.2] thin device carried in the hand of this new arrival.[pause=.5]\
+Straining to make out the sight amidst all the scurrying,[pause=.2] you notice that the gaseous miasma appears to be emanating from a long,[pause=.2] thin device carried in the hand of this new arrival.[n+]\
 \
-As they come forward,[pause=.2] the haze thickens with each slow and deliberate step.[pause=.5] The results of their approach rapidly accumulate into caution and urgency amongst the crowd.[pause=.5]\
+As they come forward,[pause=.2] the haze thickens with each slow and deliberate step.[pause=.5] The results of their approach rapidly accumulate into caution and urgency amongst the crowd.[n+]\
 \
-[n]The congregation begins to depopulate.[pause=.5] Masks flee every which way with a pronounced trepidation –[pause=.5] which,[pause=.2] actually,[pause=.2] upon consideration,[pause=.4] doesn't make sense to you at all.[pause=.5]\
+[n]The congregation begins to depopulate.[pause=.5] Masks flee every which way with a pronounced trepidation –[pause=.5] which,[pause=.2] actually,[pause=.2] upon consideration,[pause=.4] doesn't make sense to you at all.[n+]\
 \
-You stand and stare.[pause=.5] How odd…[pause=.5] You don't[pause=.3] find the same desire to flee overtaking you.[pause=.5] If anything,[pause=.2] you begin to feel somewhat…[pause=.4]serene,[pause=.2] as though the miasma is having a calming effect on you.[pause=.5]\
+You stand and stare.[pause=.5] How odd…[pause=.5] You don't[pause=.3] find the same desire to flee overtaking you.[pause=.5] If anything,[pause=.2] you begin to feel somewhat…[pause=.4]serene,[pause=.2] as though the miasma is having a calming effect on you.[[n+]\
 \
-[n]The crowd having almost fully dispersed,[pause=.2] you ignore the few urgent whispers that may be directing you to [i]run away,[pause=.2] quickly,[pause=.2] you don't want to be —[/i][pause=.5]\
+[n]The crowd having almost fully dispersed,[pause=.2] you ignore the few urgent whispers that may be directing you to [i]run away,[pause=.2] quickly,[pause=.2] you don't want to be —[/i][n+]\
 \
-[i]Ah.[/i][pause=.5]\
+[i]Ah.[/i][n+]\
 \
-[i]It's[pause=.2] too[pause=.2] late,[pause=.2] anyhow.[/i][pause=.5]\
+[i]It's[pause=.2] too[pause=.2] late,[pause=.2] anyhow.[/i][n+]\
 \
-A pair of eyes locks on you.[pause=.5]\
+A pair of eyes locks on you.[n+]\
 \
-…[pause=.5] Eyes… ?[pause=.5]\
+…[pause=.5] Eyes… ?[n+]\
 \
-[n]Yes…[pause=.5] You can see them,[pause=.2] now –[pause=.5] glowing a luminous green to pierce through the thickening fog.[pause=.5] And beneath those eyes,[pause=.2] you see a vibrant and[pause=.2] disarming grin.[pause=.5]\
+[n]Yes…[pause=.5] You can see them,[pause=.2] now –[pause=.5] glowing a luminous green to pierce through the thickening fog.[pause=.5] And beneath those eyes,[pause=.2] you see a vibrant and[pause=.2] disarming grin.[n+]\
 \
-—[pause=.5]\
+—[n+]\
 \
-A quiet[pause=.2] white[pause=.2] light[pause=.3] in the middle of that sickly green…[pause=.4]sparkles with a sense of utter delight.[pause=.5]\
+A quiet[pause=.2] white[pause=.2] light[pause=.3] in the middle of that sickly green…[pause=.4]sparkles with a sense of utter delight.[n+]\
 \
 Then,[pause=.5] you hear a voice.
 [wait time="1.0"]
 join prym 2
 question_mark: [i]"Foooound ~[pause=.3] youuuuu… ~ !!"[/i]
 [wait time="1.0"]
-narrator: The enigmatic stranger's figure fully revealed,[pause=.2] they close the distance between you and –[pause=.4] with the gentlest caress –[pause=.4] sweep their hand languidly around…[pause=.4]to cradle the back of your neck.[pause=.5]\
+narrator: The enigmatic stranger's figure fully revealed,[pause=.2] they close the distance between you and –[pause=.4] with the gentlest caress –[pause=.4] sweep their hand languidly around…[pause=.4]to cradle the back of your neck.[n+]\
 \
-In another graceful motion,[pause=.2] the instrument in their other hand draws a swirling path through the fog,[pause=.2] the gas curling and wafting beneath your mask…[pause=.5]\
+In another graceful motion,[pause=.2] the instrument in their other hand draws a swirling path through the fog,[pause=.2] the gas curling and wafting beneath your mask…[n+]\
 \
-And –[pause=.5]\
+And –[n+]\
 \
 Your grip on consciousness[pause=.4] begins to[pause=.5] slowly loosen.
 label slight fade to black
-narrator: [i]This is fine.[/i][pause=.5]\
+narrator: [i]This is fine.[/i][n+]\
 \
-You gaze up at their manic,[pause=.2] toothy expression,[pause=.2] and stumble backward as their hand lets go of your neck —[pause=.5]\
+You gaze up at their manic,[pause=.2] toothy expression,[pause=.2] and stumble backward as their hand lets go of your neck —[n+]\
 \
 — and are caught by tendrils,[pause=.2] snaking out from beneath their garb,[pause=.3] keeping you firmly rooted in place.
 label fade further toward black

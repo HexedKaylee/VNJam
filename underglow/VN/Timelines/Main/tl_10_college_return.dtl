@@ -1,9 +1,9 @@
 [style name="character"]
 [background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="1.0"]
 [wait time="1.0"]
-narrator: You aren't sure you really had to follow the same path back.[pause=.5] It seems,[pause=.2] now,[pause=.2] that your feet simply take you to where you want to go with more ease than ever.[pause=.5]\
+narrator: You aren't sure you really had to follow the same path back.[pause=.5] It seems,[pause=.2] now,[pause=.2] that your feet simply take you to where you want to go with more ease than ever.[n+]\
 \
-You feel featherlight as you round the corner into the college hallway that takes you to the lab,[pause=.2] and are soon through its doorway with a pronounced excitement that almost makes you feel ill.[pause=.5]\
+You feel featherlight as you round the corner into the college hallway that takes you to the lab,[pause=.2] and are soon through its doorway with a pronounced excitement that almost makes you feel ill.[n+]\
 \
 Behind the flasks of Spirit Fish,[pause=.2] you identify the floating lights of Prym's brilliant hair,[pause=.2] and that familiar scent of smoke wafting about from their device placed in the corner,[pause=.2] like incense permeating the space.
 [wait time="1.0"]
@@ -33,18 +33,18 @@ prym: "I have another experiment for you,[pause=.2] subject."
 prym: "I'm sure you have a lot to tell me about all the things you learned."
 prym: "But right now,[pause=.2] we must continue with our testing."
 [wait time="1.0"]
-narrator: You hear a click from the device in the corner,[pause=.2] which then begins to suddenly churn out smoke in a thick,[pause=.2] dense fog.[pause=.5]\
+narrator: You hear a click from the device in the corner,[pause=.2] which then begins to suddenly churn out smoke in a thick,[pause=.2] dense fog.[n+]\
 \
-The intoxicatingly sweet and familiar scent hits you powerfully —[pause=.5] but this time,[pause=.2] the calm that you encountered before doesn't follow.[pause=.5]\
+The intoxicatingly sweet and familiar scent hits you powerfully —[pause=.5] but this time,[pause=.2] the calm that you encountered before doesn't follow.[n+]\
 \
-There is an overbearing,[pause=.2] [i]choking[/i] pressure on all sides.[pause=.5]\
+There is an overbearing,[pause=.2] [i]choking[/i] pressure on all sides.[n+]\
 \
-You can't move.[pause=.5]\
+You can't move.[n+]\
 \
 Their tendrils have you rooted,[pause=.2] again,[pause=.2] firmly in place.
 [wait time="1.0"]
 prym: [i][b]"Take it in deeply,[pause=.2] now."[/b][/i]
-narrator: There's no room for the panic that wells up within you.[pause=.5] You couldn't partake of it if you wanted.[pause=.5]\
+narrator: There's no room for the panic that wells up within you.[pause=.5] You couldn't partake of it if you wanted.[n+]\
 \
 All is then drenched in a black and harrowing silence,[pause=.2] [speed=5.0] as you fall asleep again.
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="5.0"]

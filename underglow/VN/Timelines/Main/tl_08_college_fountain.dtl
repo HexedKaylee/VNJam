@@ -1,25 +1,25 @@
 [style name="character"]
 [background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="2.0"]
-narrator: You wander the campus with an unsettled feeling,[pause=.2] finding all of what Prym just told you somehow saddening in a way you don't understand.[pause=.5] \
+narrator: You wander the campus with an unsettled feeling,[pause=.2] finding all of what Prym just told you somehow saddening in a way you don't understand.[n+]\
 \
-You wander into the courtyard and settle on the edge of a fountain,[pause=.2] looking around at the bright formations of coral and watching the light of Spirit Fish and Socialites pass you by.[pause=.5] \
+You wander into the courtyard and settle on the edge of a fountain,[pause=.2] looking around at the bright formations of coral and watching the light of Spirit Fish and Socialites pass you by.[n+]\
 \
-Your gaze drifts down to the brine of the fountain —[pause=.5] your reflection,[pause=.2] same as before,[pause=.2] staring emptily back at you.[pause=.5] \
+Your gaze drifts down to the brine of the fountain —[pause=.5] your reflection,[pause=.2] same as before,[pause=.2] staring emptily back at you.[n+]\
 \
-Amidst your contemplation,[pause=.2] you notice a reflection beside yours,[pause=.2] and look over to see the most evidently corporeal individual you have come across since awakening thus far.[pause=.5] \
+Amidst your contemplation,[pause=.2] you notice a reflection beside yours,[pause=.2] and look over to see the most evidently corporeal individual you have come across since awakening thus far.[n+]\
 \
-They don't appear as though they're blending in with the environment,[pause=.2] their visage a stark contrast against the glow and the void below and above.[pause=.5] No mask-like appearance of which to speak,[pause=.2] and no detached limbs to float meanderingly about their form —[pause=.5] like they're the most comprehensible being you feel you've ever seen here before.[pause=.5] \
+They don't appear as though they're blending in with the environment,[pause=.2] their visage a stark contrast against the glow and the void below and above.[pause=.5] No mask-like appearance of which to speak,[pause=.2] and no detached limbs to float meanderingly about their form —[pause=.5] like they're the most comprehensible being you feel you've ever seen here before.[n+]\
 \
-Curious…[pause=.5] And,[pause=.2] though they look much more…[pause=.5] real than you are used to seeing,[pause=.2] that isn't what causes you to conclude that they're more self-aware than all the others.[pause=.5] \
+Curious…[pause=.5] And,[pause=.2] though they look much more…[pause=.5] real than you are used to seeing,[pause=.2] that isn't what causes you to conclude that they're more self-aware than all the others.[n+]\
 \
 There is nothing that appears to be an attempt at "playing pretend" like you are accustomed to in the countenance of Socialites.[pause=.5] Instead, they have a certain je ne sais quoi that…[pause=.5] feels completely organic and natural.
-narrator: A word enters your mind.[pause=.5] Lifelike.[pause=.5] \
+narrator: A word enters your mind.[pause=.5] Lifelike.[n+]\
 \
-It's as though you've met the first real person in this place with their own unique sense of self besides Prym…[pause=.5] Though you suppose Prym might be a notch more past normal than you can handle.[pause=.5] \
+It's as though you've met the first real person in this place with their own unique sense of self besides Prym…[pause=.5] Though you suppose Prym might be a notch more past normal than you can handle.[n+]\
 \
-No…[pause=.5] What makes you certain that this person is a "person" rather than a Socialite playing pretend…[pause=.5] \
+No…[pause=.5] What makes you certain that this person is a "person" rather than a Socialite playing pretend…[n+]\
 \
-…is that the expression on their face belies a sadness you could almost drown in.[pause=.5] \
+…is that the expression on their face belies a sadness you could almost drown in.[n+]\
 \
 Before you can say anything,[pause=.2] they appear to notice you with a small start,[pause=.2] their expression quickly changing to something inquisitive.
 [wait time="1.0"]
@@ -29,9 +29,9 @@ join "friendly diver" center
 "lifelike figure": "A Mask holding a book?[pause=.5] What an unusual sight."
 "lifelike figure": "Are you here for a purpose?"
 [wait time="1.0"]
-narrator: Their voice is soft.[pause=.5] You look down to realize that you are,[pause=.2] in fact,[pause=.2] still clutching the book Prym gave you.\
+narrator: Their voice is soft.[pause=.5] You look down to realize that you are,[pause=.2] in fact,[pause=.2] still clutching the book Prym gave you.[n+]\
 \
-You look back up at this new Droplet.[pause=.5] You wonder what category they actually fit in;[pause=.4] they certainly seem too…[pause=.4] well-formed to be a Socialite,[pause=.2] but they also don't strike you as a Disciple.\
+You look back up at this new Droplet.[pause=.5] You wonder what category they actually fit in;[pause=.4] they certainly seem too…[pause=.4] well-formed to be a Socialite,[pause=.2] but they also don't strike you as a Disciple.[n+]\
 \
 … Ah,[pause=.2] that's right.[pause=.5] You just learned about this.
 [wait time="1.0"]
@@ -56,13 +56,13 @@ The Diver laughs at this response.[pause=.5] It's a sound that rings like a quie
 [wait time="0.0" hide_text="false"]
 - "Oh, I can tell you ALL about this tag."
 [wait time="1.0"]
-narrator: You tell the Diver about the experiments you've been subject to,[pause=.2] making mention of your efforts in learning to speak,[pause=.2] as well as the curious Fish-shooting device with which you were briefly conjoined.\
+narrator: You tell the Diver about the experiments you've been subject to,[pause=.2] making mention of your efforts in learning to speak,[pause=.2] as well as the curious Fish-shooting device with which you were briefly conjoined.[n+]\
 \
-Your tale brings the Diver to such a jovial bout of laughter that you yourself can't help but join in.[pause=.5] It's a loud,[pause=.2] loose laugh that you weren't sure you were capable of until now.\
+Your tale brings the Diver to such a jovial bout of laughter that you yourself can't help but join in.[pause=.5] It's a loud,[pause=.2] loose laugh that you weren't sure you were capable of until now.[n+]\
 \
-Funny…[pause=.5] It really is such a pleasant sensation,[pause=.2] the laughter brought about by sharing your experience with another.[pause=.5] Realizing this makes you notice…[pause=.5] This is the best you've felt since arriving here.\
+Funny…[pause=.5] It really is such a pleasant sensation,[pause=.2] the laughter brought about by sharing your experience with another.[pause=.5] Realizing this makes you notice…[pause=.5] This is the best you've felt since arriving here.[n+]\
 \
-It continues to ring true,[pause=.2] the idea that your fears can be alleviated by simply recalling your woes aloud.[pause=.5] It rings as clearly as the laughter shared by two spirits who were once both burdened by distilled discontent.\
+It continues to ring true,[pause=.2] the idea that your fears can be alleviated by simply recalling your woes aloud.[pause=.5] It rings as clearly as the laughter shared by two spirits who were once both burdened by distilled discontent.[n+]\
 \
 All the consternation and unease given to you by your experiences almost seems to melt away the more you converse with them.
 [wait time="1.0"]
@@ -102,13 +102,13 @@ The Diver looks startled by your answer.
 "friendly diver": " … Ahah.[pause=.5] Really."
 "friendly diver": "I…[pause=.4] see."
 [wait time="1.0"]
-narrator: After a poignant silence,[pause=.2] they stand up.[pause=.5] You see their back straighten,[pause=.2] and they begin to stare out at the motes of light swimming along the currents in the distance.\
+narrator: After a poignant silence,[pause=.2] they stand up.[pause=.5] You see their back straighten,[pause=.2] and they begin to stare out at the motes of light swimming along the currents in the distance.[n+]\
 \
-You watch as a grin slowly etches itself onto their face.[pause=.5] Their eyes well up with a giddiness,[pause=.2] and their fist clenches at their front with newfound resolve.\
+You watch as a grin slowly etches itself onto their face.[pause=.5] Their eyes well up with a giddiness,[pause=.2] and their fist clenches at their front with newfound resolve.[n+]\
 \
-They seem to have forgotten you completely,[pause=.2] as they cast their gaze forward towards the innermost grounds of the college.\
+They seem to have forgotten you completely,[pause=.2] as they cast their gaze forward towards the innermost grounds of the college.[n+]\
 \
-They begin to take their steps towards the sanctum,[pause=.2] dust kicking up in their wake.\
+They begin to take their steps towards the sanctum,[pause=.2] dust kicking up in their wake.[n+]\
 \
 You aren't sure entirely,[pause=.2] but you swear you hear them whisper something that shakes you to your core.
 narrator: [i]"I'll save you yet,[pause=.2] my —"[/i]
@@ -117,20 +117,20 @@ leave "friendly diver"
 - " …! "
 [music fade="5.0" volume="0.0"]
 [wait time="1.0"]
-narrator: A potent chill washes across your form.[pause=.5] \
+narrator: A potent chill washes across your form.[n+]\
 \
-Could that…[pause=.5] \
+Could that…[n+]\
 \
-… have been…?[pause=.5] 
+… have been…?
 join "shady disciple" center
 [sound path="res://Assets/Audio/Music/mus_submerged_(loop).wav" volume="0.0"]
-narrator: Your thoughts are interrupted as something abruptly takes hold of your shoulder,[pause=.2] a grip like steel and ice.[pause=.5] \
+narrator: Your thoughts are interrupted as something abruptly takes hold of your shoulder,[pause=.2] a grip like steel and ice.[n+]\
 \
-You turn around to find an unfamiliar Disciple.[pause=.5] As you tilt your head up to meet their gaze, your eyes lock.[pause=.5] \
+You turn around to find an unfamiliar Disciple.[pause=.5] As you tilt your head up to meet their gaze, your eyes lock.[n+]\
 \
-There's a terrifying vacantness in them,[pause=.2] more so even than Prym's.[pause=.5] \
+There's a terrifying vacantness in them,[pause=.2] more so even than Prym's.[n+]\
 \
-An icy dread overtakes you.[pause=.5] 
+An icy dread overtakes you.
 "shady disciple": "Oh?[pause=.3] What do we have here?[pause=.5] What an odd Mask."
 "shady disciple": "That lack of vacancy in your eyes tells me that you seem to be having a moment of awareness not exhibited by most like you."
 "shady disciple": "What a lovely little anomaly you are."
@@ -159,14 +159,14 @@ question_mark: "Are you stupid?"
 question_mark: "You have eyes that can see,[pause=.2] don't you?"
 question_mark: "This specimen is mine."
 [wait time="1.0"]
-narrator: A familiar voice booms behind you, from the direction that your friend ran off towards.\
+narrator: A familiar voice booms behind you, from the direction that your friend ran off towards.[n+]\
 \
 You don't even need to turn around to [b]know[/b] who it is.
 [wait time="1.0"]
 prym: "[b]Back.[pause=.5] Off.[/b]"
 [wait time="1.0"]
 leave "shady disciple"
-narrator: You watch as the mad-eyed Disciple who had you in a steel-trap grip releases you immediately,[pause=.2] stumbling backward with a frightened frown.\
+narrator: You watch as the mad-eyed Disciple who had you in a steel-trap grip releases you immediately,[pause=.2] stumbling backward with a frightened frown.[n+]\
 \
 Shaking,[pause=.2] they lower their hand and back slowly away.
 [wait time="1.0"]
@@ -186,9 +186,9 @@ Prym ignores your words, grabbing you by the arm and marching forward with you a
 [wait time="1.0"]
 prym (prym_neutral): "Setup is complete.[pause=.5] We are ready for the third experiment to begin."
 [wait time="1.0"]
-narrator: And you follow —\
+narrator: And you follow —[n+]\
 \
-— now —\
+— now —[n+]\
 \
 — with a sense of understanding.
 [signal arg="start_experiment_3"]

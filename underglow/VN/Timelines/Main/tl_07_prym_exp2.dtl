@@ -2,9 +2,9 @@
 [wait time="1.0"]
 [background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="0.0"]
 [music path="res://Assets/Audio/Music/mus_droplets_(loop).wav" fade="0.0" volume="0.0"]
-narrator: No longer bound to the experimental device you just used,[pause=.2] you feel an uncomfortable ache in your shoulders.[pause=.5] Good heavens,[pause=.2] getting it removed was a harrowing process.[pause=.5] You decide to put it out of your mind and see what Prym has to say about the disorienting exercise they've just put you through.\
+narrator: No longer bound to the experimental device you just used,[pause=.2] you feel an uncomfortable ache in your shoulders.[pause=.5] Good heavens,[pause=.2] getting it removed was a harrowing process.[pause=.5] You decide to put it out of your mind and see what Prym has to say about the disorienting exercise they've just put you through.[n+]\
 \
-Turning to them,[pause=.2] you watch as they dutifully place the Fish-shooting device on a mount behind them.\
+Turning to them,[pause=.2] you watch as they dutifully place the Fish-shooting device on a mount behind them.[n+]\
 \
 You notice now,[pause=.2] amidst the spot where the device sits,[pause=.2] a collection of transparent containers —[pause=.5] [i]flasks[/i],[pause=.4] you realize —[pause=.5] the contents of which had previously piqued your interest. Only in this moment do you realize that the lights floating within all resemble the Spirit Fish with which you've just become acquainted.
 [wait time="1.0"]
@@ -21,7 +21,7 @@ prym: "Relatedly,[pause=.2] I’ve prepared a small reward for your continued di
 	prym: "Don't think your curiosity has gone unnoticed,[pause=.2] though.[pause=.5] Hehe~"
 	prym: "Anyway,[pause=.2] as for your reward…"
 [wait time="1.0"]
-narrator: From behind Prym's back,[pause=.2] a swell of tendrils rises with an outrageously hefty stack of books tangled within.[pause=.5] They drop the easily dozens-high stack of tomes,[pause=.2] which lands perfectly in front of you with a loud thump,[pause=.2] towering over you dauntingly.\
+narrator: From behind Prym's back,[pause=.2] a swell of tendrils rises with an outrageously hefty stack of books tangled within.[pause=.5] They drop the easily dozens-high stack of tomes,[pause=.2] which lands perfectly in front of you with a loud thump,[pause=.2] towering over you dauntingly.[n+]\
 \
 Prym peeks out from behind the tower at you with an expression somehow more chuffed than their default.
 [wait time="1.0"]
@@ -38,7 +38,7 @@ Not only does this book contain actual,[pause=.2] readable information,[pause=.2
 [wait time="1.0"]
 prym: "Don't be afraid to ask any questions if you find yourself confused!"
 [wait time="1.0"]
-narrator: [i]Easier said than done,[/i][pause=.3] you think.[pause=.5] The information is so overwhelming that you wouldn't even [b]know[/b] where to start.\
+narrator: [i]Easier said than done,[/i][pause=.3] you think.[pause=.5] The information is so overwhelming that you wouldn't even [b]know[/b] where to start.[n+]\
 \
 Finally,[pause=.2] in the hurricane of words,[pause=.2] you recognize one you've heard before\:[pause=.5] [i]Estuary.[/i]
 [wait time="1.5"]
@@ -109,7 +109,7 @@ prym: "You see,[pause=.2] Moira? This is why our reunion was serendipitous!"
 [wait time="1.0"]
 prym: " … "
 [wait time="1.0"]
-narrator: The last of Prym's professorial facade drains from their face.\
+narrator: The last of Prym's professorial facade drains from their face.[n+]\
 \
 You're not sure why,[pause=.2] but something tells you you've just asked the wrong question.
 [wait time="1.0"]
@@ -130,11 +130,11 @@ A veritable cloud of dark tendrils rises from behind them,[pause=.2] looming thr
 [wait time="1.0"]
 leave prym
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="0.0"]
-narrator: Unable to reconcile this sudden change in temperament of theirs,[pause=.2] you turn away in a panic and flee out into the corridor.\
+narrator: Unable to reconcile this sudden change in temperament of theirs,[pause=.2] you turn away in a panic and flee out into the corridor.[n+]\
 \
-There's a crash behind you;[pause=.4] the sounds of various flasks breaking and stone shattering.\
+There's a crash behind you;[pause=.4] the sounds of various flasks breaking and stone shattering.[n+]\
 \
-You cover your head and crouch down to avoid the inevitable rain of debris you're sure is to come…[pause=.5] But the noise goes quiet.\
+You cover your head and crouch down to avoid the inevitable rain of debris you're sure is to come…[pause=.5] But the noise goes quiet.[n+]\
 \
 When you look back,[pause=.2] the entrance to the lab is gone again.
 jump tl_08_college_fountain/

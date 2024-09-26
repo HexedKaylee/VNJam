@@ -1,11 +1,11 @@
 [style name="character"]
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="0.0"]
 [music path="res://Assets/Audio/Music/mus_droplets_(loop).wav" fade="0.0" volume="0.0"]
-narrator: You follow this person into the doorway which they originally walked out of,[pause=.2] and come out into a space that appears both open and cramped.[pause=.5]\
+narrator: You follow this person into the doorway which they originally walked out of,[pause=.2] and come out into a space that appears both open and cramped.[n+]\
 \
-The bookshelves which have been lining all the areas you have been in since Prym's test exist here in [i]far[/i] greater numbers than you're used to.[pause=.5] You notice them stacked upon one another in no small number,[pause=.2] amounting to veritable towers of shelves uncountable that progress past the point where you can see as they fade into the blackness above.[pause=.5]\
+The bookshelves which have been lining all the areas you have been in since Prym's test exist here in [i]far[/i] greater numbers than you're used to.[pause=.5] You notice them stacked upon one another in no small number,[pause=.2] amounting to veritable towers of shelves uncountable that progress past the point where you can see as they fade into the blackness above.[n+]\
 \
-Closer to the horizon of your vision,[pause=.2] you see tables with chairs scattered around the room wherever there happens to be no bookcase to take up the space.[pause=.5] These tables are occupied by other Socialites,[pause=.2] who are all having their own whispered conversations over the books opened in front of them.[pause=.5]\
+Closer to the horizon of your vision,[pause=.2] you see tables with chairs scattered around the room wherever there happens to be no bookcase to take up the space.[pause=.5] These tables are occupied by other Socialites,[pause=.2] who are all having their own whispered conversations over the books opened in front of them.[n+]\
 \
 You feel as though there's a word just in the back of your mind that you could call a place like this,[pause=.2] but you are unable to grasp it as solidly as you were the books you've just become familiar with holding.[pause=.5] You look to the bookish Socialite expectantly,[pause=.2] hoping to hear an explanation —[pause=.5] and they don't disappoint.
 [wait time="1.0"]
@@ -22,14 +22,14 @@ join "bookish socialite" center
 "bookish socialite": "Now,[pause=.2] if you'll excuse me."
 [wait time="1.0"]
 leave "bookish socialite"
-narrator: The Socialite appears to deem their very short,[pause=.2] not-too-detailed explanation of the library to be sufficient,[pause=.2] and then quickly exits out the doorway right behind you.[pause=.5] The peculiarly short tour leaves you reeling a bit,[pause=.2] but at least now you [b]know[/b] what sort of place this is…[pause=.5]and have grown to understand a bit more of what other Socialites are like.[pause=.5]\
+narrator: The Socialite appears to deem their very short,[pause=.2] not-too-detailed explanation of the library to be sufficient,[pause=.2] and then quickly exits out the doorway right behind you.[pause=.5] The peculiarly short tour leaves you reeling a bit,[pause=.2] but at least now you [b]know[/b] what sort of place this is…[pause=.5]and have grown to understand a bit more of what other Socialites are like.[n+]\
 \
-Despite the most prominent uses of the library that were explained to you just now,[pause=.2] none of the Socialites gathered here appear to be reading or studying…[pause=.5] Simply conversing in hushed tones —[pause=.5] socializing,[pause=.2] as it were.[pause=.5]\
+Despite the most prominent uses of the library that were explained to you just now,[pause=.2] none of the Socialites gathered here appear to be reading or studying…[pause=.5] Simply conversing in hushed tones —[pause=.5] socializing,[pause=.2] as it were.[n+]\
 \
-It's at this moment that you remember what Prym said\:[pause=.5] that the Socialites around here like to "play 'school'".[pause=.5] You aren't sure entirely,[pause=.2] but the impression you're getting is that Socialites aren't exactly,[pause=.2] [i]literally[/i] students of the college here.[pause=.5]
-narrator: You have trouble imagining exactly how you're supposed to learn to communicate from these people,[pause=.2] when they don't seem to actually have true purposes in mind for the things that they say.[pause=.5] You wonder vacantly about how you may actually go about learning how to speak…[pause=.5] when it occurs to you that perhaps a book on the subject of speech would be of use.[pause=.5]\
+It's at this moment that you remember what Prym said\:[pause=.5] that the Socialites around here like to "play 'school'".[pause=.5] You aren't sure entirely,[pause=.2] but the impression you're getting is that Socialites aren't exactly,[pause=.2] [i]literally[/i] students of the college here.[n+]
+narrator: You have trouble imagining exactly how you're supposed to learn to communicate from these people,[pause=.2] when they don't seem to actually have true purposes in mind for the things that they say.[pause=.5] You wonder vacantly about how you may actually go about learning how to speak…[pause=.5] when it occurs to you that perhaps a book on the subject of speech would be of use.[n+]\
 \
-You decide to wander the library for some bit,[pause=.2] looking around the various shelves,[pause=.2] before your gaze settles on one shelf that appears to have a particularly large coral formation sprouting out of it.[pause=.5] This coral is so large,[pause=.2] and shelflike in-and-of itself,[pause=.2] that it appears to have been repurposed into…[pause=.5]yet more shelving for more books.[pause=.5]\
+You decide to wander the library for some bit,[pause=.2] looking around the various shelves,[pause=.2] before your gaze settles on one shelf that appears to have a particularly large coral formation sprouting out of it.[pause=.5] This coral is so large,[pause=.2] and shelflike in-and-of itself,[pause=.2] that it appears to have been repurposed into…[pause=.5]yet more shelving for more books.[n+]\
 \
 The notion of these books seemingly having no other place but on things that are ostensibly not built for books is enough to pique your interest.[pause=.5] You close the distance between yourself and the coral formation,[pause=.2] and make your selection of the books perched upon it.
 [wait time="1.0"]
@@ -38,14 +38,14 @@ Which book do you take?
 - The magenta book with the ornate gold print on the spine.
 - The white book with glowing pages.
 [wait time="1.0"]
-narrator: You pick up the book and open it up,[pause=.2] but are unable to interpret anything meaningful from the text.[pause=.5] While you're able to identify some of the characters within,[pause=.2] most of them just seem to be squashed together into gibberish with some actual words speckled in between.[pause=.5] There are even some characters that look to be from a foreign language,[pause=.2] but they're not being used in any way that has any meaning either.[pause=.5] Putting this book down,[pause=.2] you grab another one next to it and open it up to similar results,[pause=.2] and then the last one to even less helpful results.[pause=.5]\
+narrator: You pick up the book and open it up,[pause=.2] but are unable to interpret anything meaningful from the text.[pause=.5] While you're able to identify some of the characters within,[pause=.2] most of them just seem to be squashed together into gibberish with some actual words speckled in between.[pause=.5] There are even some characters that look to be from a foreign language,[pause=.2] but they're not being used in any way that has any meaning either.[pause=.5] Putting this book down,[pause=.2] you grab another one next to it and open it up to similar results,[pause=.2] and then the last one to even less helpful results.[n+]\
 \
-You conclude,[pause=.2] from the contents of the books,[pause=.2] that the covers of them are largely just for show.[pause=.5]\
+You conclude,[pause=.2] from the contents of the books,[pause=.2] that the covers of them are largely just for show.[n+]\
 \
 If you had a face that could frown,[pause=.2] you would be doing that right now.[pause=.5]
 [wait time="1.0"]
 - Drop the book on the floor.
-	Shaking your not-head with frustration,[pause=.2] you release your grip on the book and watch as it descends into the floor and vanishes in like fashion to the books you saw earlier.[pause=.5]
+	Shaking your not-head with frustration,[pause=.2] you release your grip on the book and watch as it descends into the floor and vanishes in like fashion to the books you saw earlier.
 	Something about this leaves you perturbed,[pause=.2] but you cannot deny the satisfaction that being rid of the useless thing brings.
 - Place the book back on the shelf.
 	Shaking your not-head with frustration,[pause=.2] you contemplate letting the book fall to the floor…[pause=.5]but the thought of it disappearing,[pause=.2] somehow,[pause=.2] makes you hesitate.
@@ -58,20 +58,20 @@ narrator: Continuing your exploration of the library,[pause=.2] your results are
 [wait time="1.0"]
 [background arg="res://Assets/VN/Backgrounds/dark BG.PNG" fade="2.0"]
 [sound path="res://Assets/Audio/Music/mus_brine_and_biscuits_(loop).wav" volume="0.0"]
-narrator: [i]The radiant chandeliers baked the royal chamber in an uncomfortable warmth as Lady Dianangsworth knelt before the throne,[pause=.2] intensifying the perspiration across her brow.[pause=.5] These meetings were always nerve-racking -[pause=.2] the Queen was an intimidating figure -[pause=.2] but in this instance,[pause=.2] she was the least of her concerns.[/i][pause=.5]\
+narrator: [i]The radiant chandeliers baked the royal chamber in an uncomfortable warmth as Lady Dianangsworth knelt before the throne,[pause=.2] intensifying the perspiration across her brow.[pause=.5] These meetings were always nerve-racking -[pause=.2] the Queen was an intimidating figure -[pause=.2] but in this instance,[pause=.2] she was the least of her concerns.[/i][n+]\
 \
-[i]A loud bang echoed throughout the halls as the door to the room was flung open.[pause=.5] Dianangsworth felt her heart leap into her throat as the royal party marched past her towards the throne.[pause=.5] She quickly choked it back down to avoid suffocation.[pause=.5] She was familiar enough with this process to identify each knight by their footsteps as they planted their feet into the ground by Her Majesty\:[pause=.5] Sir Charlogomonth,[pause=.2] Dame Gregoritithy,[pause=.2] Sir Knightilio,[pause=.2] and finally —[pause=.5] gulp —[pause=.5] Dame Victorisiana.[/i][pause=.5]\
+[i]A loud bang echoed throughout the halls as the door to the room was flung open.[pause=.5] Dianangsworth felt her heart leap into her throat as the royal party marched past her towards the throne.[pause=.5] She quickly choked it back down to avoid suffocation.[pause=.5] She was familiar enough with this process to identify each knight by their footsteps as they planted their feet into the ground by Her Majesty\:[pause=.5] Sir Charlogomonth,[pause=.2] Dame Gregoritithy,[pause=.2] Sir Knightilio,[pause=.2] and finally —[pause=.5] gulp —[pause=.5] Dame Victorisiana.[/i][n+]\
 \
 [i]The Lady’s eyes swelled to balloons as she remembered what had happened between her and the great knight beneath the prior eve.[pause=.5] Their lips locked together as their tongues became entwined.[pause=.5] Their hands folded into one another’s over and over,[pause=.2] like a neatly stored towel...[pause=.5] The tendrils framing her face quivered at the memory.[pause=.5] How was she supposed to face the court like this?[i]
 [wait time="1.0"]
 [background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="2.0"]
-narrator: You close the book in front of you,[pause=.2] having seen enough.[pause=.5] You do not think this is the type of text you would actually like to be reading,[pause=.2] right now.[pause=.5] The idea occurs to you that it was being read by someone who was going to be back…[pause=.5] So you get up,[pause=.2] feeling somewhat flustered,[pause=.2] and angle your way towards anywhere but right in that spot.[pause=.5]\
+narrator: You close the book in front of you,[pause=.2] having seen enough.[pause=.5] You do not think this is the type of text you would actually like to be reading,[pause=.2] right now.[pause=.5] The idea occurs to you that it was being read by someone who was going to be back…[pause=.5] So you get up,[pause=.2] feeling somewhat flustered,[pause=.2] and angle your way towards anywhere but right in that spot.[n+]\
 \
-Well…[pause=.5] At the very least,[pause=.2] you learned that some of the books here do have contents that are comprehensible.[pause=.5]\
+Well…[pause=.5] At the very least,[pause=.2] you learned that some of the books here do have contents that are comprehensible.[n+]\
 \
-Becoming tired of gambling over whether or not the next book is going to be,[pause=.2] er,[pause=.2] inappropriate for your purposes,[pause=.2] you remember your Socialite friend from earlier having spoken of there being someone you could go to for assistance.[pause=.5]\
+Becoming tired of gambling over whether or not the next book is going to be,[pause=.2] er,[pause=.2] inappropriate for your purposes,[pause=.2] you remember your Socialite friend from earlier having spoken of there being someone you could go to for assistance.[n+]\
 \
-You look over to the front desk that was mentioned by your bookish fellow,[pause=.2] where you do indeed see another Socialite who you assume is the librarian.[pause=.5] They also appear to be the only one you have seen so far actually reading a book.[pause=.5] You go up to the desk,[pause=.2] seeking to catch their attention somehow…[pause=.5]but because you still lack the capability of speech,[pause=.2] you are only able to stand there,[pause=.2] raise one hand quietly,[pause=.2] and hope that they see you.[pause=.5]\
+You look over to the front desk that was mentioned by your bookish fellow,[pause=.2] where you do indeed see another Socialite who you assume is the librarian.[pause=.5] They also appear to be the only one you have seen so far actually reading a book.[pause=.5] You go up to the desk,[pause=.2] seeking to catch their attention somehow…[pause=.5]but because you still lack the capability of speech,[pause=.2] you are only able to stand there,[pause=.2] raise one hand quietly,[pause=.2] and hope that they see you.[n+]\
 \
 It doesn't take much,[pause=.2] thankfully,[pause=.2] for them to look up from their book and take notice.
 [wait time="1.0"]
@@ -86,7 +86,7 @@ Luckily,[pause=.2] they don't actually seem to take long to get the gist, probab
 [wait time="1.0"]
 [wait time="1.0"]
 leave "librarian socialite"
-narrator: You're not altogether pleased that you were unable to acquire the [i]exact[/i] help you need,[pause=.2] but your impatience gets the better of you.[pause=.5] You bear some hope for the chance that the librarian of all people has a real book that can be read,[pause=.5] and that the wisdom implied by their position will net you something of worth. You take the sizable book from their hands,[pause=.2] make your way over to a table,[pause=.2] and set it down.[pause=.5] Wrenching open the hefty tome,[pause=.2] you set your gaze upon the secrets contained within.[pause=.5]\
+narrator: You're not altogether pleased that you were unable to acquire the [i]exact[/i] help you need,[pause=.2] but your impatience gets the better of you.[pause=.5] You bear some hope for the chance that the librarian of all people has a real book that can be read,[pause=.5] and that the wisdom implied by their position will net you something of worth. You take the sizable book from their hands,[pause=.2] make your way over to a table,[pause=.2] and set it down.[pause=.5] Wrenching open the hefty tome,[pause=.2] you set your gaze upon the secrets contained within.[n+]\
 \
 The secrets…[pause=.5]contained…
 [wait time="1.0"]
@@ -100,9 +100,9 @@ join "librarian socialite" center
 [wait time="0.0"]
 - " …! "
 [wait time="1.0"]
-narrator: You realize with a start that,[pause=.2] in your frustration,[pause=.2] you seem to have spontaneously attained the coveted power of vocal communication.[pause=.5]\
+narrator: You realize with a start that,[pause=.2] in your frustration,[pause=.2] you seem to have spontaneously attained the coveted power of vocal communication.[n+]\
 \
-… That.[pause=.2] Was annoyingly simple![pause=.5]\
+… That.[pause=.2] Was annoyingly simple![n+]\
 \
 You decidedly get up with the tome and return it to the desk of the librarian.[pause=.5] They seem to roll their eyes at this,[pause=.2] unhappy to see you return.
 [wait time="1.0"]
@@ -111,11 +111,11 @@ You decidedly get up with the tome and return it to the desk of the librarian.[p
 [wait time="1.0"]
 leave "librarian socialite"
 [music fade="5.0" volume="0.0"]
-narrator: Though you wonder what tea could possibly have to do with books,[pause=.2] you nevertheless oblige the cantankerous librarian and go to place the book haphazardly down on a shelf chosen at random.[pause=.5]\
+narrator: Though you wonder what tea could possibly have to do with books,[pause=.2] you nevertheless oblige the cantankerous librarian and go to place the book haphazardly down on a shelf chosen at random.[n+]\
 \
-The arcane volume lands with a now-familiar clack that,[pause=.2] though you hadn't thought to interrogate its strangeness before,[pause=.2] suddenly makes perfect sense in light of the material supposedly used for its construction.[pause=.5]\
+The arcane volume lands with a now-familiar clack that,[pause=.2] though you hadn't thought to interrogate its strangeness before,[pause=.2] suddenly makes perfect sense in light of the material supposedly used for its construction.[n+]\
 \
-Having little other use for the library now that you've managed to attain the goal Prym had set for your exploration of the campus,[pause=.2] you exit out through the doorway with the objective of making your way back from whence you came…[pause=.5]\
+Having little other use for the library now that you've managed to attain the goal Prym had set for your exploration of the campus,[pause=.2] you exit out through the doorway with the objective of making your way back from whence you came…[n+]\
 \
 … But are surprised to find Prym themself standing before you,[pause=.2] waiting,[pause=.2] sporting a disconcertingly portentous grin.
 [wait time="1.0"]
