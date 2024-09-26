@@ -1,45 +1,52 @@
 [style name="character"]
+[background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="1.0"]
 [wait time="1.0"]
-narrator: You aren't sure you really had to follow the same path back. It seems, now, that your feet simply take you to where you want to go with more ease than ever.\
+narrator: You aren't sure you really had to follow the same path back.[pause=.5] It seems,[pause=.2] now,[pause=.2] that your feet simply take you to where you want to go with more ease than ever.[n+]\
 \
-You feel featherlight as you round the corner into the college hallway that takes you to the lab, and are soon through its doorway with a pronounced excitement that almost makes you feel ill.\
+You feel featherlight as you round the corner into the college hallway that takes you to the lab,[pause=.2] and are soon through its doorway with a pronounced excitement that almost makes you feel ill.[n+]\
 \
-Behind the flasks of Spirit Fish, you identify the floating lights of Prym's brilliant hair, and that familiar scent of smoke wafting about from their device placed in the corner, like incense permeating the space.
+Behind the flasks of Spirit Fish,[pause=.2] you identify the floating lights of Prym's brilliant hair,[pause=.2] and that familiar scent of smoke wafting about from their device placed in the corner,[pause=.2] like incense permeating the space.
 [wait time="1.0"]
 - "Prym…!"
 They turn to you.
 [wait time="1.0"]
+join prym (prym_neutral) center
+[music path="res://Assets/Audio/Music/mus_droplets_(loop).wav" fade="0.0" volume="0.0"]
 prym: "My —"
 prym: " …! "
 prym: " …"
-prym: "My precious subject."
+prym (prym_happy): "My precious subject."
 [wait time="0.0" hide_text="false"]
 - " …?"
-You swear that, for just an instant as they look upon you, there's an expression on Prym's face that you have never seen them make before.
-It catches you so off-guard, that you don't have a chance to say any more before a swell of tendrils surrounds you.
+You swear that,[pause=.2] for just an instant as they look upon you,[pause=.2] there's an expression on Prym's face that you have never seen them make before.
+It catches you so off-guard,[pause=.2] that you don't have a chance to say any more before a swell of tendrils surrounds you.
 [wait time="1.0"]
-prym: "You're just in time. The preparations are complete."
+prym (prym_neutral): "You're just in time.[pause=.5] The preparations are complete."
 [wait time="1.0"]
+[music fade="2.0" volume="0.0"]
 - Feel dread.
-There's something about their voice, in this moment, that freezes you in place.
+[sound path="res://Assets/Audio/Music/mus_submerged_(loop).wav" volume="0.0"]
+[background arg="res://Assets/VN/Backgrounds/uneasy BG.PNG" fade="2.0"]
+There's something about their voice,[pause=.2] in this moment,[pause=.2] that freezes you in place.
 [wait time="1.0"]
-prym: "I have another experiment for you, subject."
+prym: "I have another experiment for you,[pause=.2] subject."
 prym: "I'm sure you have a lot to tell me about all the things you learned."
-prym: "But right now, we must continue with our testing."
+prym: "But right now,[pause=.2] we must continue with our testing."
 [wait time="1.0"]
-narrator: You hear a click from the device in the corner, which then begins to suddenly churn out smoke in a thick, dense fog.\
+narrator: You hear a click from the device in the corner,[pause=.2] which then begins to suddenly churn out smoke in a thick,[pause=.2] dense fog.[n+]\
 \
-The intoxicatingly sweet and familiar scent hits you powerfully — but this time, the calm that you encountered before doesn't follow.\
+The intoxicatingly sweet and familiar scent hits you powerfully —[pause=.5] but this time,[pause=.2] the calm that you encountered before doesn't follow.[n+]\
 \
-There is an overbearing, [i]choking[/i] pressure on all sides.\
+There is an overbearing,[pause=.2] [i]choking[/i] pressure on all sides.[n+]\
 \
-You can't move.\
+You can't move.[n+]\
 \
-Their tendrils have you rooted, again, firmly in place.
+Their tendrils have you rooted,[pause=.2] again,[pause=.2] firmly in place.
 [wait time="1.0"]
-prym: [i][b]"Take it in deeply, now."[/b][/i]
-narrator: There's no room for the panic that wells up within you. You couldn't partake of it if you wanted.\
+prym: [i][b]"Take it in deeply,[pause=.2] now."[/b][/i]
+narrator: There's no room for the panic that wells up within you.[pause=.5] You couldn't partake of it if you wanted.[n+]\
 \
-All is then drenched in a black and harrowing silence, [speed=5.0] as you fall asleep again.
+All is then drenched in a black and harrowing silence,[pause=.2] [speed=5.0] as you fall asleep again.
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="5.0"]
 [wait time="5.0"]
 [signal arg="start_experiment_4"]
