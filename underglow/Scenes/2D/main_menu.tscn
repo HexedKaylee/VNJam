@@ -1,5 +1,6 @@
-[gd_scene load_steps=19 format=3 uid="uid://cb02hrifprh5y"]
+[gd_scene load_steps=20 format=3 uid="uid://cb02hrifprh5y"]
 
+[ext_resource type="Script" path="res://Scenes/2D/main_menu.gd" id="1_2c4sr"]
 [ext_resource type="Texture2D" uid="uid://d2ke0fbwkhjc3" path="res://Assets/VN/Backgrounds/uneasy BG.PNG" id="1_k7ha2"]
 [ext_resource type="Texture2D" uid="uid://cfrk5rv6bsoal" path="res://Assets/VN/Backgrounds/generic BG.PNG" id="2_nsq6g"]
 [ext_resource type="Script" path="res://Scenes/2D/generic_bg.gd" id="3_vopp0"]
@@ -48,6 +49,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_2c4sr")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
@@ -81,7 +83,7 @@ action_mode = 0
 icon = ExtResource("7_ddj50")
 icon_alignment = 1
 
-[node name="Start Button" parent="." instance=ExtResource("6_ynnse")]
+[node name="StartButton" parent="." instance=ExtResource("6_ynnse")]
 layout_mode = 0
 offset_left = 673.5
 offset_top = 362.0
@@ -90,7 +92,7 @@ offset_bottom = 524.0
 theme_override_styles/focus = SubResource("StyleBoxEmpty_8xx83")
 script = ExtResource("7_4aniq")
 
-[node name="Continue Button" parent="." instance=ExtResource("6_ynnse")]
+[node name="ContinueButton" parent="." instance=ExtResource("6_ynnse")]
 layout_mode = 0
 offset_left = 673.5
 offset_top = 530.0
@@ -101,7 +103,7 @@ theme_override_styles/disabled = SubResource("StyleBoxEmpty_i7dnt")
 text = "continue to KNOW"
 script = ExtResource("8_ldbxn")
 
-[node name="display button" parent="." instance=ExtResource("6_ynnse")]
+[node name="DisplayButton" parent="." instance=ExtResource("6_ynnse")]
 layout_mode = 0
 offset_left = 673.5
 offset_top = 695.0
@@ -111,7 +113,7 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_8xx83")
 text = "fullscreen: off"
 script = ExtResource("9_cssxv")
 
-[node name="quit button" parent="." instance=ExtResource("6_ynnse")]
+[node name="QuitButton" parent="." instance=ExtResource("6_ynnse")]
 layout_mode = 0
 offset_left = 673.5
 offset_top = 860.0
@@ -125,7 +127,7 @@ script = ExtResource("8_nfiay")
 position = Vector2(960, 197)
 texture = ExtResource("4_i6uek")
 
-[connection signal="pressed" from="Start Button" to="Start Button" method="_on_pressed"]
-[connection signal="pressed" from="Continue Button" to="Continue Button" method="_on_pressed"]
-[connection signal="pressed" from="display button" to="display button" method="_on_pressed"]
-[connection signal="pressed" from="quit button" to="quit button" method="_on_pressed"]
+[connection signal="pressed" from="StartButton" to="StartButton" method="_on_pressed"]
+[connection signal="pressed" from="ContinueButton" to="ContinueButton" method="_on_pressed"]
+[connection signal="pressed" from="DisplayButton" to="DisplayButton" method="_on_pressed"]
+[connection signal="pressed" from="QuitButton" to="QuitButton" method="_on_pressed"]

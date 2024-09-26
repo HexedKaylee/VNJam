@@ -37,3 +37,5 @@ script = ExtResource("4_4xmj5")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.271719, 0)
 visible = false
 mesh = SubResource("BoxMesh_cp382")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
