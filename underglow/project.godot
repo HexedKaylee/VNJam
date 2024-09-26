@@ -34,6 +34,10 @@ directories/dch_directory={
 "CG": "res://VN/Characters/Utility/CG.dch",
 "book-laden socialite": "res://VN/Characters/Throwaways/book-laden socialite.dch",
 "bookish socialite": "res://VN/Characters/Throwaways/bookish socialite.dch",
+"cg_reflection_2": "res://VN/Characters/Throwaways/cg_reflection_2.dch",
+"cg_reflection_3": "res://VN/Characters/Throwaways/cg_reflection_3.dch",
+"cg_reflection_4": "res://VN/Characters/Throwaways/cg_reflection_4.dch",
+"cg_reflection_5": "res://VN/Characters/Throwaways/cg_reflection_5.dch",
 "clare": "res://VN/Characters/clare.dch",
 "demure socialite": "res://VN/Characters/Throwaways/demure damsel.dch",
 "demure voice": "res://VN/Characters/Throwaways/demure voice.dch",
@@ -63,6 +67,7 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "narrationtest": "res://VN/Timelines/Test/narrationtest.dtl",
+"reflection_test": "res://VN/Timelines/Test/reflection_test.dtl",
 "testing_tl_02": "res://VN/Timelines/Test/testing_tl_02.dtl",
 "tl_00_prologue_intro": "res://VN/Timelines/Main/tl_00_prologue_intro.dtl",
 "tl_01_prologue_awaken": "res://VN/Timelines/Main/tl_01_prologue_awaken.dtl",
