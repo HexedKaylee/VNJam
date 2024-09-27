@@ -4,9 +4,9 @@ narrator: You wander the campus with an unsettled feeling,[pause=.2] finding all
 \
 You wander into the courtyard and settle on the edge of a fountain,[pause=.2] looking around at the bright formations of coral and watching the light of Spirit Fish and Socialites pass you by.[n+]\
 \
-Your gaze drifts down to the brine of the fountain —[pause=.5] your reflection,[pause=.2] same as before,[pause=.2] staring emptily back at you.[n+]\
+Your gaze drifts down to the brine of the fountain —[pause=.5] your reflection,[pause=.2] same as before,[pause=.2] staring emptily back at you.\
 \
-Amidst your contemplation,[pause=.2] you notice a reflection beside yours,[pause=.2] and look over to see the most evidently corporeal individual you have come across since awakening thus far.[n+]\
+[n]Amidst your contemplation,[pause=.2] you notice a reflection beside yours,[pause=.2] and look over to see the most evidently corporeal individual you have come across since awakening thus far.[n+]\
 \
 They don't appear as though they're blending in with the environment,[pause=.2] their visage a stark contrast against the glow and the void below and above.[pause=.5] No mask-like appearance of which to speak,[pause=.2] and no detached limbs to float meanderingly about their form —[pause=.5] like they're the most comprehensible being you feel you've ever seen here before.[n+]\
 \
@@ -15,9 +15,9 @@ Curious…[pause=.5] And,[pause=.2] though they look much more…[pause=.5] real
 There is nothing that appears to be an attempt at "playing pretend" like you are accustomed to in the countenance of Socialites.[pause=.5] Instead, they have a certain je ne sais quoi that…[pause=.5] feels completely organic and natural.
 narrator: A word enters your mind.[pause=.5] Lifelike.[n+]\
 \
-It's as though you've met the first real person in this place with their own unique sense of self besides Prym…[pause=.5] Though you suppose Prym might be a notch more past normal than you can handle.[n+]\
+It's as though you've met the first real person in this place with their own unique sense of self besides Prym…[pause=.5] Though you suppose Prym might be a notch more past normal than you can handle.\
 \
-No…[pause=.5] What makes you certain that this person is a "person" rather than a Socialite playing pretend…[n+]\
+[n]No…[pause=.5] What makes you certain that this person is a "person" rather than a Socialite playing pretend…[n+]\
 \
 …is that the expression on their face belies a sadness you could almost drown in.[n+]\
 \
@@ -31,9 +31,9 @@ join "friendly diver" center
 [wait time="1.0"]
 narrator: Their voice is soft.[pause=.5] You look down to realize that you are,[pause=.2] in fact,[pause=.2] still clutching the book Prym gave you.[n+]\
 \
-You look back up at this new Droplet.[pause=.5] You wonder what category they actually fit in;[pause=.4] they certainly seem too…[pause=.4] well-formed to be a Socialite,[pause=.2] but they also don't strike you as a Disciple.[n+]\
+You look back up at this new Droplet.[pause=.5] You wonder what category they actually fit in;[pause=.4] they certainly seem too…[pause=.4] well-formed to be a Socialite,[pause=.2] but they also don't strike you as a Disciple.\
 \
-… Ah,[pause=.2] that's right.[pause=.5] You just learned about this.
+[n]… Ah,[pause=.2] that's right.[pause=.5] You just learned about this.
 [wait time="1.0"]
 - "Are you… a Diver?"
 "lifelike figure": "Oh?[pause=.5] Well,[pause=.2] isn't that all the more unexpected!"
@@ -60,9 +60,9 @@ narrator: You tell the Diver about the experiments you've been subject to,[pause
 \
 Your tale brings the Diver to such a jovial bout of laughter that you yourself can't help but join in.[pause=.5] It's a loud,[pause=.2] loose laugh that you weren't sure you were capable of until now.[n+]\
 \
-Funny…[pause=.5] It really is such a pleasant sensation,[pause=.2] the laughter brought about by sharing your experience with another.[pause=.5] Realizing this makes you notice…[pause=.5] This is the best you've felt since arriving here.[n+]\
+Funny…[pause=.5] It really is such a pleasant sensation,[pause=.2] the laughter brought about by sharing your experience with another.[pause=.5] Realizing this makes you notice…[pause=.5] This is the best you've felt since arriving here.\
 \
-It continues to ring true,[pause=.2] the idea that your fears can be alleviated by simply recalling your woes aloud.[pause=.5] It rings as clearly as the laughter shared by two spirits who were once both burdened by distilled discontent.[n+]\
+[n]It continues to ring true,[pause=.2] the idea that your fears can be alleviated by simply recalling your woes aloud.[pause=.5] It rings as clearly as the laughter shared by two spirits who were once both burdened by distilled discontent.[n+]\
 \
 All the consternation and unease given to you by your experiences almost seems to melt away the more you converse with them.
 [wait time="1.0"]
@@ -108,25 +108,25 @@ You watch as a grin slowly etches itself onto their face.[pause=.5] Their eyes w
 \
 They seem to have forgotten you completely,[pause=.2] as they cast their gaze forward towards the innermost grounds of the college.[n+]\
 \
-They begin to take their steps towards the sanctum,[pause=.2] dust kicking up in their wake.[n+]\
+They begin to take their steps towards the sanctum,[pause=.2] dust kicking up in their wake.\
 \
-You aren't sure entirely,[pause=.2] but you swear you hear them whisper something that shakes you to your core.
+[n]You aren't sure entirely,[pause=.2] but you swear you hear them whisper something that shakes you to your core.
 narrator: [i]"I'll save you yet,[pause=.2] my —"[/i]
 leave "friendly diver"
 [wait time="1.0"]
 - " …! "
 [music fade="5.0" volume="0.0"]
 [wait time="1.0"]
-narrator: A potent chill washes across your form.[n+]\
+narrator: A potent chill washes across your form.\
 \
-Could that…[n+]\
+[n]Could that…[n+]\
 \
 … have been…?
 join "shady disciple" center
 [sound path="res://Assets/Audio/Music/mus_submerged_(loop).wav" volume="0.0"]
-narrator: Your thoughts are interrupted as something abruptly takes hold of your shoulder,[pause=.2] a grip like steel and ice.[n+]\
+narrator: Your thoughts are interrupted as something abruptly takes hold of your shoulder,[pause=.2] a grip like steel and ice.\
 \
-You turn around to find an unfamiliar Disciple.[pause=.5] As you tilt your head up to meet their gaze, your eyes lock.[n+]\
+[n]You turn around to find an unfamiliar Disciple.[pause=.5] As you tilt your head up to meet their gaze, your eyes lock.[n+]\
 \
 There's a terrifying vacantness in them,[pause=.2] more so even than Prym's.[n+]\
 \

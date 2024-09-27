@@ -74,15 +74,15 @@ narrator: [i]The radiant chandeliers baked the royal chamber in an uncomfortable
 [n+][i]The Lady’s eyes swelled to balloons as she remembered what had happened between her and the great knight beneath the prior eve.[pause=.5] Their lips locked together as their tongues became entwined.[pause=.5] Their hands folded into one another’s over and over,[pause=.2] like a neatly stored towel...[pause=.5] The tendrils framing her face quivered at the memory.[pause=.5] How was she supposed to face the court like this?[i]
 [wait time="1.0"]
 [background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="2.0"]
-narrator: You close the book in front of you,[pause=.2] having seen enough.[pause=.5] You do not think this is the type of text you would actually like to be reading,[pause=.2] right now.[pause=.5] The idea occurs to you that it was being read by someone who was going to be back…[pause=.5] So you get up,[pause=.2] feeling somewhat flustered,[pause=.2] and angle your way towards anywhere but right in that spot.\
+narrator: You close the book in front of you,[pause=.2] having seen enough.[pause=.5] You do not think this is the type of text you would actually like to be reading,[pause=.2] right now.[pause=.5] The idea occurs to you that it was being read by someone who was going to be back…[pause=.5] So you get up,[pause=.2] feeling somewhat flustered,[pause=.2] and angle your way towards anywhere but right in that spot.[n+]\
 \
 Well…[pause=.5] At the very least,[pause=.2] you learned that some of the books here do have contents that are comprehensible.\
 \
-Becoming tired of gambling over whether or not the next book is going to be,[pause=.2] er,[pause=.2] inappropriate for your purposes,[pause=.2] you remember your Socialite friend from earlier having spoken of there being someone you could go to for assistance.\
+[n]Becoming tired of gambling over whether or not the next book is going to be,[pause=.2] er,[pause=.2] inappropriate for your purposes,[pause=.2] you remember your Socialite friend from earlier having spoken of there being someone you could go to for assistance.[n+]\
 \
 You look over to the front desk that was mentioned by your bookish fellow,[pause=.2] where you do indeed see another Socialite who you assume is the librarian.[pause=.5] They also appear to be the only one you have seen so far actually reading a book.[pause=.5] You go up to the desk,[pause=.2] seeking to catch their attention somehow…[pause=.5]but because you still lack the capability of speech,[pause=.2] you are only able to stand there,[pause=.2] raise one hand quietly,[pause=.2] and hope that they see you.\
 \
-It doesn't take much,[pause=.2] thankfully,[pause=.2] for them to look up from their book and take notice.
+[n]It doesn't take much,[pause=.2] thankfully,[pause=.2] for them to look up from their book and take notice.
 [wait time="1.0"]
 join "librarian socialite" center
 "librarian socialite": " … Can I help you?"
@@ -100,7 +100,7 @@ Luckily,[pause=.2] they don't actually seem to take long to get the gist, probab
 leave "librarian socialite"
 narrator: You're not altogether pleased that you were unable to acquire the [i]exact[/i] help you need,[pause=.2] but your impatience gets the better of you.[pause=.5] You bear some hope for the chance that the librarian of all people has a real book that can be read,[pause=.5] and that the wisdom implied by their position will net you something of worth. You take the sizable book from their hands,[pause=.2] make your way over to a table,[pause=.2] and set it down.[pause=.5] Wrenching open the hefty tome,[pause=.2] you set your gaze upon the secrets contained within.\
 \
-The secrets…[pause=.5]contained…
+[n]The secrets…[pause=.5]contained…
 [wait time="1.0"]
 - "Oh for crying out loud. It's just more incomprehensible nonsense!"
 The librarian shoots you an irritated look.
@@ -112,11 +112,11 @@ join "librarian socialite" center
 [wait time="0.0"]
 - " …! "
 [wait time="1.0"]
-narrator: You realize with a start that,[pause=.2] in your frustration,[pause=.2] you seem to have spontaneously attained the coveted power of vocal communication.\
+narrator: You realize with a start that,[pause=.2] in your frustration,[pause=.2] you seem to have spontaneously attained the coveted power of vocal communication.[n+]\
 \
 … That.[pause=.2] Was annoyingly simple!\
 \
-You decidedly get up with the tome and return it to the desk of the librarian.[pause=.5] They seem to roll their eyes at this,[pause=.2] unhappy to see you return.
+[n]You decidedly get up with the tome and return it to the desk of the librarian.[pause=.5] They seem to roll their eyes at this,[pause=.2] unhappy to see you return.
 [wait time="1.0"]
 "librarian socialite": *sigh* "Look,[pause=.2] if that one wasn't your cup of tea,[pause=.2] feel free to return it to a shelf.[pause=.5] Any one will do."
 "librarian socialite": "Chuck it as hard as you like,[pause=.2] for all I care. Everything here's made of stone, anyway."
@@ -125,9 +125,9 @@ leave "librarian socialite"
 [music fade="5.0" volume="0.0"]
 narrator: Though you wonder what tea could possibly have to do with books,[pause=.2] you nevertheless oblige the cantankerous librarian and go to place the book haphazardly down on a shelf chosen at random.\
 \
-The arcane volume lands with a now-familiar clack that,[pause=.2] though you hadn't thought to interrogate its strangeness before,[pause=.2] suddenly makes perfect sense in light of the material supposedly used for its construction.\
+[n]The arcane volume lands with a now-familiar clack that,[pause=.2] though you hadn't thought to interrogate its strangeness before,[pause=.2] suddenly makes perfect sense in light of the material supposedly used for its construction.\
 \
-Having little other use for the library now that you've managed to attain the goal Prym had set for your exploration of the campus,[pause=.2] you exit out through the doorway with the objective of making your way back from whence you came…\
+[n]Having little other use for the library now that you've managed to attain the goal Prym had set for your exploration of the campus,[pause=.2] you exit out through the doorway with the objective of making your way back from whence you came…[n+]\
 \
 … But are surprised to find Prym themself standing before you,[pause=.2] waiting,[pause=.2] sporting a disconcertingly portentous grin.
 [wait time="1.0"]
