@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rw7c1tknvj5g"
-path="res://.godot/imported/prt_flustered_mask_neutral.png-bf23748a233db0043c511175dcc71e66.ctex"
+uid="uid://c5slfj05rqgam"
+path="res://.godot/imported/overlay miasma.png-c4bebd6e06e397860a84809c2372e256.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/VN/Portraits/Mask/prt_flustered_mask_neutral.png"
-dest_files=["res://.godot/imported/prt_flustered_mask_neutral.png-bf23748a233db0043c511175dcc71e66.ctex"]
+source_file="res://Assets/VN/Backgrounds/overlay miasma.png"
+dest_files=["res://.godot/imported/overlay miasma.png-c4bebd6e06e397860a84809c2372e256.ctex"]
 
 [params]
 

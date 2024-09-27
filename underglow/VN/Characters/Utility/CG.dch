@@ -41,6 +41,15 @@
 "offset": Vector2(0, 0),
 "scale": 1,
 "scene": ""
+},
+"cg_uneasy": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Backgrounds/uneasy BG.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
 }
 },
 "scale": 1.0
