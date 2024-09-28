@@ -30,6 +30,8 @@ overrides = {}
 script = ExtResource("1_tlpu6")
 scene = ExtResource("5_bypmn")
 overrides = {
+"box_panel": "\"vn_textbox_default_panel.tres\"",
+"name_label_box_panel": "\"vn_textbox_name_label_panel.tres\"",
 "text_size": "23.0",
 "text_use_global_size": "false"
 }
@@ -59,4 +61,4 @@ script = ExtResource("10_p4tje")
 name = "vncharadia"
 base_overrides = {}
 layers = Array[ExtResource("1_tlpu6")]([SubResource("Resource_ytsap"), SubResource("Resource_30rh5"), SubResource("Resource_c2rfy"), SubResource("Resource_ndc3q"), SubResource("Resource_rorod"), SubResource("Resource_dgada"), SubResource("Resource_od0wg"), SubResource("Resource_rynq4")])
-metadata/_latest_layer = 7
+metadata/_latest_layer = 3

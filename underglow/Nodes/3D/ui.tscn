@@ -7,7 +7,7 @@
 [ext_resource type="Script" path="res://Nodes/3D/dialogue_controller.gd" id="4_upstm"]
 
 [sub_resource type="Theme" id="Theme_tmgdd"]
-default_font_size = 24
+default_font_size = 30
 
 [node name="UI" type="Control"]
 layout_mode = 3
@@ -39,6 +39,8 @@ theme = SubResource("Theme_tmgdd")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 bbcode_enabled = true
 text = "Cave Johnson here. Just wanted to let you know that, after decades of research and testing, we have finally transformed into beings of pure light. Go team. Not exactly what we were after, of course, but in the ballpark. So let's keep testing, and maybe someday we'll achieve man's ultimate dream: to evolve into pillars of pure salt. Can't wait....So salty."
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="TextBox"]
 
 [node name="Controller" type="Control" parent="."]
 unique_name_in_owner = true

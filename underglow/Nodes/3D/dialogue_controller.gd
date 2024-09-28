@@ -10,6 +10,7 @@ var exit = false
 var fadeSpd = 4
 var diag
 var diagDict = {}
+var voiceDict = {}
 var scenePhase = 0
 var timer = 0.0
 var waitMax = 15.0
@@ -28,6 +29,7 @@ var drunkSeven = false
 func _ready():
 	diag = readJSON("res://Assets/Misc/ex_diag.json")
 	diagDict = generateDict(diag)
+	voiceDict = generateDictSound(diag)
 
 func _process(delta):
 	if(entry):
@@ -70,26 +72,26 @@ func exp1(delta):
 	match scenePhase:
 		0:
 			scenePhase = 1
-			textBox.activate(diagDict["ex1_00"])
+			textBox.activate(diagDict["ex1_00"], voiceDict["ex1_00"])
 		1:
 			if(textBox.modulate.a == 0):
 				timer += delta
 				if(timer > waitMax):
-					textBox.activate(diagDict["ex1_00a"])
+					textBox.activate(diagDict["ex1_00a"], voiceDict["ex1_00a"])
 					scenePhase = 2
 					timer = 0
 		2:
 			if(textBox.modulate.a == 0):
 				timer += delta
 				if(timer > waitMax):
-					textBox.activate(diagDict["ex1_00b"])
+					textBox.activate(diagDict["ex1_00b"], voiceDict["ex1_00b"])
 					scenePhase = 3
 					timer = 0
 		3:
 			if(textBox.modulate.a == 0):
 				timer += delta
 				if(timer > waitMax):
-					textBox.activate(diagDict["ex1_00c"])
+					textBox.activate(diagDict["ex1_00c"], voiceDict["ex1_00c"])
 					scenePhase = 4
 					timer = 0
 					
@@ -119,26 +121,26 @@ func exp2(delta):
 	match scenePhase:
 		0:
 			scenePhase = 1
-			textBox.activate(diagDict["ex2_00"])
+			textBox.activate(diagDict["ex2_00"], voiceDict["ex2_00"])
 		1:
 			if(textBox.modulate.a == 0):
 				timer += delta
 				if(timer > waitMax):
-					textBox.activate(diagDict["ex2_00a"])
+					textBox.activate(diagDict["ex2_00a"], voiceDict["ex2_00a"])
 					scenePhase = 2
 					timer = 0
 		2:
 			if(textBox.modulate.a == 0):
 				timer += delta
 				if(timer > waitMax):
-					textBox.activate(diagDict["ex2_00b"])
+					textBox.activate(diagDict["ex2_00b"], voiceDict["ex2_00b"])
 					scenePhase = 3
 					timer = 0
 		3:
 			if(textBox.modulate.a == 0):
 				timer += delta
 				if(timer > waitMax):
-					textBox.activate(diagDict["ex2_00c"])
+					textBox.activate(diagDict["ex2_00c"], voiceDict["ex2_00c"])
 					scenePhase = 4
 					timer = 0
 		6:
@@ -155,39 +157,39 @@ func exp3(delta):
 	match scenePhase:
 		0:
 			scenePhase = 1
-			textBox.activate(diagDict["ex3_00"])
+			textBox.activate(diagDict["ex3_00"], voiceDict["ex3_00"])
 		1:
 			if(textBox.modulate.a == 0):
 				timer += delta
 				if(timer > waitMax):
-					textBox.activate(diagDict["ex3_00a"])
+					textBox.activate(diagDict["ex3_00a"], voiceDict["ex3_00a"])
 					scenePhase = 2
 					timer = 0
 		2:
 			if(textBox.modulate.a == 0):
 				timer += delta
 				if(timer > waitMax):
-					textBox.activate(diagDict["ex3_00b"])
+					textBox.activate(diagDict["ex3_00b"], voiceDict["ex3_00b"])
 					scenePhase = 3
 					timer = 0
 		3:
 			if(textBox.modulate.a == 0):
 				timer += delta
 				if(timer > waitMax):
-					textBox.activate(diagDict["ex3_00c"])
+					textBox.activate(diagDict["ex3_00c"], voiceDict["ex3_00c"])
 					scenePhase = 4
 					timer = 0
 		4:
 			if(textBox.modulate.a == 0):
 				timer += delta
 				if(timer > waitMax):
-					textBox.activate(diagDict["ex3_00d"])
+					textBox.activate(diagDict["ex3_00d"], voiceDict["ex3_00d"])
 					scenePhase = 5
 					timer = 0
 		5:
 			if(textBox.modulate.a == 0 and player.serumsDrunk >= 8):
 				scenePhase = 6
-				textBox.activate(diagDict["ex3_02"])
+				textBox.activate(diagDict["ex3_02"], voiceDict["ex3_02"])
 		6:
 			if(textBox.modulate.a == 0):
 				timer += delta
@@ -202,47 +204,47 @@ func exp4(delta):
 	match scenePhase:
 		0:
 			scenePhase = 1
-			textBox.activate(diagDict["ex4_00"])
+			textBox.activate(diagDict["ex4_00"], voiceDict["ex4_00"])
 		1:
 			if(textBox.modulate.a == 0):
 				timer += delta
 				if(timer > waitMax):
-					textBox.activate(diagDict["ex4_00a"])
+					textBox.activate(diagDict["ex4_00a"], voiceDict["ex4_00a"])
 					scenePhase = 2
 					timer = 0
 		2:
 			if(textBox.modulate.a == 0):
 				timer += delta
 				if(timer > waitMax):
-					textBox.activate(diagDict["ex4_00b"])
+					textBox.activate(diagDict["ex4_00b"], voiceDict["ex4_00b"])
 					scenePhase = 3
 					timer = 0
 		3:
 			if(textBox.modulate.a == 0):
 				timer += delta
 				if(timer > waitMax):
-					textBox.activate(diagDict["ex4_00c"])
+					textBox.activate(diagDict["ex4_00c"], voiceDict["ex4_00c"])
 					scenePhase = 4
 					timer = 0
 		6:
 			if(textBox.modulate.a == 0):
 				timer += delta
 				if(timer > waitMax):
-					textBox.activate(diagDict["ex4_02a"])
+					textBox.activate(diagDict["ex4_02a"], voiceDict["ex4_02a"])
 					scenePhase = 7
 					timer = 0
 		7:
 			if(textBox.modulate.a == 0):
 				timer += delta
 				if(timer > waitMax):
-					textBox.activate(diagDict["ex4_02b"])
+					textBox.activate(diagDict["ex4_02b"], voiceDict["ex4_02b"])
 					scenePhase = 8
 					timer = 0
 		8:
 			if(textBox.modulate.a == 0):
 				timer += delta
 				if(timer > waitMax):
-					textBox.activate(diagDict["ex4_02c"])
+					textBox.activate(diagDict["ex4_02c"], voiceDict["ex4_02c"])
 					scenePhase = 9
 					timer = 0
 		12:
@@ -267,22 +269,22 @@ func bookControl(action, scn = ""):
 			if(scenePhase < 5):
 				scenePhase = 5
 				timer = 0
-				textBox.activate(diagDict["ex1_01"])
+				textBox.activate(diagDict["ex1_01"], voiceDict["ex1_01"])
 		1:
 			if(scenePhase < 6):
 				scenePhase = 6
 				timer = 0
-				textBox.activate(diagDict[scn])
+				textBox.activate(diagDict[scn], voiceDict[scn])
 		2:
 			if(scenePhase < 7):
 				scenePhase = 7
 				timer = 0
-				textBox.activate(diagDict[scn])
+				textBox.activate(diagDict[scn], voiceDict[scn])
 		3:
 			if(scenePhase < 7):
 				scenePhase = 8
 				timer = 0
-				textBox.activate(diagDict[scn])
+				textBox.activate(diagDict[scn], voiceDict[scn])
 		_:
 			pass
 
@@ -292,13 +294,13 @@ func launchControl():
 	if(scenePhase < 5 and player.launchReady):
 		scenePhase = 5
 		timer = 0
-		textBox.activate(diagDict["ex2_01"])
+		textBox.activate(diagDict["ex2_01"], voiceDict["ex2_01"])
 	if(scenePhase >= 5):
 		if(!hitShelf and player.shotShelf):		
-			textBox.activate(diagDict["ex2_02a"])
+			textBox.activate(diagDict["ex2_02a"], voiceDict["ex2_02a"])
 			hitShelf = true
 		if(!hitCoral and player.shotCoral):		
-			textBox.activate(diagDict["ex2_02b"])
+			textBox.activate(diagDict["ex2_02b"], voiceDict["ex2_02b"])
 			hitCoral = true
 		if(textBox.modulate.a != 0):
 			if(player.fishNum >= fishTarg):
@@ -306,15 +308,15 @@ func launchControl():
 		elif(player.fishNum > fishTarg):
 			match fishTarg:
 				10:
-					textBox.activate(diagDict["ex2_03a"])
+					textBox.activate(diagDict["ex2_03a"], voiceDict["ex2_03a"])
 				20:
-					textBox.activate(diagDict["ex2_03b"])
+					textBox.activate(diagDict["ex2_03b"], voiceDict["ex2_03b"])
 				30:
-					textBox.activate(diagDict["ex2_03c"])
+					textBox.activate(diagDict["ex2_03c"], voiceDict["ex2_03c"])
 				40:
-					textBox.activate(diagDict["ex2_03d"])
+					textBox.activate(diagDict["ex2_03d"], voiceDict["ex2_03d"])
 				50:
-					textBox.activate(diagDict["ex2_04"])
+					textBox.activate(diagDict["ex2_04"], voiceDict["ex2_04"])
 					scenePhase = 6
 				_:
 					print("ERROR: BAD FISH TARG!")
@@ -329,7 +331,7 @@ func serumIngester(serum):
 		return
 	timer = 0
 	print("ex3_01_" + str(serum))
-	textBox.activate(diagDict["ex3_01_" + str(serum)])
+	textBox.activate(diagDict["ex3_01_" + str(serum)], voiceDict["ex3_01_" + str(serum)])
 	pass
 
 func bookCounter():
@@ -347,20 +349,20 @@ func ex4_tracker():
 	if(textBox.modulate.a == 0):
 		if(drunkSeven):
 			scenePhase = 6
-			textBox.activate(diagDict["ex4_02"])
+			textBox.activate(diagDict["ex4_02"], voiceDict["ex4_02"])
 			timer = 0
 		else:
 			if(holdingBook and booksHeld >= bookTarg):
 				match bookTarg:
 					1:
 						scenePhase = 4
-						textBox.activate(diagDict["ex4_01a"])
+						textBox.activate(diagDict["ex4_01a"], voiceDict["ex4_01a"])
 						bookTarg = 5
 					5:
-						textBox.activate(diagDict["ex4_01b"])
+						textBox.activate(diagDict["ex4_01b"], voiceDict["ex4_01b"])
 						bookTarg = 10
 					10:
-						textBox.activate(diagDict["ex4_01c"])
+						textBox.activate(diagDict["ex4_01c"], voiceDict["ex4_01c"])
 						bookTarg = INF
 					_:
 						pass
@@ -368,13 +370,13 @@ func ex4_tracker():
 				match serumTarg:
 					1:
 						scenePhase = 4
-						textBox.activate(diagDict["ex4_01d"])
+						textBox.activate(diagDict["ex4_01d"], voiceDict["ex4_01d"])
 						serumTarg = 3
 					3:
-						textBox.activate(diagDict["ex4_01e"])
+						textBox.activate(diagDict["ex4_01e"], voiceDict["ex4_01e"])
 						serumTarg = 5
 					5:
-						textBox.activate(diagDict["ex4_01f"])
+						textBox.activate(diagDict["ex4_01f"], voiceDict["ex4_01f"])
 						serumTarg = INF
 					_:
 						pass
@@ -385,15 +387,15 @@ func distanceChecker():
 			10:
 				if(player.distance >= 60):
 					scenePhase = 11
-					textBox.activate(diagDict["ex4_03b"])
+					textBox.activate(diagDict["ex4_03b"], voiceDict["ex4_03b"])
 			11:
 				if(player.distance >= 90):
 					scenePhase = 12
-					textBox.activate(diagDict["ex4_03c"])
+					textBox.activate(diagDict["ex4_03c"], voiceDict["ex4_03c"])
 			_:
 				if(player.distance >= 30 and scenePhase < 10):
 					scenePhase = 10
-					textBox.activate(diagDict["ex4_03a"])
+					textBox.activate(diagDict["ex4_03a"], voiceDict["ex4_03a"])
 
 func readJSON(json_file_path):
 	var file = FileAccess.open(json_file_path, FileAccess.READ)
@@ -406,4 +408,10 @@ func generateDict(js):
 	var d = {}
 	for line in diag:
 		d[line["id"]] = line["line"]
+	return d
+
+func generateDictSound(js):
+	var d = {}
+	for line in diag:
+		d[line["id"]] = line["voiceLine"]
 	return d

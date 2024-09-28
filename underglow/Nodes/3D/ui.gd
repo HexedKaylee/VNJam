@@ -9,6 +9,8 @@ var stringPos = 0
 var txtTimer = 0
 @export var stayMax = 90.0
 @onready var txt = $RichTextLabel
+var vlHolder = ""
+var playVL = false
 
 func _ready():
 	modulate.a = 0.0
@@ -34,6 +36,12 @@ func _process(delta):
 					linePrinted += line[stringPos]
 					stringPos += 1
 					txtTimer = 0
+			if(stringPos >= 2 and playVL):
+				if($AudioStreamPlayer.playing):
+					$AudioStreamPlayer.stop()
+				$AudioStreamPlayer.stream = load("res://Assets/Audio/VO/Prym/Barks/" + vlHolder + ".wav")
+				$AudioStreamPlayer.play()
+				playVL = false
 			else:
 				if(txtTimer >= stayMax):
 					deactivate()
@@ -41,14 +49,15 @@ func _process(delta):
 	txt.text = linePrinted
 	
 
-func activate(ln):
+func activate(ln, vl):
 	active = true
 	line = ln
 	linePrinted = ""
 	stringPos = 0
 	txtTimer = 0
-	pass
+	if(vl != ""):
+		vlHolder = vl
+		playVL = true
 	
 func deactivate():
 	active = false
-	pass
