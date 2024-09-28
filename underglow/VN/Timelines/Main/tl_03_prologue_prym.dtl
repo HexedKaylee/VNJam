@@ -1,13 +1,13 @@
+do AudioManager.init_audio()
 [style name="character"]
-[background arg="res://Assets/VN/Backgrounds/uneasy BG.PNG" fade="0.0"]
+[background arg="res://Assets/VN/Backgrounds/uneasy BG.PNG" fade="2.0"]
 
 [wait time="1.0"]
-leave --All--
 narrator: As voices murmur in surprise,[pause=.2] you realize that a thick and looming miasma has been crawling its way through the sea of Masks.[pause=.5] The perimeter of the crowd begins to part,[pause=.2] and a strikingly corporeal figure begins to make its way toward the center.\
 \
 [n+]Straining to make out the sight amidst all the scurrying,[pause=.2] you notice that the gaseous miasma appears to be emanating from a long,[pause=.2] thin device carried in the hand of this new arrival.\
 \
-[n+]As they come forward,[pause=.2] the haze thickens with each slow and deliberate step.[pause=.5] The results of their approach rapidly accumulate into caution and urgency amongst the crowd.[pause=.5]\
+[n]As they come forward,[pause=.2] the haze thickens with each slow and deliberate step.[pause=.5] The results of their approach rapidly accumulate into caution and urgency amongst the crowd.[pause=.5]\
 \
 [n]The congregation begins to depopulate.[pause=.5] Masks flee every which way with a pronounced trepidation –[pause=.5] which,[pause=.2] actually,[pause=.2] upon consideration,[pause=.4] doesn't make sense to you at all.\
 \
@@ -27,9 +27,10 @@ narrator: As voices murmur in surprise,[pause=.2] you realize that a thick and l
 \
 [n]A pair of eyes locks on you.\
 \
-[n]…[pause=.5] Eyes… ?\
-\
-[n+]Yes…[pause=.5] You can see them,[pause=.2] now –[pause=.5] so many motes of light[pause=.2] glowing a luminous yellow to pierce through the thickening fog.[pause=.5] A pair of glistening,[pause=.2] many-hued eyes[pause=.2] stands out[pause=.2] from these.\
+[n]…[pause=.5] Eyes… ?
+join prym (prym_silhouette) center [animation="Fade In" length="1.0" wait="true"]
+join miasma center [animation="Fade In" length="1.0" wait="true" z_index="10"]
+narrator: [n]Yes…[pause=.5] You can see them,[pause=.2] now –[pause=.5] so many motes of light[pause=.2] glowing a luminous yellow to pierce through the thickening fog.[pause=.5] A pair of glistening,[pause=.2] many-hued eyes[pause=.2] stands out[pause=.2] from these.\
 \
 [n]And beneath those eyes,[pause=.2] you see a vibrant and[pause=.2] disarming grin.\
 \
@@ -39,7 +40,9 @@ narrator: As voices murmur in surprise,[pause=.2] you realize that a thick and l
 \
 [n+]Then,[pause=.5] you hear a voice.
 [wait time="1.0"]
-join prym 2
+update prym (prym_neutral) [fade="Fade Cross" fade_length="2.0"]
+[wait time="2.0"]
+update miasma [z_index="20"]
 question_mark: [i]"Foooound ~[pause=.3] youuuuu… ~ !!"[/i]
 [wait time="1.0"]
 narrator: The enigmatic stranger's figure fully revealed,[pause=.2] they close the distance between you and[pause=.2] sweep their hand languidly around to —[pause=.4] with the gentlest caress —[pause=.4] …[pause=.4] cradle the back of your neck.\
@@ -64,9 +67,9 @@ narrator: [i]This[pause=.2] is[pause=.2] fine.[/i]
 [wait time="1.0"]
 narrator: [speed=2]The stranger brings your head tenderly to their breast…\
 \
-[n][speed=3]… as your last vestiges of awareness…\
-\
-[n][speed=4]slip[pause=.2] away.\
+[n][speed=3]… as your last vestiges of awareness…
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="3.0"]
+narrator: [speed=4]slip[pause=.2] away.\
 \
 [n][speed=1][i]Oh.[/i]\
 \
@@ -75,8 +78,8 @@ narrator: [speed=2]The stranger brings your head tenderly to their breast…\
 [speed=3][i]this[/i][n+]\
 \
 [speed=3][i]bad…?[/i]
-[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="3.0"]
 [wait time="3.0"]
-leave prym [animation="Fade Out Down" length="3.0"]
+join CG (bg_black) center [animation="Fade In" length="2.0" wait="true" z_index="300"]
+leave prym [animation="Fade Out"]
 [wait time="5.0"]
 [signal arg="start_experiment_1"]

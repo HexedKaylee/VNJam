@@ -48,6 +48,8 @@ directories/dch_directory={
 "mask": "res://VN/Characters/mask.dch",
 "mask_2": "res://VN/Characters/Throwaways/mask_2.dch",
 "mask_3": "res://VN/Characters/Throwaways/mask_3.dch",
+"mask_4": "res://VN/Characters/Throwaways/mask_4.dch",
+"miasma": "res://VN/Characters/Utility/miasma.dch",
 "narrator": "res://VN/Characters/narrator.dch",
 "pompous socialite": "res://VN/Characters/Throwaways/pompous partygoer.dch",
 "pompous voice": "res://VN/Characters/Throwaways/pompous voice.dch",

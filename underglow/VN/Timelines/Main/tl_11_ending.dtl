@@ -11,7 +11,7 @@ A wail.[n+]\
 \
 A pang of something unpleasant hits your chest.[n+]\
 \
-No...[pause=.5] It comes from deep within.[n+]\
+[n]No...[pause=.5] It comes from deep within.\
 \
 It threatens to break through,[pause=.2] to crack the surface of your form —[n+]\
 \
@@ -22,13 +22,13 @@ Tears prick at the corners of your eyes.[pause=.5] Your new eyes,[pause=.2] for 
 \
 A flask broken on the ground catches your eye.[pause=.5] The glow of brine as it forms a puddle begs your interest.[n+]\
 \
-You see your reflection once again.[n+]\
+You see your reflection once again.\
 \
-A face…[n+]\
+[n]A face…[n+]\
 \
-You…[n+]\
+You…\
 \
-You don't recognize it.
+[n]You don't recognize it.
 [wait time="1.0"]
 question_mark: "Ah…"
 question_mark: "Do you…[pause=.5] see it…?"
@@ -38,9 +38,9 @@ narrator: You turn to Prym.[n+]\
 \
 There's an odd…[pause=.5] calm to their figure.[n+]\
 \
-No longer do you see tangles of tendrils floating around them,[pause=.2] grasping at nothing.[n+]\
+No longer do you see tangles of tendrils floating around them,[pause=.2] grasping at nothing.\
 \
-The glow of light is gone from their hair.[pause=.5] It only sits limply —[pause=.5] a dark curtain,[pause=.2] over one eye and draped heavy upon their slouched shoulders.[n+]\
+[n]The glow of light is gone from their hair.[pause=.5] It only sits limply —[pause=.5] a dark curtain,[pause=.2] over one eye and draped heavy upon their slouched shoulders.[n+]\
 \
 There is no smile on their gleaming visage.[n+]\
 \
@@ -58,9 +58,9 @@ All that they see is…[n+]\
 prym: "Ahaha…"
 prym: "That's not fair."
 [wait time="1.0"]
-narrator: The words echo in your head.[n+]\
+narrator: The words echo in your head.\
 \
-That's not fair.[n+]\
+[n]That's not fair.[n+]\
 \
 You start to feel it,[pause=.2] too.[n+]\
 \
@@ -75,18 +75,18 @@ narrator: [i]No.[/i][n+]\
 \
 They couldn't have been wrong.[n+]\
 \
-They did everything right.[n+]\
+They did everything right.\
 \
-…[n+]\
+[n]…\
 \
 The smoke —[pause=.5] you knew the smoke.[n+]\
 \
 You weren't like other Masks —[pause=.5] you weren't scared of the smoke!
 narrator: That's right,[pause=.2] Moira always said that it brought them such warmth.[pause=.5] Such familiarity.[n+]\
 \
-It was one way they would always find each other again —[pause=.5] there's no way it wasn't you —[pause=.5] there's no way you aren't Moira![n+]\
+It was one way they would always find each other again —[pause=.5] there's no way it wasn't you —[pause=.5] there's no way you aren't Moira!\
 \
-Ah.[pause=.5] But.[pause=.5] You. [n+]\
+[n]Ah.[pause=.5] But.[pause=.5] You. [n+]\
 \
 That.[pause=.5] Face.[n+]\
 \
@@ -96,17 +96,17 @@ Ah.[pause=.5] Ah.[pause=.5] Ah.
 [wait time="2.0"]
 narrator: . . . . .[n+]\
 \
-…[pause=.5] It may just be impossible.[n+]\
+…[pause=.5] It may just be impossible.\
 \
-All this [i][b]time[/b][/i]…[pause=.5] Yes, of course.[n+]\
+[n]All this [i][b]time[/b][/i]…[pause=.5] Yes, of course.[n+]\
 \
 Moira wouldn't have kept it.[pause=.5] No Spirit Fish could have kept their individuality…[n+]\
 \
 Even with their awareness intact,[pause=.2] they must have blended with the schools of Fish around them…[pause=.5] to become…[n+]\
 \
-It's not them.[n+]\
+It's not them.\
 \
-You aren't.[n+]\
+[n]You aren't.[n+]\
 \
 My.[n+]\
 \
@@ -142,9 +142,9 @@ narrator: …
 [wait time="1.0"]
 narrator: …[n+]\
 \
-You feel lightheaded.[n+]\
+You feel lightheaded.\
 \
-I see.[n+]\
+[n]I see.[n+]\
 \
 So.[n+]\
 \
@@ -158,7 +158,7 @@ They're not…
 [wait time="1.0"]
 " … "
 [wait time="1.0"]
-narrator: Too much has changed.[pause=.5]\
+narrator: Too much has changed.[n+]\
 \
 [i]You’ve changed.[/i]
 [wait time="1.0"]
@@ -170,9 +170,9 @@ narrator: …[n+]\
 \
 [i]Or is it hot?[/i][n+]\
 \
-. . . . .[n+]\
+. . . . .\
 \
-Well,[pause=.2] it's all subjective anyway.[n+]\
+[n]Well,[pause=.2] it's all subjective anyway.[n+]\
 \
 I won't think about this anymore.[n+]\
 \
@@ -186,9 +186,9 @@ Maybe…[n+]\
 \
 There will be a next light.[n+]\
 \
-Or our selves will mix down here,[pause=.2] in the Tow.[n+]\
+Or our selves will mix down here,[pause=.2] in the Tow.\
 \
-Well…[n+]\
+[n]Well…[n+]\
 \
 There is always the prospect of you finding me,[pause=.2] again.[n+]\
 \

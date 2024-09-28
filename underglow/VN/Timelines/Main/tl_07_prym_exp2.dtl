@@ -3,9 +3,9 @@ do AudioManager.init_audio()
 [wait time="1.0"]
 [background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="0.0"]
 [music path="res://Assets/Audio/Music/mus_droplets_(loop).wav" fade="0.0" volume="0.0"]
-narrator: No longer bound to the experimental device you just used,[pause=.2] you feel an uncomfortable ache in your shoulders.[pause=.5] Good heavens,[pause=.2] getting it removed was a harrowing process.[pause=.5] You decide to put it out of your mind and see what Prym has to say about the disorienting exercise they've just put you through.[n+]\
+narrator: No longer bound to the experimental device you just used,[pause=.2] you feel an uncomfortable ache in your shoulders.[pause=.5] Good heavens,[pause=.2] getting it removed was a harrowing process.[pause=.5] You decide to put it out of your mind and see what Prym has to say about the disorienting exercise they've just put you through.\
 \
-Turning to them,[pause=.2] you watch as they dutifully place the Fish-shooting device on a mount behind them.[n+]\
+[n]Turning to them,[pause=.2] you watch as they dutifully place the Fish-shooting device on a mount behind them.[n+]\
 \
 You notice now,[pause=.2] amidst the spot where the device sits,[pause=.2] a collection of transparent containers —[pause=.5] [i]flasks[/i],[pause=.4] you realize —[pause=.5] the contents of which had previously piqued your interest. Only in this moment do you realize that the lights floating within all resemble the Spirit Fish with which you've just become acquainted.
 [wait time="1.0"]
@@ -39,9 +39,9 @@ Not only does this book contain actual,[pause=.2] readable information,[pause=.2
 [wait time="1.0"]
 prym: "Don't be afraid to ask any questions if you find yourself confused!"
 [wait time="1.0"]
-narrator: [i]Easier said than done,[/i][pause=.3] you think.[pause=.5] The information is so overwhelming that you wouldn't even [b]know[/b] where to start.[n+]\
+narrator: [i]Easier said than done,[/i][pause=.3] you think.[pause=.5] The information is so overwhelming that you wouldn't even [b]know[/b] where to start.\
 \
-Finally,[pause=.2] in the hurricane of words,[pause=.2] you recognize one you've heard before\:[pause=.5] [i]Estuary.[/i]
+[n]Finally,[pause=.2] in the hurricane of words,[pause=.2] you recognize one you've heard before\:[pause=.5] [i]Estuary.[/i]
 [wait time="1.5"]
 - "What is an Estuary?"
 [music fade="5.0" volume="0.0"]
@@ -85,9 +85,9 @@ prym: "They are but a fixture."
 prym: "Un[pause=.2]moveable.[pause=.4] Un[pause=.2]inspired.[pause=.4] Un[pause=.2]motivated.[pause=.5] Un[pause=.2]aware."
 prym: "And there is no coming back from that."
 [wait time="1.0"]
-narrator: Prym pauses,[pause=.2] their voice having become quite despondent.[pause=.5] This topic appears to be difficult for them to discuss,[pause=.2] you think.[pause=.5] Nevertheless… \
+narrator: Prym pauses,[pause=.2] their voice having become quite despondent.[pause=.5] This topic appears to be difficult for them to discuss,[pause=.2] you think.[pause=.5] Nevertheless… [n+]\
 \
-This information is important.\
+This information is important.[n+]\
 \
 You need Prym to continue.[pause=.5] You [i]need[/i][pause=.2] to [b]know[/b].
 [wait time="1.0"]
@@ -135,7 +135,7 @@ narrator: Unable to reconcile this sudden change in temperament of theirs,[pause
 \
 There's a crash behind you;[pause=.4] the sounds of various flasks breaking and stone shattering.[n+]\
 \
-You cover your head and crouch down to avoid the inevitable rain of debris you're sure is to come…[pause=.5] But the noise goes quiet.[n+]\
+You cover your head and crouch down to avoid the inevitable rain of debris you're sure is to come…[pause=.5] But the noise goes quiet.\
 \
-When you look back,[pause=.2] the entrance to the lab is gone again.
+[n]When you look back,[pause=.2] the entrance to the lab is gone again.
 jump tl_08_college_fountain/

@@ -1,13 +1,16 @@
+do AudioManager.init_audio()
 [style name="character"]
 [music fade="3.0" volume="0.0"]
 [music path="res://Assets/Audio/Music/mus_droplets_(loop).wav" fade="3.0" volume="0.0"]
 [wait time="0.5"]
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="0.5" transition="Swipe Right To Left"]
-leave --All-- [animation="Instant In Or Out" length="0.0"]
+leave --All-- [animation="Instant Out" length="0.0"]
 [wait time="1.0"]
-[background arg="res://Assets/VN/Backgrounds/uneasy BG.PNG" fade="0.5" transition="Swipe Right To Left"]
+[background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="0.5" transition="Swipe Right To Left"]
 [wait time="1.0"]
-narrator: The strange beings all turn to observe a bustling congregation of some dozen individuals who bear a similar countenance to your own.[pause=.5] Peering at this curious gathering,[pause=.2] you notice that they are trailing after one of their number,[pause=.2] who appears to be in no small amount of distress.
+narrator: The strange beings all turn to observe a bustling congregation of some dozen individuals who bear a similar countenance to your own.\
+\
+[n+]Peering at this curious gathering,[pause=.2] you notice that they are trailing after one of their number,[pause=.2] who appears to be in no small amount of distress.
 [wait time="1.0"]
 "pompous socialite": "Goodness me, what an ensemble this is![pause=.5] I’ve seldom seen so[pause=.2] many[pause=.2] masks[pause=.1] in one place."
 "demure socialite": "Oh, oh![pause=.5] How novel and delightful –[pause=.5] is there a show of some kind going on?[pause=.4] Did we call for entertainment to come to our tea party?"
@@ -15,14 +18,16 @@ narrator: The strange beings all turn to observe a bustling congregation of some
 [wait time="1.0"]
 narrator: As you observe the affair before you,[pause=.2] a growing interest commands your attention away from your present company.[pause=.5] Could it be curiosity that draws you in,[pause=.2] you wonder,[pause=.4] or something else?
 [wait time="1.0"]
-"flustered mask": "A-ah –[pause=.4] hahh…[pause=.4] N-No no,[pause=.2] sorry,[pause=.2] I don’t need you all to follow me –[pause=.4] I’m just trying to find someone with –[pause=.3] ah![pause=.4] Y-Y-You!"
-join "flustered mask" center
-"flustered mask": "Hff…[pause=.4] hff…[pause=.4] Please,[pause=.4] you seem like a kindred soul–new in town,[pause=.2] like me,[pause=.2] right? C-Can you...[pause=.7] please,[pause=.4] tell me where this is?
+"flustered mask": "A-Ah –[pause=.4] hahh…[pause=.4] N-No no,[pause=.2] sorry,[pause=.2] I don’t need you all to follow me –[pause=.4] I’m just trying to find someone with –[pause=.3] ah!
+"flustered mask": "Y-Y-You!"
+join "flustered mask" center [animation="Zoom In" length="1.0" z_index="20"]
+"flustered mask" (flustered_mask_neutral): "Hff…[pause=.4] hff…[pause=.4] Please,[pause=.4] you seem like a kindred soul – new in town,[pause=.2] like me,[pause=.2] right? C-Can you...[pause=.7] please,[pause=.4] tell me where this is?
 [wait time="0.0"]
 - "…"
 You aren’t sure what to say in response to this Mask,[pause=.2] if you can even say anything at all.
 [wait time="1.0"]
-"flustered mask": "Er…[pause=.4] H-Heheh…[pause=.4] Ahem.[pause=.5] Sorry about that,[pause=.2] I’m sure you’re probably just as confused as I am –[pause=.5] it’s just…[pause=.5] I really want to gather my bearings,[pause=.2] here."
+"flustered mask" (flustered_mask_look_away): "Er…[pause=.4] H-Heheh…[pause=.4] Ahem."
+"flustered mask" (flustered_mask_neutral): "Sorry about that,[pause=.2] I’m sure you’re probably just as confused as I am –[pause=.5] it’s just…[pause=.5] I really want to gather my bearings,[pause=.2] here."
 "flustered mask": "You see,[pause=.2] there’s something very wrong going on –[pause=.5] nothing is making sense to me. Are we…[pause=.4]underwater?[pause=.5] Is there some sort of bubble surrounding us –[pause=.5] or some…[pause=.4] strangeness afoot,[pause=.2] enabling us to breathe down here?"
 [wait time="0.0"]
 - This is a tea party. Try and let them know that.
@@ -30,49 +35,59 @@ You aren’t sure what to say in response to this Mask,[pause=.2] if you can eve
 Though you want to give this Mask a response,[pause=.2] perhaps gain some understanding of each other,[pause=.2] you still cannot seem to form the words to give it the peace of mind it’s searching for.[pause=.5] You can only stare,[pause=.2] listless,[pause=.2] from behind your not-mask.
 [wait time="1.0"]
 "gossiping mask": "Under…[pause=.3] water?"
-join mask rightmost
+join mask (mask_headtilt1) rightmost
 "gossiping mask": "Ahaha…[pause=.4] He's got…[pause=.4] some funny notions…"
-join mask_2 right
+join mask_2 (mask_lookaway) right
 "gossiping mask": "Shhhh,[pause=.2] I want to hear what else he has to say.[pause=.5] It'll be…[pause=.4]interesting,[pause=.2] if he makes more of a fuss…"
-"gossiping mask": "Now you're speaking like one of the Disciples of—[pause=.5] Oh…[pause=.5] Is that what you hope happens?[pause=.5] That he gets noticed by –"
+"gossiping mask": "Now you're speaking like one of the Disciples of —[pause=.5] Oh…[pause=.5] Is that what you hope happens?[pause=.5] That he gets noticed by –"
 "gossiping mask": "N-No…![pause=.4] I don't hope for anything…[pause=.5] Ahh…[pause=.4] Now I'm more worried than interested,[pause=.2] since you mentioned…"
 join mask_3 leftmost
 "gossiping mask": "Water?[pause=.5] Water?[pause=.5] Under it?[pause=.5] Ummm…[pause=.5] What's water?"
-"flustered mask": "Ghh…[pause=.4] Please stop,[pause=.2] all you…[pause=.5] If you don't [b]know[/b] what water is then there's no point in explaining![pause=.5] Gods,[pause=.2] it's like talking to a fish."
+"flustered mask" (flustered_mask_look_away): "Ghh…[pause=.4] Please stop,[pause=.2] all of you…[pause=.5] If you don't [b]know[/b] what water is then there's no point in explaining![pause=.5] Gods,[pause=.2] it's like talking to a fish."
+join mask_4 (mask_headtilt1) left
 "gossiping mask": "Fish…?[pause=.5] Talking to Fish…[pause=.5] Mm,[pause=.2] yes,[pause=.2] there's no point in that,[pause=.3] they don't even have any…[pause=.5] Ummm,[pause=.3] what's the word…[pause=.3] form?[pause=.5] No form with which to hear you."
+update "flustered mask" [animation="Bounce" z_index="20"]
 "flustered mask": "Wh –[pause=.4] what does that even mean?[pause=.5] Fish have forms![pause=.5] They have scales,[pause=.2] and eyes,[pause=.2] and look like little…[pause=.4] Oh for pity's sake.[pause=.5] Maybe a 'mote of dust' is a better comparison than a fish."
 "gossiping mask": "Ahahah…[pause=.5] So interesting…[pause=.4] I'm hearing words that I haven't heard before…[pause=.5] Or have I?"
-"flustered mask": [turns to you] "Do you see what I mean?[pause=.5] No one here understands anything I have to say,[pause=.2] and no one has any answers for me![pause=.5] But it –[pause=.4] It really is like we're on the seafloor,[pause=.2] right?[pause=.5] Do you agree?"
+"flustered mask" (flustered_mask_neutral): "Do you see what I mean?[pause=.5] No one here understands anything I have to say,[pause=.2] and no one has any answers for me![pause=.5] But it –[pause=.4] It really is like we're on the seafloor,[pause=.2] right?[pause=.5] Do you agree?"
 [wait time="0.0"]
 - "…"
 - "…"
 Again –[pause=.5] still –[pause=.5] the state of your being appears non-conducive to conversation.
 [wait time="1.0"]
-"flustered mask": "Oh –[pause=.5] You could at least shake your head![pause=.4] Something is better than – ![pause=.4] Aaagh, bother.[pause=.5] I give up.[pause=.5] What about those,[pause=.2] er,[pause=.2] non-masked fellows you were talking to over there?[pause=.5] They look clean and civilized.[pause=.5] Maybe they can –[pause=.4] Ah?"
+"flustered mask": "Oh –[pause=.5] You could at least shake your head![pause=.4] Something is better than – !"
+"flustered mask" (flustered_mask_look_away): "Aaagh, bother.[pause=.5] I give up."
+"flustered mask" (flustered_mask_neutral): "What about those,[pause=.2] er,[pause=.2] non-masked fellows you were talking to over there?[pause=.5] They look clean and civilized.[pause=.5] Maybe they can –[pause=.4] Ah?"
 [music fade="3.0" volume="0.0"]
-"flustered mask": "Wh…[pause=.4] Wh-Wh-Where did they go?[pause=.5] Where…[pause=.4] Where are we,[pause=.2] actually?"
+"flustered mask": "Wh…[pause=.4] Wh-Wh-Where did they go?[pause=.5] Where…"
+"flustered mask" (flustered_mask_look_away): "Where are we,[pause=.2] actually?"
 [wait time="1.0"]
 narrator: Glancing around, you realize that not only has this wandering flock left the tea party nowhere in sight,[pause=.2] but its size has seemingly more than quintupled.\
 \
 [n+]Murmuring voices swirl as the other Masks surround the two of you,[pause=.2] and your distressed interlocutor sends a cloud of silt flying in annoyance.
 [wait time="1.0"]
-"flustered mask": " … Damn it all,[pause=.4] it keeps happening![pause=.5] There's no way we should have moved so far in such a short –
-"flustered mask": "H-Hang on…[pause=.5] What’s the word…?"
+"flustered mask" (flustered_mask_neutral): " … Damn it all,[pause=.4] it keeps happening![pause=.5] There's no way we should have moved so far in such a short –
+"flustered mask" (flustered_mask_look_away): "H-Hang on…[pause=.5] What’s the word…?"
 [wait time="0.0"]
 - "…"
 [wait time="1.0"]
-"flustered mask": "The word![pause=.5] The one that means — "
+"flustered mask" (flustered_mask_neutral): "The word![pause=.5] The one that means — "
 [wait time="0.0"]
 - "…"
 [wait time="1.0"]
-"flustered mask": "I-I…[pause=.4] can’t remember…[pause=.5] Why can’t I remember?"
-"flustered mask": "A-All of you!![pause=.5] Why are you staring like that!?[pause=.5] Why do you all look the same!!?"
-"flustered mask": "Why do we…[pause=.4] all look the same…?"
-"flustered mask": [b]"WHY ARE WE THE SAME??!!!"[/b]
+"flustered mask" (flustered_mask_look_away): "I-I…[pause=.4] can’t remember…[pause=.5] Why can’t I remember?"
+update mask_2 (mask_neutral) [fade="Fade Cross"]
+update "flustered mask" [animation="Shake X" length="1.0" z_index="20"]
+[wait time="0.6"]
+"flustered mask" (flustered_mask_neutral): "A-All of you!![pause=.5] Why are you staring like that!?[pause=.5] Why do you all look the same!!?"
+"flustered mask" (flustered_mask meltdown): [b]"WHY ARE WE THE SAME??!!!"[/b]
 [wait time="1.0"]
-narrator: Turning in distress to face each member of the crowd,[pause=.2] the distraught Mask then turns his gaze upward as his fragile bearings slip away.[pause=.5] Suddenly though,[pause=.2] in the midst of his panic,[pause=.3] a calm takes hold,[pause=.2] and as he stands there gazing at the abyss above,[pause=.2] the holes adorning the surface that passes for his face start to lose their definition.\
-\
-[n]You look on in curious bemusement.\
+narrator: Turning in distress to face each member of the crowd,[pause=.2] the distraught Mask then turns his gaze upward as his fragile bearings slip away.
+update "flustered mask" (mask_headtilt2) [repeat="2" z_index="20" fade="Fade Cross"]
+narrator: Suddenly though,[pause=.2] in the midst of his panic,[pause=.3] a calm takes hold,[pause=.2] and as he stands there gazing at the abyss above,[pause=.2] the holes adorning the surface that passes for his face start to lose their definition.
+join CG (cg_uneasy) center [animation="Fade In" length="3.0" z_index="100"]
+
+narrator: [n]You look on in curious bemusement.\
 \
 [n+]Something bubbles out from within,[pause=.2] and the "mask" adorning his form gives way to a nearly featureless face.\
 \
@@ -82,13 +97,17 @@ narrator: Turning in distress to face each member of the crowd,[pause=.2] the di
 \
 [n+]…\
 \
-[n+]They're at peace,[pause=.2] you think to yourself.\
+[n+]He's at peace,[pause=.2] you think to yourself.\
 \
 [n+]Your fleeting encounter with this curious individual comes to a quiet end –[pause=.4] his unfamiliar form having drifted away into the unknown.
 [wait time="1.0"]
+leave "flustered mask" [animation="Instant Out" length="0.0" wait="true"]
+[background arg="res://Assets/VN/Backgrounds/uneasy BG.PNG" fade="0.0"]
+leave CG [animation="Fade Out" wait="true"]
 [music path="mus_droplets_(loop).wav" fade="3.0" volume="0.0"]
-"gossiping mask": "Oh. I think…[pause=.4] he became an estuary."
+"gossiping mask": "Oh. I think…[pause=.4] he became an Estuary."
 "gossiping mask": "How fortunate![pause=.5] It must be such a relief,[pause=.2] letting go of one's self like that…"
 "gossiping mask": "Mhm.[pause=.5] So sad for us that the excitement is over,[pause=.2] though.[pause=.5] I wonder what we should do?"
 "gossiping mask": "Oh – ![pause=.5] Look![pause=.5] I think one of [b]Knowledge’s[/b] has come to see us!"
+leave --All-- [animation="Fade Out" length="1.0"]
 jump tl_03_prologue_prym/

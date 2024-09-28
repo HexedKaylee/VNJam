@@ -8,12 +8,112 @@
 "sound_moods": {},
 "style": ""
 },
-"default_portrait": "",
+"default_portrait": "diver neutral",
 "description": "",
 "display_name": "Friendly Diver",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),
-"portraits": {},
+"portraits": {
+"diver grimace": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Friendly Diver/friendly_diver_grimacing.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"diver inspired": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Friendly Diver/friendly_diver_kawaii.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"diver laughing": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Friendly Diver/friendly_diver_laughing.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"diver lightgone": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Friendly Diver/friendly_diver_lightgone.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"diver neutral": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Friendly Diver/friendly_diver_neutral.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"diver pained": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Friendly Diver/friendly_diver_pained.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"diver sadsmiling": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Friendly Diver/friendly_diver_sadsmile.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"diver shadowy": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Friendly Diver/friendly_diver_shadowy.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"diver sickofyourshit": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Friendly Diver/friendly_diver_sickofyourshit.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"diver simpering": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Friendly Diver/friendly_diver_simpering.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"diver sparkle": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Friendly Diver/friendly_diver_sparkle.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
 "scale": 1.0
 }
