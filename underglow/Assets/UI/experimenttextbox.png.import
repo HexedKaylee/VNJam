@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://4w2nfjjbpadh"
-=======
-uid="uid://c5mnmh6jhcuvd"
->>>>>>> origin/final-assets
-path="res://.godot/imported/textbox.png-1a5ce1e1f8f78cb26df28750b32707ae.ctex"
+uid="uid://b7a1vv6gxn0d"
+path="res://.godot/imported/experimenttextbox.png-d86f710a26cf735bc6e96e300fc699b7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/UI/textbox.png"
-dest_files=["res://.godot/imported/textbox.png-1a5ce1e1f8f78cb26df28750b32707ae.ctex"]
+source_file="res://Assets/UI/experimenttextbox.png"
+dest_files=["res://.godot/imported/experimenttextbox.png-d86f710a26cf735bc6e96e300fc699b7.ctex"]
 
 [params]
 

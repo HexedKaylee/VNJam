@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://bd1n8fvjpdakf"
+=======
+uid="uid://boeakrai51s41"
+>>>>>>> origin/final-assets
 path="res://.godot/imported/textbox_reference.png-bd6f8c820c00dd6ff9c4e750cdbe6dff.ctex"
 metadata={
 "vram_texture": false
