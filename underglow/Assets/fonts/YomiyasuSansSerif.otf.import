@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://13voy5dh1ytu"
-path="res://.godot/imported/YomiyasuSansSerif.otf-be2dcf938adccbfca704e33646f9685e.fontdata"
+path="res://.godot/imported/YomiyasuSansSerif.otf-054bf83de91e792a15e7c4b711425e19.fontdata"
 
 [deps]
 
-source_file="res://Assets/fonts/YomiyasuSansSerif.otf"
-dest_files=["res://.godot/imported/YomiyasuSansSerif.otf-be2dcf938adccbfca704e33646f9685e.fontdata"]
+source_file="res://Assets/Fonts/YomiyasuSansSerif.otf"
+dest_files=["res://.godot/imported/YomiyasuSansSerif.otf-054bf83de91e792a15e7c4b711425e19.fontdata"]
 
 [params]
 
