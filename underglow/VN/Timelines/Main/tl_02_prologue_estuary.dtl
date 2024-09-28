@@ -2,8 +2,8 @@
 [music fade="3.0" volume="0.0"]
 [music path="res://Assets/Audio/Music/mus_droplets_(loop).wav" fade="3.0" volume="0.0"]
 [wait time="0.5"]
-[background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="0.5" transition="Swipe Right To Left"]
-leave --All-- [animation="Instant In Or Out" length="0.0"]
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="0.5" transition="Swipe Right To Left"]
+leave --All-- [animation="Instant Out" length="0.0"]
 [wait time="1.0"]
 [background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="0.5" transition="Swipe Right To Left"]
 [wait time="1.0"]
@@ -84,7 +84,6 @@ update "flustered mask" [animation="Shake X" length="1.0" z_index="20"]
 narrator: Turning in distress to face each member of the crowd,[pause=.2] the distraught Mask then turns his gaze upward as his fragile bearings slip away.
 update "flustered mask" (mask_headtilt2) [repeat="2" z_index="20" fade="Fade Cross"]
 narrator: Suddenly though,[pause=.2] in the midst of his panic,[pause=.3] a calm takes hold,[pause=.2] and as he stands there gazing at the abyss above,[pause=.2] the holes adorning the surface that passes for his face start to lose their definition.
-leave "flustered mask" [animation="Fade Out" length="2.0" wait="true"]
 join CG (cg_uneasy) center [animation="Fade In" length="3.0" z_index="100"]
 
 narrator: [n]You look on in curious bemusement.\
@@ -101,11 +100,13 @@ narrator: [n]You look on in curious bemusement.\
 \
 [n+]Your fleeting encounter with this curious individual comes to a quiet end –[pause=.4] his unfamiliar form having drifted away into the unknown.
 [wait time="1.0"]
+leave "flustered mask" [animation="Instant Out" length="0.0" wait="true"]
 [background arg="res://Assets/VN/Backgrounds/uneasy BG.PNG" fade="0.0"]
 leave CG [animation="Fade Out" wait="true"]
 [music path="mus_droplets_(loop).wav" fade="3.0" volume="0.0"]
-"gossiping mask": "Oh. I think…[pause=.4] he became an estuary."
+"gossiping mask": "Oh. I think…[pause=.4] he became an Estuary."
 "gossiping mask": "How fortunate![pause=.5] It must be such a relief,[pause=.2] letting go of one's self like that…"
 "gossiping mask": "Mhm.[pause=.5] So sad for us that the excitement is over,[pause=.2] though.[pause=.5] I wonder what we should do?"
 "gossiping mask": "Oh – ![pause=.5] Look![pause=.5] I think one of [b]Knowledge’s[/b] has come to see us!"
+leave --All-- [animation="Fade Out" length="1.0"]
 jump tl_03_prologue_prym/

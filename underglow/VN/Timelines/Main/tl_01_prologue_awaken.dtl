@@ -1,4 +1,3 @@
-[wait time="1.0"]
 [style name="character"]
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="0.0"]
 [speed=7]“ ... “
@@ -39,7 +38,7 @@ narrator: The shade manifests an arm,[pause=.2] a glazed teapot in its newly-for
 [n+]You watch the little shards spill into the cup.[pause=.5] You couldn't count them if you tried.\
 \
 [n]For a fleeting moment,[pause=.2] you try anyways —
-do AudioManager.fade_music_silent(5)
+do AudioManager.fade_music_quiet(5)
 join CG (cg_reflection) center [animation="Fade In" length="3.0" z_index="100"]
 [wait time="3.0"]
 narrator: And that's when you see your face\:[pause=.4] a mask reflected in the rippling blue.[pause=.5]\
@@ -115,7 +114,7 @@ do AudioManager.fade_music_normal(2)
 - Listen carefully. This is probably important.
 	You are utterly bewildered as they describe at length the process of "doing tea."
 	After they explain the process in excruciating detail,[pause=.2] though,[pause=.2] you're encouraged to give it a shot.
-You…[pause=.4] aren't actually sure,[pause=.2] now,[pause=.2] that you even have the requisite part with which to commit to the action...[pause.4] "drink".
+You…[pause=.4] aren't actually sure,[pause=.2] now,[pause=.2] that you even have the requisite part with which to commit to the action...[pause=.4] "drink".
 Lost on what to do next,[pause=.2] you can only sit there with the cup beneath your not-chin,[pause=.2] not-face…[pause=.4]and wait.
 
 "pompous socialite": "Ah.[pause=.4] Dear?"
@@ -126,6 +125,6 @@ Lost on what to do next,[pause=.2] you can only sit there with the cup beneath y
 "demure socialite": "Yes.[pause=.4] How unfortunate."
 "pompous socialite": "'Tis such a shame,[pause=.2] I thought truly that maybe this mask could be — "
 "pompous socialite": "… Oh?[pause=.4] Hmm…?[pause=.5] Do you see that commotion over there?"
-leave --All--
+leave --All-- [animation="Fade Out"]
 [wait time="1.0"]
 jump tl_02_prologue_estuary/

@@ -2,7 +2,6 @@
 [background arg="res://Assets/VN/Backgrounds/uneasy BG.PNG" fade="2.0"]
 
 [wait time="1.0"]
-leave --All--
 narrator: As voices murmur in surprise,[pause=.2] you realize that a thick and looming miasma has been crawling its way through the sea of Masks.[pause=.5] The perimeter of the crowd begins to part,[pause=.2] and a strikingly corporeal figure begins to make its way toward the center.\
 \
 [n+]Straining to make out the sight amidst all the scurrying,[pause=.2] you notice that the gaseous miasma appears to be emanating from a long,[pause=.2] thin device carried in the hand of this new arrival.\
@@ -41,6 +40,7 @@ narrator: As voices murmur in surprise,[pause=.2] you realize that a thick and l
 [wait time="1.0"]
 join miasma center [animation="Fade In" length="1.0" wait="true" z_index="100"]
 join prym center [animation="Fade In" length="1.0" wait="true" z_index="-1"]
+update miasma [z_index="100"]
 question_mark: [i]"Foooound ~[pause=.3] youuuuu… ~ !!"[/i]
 [wait time="1.0"]
 narrator: The enigmatic stranger's figure fully revealed,[pause=.2] they close the distance between you and[pause=.2] sweep their hand languidly around to —[pause=.4] with the gentlest caress —[pause=.4] …[pause=.4] cradle the back of your neck.\
