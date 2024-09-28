@@ -1,3 +1,4 @@
+do AudioManager.init_audio()
 [style name="character"]
 [wait time="1.0"]
 narrator: Prym shoos you away,[pause=.2] and so you turn to step out the door.[pause=.5] As you peer out from the entrance,[pause=.2] you think to glance back at Prym one last time.\
@@ -17,22 +18,25 @@ narrator: Prym shoos you away,[pause=.2] and so you turn to step out the door.[p
 [n+] You conclude from the similarities and what Prym mentioned earlier that these are likely "Socialites",[pause=.2] and decide to listen to their passing conversation to see what you might glean from it.
 [background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="2.0"]
 [wait time="2.0"]
-[music path="res://Assets/Audio/Music/mus_brine_and_biscuits_(loop).wav" fade="0.0" volume="0.0"]
-join "tired socialite" left
+[music path="res://Assets/Audio/Music/mus_brine_and_biscuits_(loop).wav" fade="1.0" volume="0.0"]
+join "tired socialite" center [animation="Fade In" length="1.0" wait="true"]
 "tired socialite": *Yawn*[pause=.5] "Gosh,[pause=.2] I wish they'd let me sleep in.[pause=1] I had to get up so early and run out the door,[pause=.2] and I didn't even get to eat breakfast!"
-join "well-rested socialite" center
+join "well-rested socialite" left [animation="Slide In Left" length="1.0" wait="true"]
 "well-rested socialite": "That's so unfortunate.[pause=.5] I was able to sleep in all morning,[pause=.2] and I feel great."
 "tired socialite": "I'm so jealous![pause=.5] At least we got to walk to school together,[pause=.2] since we're neighbors."
 "well-rested socialite": "Haha,[pause=.2] indeed my friend![pause=.5] Say,[pause=.2] when is our next class?"
 [wait time="1.0"]
-leave "tired socialite" [length="2.0"]
-leave "well-rested socialite" [length="2.0" wait="true"]
+leave "tired socialite" [animation="Fade Out Down" length="1.0" wait="true"]
+leave "well-rested socialite" [animation="Fade Out Down" length="1.0" wait="true"]
+[wait time="1.0"]
+do AudioManager.fade_music_quiet(3)
 narrator: The pair go in the direction opposite to you,[pause=.2] seeming too caught up in themselves to pay you any notice.
 [wait time="1.0"]
 As you continue in the direction they came from,[pause=.2] you see another Socialite round a corner carrying a large stack of books.[pause=.5] You step aside to avoid them as they walk towards you —
 but somehow,[pause=.2] they manage to bump into you anyways,[pause=.2] dropping all of the books in a manner most disproportionate to how hard you made contact…[pause=.5] as though it were done on purpose, even.
+do AudioManager.fade_music_normal(1.0)
 join "book-laden socialite" center
-"book-laden socialite": "Oh for the love of — ""
+"book-laden socialite": "Oh for the love of — "
 "book-laden socialite": "Oh![pause=.4] Goodness me."
 "book-laden socialite": "I am so,[pause=.3] so sorry.[pause=.4] I didn't realize you were a Mask,[pause=.2] I…"
 "book-laden socialite": "Ah, well.[pause=.4] Never mind it."
@@ -45,16 +49,18 @@ They seem to stare at you in shock for a moment,[pause=.2] before taking the boo
 "book-laden socialite": "W-Why…[pause=.4] [i]Thank[/i] you,[pause=.2] so very much![pause=.4] Ahaha…"
 "book-laden socialite": "Ahem.[pause=.5] Well.[pause=.5] How very nice of you."
 "book-laden socialite": "Er,[pause=.2] now I suppose I should feel obligated to help you out a bit,[pause=.2] since you humored someone like me…"
-"book-laden socialite": "You seem fairly precocious for a mask,[pause=.2] but we do not see many of your kind around here,[pause=.2] and I would have heard about you sooner were you not new to this place…"
-"book-laden socialite": "So I'd like to try my hand at giving a newcomer like you some guidance!"
+"book-laden socialite": "You seem fairly precocious for a Mask,[pause=.2] but we do not see many of your kind around here,[pause=.2] and I would have heard about you already were you not new to this place…"
+"book-laden socialite": "So,[pause=.2] I'd like to try my hand at giving a newcomer like you some guidance!"
 "book-laden socialite": "Ooh,[pause=.2] I'm so excited now,[pause=.2] to have someone [i]finally[/i] indulge me in my…[pause=.4] Er."
 "book-laden socialite": *cough*
 "book-laden socialite": "Uh.[pause=.5] Yes."
 "book-laden socialite": "Come,[pause=.2] come![pause=.5] Let me show you the place that I know best,[pause=.2] since we're both here."
 [wait time="1.0"]
 narrator: The Socialite drops the remaining books upon the ground,[pause=.2] seemingly forgetting all about them.[pause=.5] You watch with some intrigue as the books slowly descend into the floor before disappearing like vapor,[pause=.2] as though their purpose has been served.
-[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="3.0"]
+leave "book-laden socialite" [animation="Fade Out Down" length="2.0" wait="true"]
+do AudioManager.fade_music_quiet(3.0)
+[music fade="3.0" volume="0.0"]
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="3.0" transition="Swipe Right To Left"]
 [wait time="3.0"]
-leave "book-laden socialite" [animation="Fade Out Down" length="3.0"]
 [wait time="5.0"]
 jump tl_06_college_library/

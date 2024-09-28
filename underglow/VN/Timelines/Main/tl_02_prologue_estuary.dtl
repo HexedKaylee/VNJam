@@ -1,3 +1,4 @@
+do AudioManager.init_audio()
 [style name="character"]
 [music fade="3.0" volume="0.0"]
 [music path="res://Assets/Audio/Music/mus_droplets_(loop).wav" fade="3.0" volume="0.0"]

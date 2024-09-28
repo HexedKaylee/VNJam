@@ -1,3 +1,4 @@
+do AudioManager.init_audio()
 [style name="character"]
 [wait time="1.0"]
 [background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="0.0"]

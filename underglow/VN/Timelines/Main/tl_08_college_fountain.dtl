@@ -1,3 +1,4 @@
+do AudioManager.init_audio()
 [style name="character"]
 [background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="2.0"]
 narrator: You wander the campus with an unsettled feeling,[pause=.2] finding all of what Prym just told you somehow saddening in a way you don't understand.[n+]\
