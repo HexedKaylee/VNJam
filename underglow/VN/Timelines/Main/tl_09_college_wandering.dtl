@@ -1,118 +1,137 @@
 [style name="character"]
 [wait time="1.0"]
-narrator: Although you were expecting another bout of exposition after that disorienting test, Prym seems to regard you with much less than the usual enthusiasm you are used to seeing from them. Your head still foggy from the last serum you imbibed, they simply prod you towards the exit of the lab and disregard the barrage of inquiries you've amassed since their prior outburst.\
+[background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="2.0"]
+narrator: Although you were expecting another bout of exposition after that disorienting test,[pause=.2] Prym seems to regard you with much less than the usual enthusiasm you are used to seeing from them.[pause=.5] Your head still foggy from the last serum you imbibed,[pause=.2] they simply prod you towards the exit of the lab and disregard the barrage of inquiries you've amassed since their prior outburst.[n+]\
 \
-They do, however, seem to be acting like you were never subject to said outburst, which does nothing to set you at ease.
+They do,[pause=.2] however,[pause=.2] seem to be acting like you were never subject to said outburst,[pause=.2] which does nothing to set you at ease.
 [wait time="1.0"]
-prym: "Now… I have no shortage of things on my plate to deal with since you gave me more valuable data to sift through, so I'm going to assign you more to do than usual for your next excursion."
-prym: "I think you're smart enough at this point to take care of yourself out there, so why not explore more of the Underglow? Glean all you can from moving about as much as your little legs can take you."
+join prym (prym_neutral) center
+prym: "Now…[pause=.5] I have no shortage of things on my plate to deal with since you gave me more valuable data to sift through,[pause=.2] so I'm going to assign you more to do than usual for your next excursion."
+prym: "I think you're smart enough at this point to take care of yourself out there,[pause=.2] so why not explore more of the Underglow?[pause=.5] Glean all you can from moving about as much as your little legs can take you."
 prym: "Perhaps it will help you develop some sense of [i]purpose[/i]."
-prym: "Yes, that ought to occupy you well enough. Just come back once you feel satisfied."
+prym: "Yes,[pause=.2] that ought to occupy you well enough.[pause=.5] Just come back once you feel satisfied."
+leave prym
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="2.0"]
 [wait time="1.0"]
-narrator: You again find yourself urged out with haste… But, to your surprise, the entrance to their lab seems to remain in its place. You take this as a sign that they seem to trust that you will come back to them, however little sense that really makes.\
+narrator: You again find yourself urged out with haste…[pause=.5] But, to your surprise, the entrance to their lab seems to remain in its place.[pause=.5] You take this as a sign that they seem to trust that you will come back to them,[pause=.2] however little sense that really makes.[n+]\
 \
 You shake your head with a sigh and make your way outside.
-narrator: It occurs to you, after however many twists and turns you take around campus, that you really don't actually know exactly how to leave.\
+[background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="2.0"]
+[music path="res://Assets/Audio/Music/mus_droplets_(loop).wav" fade="0.0" volume="0.0"]
+narrator: It occurs to you,[pause=.2] after however many twists and turns you take around campus,[pause=.2] that you really don't actually know exactly how to leave.[n+]\
 \
-After a good deal of wandering, though, you manage to stumble upon what appears to be the café your Diver friend mentioned earlier, and find yourself attempting to order a "drink" from a Socialite barista.\
+After a good deal of wandering,[pause=.2] though,[pause=.2] you manage to stumble upon what appears to be the café your Diver friend mentioned earlier,[pause=.2] and find yourself attempting to order a "drink" from a Socialite barista.[n+]\
 \
-It takes a dauntingly repetitious conversation — and many urges to leave a "tip," on their part — before you watch them make one of these "drinks," only to realize it was just more tea. Or brine, as it were, but they certainly did call it tea.\
+It takes a dauntingly repetitious conversation —[pause=.5] and many urges to leave a "tip,"[pause=.2] on their part —[pause=.5] before you watch them make one of these "drinks,"[pause=.2] only to realize it was just more tea.[pause=.5] Or brine,[pause=.2] as it were,[pause=.2] but they certainly did call it tea.[n+]\
 \
-[i]Tea…[/i]\
+[i]Tea…[/i][n+]\
 \
-Staring at the covered, glowing cup, you recall the tea party from earlier… and find yourself thinking with a sense of fondness about the Socialites who warmly greeted you on your awakening, doting upon you while you came to understand how you might use your new form to move and grasp.\
+Staring at the covered,[pause=.2] glowing cup,[pause=.2] you recall the tea party from earlier…[pause=.5] and find yourself thinking with a sense of fondness about the Socialites who warmly greeted you on your awakening,[pause=.2] doting upon you while you came to understand how you might use your new form to move and grasp.[n+]\
 \
-You think of how far you've come since then.\
+You think of how far you've come since then.[pause=.5]
+[background arg="res://Assets/VN/Backgrounds/bg_test.png" fade="5.0"]
+narrator: It's automatic,[pause=.2] seemingly…[pause=.5] Before you know it,[pause=.2] your feet are taking you out of the café,[pause=.2] off the college grounds and into familiar environs.[n+]\
 \
-It's automatic, seemingly... Before you know it, your feet are taking you out of the café, off the college grounds and into familiar environs.\
+There's some pleasantries and banter being exchanged by familiar voices.[n+]\
 \
-There's some pleasantries and banter being exchanged by familiar voices.\
+You realize you've made your way back to your noble Socialite friends,[pause=.2] their tea party still well-underway.[n+]\
 \
-You realize you've made your way back to your noble Socialite friends, their tea party still well-underway.\
+It occurs to you but vaguely\:[pause=.5] [i]They're still there?[pause=.4] After all this…[/i][n+]\
 \
-It occurs to you but vaguely\: [i]They're still there? After all this…[/i]\
-\
-Ah, well, no matter. What's important is that you've found them again.\
+Ah,[pause=.2] well,[pause=.2] no matter.[pause=.4] What's important is that you've found them again.[n+]\
 \
 You feel something welling up within you as you approach the table.
+[music fade="0.0" volume="0.0"]
 [wait time="1.0"]
-"demure socialite": "Oh… Look, dear, haven't we met this one before?"
-"pompous socialite": "Why, yes, dear! I do so fondly recall their peculiar behavior with the tea!"
-"pompous socialite": "Welcome back, welcome back! Would you care for another cup?"
+[music path="res://Assets/Audio/Music/mus_brine_and_biscuits_(loop).wav" fade="0.0" volume="0.0"]
+join "demure socialite" right
+"demure socialite": "Oh…[pause=.4] Look,[pause=.2] dear,[pause=.2] haven't we met this one before?"
+join "pompous socialite" left
+"pompous socialite": "Why,[pause=.2] yes,[pause=.2] dear![pause=.4] I do so fondly recall their peculiar behavior with the tea!"
+"pompous socialite": "Welcome back,[pause=.2] welcome back![pause=.4] Would you care for another cup?"
 [wait time="0.0" hide_text="false"]
 - "Might as well. I've been practicing, after all."
-Your words appear to startle your present audience, each glancing to one another as you take your seat among them once again.
+Your words appear to startle your present audience,[pause=.2] each glancing to one another as you take your seat among them once again.
 [wait time="1.0"]
-"demure socialite": " … Dearest, was our friend here so well-spoken, last we met?"
-"pompous socialite": "I don't believe so… My, what a wonderful progression of affairs! Tell us, how ever did you learn to grace us with such eloquence, my friend?"
+"demure socialite": " … Dearest,[pause=.2] was our friend here so well-spoken,[pause=.2] last we met?"
+"pompous socialite": "I don't believe so…[pause=.5] My,[pause=.2] what a wonderful progression of affairs![pause=.5] Tell us,[pause=.2] how ever did you learn to grace us with such eloquence,[pause=.2] my friend?"
 [wait time="0.0" hide_text="false"]
 - Leave them with a coy silence.
 - "I'll show you what else I can do."
+leave --All--
 [wait time="1.0"]
-narrator: With a flick of your wrist, you reach out for your teacup, still sitting prepared for you, and lift it to your mask.\
+narrator: With a flick of your wrist,[pause=.2] you reach out for your teacup,[pause=.2] still sitting prepared for you,[pause=.2] and lift it to your mask.[n+]\
 \
-You drink it. You don't think it tastes like much… doesn't taste like anything at all, really. But you understand now that Socialites aren't wont to really utilize anything of substance while they perform their rituals, and it doesn't bother you so long as you perform the task successfully.\
+You drink it.[pause=.5] You don't think it tastes like much…[pause=.4] doesn't taste like anything at all,[pause=.2] really.[pause=.5] But you understand now that Socialites aren't wont to really utilize anything of substance while they perform their rituals,[pause=.2] and it doesn't bother you so long as you perform the task successfully.[n+]\
 \
-To your approval, there's a ring of sounds of awe from the onlookers you sought to impress. The Socialites clap softly in delight as you perform their curious ritual with impressive dexterity.\
+To your approval,[pause=.2] there's a ring of sounds of awe from the onlookers you sought to impress.[pause=.5] The Socialites clap softly in delight as you perform their curious ritual with impressive dexterity.[n+]\
 \
-A sense of pride wells up within you… but then, at that moment, your attention is seized by a sight most unfamiliar.\
-\
-Your reflection in the brine.\
+A sense of pride wells up within you…[pause=.5] but then,[pause=.2] at that moment,[pause=.2] your attention is seized by a sight most unfamiliar.
+[background arg="res://Assets/VN/CG/cg_reflection.PNG" fade="2.0"]
+[wait time="2.0"]
+narrator: Your reflection in the brine.[n+]\
 \
 A gasp sounds from the group.
 [wait time="1.0"]
-"demure socialite": "Dear… Do you see…?"
-"pompous socialite": "Ah-[i]hah[/i]! Well-done, well-done! This calls for a celebration!"
-"haughty socialite": "We're already celebrating, aren't we? Isn't that what parties are for?"
-"pompous socialite": "Oh, how fortuitous! We indeed already have all that we need right here."
-"demure socialite": "This calls for more tea, wouldn't you say?"
-"haughty socialite": "Yes, yes! More tea…"
-"pompous socialite": "… to celebrate our friend's new [i]face[/i]!"
+"demure socialite": "Dear…[pause=.5] Do you see…?"
+"pompous socialite": "Ah-[i]hah[/i]![pause=.5] Well-done,[pause=.2] well-done![pause=.5] This calls for a celebration!"
+"haughty socialite": "We're already celebrating,[pause=.2] aren't we?[pause=.5] Isn't that what parties are for?"
+"pompous socialite": "Oh, how fortuitous![pause=.5] We indeed already have all that we need right here."
+"demure socialite": "This calls for more tea,[pause=.2] wouldn't you say?"
+"haughty socialite": "Yes,[pause=.2] yes![pause=.5] More tea…"
+"pompous socialite": "… to celebrate our friend's[pause=.2] new[pause=.2] [i]face![/i]"
 [wait time="1.0"]
-narrator: The laughter dies down.\
+[music fade="10.0" volume="0.0"]
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="10.0"]
+[wait time="1.0"]
+narrator: The laughter dies down.[n+]\
 \
-The Socialites have resumed their ritual.\
+The Socialites have resumed their ritual.[n+]\
 \
-It's all repeated pleasantries, and cordial remarks, and empty politeness. All as a play-pretend session might play out.\
+It's all repeated pleasantries,[pause=.2] and cordial remarks,[pause=.2] and empty politeness.[pause=.5] All as a play-pretend session might play out.[n+]\
 \
-As the tea party goes on, you keep looking down at your reflection in your cup.\
+As the tea party goes on,[pause=.2] you keep looking down at your reflection in your cup.[n+]\
 \
-You haven't drunk any more.\
+You haven't drunk any more.[n+]\
 \
-They aren't looking to you anymore, either, to feign interest in their charade.\
+They aren't looking to you anymore,[pause=.2] either,[pause=.2] to feign interest in their charade.[n+]\
 \
-Though you know it was only a matter of them settling back into their norm… You somehow feel a certain disappointment.\
+Though you know it was only a matter of them settling back into their norm…[pause=.5] You somehow feel a certain disappointment.
+narrator: You planned to tell them all about your journey.[pause=.5] You wanted to share the experiences with them.[n+]\
+You wanted to tell them of the Diver who let you realize what you wanted,[pause=.2] for the very first time.[n+]\
 \
-You planned to tell them all about your journey. You wanted to share the experiences with them.\
+Realize that you wanted…[n+]\
 \
-You wanted to tell them of the Diver who let you realize what you wanted, for the very first time.\
+You wanted to have a friend.[n+]\
 \
-Realize that you wanted…\
+To share in the moment.[pause=.5] To share the ache.[pause=.5] To shoulder the burden together.[n+]\
 \
-You wanted to have a friend.\
+You thought maybe your worries could be cast away again.[n+]\
 \
-To share in the moment. To share the ache. To shoulder the burden together.\
+But they…[n+]\
 \
-You thought maybe your worries could be cast away again.\
-\
-But they…\
-\
-You realize that these Socialites haven't reached that point. Not yet.\
+You realize that these Socialites haven't reached that point.[pause=.5] Not yet.[n+]\
 \
 You stand up from your seat.
+[background arg="res://Assets/VN/Backgrounds/bg_test.png" fade="1.0"]
 [wait time="1.0"]
-"demure socialite": "Oh? Did something occur to you, my friend? You seem far off and away from us."
-"pompous socialite": Ah, dear… I get the feeling maybe they have somewhere else to be."
+join "demure socialite" right
+"demure socialite": "Oh?[pause=.4] Did something occur to you,[pause=.2] my friend?[pause=.5] You seem far off and away from us."
+join "pompous socialite" left
+"pompous socialite": Ah,[pause=.2] dear…[pause=.5] I get the feeling maybe they have somewhere else to be."
 [wait time="0.0" hide_text="false"]
 - "… Yes."
 	[wait time="1.0"]
 	- "I've found my purpose."
+leave --All--
 [wait time="1.0"]
-narrator: You abscond from the party with haste. You don't even stick around to hear their farewells.\
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="0.0"]
+[wait time="5.0"]
+narrator: You abscond from the party with haste.[pause=.5] You don't even stick around to hear their farewells.[n+]\
 \
-You need to get back to your —\
+You need to get back to your —[n+]\
 \
-…\
+…[n+]\
 \
 You must return to Prym.
 jump tl_10_college_return/

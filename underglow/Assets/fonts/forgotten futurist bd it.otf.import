@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://1ipmioibx4b6"
-path="res://.godot/imported/forgotten futurist bd it.otf-316a3123f49d688f831acff9435c7dd6.fontdata"
+path="res://.godot/imported/forgotten futurist bd it.otf-ea28c1383ae2deb41f6a698df6f7ada5.fontdata"
 
 [deps]
 
-source_file="res://Assets/Fonts/forgotten futurist bd it.otf"
-dest_files=["res://.godot/imported/forgotten futurist bd it.otf-316a3123f49d688f831acff9435c7dd6.fontdata"]
+source_file="res://Assets/fonts/forgotten futurist bd it.otf"
+dest_files=["res://.godot/imported/forgotten futurist bd it.otf-ea28c1383ae2deb41f6a698df6f7ada5.fontdata"]
 
 [params]
 

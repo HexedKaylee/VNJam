@@ -1,101 +1,107 @@
 [style name="character"]
 [wait time="1.0"]
-narrator: No longer bound to the experimental device you just used, you feel an uncomfortable ache in your shoulders. Good heavens, getting it removed was a harrowing process. You decide to put it out of your mind and see what Prym has to say about the disorienting exercise they've just put you through.\
+[background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="0.0"]
+[music path="res://Assets/Audio/Music/mus_droplets_(loop).wav" fade="0.0" volume="0.0"]
+narrator: No longer bound to the experimental device you just used,[pause=.2] you feel an uncomfortable ache in your shoulders.[pause=.5] Good heavens,[pause=.2] getting it removed was a harrowing process.[pause=.5] You decide to put it out of your mind and see what Prym has to say about the disorienting exercise they've just put you through.[n+]\
 \
-Turning to them, you watch as they dutifully place the Fish-shooting device on a mount behind them.\
+Turning to them,[pause=.2] you watch as they dutifully place the Fish-shooting device on a mount behind them.[n+]\
 \
-You notice now, amidst the spot where the device sits, a collection of transparent containers — [i]flasks[/i], you realize — the contents of which had previously piqued your interest. Only in this moment do you realize that the lights floating within all resemble the Spirit Fish with which you've just become acquainted.
+You notice now,[pause=.2] amidst the spot where the device sits,[pause=.2] a collection of transparent containers —[pause=.5] [i]flasks[/i],[pause=.4] you realize —[pause=.5] the contents of which had previously piqued your interest. Only in this moment do you realize that the lights floating within all resemble the Spirit Fish with which you've just become acquainted.
 [wait time="1.0"]
-prym: "Oh, Moira! [i]Fantastic[/i] work in there! I'm so glad my efforts were not wasted."
-prym: "I can tell you, those Spirit Fish are slippery little devils.”
-prym: "Wrangling enough to actually load the launcher is no trivial feat, but it was all worth it to see you enthusiastically take to my little trial for you."
-prym: "Relatedly, I’ve prepared a small reward for your continued diligence towards the pursuit of [b]Knowledge[/b]."
+join prym (prym_happy) center
+prym: "Oh,[pause=.2] Moira! [i]Fantastic[/i][pause=.2] work in there![pause=.5] I'm so glad my efforts were not wasted."
+prym: "I can tell you,[pause=.2] those Spirit Fish are slippery little devils.”
+prym: "Wrangling enough to actually load the launcher is no trivial feat,[pause=.2] but it was all worth it to see you enthusiastically take to my little trial for you."
+prym: "Relatedly,[pause=.2] I’ve prepared a small reward for your continued diligence towards the pursuit of [b]Knowledge[/b]."
 [wait time="0.0" hide_text="false"]
 - "A reward?"
-	prym: "Yes yes, my dear Moira. Behold!"
+	prym: "Yes yes,[pause=.2] my dear Moira.[pause=.4] Behold!"
 - "What are those flasks?"
-	prym: "Oh, taken an interest in the serums, have you? Well, I can't explain too much, or it'll contaminate the data."
-	prym: "Don't think your curiosity has gone unnoticed, though. Hehe~"
-	prym: "Anyway, as for your reward…"
+	prym: "Oh,[pause=.2] taken an interest in the serums,[pause=.2] have you?[pause=.5] Well, I can't explain too much,[pause=.2] or it'll contaminate the data."
+	prym: "Don't think your curiosity has gone unnoticed,[pause=.2] though.[pause=.5] Hehe~"
+	prym: "Anyway,[pause=.2] as for your reward…"
 [wait time="1.0"]
-narrator: From behind Prym's back, a swell of tendrils rises with an outrageously hefty stack of books tangled within. They drop the easily dozens-high stack of tomes, which lands perfectly in front of you with a loud thump, towering over you dauntingly.\
+narrator: From behind Prym's back,[pause=.2] a swell of tendrils rises with an outrageously hefty stack of books tangled within.[pause=.5] They drop the easily dozens-high stack of tomes,[pause=.2] which lands perfectly in front of you with a loud thump,[pause=.2] towering over you dauntingly.[n+]\
 \
 Prym peeks out from behind the tower at you with an expression somehow more chuffed than their default.
 [wait time="1.0"]
-prym: "Consider this not just a reward for your performance, but a gift for relearning how to speak."
-prym: "You certainly encountered your fair share of fake books from the library, but I guarantee you that [i]these[/i] all have perfectly coherent and linear paragraphs of information for you to peruse."
-prym: "No need to thank me. This is all for improving my datasets going forward as well, you [b]know[/b]."
-prym: "Go on, now — study to your heart's content!"
+prym: "Consider this not just a reward for your performance,[pause=.2] but a gift for relearning how to speak."
+prym: "You certainly encountered your fair share of fake books from the library,[pause=.2] but I guarantee you that [i]these[/i][pause=.2] all have perfectly coherent and linear paragraphs of information for you to peruse."
+prym: "No need to thank me.[pause=.5] This is all for improving my datasets going forward as well,[pause=.2] you [b]know[/b]."
+prym: "Go on,[pause=.2] now —[pause=.4] study to your heart's content!"
 [wait time="0.0" hide_text="false"]
 - Feverishly pick up the nearest book and begin reading.
-	You grab a book from the middle of the tower, pulling it out effortlessly. The books above it descend neatly onto the ones below, as if the one you're now holding was never there. You begin reading…
+	You grab a book from the middle of the tower,[pause=.2] pulling it out effortlessly.[pause=.5] The books above it descend neatly onto the ones below,[pause=.2] as if the one you're now holding was never there.[pause=.5] You begin reading…
 - Stare blankly at the book stack.
-	You feel intense pressure from Prym's stare as you remain still. The expectant look in their eyes is unbearable, and you find yourself sheepishly reaching up towards the top of the stack. You pick up a book and begin reading…
-Not only does this book contain actual, readable information, but it all seems to pertain to Prym's studies. Charts and equations fill your vision, spinning around in your head as the mountain of information serves only to confuse you even more than the imitation-books' gibberish would have.
+	You feel intense pressure from Prym's stare as you remain still.[pause=.5] The expectant look in their eyes is unbearable,[pause=.2] and you find yourself sheepishly reaching up towards the top of the stack.[pause=.5] You pick up a book and begin reading…
+Not only does this book contain actual,[pause=.2] readable information,[pause=.2] but it all seems to pertain to Prym's studies.[pause=.5] Charts and equations fill your vision,[pause=.2] spinning around in your head as the mountain of information serves only to confuse you even more than the imitation-books' gibberish would have.
 [wait time="1.0"]
 prym: "Don't be afraid to ask any questions if you find yourself confused!"
 [wait time="1.0"]
-narrator: [i]Easier said than done,[/i] you think. The information is so overwhelming that you wouldn't even [b]know[/b] where to start.\
+narrator: [i]Easier said than done,[/i][pause=.3] you think.[pause=.5] The information is so overwhelming that you wouldn't even [b]know[/b] where to start.[n+]\
 \
-Finally, in the hurricane of words, you recognize one you've heard before\: [i]Estuary.[/i]
+Finally,[pause=.2] in the hurricane of words,[pause=.2] you recognize one you've heard before\:[pause=.5] [i]Estuary.[/i]
 [wait time="1.5"]
 - "What is an Estuary?"
+[music fade="5.0" volume="0.0"]
 [wait time="0.0"]
 prym: " ... "
 [wait time="1.0"]
-The expression on Prym's face doesn't shift, but… All the same, there's something subtly different about it.
-It unsettles you, especially as you notice their voice begin to take on a tone with a darkness rivaling that of the abyss above.
+The expression on Prym's face doesn't shift,[pause=.2] but…[pause=.5] All the same,[pause=.2] there's something[pause=.2] subtly different about it.
+It unsettles you,[pause=.2] especially as you notice their voice begin to take on a tone with a darkness rivaling that of the abyss above.
 [wait time="1.0"]
-prym: "Are you aware of the process by which we change, Moira?"
-prym: "How, though we are all Droplets, we come to take on many forms?"
+prym: "Are you aware of the process by which we change,[pause=.2] Moira?"
+prym: "How,[pause=.2] though we are all Droplets,[pause=.2] we come to take on many forms?"
 [wait time="0.0" hide_text="false"]
 - Shake your head.
 [wait time="1.0"]
-prym: "Well, let me give you a brief lesson. Feel free to bask in the honor that is having a Disciple of [b]Knowledge[/b] share their personal findings with you face to face~"
-prym: "So. When we enter the Tow, we all take the form of a Mask – just like you, Moira."
-prym: "Masks begin with an ambiguous sense of self. They merely move and speak on instinct, perhaps carried over from… Ah, well, that's getting into theories involving preventatively large quantities of prerequisite [b]knowledge[/b]."
-prym: "As a newly-adorned Mask entering Droplet society, we may develop our senses of self to be more complex. This is how we grow to be… [i]more.[/i]"
-prym: "A Mask who seeks to understand may begin to imitate others, and grow that sense of self."
-prym: "We become Socialites when we understand the meaning of self, and seek to perfect our imitation of reality."
-prym: "Then, after a fashion, we become Divers. [i]This…[/i] is when we gain [i]purpose.[/i]"
-prym: "We become Disciples – like myself – when we [i]fully devote[/i] ourselves to that purpose."
-prym: "And, if we come to embody our purpose as a singular, all-encompassing ideal, we become [b]Gods[/b]."
-prym: "Alas, there are also those unfortunate Droplets who shy away from the call of purpose."
-prym: "As they lose themselves, they become Estuaries. A truly pitiful form of existence brought forth by a blurring of the line between the self and all else."
-prym: "There are benefits to attaining this form — for instance, gaining a greater understanding of the workings of the Underglow."
-prym: "But they cannot share that [b]knowledge[/b] with the rest of us, or partake in the company of others with the full awareness necessary to enjoy such things. Ever the pity."
-prym: "That said, Estuaries do at the very least still cling to the vestiges of individuality needed to maintain one's form."
-prym: "An Estuary who loses themself [i]entirely[/i] will thus surrender that tenuous form, and become a Spirit Fish – the very same type of entity you encountered during our latest experiment."
+prym: "Well,[pause=.2] let me give you a brief lesson.[pause=.5] Feel free to bask in the honor that is having a Disciple of [b]Knowledge[/b] share their personal findings with you face to face~"
+[music path="res://Assets/Audio/Music/mus_submerged_(loop).wav" fade="0.0" volume="0.0"]
+prym: "So.[pause=.5] When we enter the Tow,[pause=.2] we all take the form of a Mask –[pause=.5] just like you,[pause=.2] Moira."
+prym: "Masks begin with an ambiguous sense of self.[pause=.5] They merely move and speak on instinct,[pause=.2] perhaps carried over from…[pause=.5] Ah,[pause=.2] well,[pause=.4] that's getting into theories involving preventatively large quantities of prerequisite [b]knowledge[/b]."
+prym: "As a newly-adorned Mask entering Droplet society,[pause=.2] we may develop our senses of self to be more complex.[pause=.5] This is how we grow to be…[pause=.5] [i]more.[/i]"
+prym: "A Mask who seeks to understand may begin to imitate others,[pause=.2] and grow that sense of self."
+prym: "We become Socialites when we understand the meaning of self,[pause=.2] and seek to perfect our imitation of reality."
+prym: "Then,[pause=.2] after a fashion,[pause=.2] we become Divers.[pause=.5] [i]This…[/i][pause=.5] is when we gain [i]purpose.[/i]"
+prym: "We become Disciples –[pause=.3] like myself –[pause=.3] when we [i]fully devote[/i] ourselves to that purpose."
+prym: "And,[pause=.2] if we come to embody our purpose as a singular,[pause=.2] all-encompassing ideal,[pause=.2] we become [b]Gods[/b]."
+prym: "Alas,[pause=.2] there are also those unfortunate Droplets who shy away from the call of purpose."
+prym: "As they lose themselves,[pause=.2] they become Estuaries.[pause=.5] A truly pitiful form of existence brought forth by a blurring of the line between the self and all else."
+prym: "There are benefits to attaining this form —[pause=.5] for instance,[pause=.2] gaining a greater understanding of the workings of the Underglow."
+prym: "But they cannot share that [b]knowledge[/b] with the rest of us,[pause=.2] or partake in the company of others with the full awareness necessary to enjoy such things.[pause=.5] Ever the pity."
+prym: "That said,[pause=.2] Estuaries do at the very least still cling to the vestiges of individuality needed to maintain one's form."
+prym: "An Estuary who loses themself [i]entirely[/i] will thus surrender that tenuous form,[pause=.2] and become a Spirit Fish –[pause=.5] the very same type of entity you encountered during our latest experiment."
 prym: "A spirit fish is a being of pure instinct, driven only to cluster together with others of its ilk."
-prym: "It is speculated that Spirit Fish may be possessed of more raw power than any other type of being in the Underglow, for reasons I'm not about to get into at this juncture."
-prym: "But such beings truly are the saddest existences I can imagine… Nothing about them is all that exciting or interesting, much as I may poke and prod."
-prym: "Do not feel too afraid for them, though! Even a Spirit Fish is not a lost cause."
+prym: "It is speculated that Spirit Fish may be possessed of more raw power than any other type of being in the Underglow,[pause=.2] for reasons I'm not about to get into at this juncture."
+prym: "But such beings truly are the saddest existences I can imagine…[pause=.5] Nothing about them is all that exciting or interesting,[pause=.2] much as I may poke and prod."
+prym: "Do not feel too afraid for them,[pause=.2] though! Even a Spirit Fish is not a lost cause."
 prym: "As it turns out, it may in fact be possible to [i]revert[/i] them back to their previous forms."
 prym: "For if a Fish has even the smallest gleam of transient brightness to their being…"
-prym: "It means that they still have [i]self.[/i] That they can be re-made back into themselves, and returned to the path of growth."
-prym: "However, if that last sliver of self leaves a Spirit Fish… They become the Coral you see all around us."
+prym: "It means that they still have [i]self.[/i][pause=.5] That they can be re-made back into themselves,[pause=.2] and returned to the path of growth."
+prym: "However,[pause=.2] if that last sliver of self leaves a Spirit Fish…[pause=.5] They become the Coral you see all around us."
 prym: "No longer a being driven by will."
 prym: "They are but a fixture."
-prym: "Unmoveable. Uninspired. Unmotivated. Unaware."
+prym: "Un[pause=.2]moveable.[pause=.4] Un[pause=.2]inspired.[pause=.4] Un[pause=.2]motivated.[pause=.5] Un[pause=.2]aware."
 prym: "And there is no coming back from that."
 [wait time="1.0"]
-narrator: Prym pauses, their voice having become quite despondent. This topic appears to be difficult for them to discuss, you think. Nevertheless… \
+narrator: Prym pauses,[pause=.2] their voice having become quite despondent.[pause=.5] This topic appears to be difficult for them to discuss,[pause=.2] you think.[pause=.5] Nevertheless… \
 \
 This information is important.\
 \
-You need Prym to continue. You [i]need[/i] to [b]know[/b].
+You need Prym to continue.[pause=.5] You [i]need[/i][pause=.2] to [b]know[/b].
 [wait time="1.0"]
-prym: "There are… certain conditions, rare as they may be, where some stages of Droplethood are skipped entirely."
-prym: "For example, a Diver… a particularly [i]foolish[/i] Diver, may practice learning to temporarily relinquish their sense of self."
-prym: "If they can control it… If they can [b]know[/b] they'll regain it later… they can wield the power that comes with being an Estuary – the power attained through becoming one with the Underglow."
+prym: "There are…[pause=.5] certain conditions,[pause=.2] rare as they may be,[pause=.3] where some stages of Droplethood are skipped entirely."
+prym: "For example,[pause=.2] a Diver…[pause=.5] a particularly [i]foolish[/i] Diver,[pause=.2] may practice learning to temporarily relinquish their sense of self."
+prym: "If they can control it…[pause=.5] If they can [b]know[/b] they'll regain it later…[pause=.5] they can wield the power that comes with being an Estuary –[pause=.5] the power attained through becoming one with the Underglow."
 prym: "But if they can't… they'll be stuck that way."
 prym: "But but [i]but![/i]"
 prym: "My [b]God[/b] has proffered to me a boon of enlightenment."
-prym: "It stands to reason that, if a Diver can become an Estuary, perhaps a Spirit Fish could turn straight back into a Mask."
+prym: "It stands to reason that,[pause=.2] if a Diver can become an Estuary,[pause=.2] perhaps a Spirit Fish could turn straight back into a Mask."
 prym: "That is what my research seeks to help us understand."
-prym: "Rescuing Spirit Fish. Pulling them back from the brink."
-prym: "And somehow, [i]you,[/i] my dear, have exhibited signs of having already been a Droplet before becoming a Mask, falling [i]completely outside[/i] of the norm of what the cycle dictates!"
-prym: "You see, Moira? This is why our reunion was serendipitous!"
+prym: "Rescuing Spirit Fish.[pause=.5] Pulling them back from the brink."
+prym: "And somehow,[pause=.2] [i]you,[/i][pause=.3] my dear,[pause=.3] have exhibited signs of having already been a Droplet before becoming a Mask,[pause=.2] falling [i]completely outside[/i] of the norm of what the cycle dictates!"
+[music fade="5.0" volume="0.0"]
+prym: "You see,[pause=.2] Moira? This is why our reunion was serendipitous!"
 [wait time="1.5"]
 - " … That name again."
 [wait time="1.0"]
@@ -103,29 +109,32 @@ prym: "You see, Moira? This is why our reunion was serendipitous!"
 [wait time="1.0"]
 prym: " … "
 [wait time="1.0"]
-narrator: The last of Prym's professorial facade drains from their face.\
+narrator: The last of Prym's professorial facade drains from their face.[n+]\
 \
-You're not sure why, but something tells you you've just asked the wrong question.
+You're not sure why,[pause=.2] but something tells you you've just asked the wrong question.
 [wait time="1.0"]
 prym: "[b]Get out.[/b]"
 [wait time="1.0"]
-Prym snatches a book from the stack with a whip of a tendril, causing the whole thing to tumble over.
-They throw it as hard as they can. You hear it zip by as it flies just over you.
+Prym snatches a book from the stack with a whip of a tendril,[pause=.2] causing the whole thing to tumble over.
+They throw it as hard as they can.[pause=.5] You hear it zip by as it flies just over you.
 [wait time="1.0"]
-prym: "[b]Leave. [i]Now.[/i][/b]"
+prym: "[b]Leave.[pause=.5] [i]Now.[/i][/b]"
 [wait time="1.0"]
-A veritable cloud of dark tendrils rises from behind them, looming threateningly as a billow of golden dust leeches into the surrounds.
+[background arg="res://Assets/VN/Backgrounds/uneasy BG.PNG" fade="2.0"]
+A veritable cloud of dark tendrils rises from behind them,[pause=.2] looming threateningly as a billow of golden dust leeches into the surrounds.
 - Leave
 - "… I'm sorry — "
 	prym: "I…"
 	prym: "said…"
 	prym: "[b]GO!![/b]"
 [wait time="1.0"]
-narrator: Unable to reconcile this sudden change in temperament of theirs, you turn away in a panic and flee out into the corridor.\
+leave prym
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="0.0"]
+narrator: Unable to reconcile this sudden change in temperament of theirs,[pause=.2] you turn away in a panic and flee out into the corridor.[n+]\
 \
-There's a crash behind you; the sounds of various flasks breaking and stone shattering.\
+There's a crash behind you;[pause=.4] the sounds of various flasks breaking and stone shattering.[n+]\
 \
-You cover your head and crouch down to avoid the inevitable rain of debris you're sure is to come… But the noise goes quiet.\
+You cover your head and crouch down to avoid the inevitable rain of debris you're sure is to come…[pause=.5] But the noise goes quiet.[n+]\
 \
-When you look back, the entrance to the lab is gone again.
+When you look back,[pause=.2] the entrance to the lab is gone again.
 jump tl_08_college_fountain/
