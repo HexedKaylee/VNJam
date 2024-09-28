@@ -11,6 +11,7 @@ do AudioManager.init_audio()
 [wait time="3.0"]
 join "haughty socialite" right
 [music path="res://Assets/Audio/Music/mus_brine_and_biscuits_(loop).wav" fade="0.0" volume="0.0"]
+[style name="character"]
 "haughty socialite": "I believe there was a Fish here but a moment ago."
 "haughty socialite": "'Twas providing some excellent mood lighting,[pause=.5] with how bright the glow became!"
 join "demure socialite" left

@@ -1,0 +1,7 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://mooxsmah22v6"]
+
+[ext_resource type="Texture2D" uid="uid://bebqwg4lpr5a5" path="res://Assets/UI/textbox_nameless.png" id="1_tt2iq"]
+
+[resource]
+texture = ExtResource("1_tt2iq")
+axis_stretch_horizontal = 2
