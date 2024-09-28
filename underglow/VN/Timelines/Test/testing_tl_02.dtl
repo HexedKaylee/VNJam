@@ -1,7 +1,7 @@
 [wait_input]
 [style name="character"]
 do AudioManager.init_audio()
-[music path="res://Assets/Audio/Music/mus_aphos_(loop).wav" fade="0.0" volume="0.0"]
+[music path="res://Assets/Audio/Music/music_prym_(loop).wav" fade="0.0" volume="0.0"]
 join prym center
 [voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_hmm_04.wav" volume="0.0" bus="Dialogic_VO"]
 Hmm...
