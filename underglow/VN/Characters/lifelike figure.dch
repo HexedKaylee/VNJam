@@ -8,12 +8,40 @@
 "sound_moods": {},
 "style": ""
 },
-"default_portrait": "",
+"default_portrait": "diver_neutral",
 "description": "",
 "display_name": "Lifelike Figure",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),
-"portraits": {},
+"portraits": {
+"diver_lightgone": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Friendly Diver/friendly_diver_lightgone.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"diver_neutral": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Friendly Diver/friendly_diver_neutral.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"diver_sparkle": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Friendly Diver/friendly_diver_sparkle.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
 "scale": 1.0
 }
