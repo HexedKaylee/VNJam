@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://cb02hrifprh5y"]
+[gd_scene load_steps=23 format=3 uid="uid://cb02hrifprh5y"]
 
 [ext_resource type="Script" path="res://Scenes/2D/main_menu.gd" id="1_2c4sr"]
 [ext_resource type="Texture2D" uid="uid://d2ke0fbwkhjc3" path="res://Assets/VN/Backgrounds/uneasy BG.PNG" id="1_k7ha2"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://dnskp6wtxfaq4" path="res://Assets/UI/logo_shadowed.png" id="12_1sfm6"]
 [ext_resource type="Script" path="res://Scenes/2D/logo_shadow.gd" id="13_cspst"]
 [ext_resource type="Texture2D" uid="uid://crxmkshugoudi" path="res://Assets/UI/logo_unshadowed.png" id="14_74ic1"]
+[ext_resource type="AudioStream" uid="uid://dy56ywtjytmx6" path="res://Assets/Audio/Music/mus_aphos_(loop).wav" id="15_unml6"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cu1fy"]
 
@@ -134,6 +135,19 @@ script = ExtResource("13_cspst")
 [node name="Logo" type="Sprite2D" parent="."]
 texture = ExtResource("14_74ic1")
 centered = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("15_unml6")
+autoplay = true
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -13.0
+offset_top = -20.0
+offset_right = 1978.0
+offset_bottom = 1104.0
+color = Color(0, 0, 0, 0)
 
 [connection signal="pressed" from="StartButton" to="StartButton" method="_on_pressed"]
 [connection signal="pressed" from="ContinueButton" to="ContinueButton" method="_on_pressed"]

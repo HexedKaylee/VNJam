@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://co35njx48b78t"]
+[gd_scene load_steps=15 format=3 uid="uid://co35njx48b78t"]
 
 [ext_resource type="Script" path="res://Scenes/2D/credits.gd" id="1_abcf6"]
 [ext_resource type="Texture2D" uid="uid://gohg56cf4i3o" path="res://Assets/Credits/credits_1.png" id="1_mbwao"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://gaf1c7van06w" path="res://Assets/Credits/credits_kayleebubble.png" id="5_aedv8"]
 [ext_resource type="Shader" path="res://Scenes/2D/credits.gdshader" id="5_mj0u4"]
 [ext_resource type="Texture2D" uid="uid://bp0fy2xodo58f" path="res://Assets/Credits/credits_skadi_les.png" id="6_cu4l0"]
+[ext_resource type="AudioStream" uid="uid://dy56ywtjytmx6" path="res://Assets/Audio/Music/mus_aphos_(loop).wav" id="10_ehwfm"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_it7f7"]
 
@@ -81,3 +82,15 @@ modulate = Color(1, 1, 1, 0)
 material = SubResource("ShaderMaterial_mgy8o")
 texture = ExtResource("6_cu4l0")
 centered = false
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -36.0
+offset_top = -30.0
+offset_right = 1951.0
+offset_bottom = 1091.0
+color = Color(0, 0, 0, 0)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_ehwfm")
+autoplay = true
