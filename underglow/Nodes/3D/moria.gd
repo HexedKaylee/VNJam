@@ -30,7 +30,6 @@ var redShift = false
 var serumMove = false
 var serumTime = 0.0
 var terrain : Node3D
-var randomTex = []
 var terrainTex : ImageTexture
 var canQuaf = true
 @export var Center : Node3D
@@ -42,14 +41,15 @@ var music0 = preload("res://Assets/Audio/Music/music_prym_(loop).wav")
 var music1 = preload("res://Assets/Audio/Music/music_prym_(loop).wav")
 @export var exp4 = false
 
+var randomTex = [preload("res://Assets/3D/Models/Bookshelves/bookshelf_2_001_d.png"), preload("res://Assets/3D/Models/Coral/Coral8_0.jpg"), preload("res://Assets/3D/Textures/sand_map2.png"), preload("res://Assets/3D/Textures/sand_map2.png")]
+
 func _ready():
 	randomize()
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	shotShelf = false
 	shotCoral = false
-	randomTex = ["res://Assets/3D/Models/Bookshelves/bookshelf_2_001_d.png", "res://Assets/3D/Models/Coral/Coral8_0.jpg", "res://Assets/3D/Textures/sand_map2.png", "res://Assets/3D/Textures/sand_map2.png"]
-	terrainTex = ImageTexture.create_from_image(Image.load_from_file(randomTex.pick_random()))
+	terrainTex = ImageTexture.create_from_image(randomTex.pick_random().get_image())
 	if(exp4):
 		$AudioStreamPlayer.stream = music1
 	else:
