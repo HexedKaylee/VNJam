@@ -38,6 +38,10 @@ var canQuaf = true
 var distance = 0
 var mouseCaptured = true
 
+var music0 = preload("res://Assets/Audio/Music/music_prym_(loop).wav")
+var music1 = preload("res://Assets/Audio/Music/music_prym_(loop).wav")
+@export var exp4 = false
+
 func _ready():
 	randomize()
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
@@ -46,6 +50,11 @@ func _ready():
 	shotCoral = false
 	randomTex = ["res://Assets/3D/Models/Bookshelves/bookshelf_2_001_d.png", "res://Assets/3D/Models/Coral/Coral8_0.jpg", "res://Assets/3D/Textures/sand_map2.png", "res://Assets/3D/Textures/sand_map2.png"]
 	terrainTex = ImageTexture.create_from_image(Image.load_from_file(randomTex.pick_random()))
+	if(exp4):
+		$AudioStreamPlayer.stream = music1
+	else:
+		$AudioStreamPlayer.stream = music0
+	$AudioStreamPlayer.play()
 
 func _input(event):
 	if event is InputEventMouseMotion and mouseCaptured:

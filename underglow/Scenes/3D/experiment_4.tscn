@@ -134,6 +134,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.3944, 4.53997, 77.9)
 SceneRoot = NodePath("..")
 Center = NodePath("../Center")
 centerCheck = true
+exp4 = true
 
 [node name="Terrain" type="StaticBody3D" parent="."]
 unique_name_in_owner = true

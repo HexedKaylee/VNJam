@@ -1,13 +1,13 @@
 [gd_scene load_steps=7 format=3 uid="uid://oefdh2b5xghk"]
 
 [ext_resource type="Texture2D" uid="uid://ee5glcc6p1su" path="res://Assets/3D/Sprites/serumOverlay.png" id="1_jvn41"]
-[ext_resource type="Texture2D" uid="uid://deo3jyvgyj0eu" path="res://Assets/VN/GUI/placeholder_textbox_in_experiment.png" id="2_170po"]
 [ext_resource type="Script" path="res://Nodes/3D/image_overlay.gd" id="2_c34eq"]
 [ext_resource type="Script" path="res://Nodes/3D/ui.gd" id="3_kuvqa"]
+[ext_resource type="Texture2D" uid="uid://b7a1vv6gxn0d" path="res://Assets/UI/experimenttextbox.png" id="3_obhsm"]
 [ext_resource type="Script" path="res://Nodes/3D/dialogue_controller.gd" id="4_upstm"]
 
 [sub_resource type="Theme" id="Theme_tmgdd"]
-default_font_size = 24
+default_font_size = 30
 
 [node name="UI" type="Control"]
 layout_mode = 3
@@ -20,27 +20,28 @@ grow_vertical = 2
 [node name="ImageOverlay" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0)
 position = Vector2(958, 551)
-scale = Vector2(1.3054, 1.3054)
 texture = ExtResource("1_jvn41")
 script = ExtResource("2_c34eq")
 
 [node name="TextBox" type="Sprite2D" parent="."]
 unique_name_in_owner = true
 position = Vector2(960, 896)
-scale = Vector2(1.5, 1.5)
-texture = ExtResource("2_170po")
+texture = ExtResource("3_obhsm")
 script = ExtResource("3_kuvqa")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="TextBox"]
 offset_left = -284.0
-offset_top = -66.0001
+offset_top = -83.0
 offset_right = 606.0
-offset_bottom = 117.0
+offset_bottom = 100.0
 scale = Vector2(0.75, 0.75)
 theme = SubResource("Theme_tmgdd")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 bbcode_enabled = true
 text = "Cave Johnson here. Just wanted to let you know that, after decades of research and testing, we have finally transformed into beings of pure light. Go team. Not exactly what we were after, of course, but in the ballpark. So let's keep testing, and maybe someday we'll achieve man's ultimate dream: to evolve into pillars of pure salt. Can't wait....So salty."
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="TextBox"]
+bus = &"Dialogic_VO"
 
 [node name="Controller" type="Control" parent="."]
 unique_name_in_owner = true

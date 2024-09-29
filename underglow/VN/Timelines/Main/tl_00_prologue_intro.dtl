@@ -1,7 +1,5 @@
 do AudioManager.init_audio()
-[wait time="1.0"]
 [style name="character"]
-[wait_input]
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="3.0"]
 [wait time="3.0"]
 [music path="res://Assets/Audio/Music/mus_submerged_(loop).wav" fade="0.0" volume="0.0"]

@@ -1,11 +1,12 @@
+do AudioManager.init_audio()
 [style name="character"]
 [background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="1.0"]
 [wait time="1.0"]
 narrator: You aren't sure you really had to follow the same path back.[pause=.5] It seems,[pause=.2] now,[pause=.2] that your feet simply take you to where you want to go with more ease than ever.[n+]\
 \
-You feel featherlight as you round the corner into the college hallway that takes you to the lab,[pause=.2] and are soon through its doorway with a pronounced excitement that almost makes you feel ill.[n+]\
+You feel featherlight as you round the corner into the college hallway that takes you to the lab,[pause=.2] and are soon through its doorway with a pronounced excitement that almost makes you feel ill.\
 \
-Behind the flasks of Spirit Fish,[pause=.2] you identify the floating lights of Prym's brilliant hair,[pause=.2] and that familiar scent of smoke wafting about from their device placed in the corner,[pause=.2] like incense permeating the space.
+[n]Behind the flasks of Spirit Fish,[pause=.2] you identify the floating lights of Prym's brilliant hair,[pause=.2] and that familiar scent of smoke wafting about from their device placed in the corner,[pause=.2] like incense permeating the space.
 [wait time="1.0"]
 - "Prym…!"
 They turn to you.
@@ -37,9 +38,9 @@ narrator: You hear a click from the device in the corner,[pause=.2] which then b
 \
 The intoxicatingly sweet and familiar scent hits you powerfully —[pause=.5] but this time,[pause=.2] the calm that you encountered before doesn't follow.[n+]\
 \
-There is an overbearing,[pause=.2] [i]choking[/i] pressure on all sides.[n+]\
+There is an overbearing,[pause=.2] [i]choking[/i] pressure on all sides.\
 \
-You can't move.[n+]\
+[n]You can't move.[n+]\
 \
 Their tendrils have you rooted,[pause=.2] again,[pause=.2] firmly in place.
 [wait time="1.0"]

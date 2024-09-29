@@ -2,296 +2,355 @@
 	{
 		"id": "ex1_00",
 		"line": "Subject, pick up the book.",
-		"note": "Scene Start"
+		"note": "Scene Start",
+		"voiceLine": "vo_prym_bark_subject_calm_01"
 	},
 	{
 		"id": "ex1_00a",
 		"line": "Hypothesis: subject does not know what a \"book\" is.",
-		"note": "After player fails to pick up book for a time since last line played"
+		"note": "After player fails to pick up book for a time since last line played",
+		"voiceLine": "vo_prym_bark_hmm_04"
 	},
 	{
 		"id": "ex1_00b",
 		"line": "Subject, remove the rectangular object from the nearby pillar.",
-		"note": "After player fails to pick up book for a time since last line played"
+		"note": "After player fails to pick up book for a time since last line played",
+		"voiceLine": "vo_prym_bark_subject_calm_02"
 	},
 	{
 		"id": "ex1_00c",
 		"line": "Updated hypothesis: subject does not know what a \"pillar\" is.",
-		"note": "After player fails to pick up book for a time since last line played"
+		"note": "After player fails to pick up book for a time since last line played",
+		"voiceLine": "vo_prym_bark_sigh_01"
 	},
 	{
 		"id": "ex1_01",
 		"line": "Very good. Now place the book on one of the nearby pillars.",
-		"note": "Player picks up book"
+		"note": "Player picks up book",
+		"voiceLine": "vo_prym_bark_its_simple_01"
 	},
 	{
 		"id": "ex1_01a",
 		"line": "Subject appears to have issues with corporeality. Note: apply mild adhesive to future testing equipment.",
-		"note": "Player drops book on ground"
+		"note": "Player drops book on ground",
+		"voiceLine": "vo_prym_bark_hmm_05"
 	},
 	{
 		"id": "ex1_02a",
 		"line": "Subject has chosen the RED pillar. Results: unsatisfactory.",
-		"note": "Player picks red pillar"
+		"note": "Player picks red pillar",
+		"voiceLine": "vo_prym_bark_sigh_04"
 	},
 	{
 		"id": "ex1_02b",
 		"line": "Subject has chosen the BLUE pillar. Results: unsatisfactory.",
-		"note": "Player picks blue pillar"
+		"note": "Player picks blue pillar",
+		"voiceLine": "vo_prym_bark_sigh_04"
 	},
 	{
 		"id": "ex1_02c",
 		"line": "Subject has chosen the GREEN pillar. Results: unsatisfactory.",
-		"note": "Player picks green pillar"
+		"note": "Player picks green pillar",
+		"voiceLine": "vo_prym_bark_sigh_04"
 	},
 	{
 		"id": "ex1_02d",
 		"line": "Subject has attempted to return the book to a bookshelf. Hypothesis: subject retains basic level of mental association.",
-		"note": "Player puts book on shelf"
+		"note": "Player puts book on shelf",
+		"voiceLine": "vo_prym_bark_chuckle_05"
 	},
 	{
 		"id": "ex1_02e",
 		"line": "Subject demonstrates lack of understanding in local thermodynamics. Suggestion: further reading.",
-		"note": "Player puts book in fire"
+		"note": "Player puts book in fire",
+		"voiceLine": "vo_prym_bark_foolish_01"
 	},
 	{
 		"id": "ex1_02f",
 		"line": "Subject has re-chosen initial placement. Results: satisfactory.",
-		"note": "Player puts book back where it was picked up"
+		"note": "Player puts book back where it was picked up",
+		"voiceLine": "vo_prym_bark_splendid_02"
 	},
 	{
 		"id": "ex1_02g",
 		"line": "Subject has chosen the GOLDEN pillar. Results: extremely satisfactory.",
-		"note": "Player puts book on gold pillar"
+		"note": "Player puts book on gold pillar",
+		"voiceLine": "vo_prym_bark_splendid_02"
 	},
 	{
 		"id": "ex1_02h",
 		"line": "Subject has chosen unexpected pillar. Results: additional testing needed.",
-		"note": "Player puts book on any tall pillar"
+		"note": "Player puts book on any tall pillar",
+		"voiceLine": "vo_prym_bark_ohh_04"
 	},
 	{
 		"id": "ex1_02i",
 		"line": "Experiment failed. Suggestion: administer high-level behavioral correction to subject.",
-		"note": "Player puts book on coral."
+		"note": "Player puts book on coral.",
+		"voiceLine": "vo_prym_bark_subject_angry_03"
 	},
 	{
 		"id": "ex1_02j",
 		"line": "Subject has defied all theoretical expectations. Results: unknown.",
-		"note": "Player somehow manages to place the book somewhere actually unexpected"
+		"note": "Player somehow manages to place the book somewhere actually unexpected",
+		"voiceLine": "vo_prym_bark_surprise_02"
 	},
 	{
 		"id": "ex2_00",
 		"line": "Take the experimental device.",
-		"note": "Player enters the scene"
+		"note": "Player enters the scene",
+		"voiceLine": "vo_prym_bark_little_mask_01"
 	},
 	{
 		"id": "ex2_00a",
 		"line": "Come on, just walk into it and it'll bind to your form.",
-		"note": "After player fails to pick up launcher for a time since last line played"
+		"note": "After player fails to pick up launcher for a time since last line played",
+		"voiceLine": "vo_prym_bark_nownow_02"
 	},
 	{
 		"id": "ex2_00b",
 		"line": "The launcher, Moira! Take the launcher!",
-		"note": "After player fails to pick up launcher for a time since last line played"
+		"note": "After player fails to pick up launcher for a time since last line played",
+		"voiceLine": "vo_prym_bark_moira_01"
 	},
 	{
 		"id": "ex2_00c",
 		"line": "Subject is showing resistance to the experience. New protocol: ignore the subject until directions are obeyed.",
-		"note": "After player fails to pick up launcher for a time since last line played"
+		"note": "After player fails to pick up launcher for a time since last line played",
+		"voiceLine": "vo_prym_bark_subject_angry_05"
 	},
 	{
 		"id": "ex2_01",
 		"line": "Next, operate the mechanism until results are obtained.",
-		"note": "Player grabs the launcher"
+		"note": "Player grabs the launcher",
+		"voiceLine": "vo_prym_bark_its_simple_01"
 	},
 	{
 		"id": "ex2_02a",
 		"line": "Hypothesis: Moira is making an admirable attempt to educate the Spirit Fish.",
-		"note": "Hit bookshelf"
+		"note": "Hit bookshelf",
+		"voiceLine": "vo_prym_bark_chuckle_10"
 	},
 	{
 		"id": "ex2_02b",
 		"line": "Moira shows aggressive behavior. Note: administer reward.",
-		"note": "Hit coral"
+		"note": "Hit coral",
+		"voiceLine": "vo_prym_bark_chuckle_05"
 	},
 	{
 		"id": "ex2_03a",
 		"line": "Data collection in progress...",
-		"note": "10 fish are fired"
+		"note": "10 fish are fired",
+		"voiceLine": "vo_prym_bark_hmm_03"
 	},
 	{
 		"id": "ex2_03b",
 		"line": "Results presently unclear. More data needed.",
-		"note": "20 fish are fired"
+		"note": "20 fish are fired",
+		"voiceLine": "vo_prym_bark_hmm_04"
 	},
 	{
 		"id": "ex2_03c",
 		"line": "The data is accumulating!",
-		"note": "30 fish are fired"
+		"note": "30 fish are fired",
+		"voiceLine": "vo_prym_bark_laugh_04"
 	},
 	{
 		"id": "ex2_03d",
 		"line": "More! More!",
-		"note": "40 fish are fired"
+		"note": "40 fish are fired",
+		"voiceLine": "vo_prym_bark_laugh_07"
 	},
 	{
 		"id": "ex2_04",
 		"line": "Enough data collected. Come, let's de-graft that thing from you.",
-		"note": "50(?) fish are fired (end)"
+		"note": "50(?) fish are fired (end)",
+		"voiceLine": "vo_prym_bark_splendid_03"
 	},
 	{
 		"id": "ex3_00",
 		"line": "These are some serums I'm developing. Imbibe them so I may observe their effects.",
-		"note": "Player enters the scene"
+		"note": "Player enters the scene",
+		"voiceLine": "vo_prym_bark_its_simple_01"
 	},
 	{
 		"id": "ex3_00a",
 		"line": "Pick one and use it!",
-		"note": "Player doesn't consume serums for a time"
+		"note": "Player doesn't consume serums for a time",
+		"voiceLine": "vo_prym_bark_hmph_02"
 	},
 	{
 		"id": "ex3_00b",
 		"line": "The serums, Moira! You must use more serums!",
-		"note": "Player doesn't consume serums for a time"
+		"note": "Player doesn't consume serums for a time",
+		"voiceLine": "vo_prym_bark_moira_01"
 	},
 	{
 		"id": "ex3_00c",
 		"line": "The data will be incomplete unless you take them all. The data must be completed.",
-		"note": "Player doesn't consume serums for a time"
+		"note": "Player doesn't consume serums for a time",
+		"voiceLine": "vo_prym_bark_subject_angry_01"
 	},
 	{
 		"id": "ex3_00d",
 		"line": "You will not leave this place until all serums are consumed.",
-		"note": "Player doesn't consume serums for a time, loops back from A"
+		"note": "Player doesn't consume serums for a time, loops back from A",
+		"voiceLine": "vo_prym_bark_subject_angry_03"
 	},
 	{
 		"id": "ex3_01_0",
 		"line": "Effect unclear. Hypothesis: more serums must be absorbed.",
-		"note": "Player drinks serum 0 (No effect)"
+		"note": "Player drinks serum 0 (No effect)",
+		"voiceLine": "vo_prym_bark_hmm_04"
 	},
 	{
 		"id": "ex3_01_1",
 		"line": "The subject is staring intently down. Hypothesis: subject is hallucinating.",
-		"note": "Player drinks serum 1 (Floor change)"
+		"note": "Player drinks serum 1 (Floor change)",
+		"voiceLine": "vo_prym_bark_ohh_01"
 	},
 	{
 		"id": "ex3_01_2",
 		"line": "Subject appears to be in intense pain. Serum rated as highly effective.",
-		"note": "Player drinks serum 2 (Red tint)"
+		"note": "Player drinks serum 2 (Red tint)",
+		"voiceLine": "vo_prym_bark_laugh_08"
 	},
 	{
 		"id": "ex3_01_4",
 		"line": "No effect observed. Control serum functional.",
-		"note": "Player drinks serum 4 (No effect)"
+		"note": "Player drinks serum 4 (No effect)",
+		"voiceLine": "vo_prym_bark_of_course_01"
 	},
 	{
 		"id": "ex3_01_5",
 		"line": "Subject is unsteady. Note: stronger variant may work as a sedative.",
-		"note": "Player drinks serum 5 (Movement change)"
+		"note": "Player drinks serum 5 (Movement change)",
+		"voiceLine": "vo_prym_bark_ohh_04"
 	},
 	{
 		"id": "ex3_01_6",
 		"line": "Paranoia levels in the subject appear to have spiked.",
-		"note": "Player drinks serum 6 (Image overlay)"
+		"note": "Player drinks serum 6 (Image overlay)",
+		"voiceLine": "vo_prym_bark_chuckle_06"
 	},
 	{
 		"id": "ex3_01_7",
 		"line": "Note: when conducting further studies, tag the bookshelves to see where they just went.",
-		"note": "Player drinks serum 7 (Delete bookshelf)"
+		"note": "Player drinks serum 7 (Delete bookshelf)",
+		"voiceLine": "vo_prym_bark_surprise_03"
 	},
 	{
 		"id": "ex3_02",
 		"line": "Very well, Moira. Experiment completed. Further serums must be synthesized for future studies.",
-		"note": "All serums are consumed"
+		"note": "All serums are consumed",
+		"voiceLine": "vo_prym_bark_moira_04"
 	},
 	{
 		"id": "ex3_01_3",
 		"line": "⍌Ⓜ⬟ ⲳ⎔≛⑏⡓ ⨄⬅Ȿ➨⺚⢼ ⒠❪⁣⏤╀ⷌ⽜Ⲕ ⡠⊃⭽ⅆⳫ ⛓⎐⻆⹏⻤ ⶬ⢂☠⣀⽈⎉",
-		"note": "Used whenever player drinks serum 3"
+		"note": "Used whenever player drinks serum 3",
+		"voiceLine": ""
 	},
 	{
 		"id": "ex4_00",
 		"line": "Observation in progress. Subject expected to exhibit curiosity.",
-		"note": "Player enters the scene"
+		"note": "Player enters the scene",
+		"voiceLine": "vo_prym_bark_subject_calm_01"
 	},
 	{
 		"id": "ex4_00a",
 		"line": "The SUBJECT is expected to exhibit CURIOSITY!",
-		"note": "Player does nothing for a time"
+		"note": "Player does nothing for a time",
+		"voiceLine": "vo_prym_bark_subject_angry_01"
 	},
 	{
 		"id": "ex4_00b",
 		"line": "Subject! Interact with the experimental equipment!",
-		"note": "Player does nothing for a time"
+		"note": "Player does nothing for a time",
+		"voiceLine": "vo_prym_bark_subject_angry_03"
 	},
 	{
 		"id": "ex4_00c",
 		"line": "Subject is acting with petty resistence. Note: exact punishment once the experiment is concluded.",
-		"note": "Player does nothing for a time"
+		"note": "Player does nothing for a time",
+		"voiceLine": "vo_prym_bark_subject_angry_02"
 	},
 	{
 		"id": "ex4_01a",
 		"line": "Interesting! The books!",
-		"note": "Player picks up a book"
+		"note": "Player picks up a book",
+		"voiceLine": "vo_prym_bark_surprise_02"
 	},
 	{
 		"id": "ex4_01b",
 		"line": "Enough books! Use some serums!",
-		"note": "Player picks up five books"
+		"note": "Player picks up five books",
+		"voiceLine": "vo_prym_bark_subject_angry_02"
 	},
 	{
 		"id": "ex4_01c",
 		"line": "Subject! Stop moving the books! The serums, subject!",
-		"note": "Player picks up 10 books"
+		"note": "Player picks up 10 books",
+		"voiceLine": "vo_prym_bark_subject_angry_03"
 	},
 	{
 		"id": "ex4_01d",
 		"line": "Yes! I've refined the serum formulas! Test them all!",
-		"note": "Player drinks non-7 serum"
+		"note": "Player drinks non-7 serum",
+		"voiceLine": "vo_prym_bark_chuckle_04"
 	},
 	{
 		"id": "ex4_01e",
 		"line": "More serums! More!",
-		"note": "Player drinks three non-7 serums"
+		"note": "Player drinks three non-7 serums",
+		"voiceLine": "vo_prym_bark_laugh_08"
 	},
 	{
 		"id": "ex4_01f",
 		"line": "Note: the serums are acting as expected. Suggestion: further testing of serums.",
-		"note": "Player drinks five non-7 serums"
+		"note": "Player drinks five non-7 serums",
+		"voiceLine": "vo_prym_bark_of_course_03"
 	},
 	{
 		"id": "ex4_02",
 		"line": "Oh no...",
-		"note": "Player drinks serum 7"
+		"note": "Player drinks serum 7",
+		"voiceLine": "vo_prym_bark_inhale_01"
 	},
 	{
 		"id": "ex4_02a",
 		"line": "Very good, subject. Stay here.",
-		"note": "Time passes after player drinks serum 7"
+		"note": "Time passes after player drinks serum 7",
+		"voiceLine": "vo_prym_bark_subject_calm_01"
 	},
 	{
 		"id": "ex4_02b",
 		"line": "Subject, please stop looking at the gap between pillars.",
-		"note": "Time passes after player drinks serum 7"
+		"note": "Time passes after player drinks serum 7",
+		"voiceLine": "vo_prym_bark_subject_angry_05"
 	},
 	{
 		"id": "ex4_02c",
 		"line": "Subject...",
-		"note": "Time passes after player drinks serum 8"
+		"note": "Time passes after player drinks serum 8",
+		"voiceLine": "vo_prym_bark_subject_angry_04"
 	},
 	{
 		"id": "ex4_03a",
 		"line": "Subject! Come back!",
-		"note": "Player walks a distance from the center"
+		"note": "Player walks a distance from the center",
+		"voiceLine": "vo_prym_bark_subject_calm_01"
 	},
 	{
 		"id": "ex4_03b",
 		"line": "Please don't leave, subject!",
-		"note": "Player walks a distance from the center"
+		"note": "Player walks a distance from the center",
+		"voiceLine": "vo_prym_bark_exhale_02"
 	},
 	{
 		"id": "ex4_03c",
 		"line": "Please, subject... Moira...",
-		"note": "Player walks a distance from the center"
+		"note": "Player walks a distance from the center",
+		"voiceLine": "vo_prym_bark_moira_01"
 	}
 ]

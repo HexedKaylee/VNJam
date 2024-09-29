@@ -1,0 +1,11 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://mooxsmah22v6"]
+
+[ext_resource type="Texture2D" uid="uid://bebqwg4lpr5a5" path="res://Assets/UI/textbox_nameless.png" id="1_qorfm"]
+
+[resource]
+texture = ExtResource("1_qorfm")
+expand_margin_left = 110.0
+expand_margin_top = 90.0
+expand_margin_right = 100.0
+expand_margin_bottom = 10.0
+axis_stretch_horizontal = 2

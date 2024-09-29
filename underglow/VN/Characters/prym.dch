@@ -21,12 +21,12 @@
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
+"scale": 1.0,
 "scene": ""
 },
 "prym_furious": {
 "export_overrides": {
-"image": "\"res://Assets/VN/Portraits/Prym/prt_prym_furious.png\""
+"image": "\"res://Assets/VN/Portraits/Prym/prym_furious.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -48,7 +48,7 @@
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
+"scale": 1.0,
 "scene": ""
 },
 "prym_pathetic": {
@@ -65,8 +65,8 @@
 "image": "\"res://Assets/VN/Portraits/Prym/prt_prym_silhouette.PNG\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(10, 0),
+"scale": 1.0,
 "scene": ""
 }
 },

@@ -1,0 +1,97 @@
+[gd_scene load_steps=15 format=3 uid="uid://co35njx48b78t"]
+
+[ext_resource type="Script" path="res://Scenes/2D/credits.gd" id="1_abcf6"]
+[ext_resource type="Texture2D" uid="uid://gohg56cf4i3o" path="res://Assets/Credits/credits_1.png" id="1_mbwao"]
+[ext_resource type="Texture2D" uid="uid://h01qqt1sdf7x" path="res://Assets/Credits/credits_soup.png" id="2_dvoin"]
+[ext_resource type="Texture2D" uid="uid://60jikb83f1mn" path="res://Assets/Credits/credits_starfish.png" id="3_by426"]
+[ext_resource type="Texture2D" uid="uid://cxro430gvt5gm" path="res://Assets/Credits/credits_2.png" id="4_lc5ei"]
+[ext_resource type="Script" path="res://Scenes/2D/credits_soup.gd" id="4_t5x22"]
+[ext_resource type="Texture2D" uid="uid://gaf1c7van06w" path="res://Assets/Credits/credits_kayleebubble.png" id="5_aedv8"]
+[ext_resource type="Shader" path="res://Scenes/2D/credits.gdshader" id="5_mj0u4"]
+[ext_resource type="Texture2D" uid="uid://bp0fy2xodo58f" path="res://Assets/Credits/credits_skadi_les.png" id="6_cu4l0"]
+[ext_resource type="AudioStream" uid="uid://dy56ywtjytmx6" path="res://Assets/Audio/Music/mus_aphos_(loop).wav" id="10_ehwfm"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_it7f7"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_e7h6d"]
+resource_local_to_scene = true
+shader = ExtResource("5_mj0u4")
+shader_parameter/time_scale = 1.0
+shader_parameter/meltness = 0.191
+shader_parameter/how_low = 1.0
+shader_parameter/wave_frequency = 17.978
+shader_parameter/bounce = false
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6brfd"]
+resource_local_to_scene = true
+shader = ExtResource("5_mj0u4")
+shader_parameter/time_scale = 0.427
+shader_parameter/meltness = 0.528
+shader_parameter/how_low = 0.27
+shader_parameter/wave_frequency = 9.888
+shader_parameter/bounce = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mgy8o"]
+resource_local_to_scene = true
+shader = ExtResource("5_mj0u4")
+shader_parameter/time_scale = 1.0
+shader_parameter/meltness = 0.461
+shader_parameter/how_low = 1.0
+shader_parameter/wave_frequency = 20.0
+shader_parameter/bounce = false
+
+[node name="Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_abcf6")
+
+[node name="Credits1" type="Sprite2D" parent="."]
+texture = ExtResource("1_mbwao")
+centered = false
+
+[node name="CreditsSoup" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_it7f7")
+position = Vector2(990, 581)
+rotation = -0.785398
+texture = ExtResource("2_dvoin")
+script = ExtResource("4_t5x22")
+spinSpeed = 0.1
+
+[node name="CreditsStarfish" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_e7h6d")
+texture = ExtResource("3_by426")
+centered = false
+
+[node name="Credits2" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("4_lc5ei")
+centered = false
+
+[node name="CreditsKayleebubble" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+material = SubResource("ShaderMaterial_6brfd")
+position = Vector2(1031, 684)
+texture = ExtResource("5_aedv8")
+
+[node name="CreditsSkadiLes" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+material = SubResource("ShaderMaterial_mgy8o")
+texture = ExtResource("6_cu4l0")
+centered = false
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -36.0
+offset_top = -30.0
+offset_right = 1951.0
+offset_bottom = 1091.0
+color = Color(0, 0, 0, 0)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_ehwfm")
+autoplay = true
+bus = &"Dialogic_Music"

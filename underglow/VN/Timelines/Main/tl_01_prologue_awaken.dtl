@@ -1,4 +1,4 @@
-[wait time="1.0"]
+do AudioManager.init_audio()
 [style name="character"]
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="0.0"]
 [speed=7]“ ... “
@@ -11,6 +11,7 @@
 [wait time="3.0"]
 join "haughty socialite" right
 [music path="res://Assets/Audio/Music/mus_brine_and_biscuits_(loop).wav" fade="0.0" volume="0.0"]
+[style name="character"]
 "haughty socialite": "I believe there was a Fish here but a moment ago."
 "haughty socialite": "'Twas providing some excellent mood lighting,[pause=.5] with how bright the glow became!"
 join "demure socialite" left
@@ -39,29 +40,41 @@ narrator: The shade manifests an arm,[pause=.2] a glazed teapot in its newly-for
 [n+]You watch the little shards spill into the cup.[pause=.5] You couldn't count them if you tried.\
 \
 [n]For a fleeting moment,[pause=.2] you try anyways —
-do AudioManager.fade_music_silent(5)
-leave --All-- [animation="Fade Out Down" length="2.0"]
-[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="5.0"]
-narrator: And that's when you see your face\:[pause=.4] a mask reflected in the rippling blue.[pause=.5][n+] Three dark circles constrained by plaster white.[n+]\
-Is this why they called you "a Mask?"\
+do AudioManager.fade_music_quiet(5)
+join CG (cg_reflection) center [animation="Fade In" length="3.0" z_index="100"]
+[wait time="3.0"]
+narrator: And that's when you see your face\:[pause=.4] a mask reflected in the rippling blue.[pause=.5]\
+\
+[n+] Three dark circles constrained by plaster white.\
+\
+[n+]Is this why they called you "a Mask?"\
+\
 [n]...\
-[n]The only thing you can see is the mask.[pause=.5] Your eyes,[pause=.2] your mouth,[pause=.2] your shoulders — [pause=.4]all just match the murky blackness of the sky.[pause=.5] But that pristine mask is...[n+]\
-No.\
+\
+[n]The only thing you can see is the mask.[pause=.5] Your eyes,[pause=.2] your mouth,[pause=.2] your shoulders — [pause=.4]all just match the murky blackness of the sky.[pause=.5] But that pristine mask is...\
+\
+[n]No.\
+\
 [n]That's wrong.\
 \
 [n+]It's the opposite,[pause=.2] in fact.\
 \
-[n+]There is no mask.[n+]\
-Where there should be a mask,[pause=.2] there is simply nothing.\
-[n]The luminous blue of the tea and three black dots floating.[n+]\
-...\
+[n+]There is no mask.\
+\
+[n+]Where there should be a mask,[pause=.2] there is simply nothing.\
+\
+[n]The luminous blue of the tea and three black dots floating.\
+\
+[n]...\
 \
 [n+]You roll your head to the side,[pause=.2] but you can't see the mask at the edge of your vision,[pause=.2] either.\
 \
-[n]The curvature of your head appears in the teacup,[pause=.2] past where the edge of the mask should be;\
+[n+]The curvature of your head appears in the teacup,[pause=.2] past where the edge of the mask should be;\
 \
-[n]Your neck and shoulders descend from the nothingness,[pause=.2] as if they have no relation with the eyes that see them.[n+]\
-But there's no mask.\
+[n+]Your neck and shoulders descend from the nothingness,[pause=.2] as if they have no relation with the eyes that see them.\
+\
+\
+[n][speed=3]But there's no mask.\
 \
 [n+]A nonexistent surface that seems to hide anything behind it,[pause=.2] but does not itself show.\
 \
@@ -87,26 +100,24 @@ But there's no mask.\
 \
 [n]—\
 \
-[n+]You're interrupted before you can further contemplate the state of your being.
+[n]You're interrupted before you can further contemplate the state of your being.
+leave CG [animation="Fade Out" length="3.0" wait="true"]
 do AudioManager.fade_music_normal(2)
-[background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="2.0"]
 [wait time="1.0"]
-join "haughty socialite" right
-join "demure socialite" left
-join "pompous socialite" center
 "pompous socialite": "Oh, dear.[pause=.4] I don't think this poor thing even knows how to use tea!"
 "demure socialite": "Well,[pause=.2] that most certainly cannot be![pause=.5] Taking tea is the most important point of etiquette.[pause=.5] How could anyone not know?[pause=.4] Surely it is self-apparent and fundamental!"
 "haughty socialite": "One can never underestimate the cluelessness of a newly-adorned Mask,[pause=.2] dear."
 "demure socialite": "Ah,[pause=.4] that is true,[pause=.2] true, indeed. Dear,[pause=.3] would you mind giving them a lesson?"
 "pompous socialite": "But of course![pause=.5] 'Tis a Kingdom lady's duty to do so."
 "pompous socialite": "Alright, dear.[pause=.4] See here –[pause=.4] it's quite easy![pause=.5] Now, all you need to do is..."
-[wait time="0.0"]
+[wait time="1.0" hide_text="false"]
 - You don't need help to drink. You drink it.
 	To the tea party's surprise,[pause=.2] you pick up the cup –[pause=.4] it's easy when you just grab it by the rim –[pause=.3] and bring it up to your not-a-mask mask.
 - Listen carefully. This is probably important.
 	You are utterly bewildered as they describe at length the process of "doing tea."
 	After they explain the process in excruciating detail,[pause=.2] though,[pause=.2] you're encouraged to give it a shot.
-You…[pause=.4] aren't actually sure,[pause=.2] now,[pause=.2] that you even have a mouth.[pause=.5] Lost on what to do next,[pause=.2] you can only sit there with the cup beneath your not-chin,[pause=.2] not-face…[pause=.4]and wait.
+You…[pause=.4] aren't actually sure,[pause=.2] now,[pause=.2] that you even have the requisite part with which to commit to the action...[pause=.4] "drink".
+Lost on what to do next,[pause=.2] you can only sit there with the cup beneath your not-chin,[pause=.2] not-face…[pause=.4]and wait.
 
 "pompous socialite": "Ah.[pause=.4] Dear?"
 "demure socialite": "Hmmm…[pause=.5] I'm not so certain…"
@@ -116,6 +127,6 @@ You…[pause=.4] aren't actually sure,[pause=.2] now,[pause=.2] that you even ha
 "demure socialite": "Yes.[pause=.4] How unfortunate."
 "pompous socialite": "'Tis such a shame,[pause=.2] I thought truly that maybe this mask could be — "
 "pompous socialite": "… Oh?[pause=.4] Hmm…?[pause=.5] Do you see that commotion over there?"
-leave --All--
+leave --All-- [animation="Fade Out"]
 [wait time="1.0"]
 jump tl_02_prologue_estuary/
