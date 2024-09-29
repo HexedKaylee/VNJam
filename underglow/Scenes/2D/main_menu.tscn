@@ -139,6 +139,7 @@ centered = false
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("15_unml6")
 autoplay = true
+bus = &"Dialogic_Music"
 
 [node name="ColorRect2" type="ColorRect" parent="."]
 visible = false

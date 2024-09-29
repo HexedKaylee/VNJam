@@ -73,3 +73,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.19277, -0.0994186, 5.21541e
 [node name="Fish" parent="Camera/FishModel" instance=ExtResource("5_xrpj8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -100, 0)
 visible = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -80.0
+bus = &"Dialogic_Music"

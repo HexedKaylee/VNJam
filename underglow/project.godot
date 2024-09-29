@@ -14,7 +14,7 @@ config/name="Underglow"
 run/main_scene="res://Scenes/2D/main_menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 boot_splash/bg_color=Color(1, 1, 1, 1)
-boot_splash/image="res://Assets/VN/GUI/pitchdrop_splash.png"
+boot_splash/image="res://Assets/UI/pd_logo.png"
 config/icon="res://game_icon_resize.PNG"
 
 [audio]

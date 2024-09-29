@@ -41,6 +41,7 @@ bbcode_enabled = true
 text = "Cave Johnson here. Just wanted to let you know that, after decades of research and testing, we have finally transformed into beings of pure light. Go team. Not exactly what we were after, of course, but in the ballpark. So let's keep testing, and maybe someday we'll achieve man's ultimate dream: to evolve into pillars of pure salt. Can't wait....So salty."
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="TextBox"]
+bus = &"Dialogic_VO"
 
 [node name="Controller" type="Control" parent="."]
 unique_name_in_owner = true

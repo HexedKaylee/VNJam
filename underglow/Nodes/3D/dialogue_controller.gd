@@ -34,6 +34,7 @@ func _ready():
 func _process(delta):
 	if(entry):
 		fade.color.a = lerp(fade.color.a, 0.0, 0.5*fadeSpd*delta)
+		player.get_node("AudioStreamPlayer").volume_db = lerp(player.get_node("AudioStreamPlayer").volume_db, 0.0, 8*delta)
 		if(snappedf(fade.color.a, 0.05) == 0):
 			fade.color.a = 0
 			entry = false
@@ -51,6 +52,7 @@ func _process(delta):
 				pass
 	else:
 		fade.color.a = lerp(fade.color.a, 1.0, fadeSpd*delta)
+		player.get_node("AudioStreamPlayer").volume_db = lerp(player.get_node("AudioStreamPlayer").volume_db, -80.0, 8*delta)
 		if(snappedf(fade.color.a, 0.05) == 1):
 			fade.color.a = 1
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
