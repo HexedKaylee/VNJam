@@ -1,9 +1,9 @@
 do AudioManager.init_audio()
 [style name="character"]
 [background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="2.0"]
-narrator: You wander the campus with an unsettled feeling,[pause=.2] finding all of what Prym just told you somehow saddening in a way you don't understand.[n+]\
+narrator: You wander the campus with an unsettled feeling,[pause=.2] finding all of what Prym just told you somehow saddening in a way you don't understand.\
 \
-You wander into the courtyard and settle on the edge of a fountain,[pause=.2] looking around at the bright formations of coral and watching the light of Spirit Fish and Socialites pass you by.\
+[n+]You wander into the courtyard and settle on the edge of a fountain,[pause=.2] looking around at the bright formations of coral and watching the light of Spirit Fish and Socialites pass you by.\
 \
 [n+]Your gaze drifts down to the brine of the fountain —[pause=.5] your reflection,[pause=.2] same as before,[pause=.2] staring emptily back at you.\
 \
@@ -62,9 +62,9 @@ The Diver laughs at this response.[pause=.5] It's a sound that rings like a quie
 [wait time="1.0"]
 narrator: You tell the Diver about the experiments you've been subject to,[pause=.2] making mention of your efforts in learning to speak,[pause=.2] as well as the curious Fish-shooting device with which you were briefly conjoined.[n+]\
 \
-Your tale brings the Diver to such a jovial bout of laughter that you yourself can't help but join in.[pause=.5] It's a loud,[pause=.2] loose laugh that you weren't sure you were capable of until now.[n+]\
+Your tale brings the Diver to such a jovial bout of laughter that you yourself can't help but join in.[pause=.5] It's a loud,[pause=.2] loose laugh that you weren't sure you were capable of until now.\
 \
-Funny…[pause=.5] It really is such a pleasant sensation,[pause=.2] the laughter brought about by sharing your experience with another.[pause=.5] Realizing this makes you notice…[pause=.5] This is the best you've felt since arriving here.\
+[n]Funny…[pause=.5] It really is such a pleasant sensation,[pause=.2] the laughter brought about by sharing your experience with another.[pause=.5] Realizing this makes you notice…[pause=.5] This is the best you've felt since arriving here.\
 \
 [n]It continues to ring true,[pause=.2] the idea that your fears can be alleviated by simply recalling your woes aloud.[pause=.5] It rings as clearly as the laughter shared by two spirits who were once both burdened by distilled discontent.[n+]\
 \
@@ -139,8 +139,8 @@ narrator: A potent chill washes across your form.\
 … have been…?
 [wait time="3.0"]
 join "shady disciple" center
-[sound path="res://Assets/Audio/Music/mus_submerged_(loop).wav" volume="0.0"]
-narrator: Your thoughts are interrupted as something abruptly takes hold of your shoulder,[pause=.2] a grip like steel and ice.\
+[music path="res://Assets/Audio/Music/mus_submerged_(loop).wav" fade="1.0" volume="0.0"]
+narrator: Your thoughts are interrupted as something abruptly takes hold of your arm,[pause=.2] a grip like steel and ice.\
 \
 [n]You turn around to find an unfamiliar Disciple.[pause=.5] As you tilt your head up to meet their gaze, your eyes lock.[n+]\
 \
@@ -153,12 +153,13 @@ An icy dread overtakes you.
 "shady disciple": "What a lovely little anomaly you are."
 [wait time="0.0" hide_text="false"]
 - "... Let go of me."
+[wait time="1.0"]
 "shady disciple": "My![pause=.4] Such awareness indeed![pause=.4] How adorable."
 "shady disciple": "What,[pause=.2] you fancy yourself a Diver?[pause=.5] A Mask who isn't interested in becoming a Socialite first at all?"
 "shady disciple": "It bars all comprehension,[pause=.2] to be quite honest![pause=.5] How extremely quaint."
 "shady disciple": "You think you can just skip across the lines like that?"
 "shady disciple": "[i]That's not how it works,[pause=.2] you [b]know[/b].[/i]"
-[wait time="0.0"]
+[wait time="1.0"]
 - Struggle to escape the Disciple's grip.
 "shady disciple": "Ahahahahaaah."
 "shady disciple": "Oh,[pause=.2] how very intriguing![pause=.4] How very strange!"
@@ -166,11 +167,12 @@ An icy dread overtakes you.
 "shady disciple": "It isn't exactly my realm,[pause=.2] though.[pause=.5] I'm more concerned with the [i]biological[/i] sciences."
 "shady disciple": "Hmm… But your form seems solid enough that it might just withstand my preferred methods of examination.[pause=.4] How [i]lucky[/i] for me!"
 "shady disciple": "Yes,[pause=.2] I [i]do[/i] think such a specimen warrants a vivisection."
-[wait time="0.0" hide_text="false"]
-- " …! "
-[wait time="1.0"]
+[wait time="0.5"]
 label might just have to put a silent track in? cuz yeah this isn't changing fsr
 [music fade="1.0" volume="0.0"]
+[wait time="0.5" hide_text="false"]
+- " …! "
+[wait time="1.0"]
 [wait time="1.0"]
 question_mark: "Are you stupid?"
 question_mark: "You have eyes that can see,[pause=.2] don't you?"
@@ -193,14 +195,16 @@ Shaking,[pause=.2] they lower their hand and back slowly away.
 [wait time="1.0"]
 narrator: And they're gone.
 [wait time="1.0"]
-join prym (prym_neutral) center
-prym: "... Hmph."
-[wait time="0.0" hide_text="false"]
+join prym (prym_furious) center [animation="Fade In" length="1.0" wait="true"]
+[wait time="1.0"]
+prym (prym_anger): "... Hmph."
+[wait time="1.0" hide_text="false"]
 - "... Thank you?"
 Prym ignores your words, grabbing you by the arm and marching forward with you at their side.
 [wait time="1.0"]
 prym (prym_neutral): "Setup is complete.[pause=.5] We are ready for the third experiment to begin."
 [wait time="1.0"]
+join CG (bg_black) center [animation="Fade In" length="3.0" wait="true"]
 narrator: And you follow —[n+]\
 \
 — now —[n+]\
