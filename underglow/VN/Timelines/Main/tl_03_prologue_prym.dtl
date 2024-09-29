@@ -1,6 +1,7 @@
 do AudioManager.init_audio()
 [style name="character"]
 [background arg="res://Assets/VN/Backgrounds/uneasy BG.PNG" fade="2.0"]
+[music fade="3.0" volume="0.0"]
 
 [wait time="1.0"]
 narrator: As voices murmur in surprise,[pause=.2] you realize that a thick and looming miasma has been crawling its way through the sea of Masks.[pause=.5] The perimeter of the crowd begins to part,[pause=.2] and a strikingly corporeal figure begins to make its way toward the center.\
@@ -81,5 +82,6 @@ narrator: [speed=4]slip[pause=.2] away.\
 [wait time="3.0"]
 join CG (bg_black) center [animation="Fade In" length="2.0" wait="true" z_index="300"]
 leave prym [animation="Fade Out"]
+[music fade="5.0" volume="0.0"]
 [wait time="5.0"]
 [signal arg="start_experiment_1"]

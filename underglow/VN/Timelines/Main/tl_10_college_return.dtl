@@ -49,5 +49,6 @@ narrator: There's no room for the panic that wells up within you.[pause=.5] You 
 \
 [n+]All is then drenched in a black and harrowing silence,[pause=.2] [speed=5.0] as you fall asleep again.
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="5.0"]
+[music fade="5.0" volume="0.0"]
 [wait time="5.0"]
 [signal arg="start_experiment_4"]
