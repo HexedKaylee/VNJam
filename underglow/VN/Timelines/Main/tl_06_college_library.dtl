@@ -74,22 +74,23 @@ narrator: [i]The radiant chandeliers baked the royal chamber in an uncomfortable
 [n+][i]The Lady’s eyes swelled to balloons as she remembered what had happened between her and the great knight beneath the prior eve.[pause=.5] Their lips locked together as their tongues became entwined.[pause=.5] Their hands folded into one another’s over and over,[pause=.2] like a neatly stored towel...[pause=.5] The tendrils framing her face quivered at the memory.[pause=.5] How was she supposed to face the court like this?[i]
 [wait time="1.0"]
 [music fade="1.0" volume="0.0"]
-[background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="2.0"]
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="0.3"]
 narrator: You close the book in front of you,[pause=.2] having seen enough.[pause=.5] You do not think this is the type of text you would actually like to be reading,[pause=.2] right now.\
 \
-The idea occurs to you that it was being read by someone who was going to be back…[pause=.5] So you get up,[pause=.2] feeling somewhat flustered,[pause=.2] and angle your way towards anywhere but right in that spot.
+[n+]The idea occurs to you that it was being read by someone who was going to be back…[pause=.5] So you get up,[pause=.2] feeling somewhat flustered,[pause=.2] and angle your way towards anywhere but right in that spot.
+[background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="2.0"]
 [music path="res://Assets/Audio/Music/mus_droplets_(loop).wav" fade="3.0" volume="0.0"]
 narrator: Well…[pause=.5] At the very least,[pause=.2] you learned that some of the books here do have contents that are comprehensible.\
 \
-[n]Becoming tired of gambling over whether or not the next book is going to be,[pause=.2] er,[pause=.2] inappropriate for your purposes,[pause=.2] you remember your Socialite friend from earlier having spoken of there being someone you could go to for assistance.[n+]\
+[n]Becoming tired of gambling over whether or not the next book is going to be,[pause=.2] er,[pause=.2] inappropriate for your purposes,[pause=.2] you remember your Socialite friend from earlier having spoken of there being someone you could go to for assistance.\
 \
-You look over to the front desk that was mentioned by your bookish fellow,[pause=.2] where you do indeed see another Socialite who you assume is the librarian.[pause=.5] They also appear to be the only one you have seen so far actually reading a book.[pause=.5] You go up to the desk,[pause=.2] seeking to catch their attention somehow…[pause=.5]but because you still lack the capability of speech,[pause=.2] you are only able to stand there,[pause=.2] raise one hand quietly,[pause=.2] and hope that they see you.\
+[n+]You look over to the front desk that was mentioned by your bookish fellow,[pause=.2] where you do indeed see another Socialite who you assume is the librarian.[pause=.5] They also appear to be the only one you have seen so far actually reading a book.[pause=.5] You go up to the desk,[pause=.2] seeking to catch their attention somehow…[pause=.5]but because you still lack the capability of speech,[pause=.2] you are only able to stand there,[pause=.2] raise one hand quietly,[pause=.2] and hope that they see you.\
 \
 [n]It doesn't take much,[pause=.2] thankfully,[pause=.2] for them to look up from their book and take notice.
 [wait time="1.0"]
 join "librarian socialite" center
 "librarian socialite": " … Can I help you?"
-[wait time="0.0"]
+[wait time="0.0" hide_text="false"]
 - Gesticulate to try and convey what you need.
 	You point at the book which they are reading,[pause=.2] and then point at the whole of the vicinity behind you,[pause=.2] hoping that this gets the point across well enough.
 - Tilt your head.
@@ -110,9 +111,11 @@ The librarian shoots you an irritated look.
 [wait time="1.0"]
 join "librarian socialite" center [animation="Slide In Up"]
 "librarian socialite": "Shhhh!![pause=.5] Quiet in the library!"
+[wait time="1.0"]
 "whispering socialite": "I [i]am[/i] being quiet!"
+[wait time="0.5"]
 "shouting socialite": "Me too!"
-[wait time="0.0"]
+[wait time="1.0"]
 - " …! "
 [wait time="1.0"]
 narrator: You realize with a start that,[pause=.2] in your frustration,[pause=.2] you seem to have spontaneously attained the coveted power of vocal communication.[n+]\
@@ -124,7 +127,7 @@ narrator: You realize with a start that,[pause=.2] in your frustration,[pause=.2
 "librarian socialite": *sigh* "Look,[pause=.2] if that one wasn't your cup of tea,[pause=.2] feel free to return it to a shelf.[pause=.5] Any one will do."
 "librarian socialite": "Chuck it as hard as you like,[pause=.2] for all I care. Everything here's made of stone, anyway."
 [wait time="1.0"]
-leave "librarian socialite" [animation="Fade Out Down"]
+leave "librarian socialite" [animation="Fade Out Down" wait="true"]
 [music fade="5.0" volume="0.0"]
 narrator: Though you wonder what tea could possibly have to do with books,[pause=.2] you nevertheless oblige the cantankerous librarian and go to place the book haphazardly down on a shelf chosen at random.\
 \
@@ -134,12 +137,13 @@ narrator: Though you wonder what tea could possibly have to do with books,[pause
 \
 … But are surprised to find Prym themself standing before you,[pause=.2] waiting,[pause=.2] sporting a disconcertingly portentous grin.
 [wait time="1.0"]
-join prym center [animation="Fade In Up"]
+join prym center [animation="Fade In Up" length="1.0" wait="true"]
 prym: "Well now![pause=.5] From the sound of it,[pause=.2] you've managed to learn quite a bit on this little excursion."
 prym: I hope you're ready for the next test,[pause=.2] my little Moira~"
 [wait time="1.0"]
-narrator: You're given no opportunity to protest when Prym encircles you with tendrils once again,[pause=.2] turning around as the slithering tangle whisks you off like a rip current down the hallway and through the rematerialized entrance to their lab.
+leave prym [animation="Fade Out Down" length="2.0" wait="true"]
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="3.0"]
 [wait time="3.0"]
-leave prym [animation="Fade Out Down" length="3.0"]
+narrator: You're given no opportunity to protest when Prym encircles you with tendrils once again,[pause=.2] turning around as the slithering tangle whisks you off like a rip current down the hallway and through the rematerialized entrance to their lab.
 [wait time="5.0"]
 [signal arg="start_experiment_2"]
