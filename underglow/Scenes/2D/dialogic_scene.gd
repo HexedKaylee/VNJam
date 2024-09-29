@@ -14,5 +14,7 @@ func _on_dialogic_signal(argument:String):
 			Global.goto_scene("res://Scenes/3D/experiment_3.tscn")
 		"start_experiment_4":
 			Global.goto_scene("res://Scenes/3D/experiment_4.tscn")
+		"game_end":
+			Global.goto_scene("res://Scenes/2D/main_menu.tscn")
 		_:
 			print("Invalid signal!")
