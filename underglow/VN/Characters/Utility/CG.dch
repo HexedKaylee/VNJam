@@ -42,7 +42,52 @@
 "scale": 1,
 "scene": ""
 },
-"cg_uneasy": {
+"cg_reflection_ending_1": {
+"export_overrides": {
+"image": "\"res://Assets/VN/CG/ReflectionEnd/cg_reflection_ending_1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"cg_reflection_ending_2": {
+"export_overrides": {
+"image": "\"res://Assets/VN/CG/ReflectionEnd/cg_reflection_ending_2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"cg_reflection_ending_3": {
+"export_overrides": {
+"image": "\"res://Assets/VN/CG/ReflectionEnd/cg_reflection_ending_3.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"cg_reflection_ending_4": {
+"export_overrides": {
+"image": "\"res://Assets/VN/CG/ReflectionEnd/cg_reflection_ending_4.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"cg_reflection_ending_5": {
+"export_overrides": {
+"image": "\"res://Assets/VN/CG/ReflectionEnd/cg_reflection_ending_5.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"cg_test": {
 "export_overrides": {
 "image": "\"res://Assets/VN/Backgrounds/uneasy BG.PNG\""
 },

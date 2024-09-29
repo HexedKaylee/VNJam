@@ -84,7 +84,8 @@ prym: "Just try not to get any delusions in your head that lead down the same pa
 prym: " … And be wary of other Disciples,[pause=.2] or Divers who ask too many questions."
 prym: "So have yourself a look around,[pause=.2] and…[pause=.5] Don't get pulled in by anyone shady."
 [wait time="3.0"]
-leave prym [animation="Fade Out" length="3.0"]
+leave prym [animation="Fade Out Down" length="3.0" wait="true"]
+[music fade="5.0" volume="0.0"]
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="2.0" transition="Swipe Right To Left"]
 [wait time="5.0"]
 jump tl_05_college_hallway/
