@@ -12,6 +12,7 @@ narrator: Upon appearing to satisfy the curiosity of the stranger who brought yo
 [background arg="res://Assets/VN/Backgrounds/dark BG.PNG" fade="2.0"]
 [wait time="1.0"]
 join prym (prym_neutral) center [animation="Fade In" length="2.0" wait="true"]
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_little_mask_02.wav" volume="0.0" bus="Dialogic_VO"]
 
 "enigmatic figure": "[i]Theeeere's[/i] a good little test subject."
 "enigmatic figure": "Thank you [i]ever[/i][pause=.2] so much for humoring me in this little exercise —[pause=.5] it lets me [b]know[/b] that now we can move forward with more progression towards your…"
@@ -25,20 +26,24 @@ narrator: The space before you strikes you as odd,[pause=.2] even considering wh
 \
 [n]An itching feeling in the back of your mind informs you that you should be nervous,[pause=.2] and yet,[pause=.2] the subtly sweet scent of smoke puts you unnervingly at ease.
 [wait time="1.0"]
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_splendid_02.wav" volume="0.0" bus="Dialogic_VO"]
 
 "enigmatic figure": "Where I've brought you is the Underglow College —[pause=.5] an institution of sorts[pause=.2] run by the Disciples of [b]Knowledge[/b]… Of whom I am one."
 "enigmatic figure": "Here,[pause=.2] we Disciples of that [b]God[/b] seek to expand upon learning everything so that it might become [b]Known[/b]. Sounds like[pause=.2] quite the broad study program,[pause=.2] though,[pause=.2] hmm?"
 "enigmatic figure": "Well,[pause=.2] it's not actually so simple[pause=.3] nor complex. There are many of us who have dedicated ourselves to studying a grand variety of particular Things To [b]Know[/b]."
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_hmm_04.wav" volume="0.0" bus="Dialogic_VO"]
 "enigmatic figure": "Ah,[pause=.2] right,[pause=.2] you may not be familiar with this place…[pause=.4] Not the college,[pause=.2] but the entire space in which you have manifested. The one that lets you and I exist as beings who can communicate —[pause=.5] and also those beings who cannot."
 "enigmatic figure": "As far as we've been able to determine,[pause=.2] The Underglow is something of an ephemeral realm — "
 "enigmatic figure": " — where spirits roam detached from form,[pause=.2] who may form forms or change from form to form in order to inform other forms…[pause=.5]or not form at all,[pause=.2] or even relinquish form to be free from form."
 "enigmatic figure": "Though some might be careful,[pause=.2] lest they become [i]de[/i]-formed."
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_its_simple_03.wav" volume="0.0" bus="Dialogic_VO"]
 "enigmatic figure": "You're able to follow,[pause=.1] yes?"
 [wait time="1.0"]
 - "…"
 You cannot express to them whether or not you really do understand everything they've said so far.[pause=.5] Nonetheless, they seem to take your silence as affirmation.
 [wait time="1.0"]
 update prym (prym_happy) [fade="Fade Cross"]
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_laugh_02.wav" volume="0.0" bus="Dialogic_VO"]
 "enigmatic figure": "Excellent![pause=.4] That's exactly what I've been looking for."
 update prym (prym_neutral) [fade="Fade Cross"]
 "enigmatic figure": "You see,[pause=.2] I've been waiting for someone like you to come along."
