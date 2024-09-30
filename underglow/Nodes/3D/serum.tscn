@@ -54,4 +54,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_l2yvd")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000732422, 0.252441, 0.0100708)
 shape = SubResource("BoxShape3D_atl37")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"Dialogic_SFX"
+
 [editable path="Potion_1"]

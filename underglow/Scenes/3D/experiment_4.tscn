@@ -516,7 +516,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.394, 4.53997, 77.9)
 [node name="UI" parent="." instance=ExtResource("29_pdu5d")]
 unique_name_in_owner = true
 
-[node name="Controller" parent="UI" index="2" node_paths=PackedStringArray("player", "SceneRoot")]
+[node name="Controller" parent="UI" index="3" node_paths=PackedStringArray("player", "SceneRoot")]
 Experiment = 4
 player = NodePath("../../Moria")
 SceneRoot = NodePath("../..")

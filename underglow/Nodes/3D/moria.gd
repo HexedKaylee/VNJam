@@ -38,7 +38,7 @@ var distance = 0
 var mouseCaptured = true
 
 var music0 = preload("res://Assets/Audio/Music/music_prym_(loop).wav")
-var music1 = preload("res://Assets/Audio/Music/music_prym_(loop).wav")
+var music1 = preload("res://Assets/Audio/Music/mus_bereft_of_purpose_(loop).wav")
 @export var exp4 = false
 
 var randomTex = [preload("res://Assets/3D/Models/Bookshelves/bookshelf_2_001_d.png"), preload("res://Assets/3D/Models/Coral/Coral8_0.jpg"), preload("res://Assets/3D/Textures/sand_map2.png"), preload("res://Assets/3D/Textures/sand_map2.png")]
