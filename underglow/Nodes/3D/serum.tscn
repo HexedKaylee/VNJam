@@ -55,6 +55,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000732422, 0.252441, 0.010
 shape = SubResource("BoxShape3D_atl37")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -6.0
 bus = &"Dialogic_SFX"
 
 [editable path="Potion_1"]

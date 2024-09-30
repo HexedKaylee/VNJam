@@ -135,7 +135,7 @@ Even with their awareness intact,[pause=.2] they must have blended with the scho
 [n]It's not them.
 leave prym [animation="Fade Out" length="3.0"]
 [wait time="1.0"]
-[voice path="vo_prym_full_lines_06.wav" volume="0.0" bus="Dialogic_VO"]
+[voice path="res://Assets/Audio/VO/Prym/Full Lines/vo_prym_full_lines_06.wav" volume="0.0" bus="Dialogic_VO"]
 narrator: [n]You aren't.\
 \
 [pause=.7]My.\
