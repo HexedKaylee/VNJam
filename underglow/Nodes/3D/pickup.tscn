@@ -39,3 +39,4 @@ visible = false
 mesh = SubResource("BoxMesh_cp382")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+bus = &"Dialogic_SFX"

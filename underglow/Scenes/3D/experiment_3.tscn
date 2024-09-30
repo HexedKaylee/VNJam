@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=3 uid="uid://bkhg83gytom4q"]
+[gd_scene load_steps=58 format=3 uid="uid://bkhg83gytom4q"]
 
 [ext_resource type="Script" path="res://Scenes/3D/coral_spawner.gd" id="1_3j1rv"]
 [ext_resource type="PackedScene" uid="uid://v2eeteufrg38" path="res://Nodes/3D/moria.tscn" id="1_x8a45"]
@@ -31,7 +31,6 @@
 [ext_resource type="PackedScene" uid="uid://bqyujxgbd2ry0" path="res://Nodes/3D/Geo/pillar.tscn" id="25_i60tt"]
 [ext_resource type="PackedScene" uid="uid://bfwwmn71aghkj" path="res://Nodes/3D/Geo/bookshelf/stack_stack.tscn" id="25_suofw"]
 [ext_resource type="PackedScene" uid="uid://dyu3chx4twwqj" path="res://Nodes/3D/Geo/bookshelf/bookshelf_1.tscn" id="26_w0ne3"]
-[ext_resource type="PackedScene" uid="uid://dm7jbytkwf80f" path="res://Nodes/3D/Geo/coral/coral_s_03.tscn" id="30_bcyrx"]
 [ext_resource type="PackedScene" uid="uid://dymfc8gygvwl2" path="res://Nodes/3D/Geo/coral/coral_s_13_highcollisions.tscn" id="30_rlh3y"]
 [ext_resource type="PackedScene" uid="uid://dcpftv66ac55c" path="res://Nodes/3D/Geo/coral/coral_s_10.tscn" id="30_scw2s"]
 [ext_resource type="PackedScene" uid="uid://2h64pum4j5og" path="res://Nodes/3D/Geo/coral/coral_s_11.tscn" id="31_3wt46"]
@@ -359,9 +358,6 @@ transform = Transform3D(-0.383936, 0.107416, -0.91709, 0.353237, 0.934745, -0.03
 
 [node name="Corals inside" type="Node3D" parent="."]
 transform = Transform3D(-0.440472, 0, 0.897766, 0, 1, 0, -0.897766, 0, -0.440472, 37.0789, 6.4366, 88.33)
-
-[node name="CoralS 09" parent="Corals inside" instance=ExtResource("30_bcyrx")]
-transform = Transform3D(-6.78966, -2.4231, -6.93031, 0.934893, 9.07744, -4.08974, 7.28193, -3.42471, -5.93674, 18.8196, -0.342757, -7.40762)
 
 [node name="CoralS 06" parent="Corals inside" instance=ExtResource("30_rlh3y")]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -6.7654, -2.1523, -24.4983)
@@ -1171,10 +1167,20 @@ shape = SubResource("ConcavePolygonShape3D_jmgs8")
 [node name="UI" parent="." instance=ExtResource("10_258mi")]
 unique_name_in_owner = true
 
-[node name="Controller" parent="UI" index="2" node_paths=PackedStringArray("player", "SceneRoot")]
+[node name="ImageOverlay" parent="UI" index="0"]
+position = Vector2(966.176, 557)
+scale = Vector2(1.43956, 1.43956)
+
+[node name="ImageOverlay2" parent="UI" index="1"]
+position = Vector2(966.176, 557)
+
+[node name="Controller" parent="UI" index="3" node_paths=PackedStringArray("player", "SceneRoot")]
 Experiment = 3
 player = NodePath("../../Moria")
 SceneRoot = NodePath("../..")
+
+[node name="ColorRect" parent="UI/Controller" index="0"]
+visible = false
 
 [editable path="Terrain/Clipmap"]
 [editable path="Short Pillars/Pillar/serum"]
