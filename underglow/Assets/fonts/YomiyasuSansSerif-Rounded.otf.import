@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://b77swqd6xlmll"
-path="res://.godot/imported/YomiyasuSansSerif-Rounded.otf-48c1a9eb6c99807b149c88a8b8c43d8b.fontdata"
+path="res://.godot/imported/YomiyasuSansSerif-Rounded.otf-0f404c0d1892b7b9a1f71a217637e9df.fontdata"
 
 [deps]
 
-source_file="res://Assets/Fonts/YomiyasuSansSerif-Rounded.otf"
-dest_files=["res://.godot/imported/YomiyasuSansSerif-Rounded.otf-48c1a9eb6c99807b149c88a8b8c43d8b.fontdata"]
+source_file="res://Assets/fonts/YomiyasuSansSerif-Rounded.otf"
+dest_files=["res://.godot/imported/YomiyasuSansSerif-Rounded.otf-0f404c0d1892b7b9a1f71a217637e9df.fontdata"]
 
 [params]
 
