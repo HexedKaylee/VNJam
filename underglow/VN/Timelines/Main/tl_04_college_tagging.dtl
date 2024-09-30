@@ -10,7 +10,7 @@ narrator: Upon appearing to satisfy the curiosity of the stranger who brought yo
 [n]You glance around and, having explored your present surroundings as much as you care to,[pause=.2] step cautiously across this new threshold,[pause=.2] an ominous feeling washing over you as you pass through.
 [wait time="1.0"]
 [background arg="res://Assets/VN/Backgrounds/dark BG.PNG" fade="2.0"]
-[wait time="1.0"]
+[wait time="2.0"]
 join prym (prym_neutral) center [animation="Fade In" length="2.0" wait="true"]
 [voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_little_mask_02.wav" volume="0.0" bus="Dialogic_VO"]
 
@@ -26,7 +26,7 @@ narrator: The space before you strikes you as odd,[pause=.2] even considering wh
 \
 [n]An itching feeling in the back of your mind informs you that you should be nervous,[pause=.2] and yet,[pause=.2] the subtly sweet scent of smoke puts you unnervingly at ease.
 [wait time="1.0"]
-[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_splendid_02.wav" volume="0.0" bus="Dialogic_VO"]
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_chuckle_04.wav" volume="0.0" bus="Dialogic_VO"]
 
 "enigmatic figure": "Where I've brought you is the Underglow College —[pause=.5] an institution of sorts[pause=.2] run by the Disciples of [b]Knowledge[/b]… Of whom I am one."
 "enigmatic figure": "Here,[pause=.2] we Disciples of that [b]God[/b] seek to expand upon learning everything so that it might become [b]Known[/b]. Sounds like[pause=.2] quite the broad study program,[pause=.2] though,[pause=.2] hmm?"
@@ -48,14 +48,17 @@ update prym (prym_happy) [fade="Fade Cross"]
 update prym (prym_neutral) [fade="Fade Cross"]
 "enigmatic figure": "You see,[pause=.2] I've been waiting for someone like you to come along."
 "enigmatic figure": "You remember the moment you gained awareness,[pause=.2] yes?"
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_of_course_04.wav" volume="0.0" bus="Dialogic_VO"]
 "enigmatic figure": "Of course you do.[pause=.4] A mask as well-adorned as yourself must be capable of retaining such a memory with ease![pause=.5] You've proven as much by participating in my experiment –[pause=.4] not just [i]any[/i] Mask has the ability to follow directions like you do."
 "enigmatic figure": "Yes…[pause=.5] I am all but certain[pause=.2] you are [i]exactly[/i][pause=.2] the Mask I've been looking for."
 "enigmatic figure": "And I have waited — "
 "enigmatic figure": "So.[pause=.5] Very.[pause=.5] Patiently."
 "enigmatic figure": " — For you to come to me[pause=.4] like this."
 "enigmatic figure": "It delights me to think that,[pause=.3] with enough testing,[pause=.3] we can discover together the potential you have as a fully realized…"
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_surprise_01.wav" volume="0.0" bus="Dialogic_VO"]
 "enigmatic figure": "Ah,[pause=.2] well,[pause=.4] I won't spoil anything for you –[pause=.5] best that all of the results come organically,[pause=.2] without coloring your perceptions [i]too[/i] much."
 "enigmatic figure": "Alright,[pause=.2] I think you've earned the right to put a name to my face,[pause=.2] since you've proven to be so precocious — "
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_chuckle_04.wav" volume="0.0" bus="Dialogic_VO"]
 prym: "Those around here have taken to calling me Prym,[pause=.2] so I think that works as good as anything.[pause=.5] If you ever feel so inclined to form the words with which to speak,[pause=.2] call me that.[pause=.5] Please."
 [wait time="0.0"]
 - Nod.
@@ -64,6 +67,7 @@ prym: "Those around here have taken to calling me Prym,[pause=.2] so I think tha
 	You stare,[pause=.2] unsure of whether your continued cooperation might call your safety into question.
 Your attentiveness seemingly delights Prym,[pause=.2] and they clasp their hands together.
 [wait time="1.0"]
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_splendid_02.wav" volume="0.0" bus="Dialogic_VO"]
 prym (prym_happy): "Splendid, then~"
 prym (prym_neutral): "As of now,[pause=.2] I think I would like to see you [i]actually[/i][pause=.2] become able to use words…[pause=.5] So I think it would be prudent for me to allow you to roam the College grounds for a bit,[pause=.2] and learn a thing or three about how to communicate."
 prym: "Oh,[pause=.2] but I wouldn't want you to wander too far off,[pause=.2] or get caught up in some unfortunate business with some [i]other[/i][pause=.2] Disciple of [b]Knowledge[/b]'s affairs."
@@ -77,9 +81,11 @@ narrator: — pierce your form with something sharp.
 do AudioManager.fade_music_normal(3.0)
 narrator: You jump at the sudden pain,[pause=.2] though it begins to quickly subside.[pause=.5] Prym lifts the device from your back and as you feel around for the injection site,[pause=.2] you realize you've been affixed with a small,[pause=.2] dangling object.
 [wait time="1.0"]
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_laugh_02.wav" volume="0.0" bus="Dialogic_VO"]
 prym: "There![pause=.4] That should let anyone else around here [b]know[/b] that you're [i]my[/i] subject of study."
 prym: "Aw,[pause=.2] don't seem so upset.[pause=.5] It's a very good thing you were able to feel that!"
 prym: "If you hate being my test subject so badly,[pause=.2] just think of the ability to feel pain as being one step closer to graduating."
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_hmm_04.wav" volume="0.0" bus="Dialogic_VO"]
 prym: "Hmm~[pause=.5] That makes you sound more like one of my students,[pause=.2] doesn't it?"
 prym: "No —[pause=.5] if I thought of you as one of my students,[pause=.2] we would already be through with most of all this. You'd be a Diver,[pause=.2] then,[pause=.2] and right now you really don't make the cut."
 prym: "Anyways~[pause=.5] Now that you've been properly labeled,[pause=.2] I'm assigning you the task of finding anything on campus that interests you and observing until you've gleaned something useful from it,[pause=.2] such as how to speak."
@@ -88,9 +94,10 @@ prym: "Socialites make for decent observation subjects,[pause=.2] though their b
 prym: "It's quite adorable,[pause=.2] if you can get past their stranger proclivities.[pause=.5] Hehe."
 prym: "Just try not to get any delusions in your head that lead down the same path to pretend as theirs…"
 prym: " … And be wary of other Disciples,[pause=.2] or Divers who ask too many questions."
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_chuckle_04.wav" volume="0.0" bus="Dialogic_VO"]
 prym: "So have yourself a look around,[pause=.2] and…[pause=.5] Don't get pulled in by anyone shady."
 [wait time="3.0"]
-leave prym [animation="Fade Out Down" length="3.0" wait="true"]
+leave prym [animation="Fade Out" length="3.0" wait="true"]
 [music fade="5.0" volume="0.0"]
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="2.0" transition="Swipe Right To Left"]
 [wait time="5.0"]

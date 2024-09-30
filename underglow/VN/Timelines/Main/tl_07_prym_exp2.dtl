@@ -12,6 +12,7 @@ narrator: No longer bound to the experimental device you just used,[pause=.2] yo
 You notice now,[pause=.2] amidst the spot where the device sits,[pause=.2] a collection of transparent containers —[pause=.5] [i]flasks[/i],[pause=.4] you realize —[pause=.5] the contents of which had previously piqued your interest. Only in this moment do you realize that the lights floating within all resemble the Spirit Fish with which you've just become acquainted.
 [wait time="1.0"]
 join prym (prym_happy) center
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_moira_04.wav" volume="0.0" bus="Dialogic_VO"]
 prym: "Oh,[pause=.2] Moira! [i]Fantastic[/i][pause=.2] work in there![pause=.5] I'm so glad my efforts were not wasted."
 prym: "I can tell you,[pause=.2] those Spirit Fish are slippery little devils.”
 prym: "Wrangling enough to actually load the launcher is no trivial feat,[pause=.2] but it was all worth it to see you enthusiastically take to my little trial for you."

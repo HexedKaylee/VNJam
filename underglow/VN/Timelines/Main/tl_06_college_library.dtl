@@ -148,10 +148,12 @@ narrator: Having little other use for the library now that you've managed to att
 [wait time="1.0"]
 join prym center [animation="Fade In" length="1.0"]
 [wait time="1.0"]
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_surprise_03.wav" volume="0.0" bus="Dialogic_VO"]
 prym: "Well now![pause=.5] From the sound of it,[pause=.2] you've managed to learn quite a bit on this little excursion."
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_moira_04.wav" volume="0.0" bus="Dialogic_VO"]
 prym: I hope you're ready for the next test,[pause=.2] my little Moira~"
 [wait time="1.0"]
-leave prym [animation="Fade Out Down" length="2.0" wait="true"]
+leave prym [animation="Fade Out" length="2.0" wait="true"]
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="3.0"]
 [wait time="3.0"]
 narrator: You're given no opportunity to protest when Prym encircles you with tendrils once again,[pause=.2] turning around as the slithering tangle whisks you off like a rip current down the hallway and through the rematerialized entrance to their lab.
