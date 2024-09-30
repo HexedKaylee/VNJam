@@ -339,18 +339,18 @@
 		"id": "ex4_03a",
 		"line": "Subject! Come back!",
 		"note": "Player walks a distance from the center",
-		"voiceLine": "vo_prym_bark_subject_calm_01"
+		"voiceLine": "vo_prym_bark_subject_angry_03"
 	},
 	{
 		"id": "ex4_03b",
 		"line": "Please don't leave, subject!",
 		"note": "Player walks a distance from the center",
-		"voiceLine": "vo_prym_bark_exhale_02"
+		"voiceLine": "vo_prym_bark_subject_angry_04"
 	},
 	{
 		"id": "ex4_03c",
 		"line": "Please, subject... Moira...",
 		"note": "Player walks a distance from the center",
-		"voiceLine": "vo_prym_bark_moira_01"
+		"voiceLine": "vo_prym_bark_moira_end"
 	}
 ]

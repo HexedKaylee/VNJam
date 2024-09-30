@@ -59,4 +59,5 @@ func leave():
 	if transLoad:
 		Global.loadData()
 	else:
+		Global.set_timeline("tl_00_prologue_intro")
 		Global.goto_scene("res://Scenes/2D/dialogic_scene.tscn")

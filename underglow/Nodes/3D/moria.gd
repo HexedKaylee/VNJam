@@ -131,10 +131,14 @@ func control_launcher(delta):
 			fishNum += 1
 		if animStart:
 			launcher.rotation.z = lerp(launcher.rotation.z, rot_launch_targ, rot_launch_spd*delta)
+			if(launcher.rotation.z > rot_launch_targ):
+				launcher.rotation.z = rot_launch_targ
 			if(snappedf(launcher.rotation.z, 0.05) == snappedf(rot_launch_targ, 0.05)):
 				animStart = false
 		else:
 			launcher.rotation.z = lerp(launcher.rotation.z, rot_launch_orig, rot_launch_spd*delta)
+			if(launcher.rotation.z < 0.0):
+				launcher.rotation.z = 0.0
 		if shot_cooldown > 0.0:
 			shot_cooldown -= delta
 
