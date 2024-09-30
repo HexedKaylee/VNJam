@@ -2,9 +2,11 @@ do AudioManager.init_audio()
 [style name="character"]
 [wait time="1.0"]
 [background arg="res://Assets/VN/Backgrounds/dark BG.PNG" fade="2.0"]
-narrator: Although you were expecting another bout of exposition after that disorienting test,[pause=.2] Prym seems to regard you with much less than the usual enthusiasm you are used to seeing from them.[pause=.5] Your head still foggy from the last serum you imbibed,[pause=.2] they simply prod you towards the exit of the lab and disregard the barrage of inquiries you've amassed since their prior outburst.[n+]\
+narrator: Although you were expecting another bout of exposition after that disorienting test,[pause=.2] Prym seems to regard you with much less than the usual enthusiasm you are used to seeing from them.\
 \
-They do,[pause=.2] however,[pause=.2] seem to be acting like you were never subject to said outburst,[pause=.2] which does nothing to set you at ease.
+[n+]Your head still foggy from the last serum you imbibed,[pause=.2] they simply prod you towards the exit of the lab and disregard the barrage of inquiries you've amassed since their prior outburst.\
+\
+[n]They do,[pause=.2] however,[pause=.2] seem to be acting like you were never subject to said outburst,[pause=.2] which does nothing to set you at ease.
 [wait time="1.0"]
 join prym (prym_neutral) center [animation="Fade In" length="1.0" wait="true"]
 prym: "Now…[pause=.5] I have no shortage of things on my plate to deal with since you gave me more valuable data to sift through,[pause=.2] so I'm going to assign you more to do than usual for your next excursion."
@@ -19,17 +21,19 @@ leave prym [animation="Fade Out Down" length="1.0" wait="true"]
 narrator: You again find yourself urged out with haste…[pause=.5] But, to your surprise, the entrance to their lab seems to remain in its place.[pause=.5] You take this as a sign that they seem to trust that you will come back to them,[pause=.2] however little sense that really makes.[n+]\
 \
 You shake your head with a sigh and make your way outside.
-[background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="2.0"]
+label college bg goes here instead
+[background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="2.0" transition="Swipe Left To Right"]
+[wait time="2.0"]
 [music path="res://Assets/Audio/Music/mus_droplets_(loop).wav" fade="0.0" volume="0.0"]
 narrator: It occurs to you,[pause=.2] after however many twists and turns you take around campus,[pause=.2] that you really don't actually know exactly how to leave.\
 \
-[n+]After a good deal of wandering,[pause=.2] though,[pause=.2] you manage to stumble upon what appears to be the café your Diver friend mentioned earlier,[pause=.2] and find yourself attempting to order a "drink" from a Socialite barista.\
+[n]After a good deal of wandering,[pause=.2] though,[pause=.2] you manage to stumble upon what appears to be the café your Diver friend mentioned earlier,[pause=.2] and find yourself attempting to order a "drink" from a Socialite barista.\
 \
 [n+]It takes a dauntingly repetitious conversation —[pause=.5] and many urges to leave a "tip,"[pause=.2] on their part —[pause=.5] before you watch them make one of these "drinks,"[pause=.2] only to realize it was just more tea.[pause=.5] Or brine,[pause=.2] as it were,[pause=.2] but they certainly did call it tea.\
 \
 [n][i]Tea…[/i]\
 \
-[n]Staring at the covered,[pause=.2] glowing cup,[pause=.2] you recall the tea party from earlier…[pause=.5] and find yourself thinking with a sense of fondness about the Socialites who warmly greeted you on your awakening,[pause=.2] doting upon you while you came to understand how you might use your new form to move and grasp.\
+[n]Staring at the covered,[pause=.2] glowing cup on the table,[pause=.2] you recall the tea party from earlier…[pause=.5] and find yourself thinking with a sense of fondness about the Socialites who warmly greeted you on your awakening,[pause=.2] doting upon you while you came to understand how you might use your new form to move and grasp.\
 \
 [n+]You think of how far you've come since then.[pause=.5]
 [wait time="1.0"]
@@ -78,18 +82,23 @@ narrator: With a flick of your wrist,[pause=.2] you reach out for your teacup,[p
 \
 You drink it.[pause=.5] You don't think it tastes like much…[pause=.4] doesn't taste like anything at all,[pause=.2] really.[pause=.5] But you understand now that Socialites aren't wont to really utilize anything of substance while they perform their rituals,[pause=.2] and it doesn't bother you so long as you perform the task successfully.\
 \
-[n]To your approval,[pause=.2] there's a ring of sounds of awe from the onlookers you sought to impress.[pause=.5] The Socialites clap softly in delight as you perform their curious ritual with impressive dexterity.[n+]\
-\
-A sense of pride wells up within you…[pause=.5] but then,[pause=.2] at that moment,[pause=.2] your attention is seized by a sight most unfamiliar.
+[n]To your approval,[pause=.2] there's a ring of sounds of awe from the onlookers you sought to impress.[pause=.5] The Socialites clap softly in delight as you perform their curious ritual with impressive dexterity.
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="5.0"]
+narrator: A sense of pride wells up within you…[pause=.5] but then,[pause=.2] at that moment,[pause=.2] your attention is seized by a sight most unfamiliar.
 [wait time="1.0"]
-[background arg="res://Assets/VN/Backgrounds/bg_test.png" fade="5.0"]
+join CG (cg_reflection_ending_1) center [animation="Fade In" length="3.0" wait="true"]
+join cg_reflection_2 (cg_reflection_2) center [animation="Fade In" length="2.0" wait="true"]
+join cg_reflection_3 (cg_reflection_3) center [animation="Fade In" length="2.0" wait="true"]
+join cg_reflection_4 (cg_reflection_4) center [animation="Fade In" length="2.0" wait="true"]
+join cg_reflection_5 (cg_reflection_5) center [animation="Fade In" length="2.0" wait="true"]
 [wait time="5.0"]
 narrator: Your reflection in the brine.[n+]\
 \
 A gasp sounds from the group.
 [wait time="1.0"]
 "demure socialite": "Dear…[pause=.5] Do you see…?"
-"pompous socialite": "Ah-[i]hah[/i]![pause=.5] Well-done,[pause=.2] well-done![pause=.5] This[pause=.2] calls[pause=.2] for a [i]celebration![/i]"
+"pompous socialite": "Ah-[i]hah[/i]![pause=.5] Well-done,[pause=.2] well-done!"
+"pompous socialite": "This[pause=.2] calls[pause=.2] for a [i]celebration![/i]"
 "haughty socialite": "We're already celebrating,[pause=.2] aren't we?[pause=.5] Isn't that what parties are for?"
 "pompous socialite": "Oh, how fortuitous![pause=.5] We indeed already have all that we need right here."
 "demure socialite": "This calls for more tea,[pause=.2] wouldn't you say?"
@@ -148,9 +157,10 @@ leave --All-- [animation="Fade Out" length="3.0" wait="true"]
 [wait time="3.0"]
 narrator: You abscond from the party with haste.[pause=.5] You don't even stick around to hear their farewells.[n+]\
 \
-You need to get back to your —[n+]\
+You need to get back to your —\
 \
-…\
+[n][speed=3]. . .\
 \
-[n]You must return to Prym.
+[n+]You must return to Prym.
+[wait time="1.0"]
 jump tl_10_college_return/

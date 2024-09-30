@@ -24,9 +24,27 @@
 "scale": 1.0,
 "scene": ""
 },
+"prym_dreaded": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Prym/prt_prym_dreaded.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
 "prym_furious": {
 "export_overrides": {
 "image": "\"res://Assets/VN/Portraits/Prym/prym_furious.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"prym_grieving": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Prym/prym_grieving.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -54,6 +72,24 @@
 "prym_pathetic": {
 "export_overrides": {
 "image": "\"res://Assets/VN/Portraits/Prym/prt_prym_pathetic.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"prym_pensive": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Prym/prym_pensive.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"prym_shocked": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Prym/prt_prym_shocked.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

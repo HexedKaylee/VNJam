@@ -1,198 +1,246 @@
 do AudioManager.init_audio()
 [style name="character"]
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="0.0"]
+join overlay_darkening center [z_index="-1"]
 [wait time="1.0"]
 narrator: You had your chance to run.[n+]\
 \
-But you have to pray that Prym will listen.[n+]\
+But you have to pray that Prym will listen.\
 \
-You hear a noise unfamiliar.[n+]\
+[n]You hear a noise unfamiliar.\
 \
-A wail.[n+]\
+[n]A wail.\
 \
-A pang of something unpleasant hits your chest.[n+]\
+[n]. . .[n+]\
 \
-[n]No...[pause=.5] It comes from deep within.\
+A pang of something unpleasant hits your chest.\
 \
-It threatens to break through,[pause=.2] to crack the surface of your form —[n+]\
+[n]No…[pause=1] It comes from deep within.\
 \
-But you can't break this form just yet.[pause=.5] [i]Not again[/i].
-narrator: A sob.[n+]\
+[n+]It threatens to break through,[pause=.2] to crack the surface of your form —\
 \
-Tears prick at the corners of your eyes.[pause=.5] Your new eyes,[pause=.2] for your new face.[n+]\
+[n]But you can't break this form just yet.\
 \
-A flask broken on the ground catches your eye.[pause=.5] The glow of brine as it forms a puddle begs your interest.[n+]\
+[n][i]Not again.[/i]\
+\
+[n]. . .\
+\
+[n+]A sob.\
+\
+[n]Tears prick at the corners of your eyes.\
+\
+[n+]Your new eyes,[pause=.2] for your new face.\
+\
+[n]A flask broken on the ground catches your eye.[pause=.5] The glow of brine as it forms a puddle begs your interest.[n+]\
 \
 You see your reflection once again.\
 \
-[n]A face…[n+]\
+[n]A face…\
 \
-You…\
+[n][speed=3]You…\
 \
 [n]You don't recognize it.
 [wait time="1.0"]
+[background arg="res://Assets/VN/Backgrounds/dark BG.PNG" fade="3.0"]
+[wait time="3.0"]
 question_mark: "Ah…"
 question_mark: "Do you…[pause=.5] see it…?"
 question_mark: "Let me…[pause=.5] look…[pause=.5] at…[pause=.5] you."
 [wait time="1.0"]
-narrator: You turn to Prym.[n+]\
+join prym (prym_pathetic) center [animation="Fade In" length="2.0" wait="true"]
+[wait time="1.0"]
+narrator: You turn to Prym.\
 \
-There's an odd…[pause=.5] calm to their figure.[n+]\
+[n+]There's an odd…[pause=.5] calm to their figure.\
 \
-No longer do you see tangles of tendrils floating around them,[pause=.2] grasping at nothing.\
+[n]No longer do you see tangles of tendrils floating around them,[pause=.2] grasping at nothing.\
 \
 [n]The glow of light is gone from their hair.[pause=.5] It only sits limply —[pause=.5] a dark curtain,[pause=.2] over one eye and draped heavy upon their slouched shoulders.[n+]\
 \
-There is no smile on their gleaming visage.[n+]\
+There is no smile on their gleaming visage.\
 \
-They look upon you with trepidation.[n+]\
+[n]They look upon you with trepidation.[n+]\
 \
-In silence.
-narrator: Their eye scans your face for…[pause=.5] something familiar.[n+]\
+In silence.\
 \
-But their search appears to come up empty.[n+]\
+[n]Their eye scans your face for…[pause=.5] something familiar.\
 \
-All that they see is…[n+]\
+[n]But their search appears to come up empty.[n+]\
 \
-… someone they don't know.
+All that they see is…\
+\
+[n][speed=3]. . .\
+\
+[n+]… someone they don't [b]know[/b].
 [wait time="1.0"]
 prym: "Ahaha…"
-prym: "That's not fair."
+prym (prym_pensive): "That's not fair."
 [wait time="1.0"]
 narrator: The words echo in your head.\
 \
-[n]That's not fair.[n+]\
+[n][i]That's not fair.[/i][n+]\
 \
-You start to feel it,[pause=.2] too.[n+]\
+You start to feel it,[pause=.2] too.\
 \
-They must have gotten it wrong.
+[n]They must have gotten it wrong.
 [wait time="1.0"]
-prym: "Ah.[pause=.5] But you.[pause=.5] It's…
-prym: "No.[pause=.5] No.[pause=.5] No.[pause=.4] No![pause=.5] NO…!"
-[wait time="0.0"]
-- " …"
+prym (prym_pathetic): "Ah.[pause=.5] But you.[pause=.5] It's…
+prym (prym_pensive): "No.[pause=.5] No.[pause=.5] No.[pause=.4] No!"
+update prym (prym_grieving) [animation="Tada"]
+prym: "[b]NO…![/b]"
+[wait time="1.0"]
+- " . . . "
 [wait time="1.0"]
 narrator: [i]No.[/i][n+]\
 \
-They couldn't have been wrong.[n+]\
+They couldn't have been wrong.\
 \
-They did everything right.\
+[n]They did everything right.\
 \
 [n]…\
 \
-The smoke —[pause=.5] you knew the smoke.[n+]\
+[n+]The smoke —[pause=.5] you knew the smoke.[n+]\
 \
 You weren't like other Masks —[pause=.5] you weren't scared of the smoke!
 narrator: That's right,[pause=.2] Moira always said that it brought them such warmth.[pause=.5] Such familiarity.[n+]\
 \
-It was one way they would always find each other again —[pause=.5] there's no way it wasn't you —[pause=.5] there's no way you aren't Moira!\
+It was one way they would always find each other again —[pause=.5] there's no way it wasn't you —\
 \
-[n]Ah.[pause=.5] But.[pause=.5] You. [n+]\
+[n+]There's no way you aren't [b][i]Moira![/i][/b]
+update prym (prym_pathetic) [fade="Fade Cross"]
+narrator: Ah.[pause=.5] But.[pause=.5] You. \
 \
-That.[pause=.5] Face.[n+]\
+[n]That.[pause=.5] Face.\
 \
-You.[pause=.5] Aren't…[n+]\
-\
-Ah.[pause=.5] Ah.[pause=.5] Ah.
+[n]You.[pause=.5] Aren't…
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="5.0"]
+[wait time="5.0"]
+update prym (prym_pensive) [fade="Fade Cross"]
+narrator: [n]Ah.[pause=.5] Ah.[pause=.5] Ah.
 [wait time="2.0"]
-narrator: . . . . .[n+]\
-\
-…[pause=.5] It may just be impossible.\
-\
-[n]All this [i][b]time[/b][/i]…[pause=.5] Yes, of course.[n+]\
-\
-Moira wouldn't have kept it.[pause=.5] No Spirit Fish could have kept their individuality…[n+]\
-\
-Even with their awareness intact,[pause=.2] they must have blended with the schools of Fish around them…[pause=.5] to become…[n+]\
-\
-It's not them.\
-\
-[n]You aren't.[n+]\
-\
-My.[n+]\
-\
-Moira.[n+]\
-\
-…
+update prym (prym_pathetic) [fade="Fade Cross" fade_length="1.0"]
 [wait time="1.0"]
-"I can't deny it."
+narrator: [speed=5]. . . . .[n+]\
+\
+[speed=5]. . .[pause=.5] It may just be impossible.\
+\
+[n]All this [i][b]time[/b][/i]…[pause=.5] Yes, of course.\
+\
+[n]Moira wouldn't have kept it.[pause=.5] No Spirit Fish could have kept their individuality…[n+]\
+\
+Even with their awareness intact,[pause=.2] they must have blended with the schools of Fish around them…[pause=.5] to become…\
+\
+[n] . . .\
+\
+[n]It's not them.
+leave prym [animation="Fade Out" length="3.0"]
+[wait time="1.0"]
+narrator: [n]You aren't.\
+\
+[n]My.\
+\
+[n]Moira.\
+\
+[n]…
+[wait time="1.0"]
+- " … "
+[wait time="1.0"]
+- "I can't deny it."
 "Those memories.[pause=.5] They aren't…"
 "I don't have any of them."
 "I'm…"
-"I'm not Moira."
+[wait time="2.0"]
+- "I'm not Moira."
 [wait time="1.0"]
 narrator: …
-[wait time="1.0"]
+[wait time="2.0"]
 "I was only a Fish."
-"In a school of other Fish."
+[wait time="1.0"]
+- "In a school of other Fish."
 "I shone brighter than the rest."
 "But I…"
 " … "
 "We all blended together."
 "No Fish knew itself from another."
 "When we become like that…"
-"There's no going back."
+[wait time="1.0"]
+- "There's no going back."
 " … "
 "Yet,[pause=.2] somehow…"
 "I awoke as a Mask."
+join overlay_darkening center
+label sad version of the title theme!
+[music path="res://Assets/Audio/Music/mus_aphos_(loop).wav" fade="1.0" volume="0.0"]
+[background arg="res://Assets/VN/CG/cg_reflection.PNG" fade="5.0"]
+[wait time="3.0"]
 "Again…[pause=.5] Newly-adorned…"
 "With a new chance."
-"But I…"
-"Didn't come of it out the same."
-"And I couldn't be who you wanted me to be."
 [wait time="1.0"]
-narrator: …[n+]\
+- "But I…"
+[wait time="2.0"]
+- "Didn't come out of it the same."
+[wait time="1.0"]
+"[speed=5]..."
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="3.0"]
+[wait time="3.0"]
+- "And I couldn't be who you wanted me to be."
+[wait time="3.0"]
+narrator: …\
 \
-You feel lightheaded.\
+[n][i]You feel lightheaded.[/i]\
 \
 [n]I see.[n+]\
 \
-So.[n+]\
+So.\
 \
-Maybe I should have stayed away.[n+]\
+[n]Maybe I should have stayed away.\
 \
-I'm not…[n+]\
+[n]I'm not…\
 \
-Prym isn't…[n+]\
+[n]Prym isn't…\
 \
-They're not…
+[n]They're not…
 [wait time="1.0"]
 " … "
 [wait time="1.0"]
 narrator: Too much has changed.[n+]\
 \
 [i]You’ve changed.[/i]
+[wait time="2.0"]
+- "We have."
 [wait time="1.0"]
-"We have."
-[wait time="1.0"]
-narrator: …[n+]\
+narrator: [speed=5]. . .\
 \
-[i]It's cold.[/i][n+]\
+[n][speed= 3][i]It's cold.[/i]\
 \
-[i]Or is it hot?[/i][n+]\
+[n][i]Or is it[pause=1] hot?[/i]\
 \
-. . . . .\
+[n]. . . . .\
 \
 [n]Well,[pause=.2] it's all subjective anyway.[n+]\
 \
-I won't think about this anymore.[n+]\
+I won't think about this anymore.\
 \
-In fact,[pause=.2] I would like to…[pause=.5] release it all.[n+]\
+[n]In fact,[pause=.2] I would like to…[pause=.5] release it all.[n+]\
 \
 …
-[wait time="1.0"]
-narrator: Thank you for your contributions.[n+]\
+[wait time="2.0"]
+join prym (prym_pathetic) center [animation="Fade In" length="1.0" wait="true"]
+narrator: Thank you for your contributions.\
 \
-Maybe…[n+]\
+[n]Maybe…[n+]\
 \
-There will be a next light.[n+]\
+There will be a next light.\
 \
-Or our selves will mix down here,[pause=.2] in the Tow.\
+[n]Or our selves will mix down here,[pause=.2] in the Tow.\
 \
 [n]Well…[n+]\
 \
-There is always the prospect of you finding me,[pause=.2] again.[n+]\
+There is always the prospect of you finding me,[pause=.2] again.\
 \
-Just don't make the same mistake I did.
+[n]Just don't make the same mistake I did.
+leave prym [animation="Fade Out" length="10.0"]
+[wait time="1.0"]
 narrator: Don't…[n+]\
 \
 Don't you look[n+]\
@@ -202,8 +250,9 @@ for [n+]\
 me[n+]\
 \
 [i]…[/i]
-[wait time="3.0"]
+[wait time="5.0"]
 label spirit fish goes here
+join CG (cg_fish_ending) center [animation="Fade In" length="5.0" wait="true"]
 [wait_input]
 label credits go here
 [wait_input]

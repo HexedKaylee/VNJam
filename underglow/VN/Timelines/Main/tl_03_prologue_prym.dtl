@@ -1,6 +1,7 @@
 do AudioManager.init_audio()
 [style name="character"]
 [background arg="res://Assets/VN/Backgrounds/uneasy BG.PNG" fade="2.0"]
+[music fade="3.0" volume="0.0"]
 
 [wait time="1.0"]
 narrator: As voices murmur in surprise,[pause=.2] you realize that a thick and looming miasma has been crawling its way through the sea of Masks.[pause=.5] The perimeter of the crowd begins to part,[pause=.2] and a strikingly corporeal figure begins to make its way toward the center.\
@@ -40,28 +41,32 @@ narrator: [n]Yes…[pause=.5] You can see them,[pause=.2] now –[pause=.5] so m
 \
 [n+]Then,[pause=.5] you hear a voice.
 [wait time="1.0"]
-update prym (prym_neutral) [fade="Fade Cross" fade_length="2.0"]
+leave prym [animation="Fade Out" length="1.0" wait="true" fade="Fade Cross" fade_length="2.0"]
+join prym (prym_neutral) center [animation="Fade In" length="1.0" wait="true"]
 [wait time="2.0"]
 update miasma [z_index="20"]
 question_mark: [i]"Foooound ~[pause=.3] youuuuu… ~ !!"[/i]
 [wait time="1.0"]
-narrator: The enigmatic stranger's figure fully revealed,[pause=.2] they close the distance between you and[pause=.2] sweep their hand languidly around to —[pause=.4] with the gentlest caress —[pause=.4] …[pause=.4] cradle the back of your neck.\
+narrator: The enigmatic stranger's figure fully revealed,[pause=.2] they close the distance between you and[pause=.2] sweep their hand languidly around to —[pause=.4] with the gentlest caress —\
 \
-[n+]In another graceful motion,[pause=.2] the instrument in their other hand draws a swirling path through the fog,[pause=.2] the gas curling and wafting beneath your mask…\
+[n+]…[pause=.4] cradle the back of your neck.\
+\
+[n]In another graceful motion,[pause=.2] the instrument in their other hand draws a swirling path through the fog,[pause=.2] the gas curling and wafting beneath your mask…\
 \
 [n+]And –\
 \
-[n+]Your grip on consciousness[pause=.4] begins to[pause=.5] slowly loosen.
+[n]Your grip on consciousness[pause=.4] begins to[pause=.5] slowly loosen.
 label slight fade to black
 narrator: [i]This is fine.[/i]\
 \
-[n+]You gaze up at their manic,[pause=.2] toothy expression,[pause=.2] and stumble backward as their hand lets go of your neck —\
+[n]You gaze up at their manic,[pause=.2] toothy expression,[pause=.2] and stumble backward as their hand lets go of your neck —\
 \
 [n+]— and are caught by tendrils,[pause=.2] snaking out from beneath their garb,[pause=.3] keeping you firmly rooted in place.
 label fade further toward black
 narrator: [i]This[pause=.2] is[pause=.2] fine.[/i]
 [wait time="1.0"]
 "enigmatic figure": "[i]Thaaat’s[/i] it.[pause=.5] Take it in [speed=2][i]deeply[/i],[speed=1][pause=.2] please…"
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_chuckle_02.wav" volume="0.0"]
 "enigmatic figure": [speed=2]" ~♪ "
 "enigmatic figure": "Come along,[pause=.2] now…[pause=.5] [speed=2]For we have so.[pause=.5] [i]Very.[pause=.5] Much.[/i][pause] To do."
 [wait time="1.0"]
@@ -69,9 +74,9 @@ narrator: [speed=2]The stranger brings your head tenderly to their breast…\
 \
 [n][speed=3]… as your last vestiges of awareness…
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="3.0"]
-narrator: [speed=4]slip[pause=.2] away.\
-\
-[n][speed=1][i]Oh.[/i]\
+narrator: [speed=4]slip[pause=.2] away.
+join CG (bg_black) center [animation="Fade In" length="3.0" wait="true" z_index="300"]
+narrator: [speed=1][i]Oh.[/i]\
 \
 [n][speed=3][i]Is[/i][n+]\
 \
@@ -79,7 +84,7 @@ narrator: [speed=4]slip[pause=.2] away.\
 \
 [speed=3][i]bad…?[/i]
 [wait time="3.0"]
-join CG (bg_black) center [animation="Fade In" length="2.0" wait="true" z_index="300"]
 leave prym [animation="Fade Out"]
+[music fade="5.0" volume="0.0"]
 [wait time="5.0"]
 [signal arg="start_experiment_1"]

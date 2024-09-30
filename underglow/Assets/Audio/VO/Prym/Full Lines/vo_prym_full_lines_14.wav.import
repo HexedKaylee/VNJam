@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://og35wpjosy8u"
+path="res://.godot/imported/vo_prym_full_lines_14.wav-ea1f1008035f13a4847da8a96dc46387.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/VO/Prym/Full Lines/vo_prym_full_lines_14.wav"
+dest_files=["res://.godot/imported/vo_prym_full_lines_14.wav-ea1f1008035f13a4847da8a96dc46387.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
