@@ -135,8 +135,8 @@ Even with their awareness intact,[pause=.2] they must have blended with the scho
 [n]It's not them.
 leave prym [animation="Fade Out" length="3.0"]
 [wait time="1.0"]
-[voice path="vo_prym_full_lines_06.wav" volume="0.0" bus="Dialogic_VO"]
-narrator: [n]You aren't.\
+[voice path="res://Assets/Audio/VO/Prym/Full Lines/vo_prym_full_lines_06.wav" volume="0.0" bus="Dialogic_VO"]
+narrator: You aren't.\
 \
 [pause=.7]My.\
 \
@@ -255,6 +255,6 @@ narrator: [i]…[/i]
 label spirit fish goes here
 join CG (cg_fish_ending) center [animation="Fade In" length="5.0" wait="true"]
 [wait_input]
-[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="5.0"]
+update CG (bg_black) [fade="Fade Cross" fade_length="5.0"]
 [wait time="5.0"]
 [signal arg="game_end"]
