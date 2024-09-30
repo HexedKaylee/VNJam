@@ -66,6 +66,7 @@ prym: "Hold still,[pause=.2] for a moment,[pause=.2] please~"
 [wait time="1.0"]
 narrator: One of Prym's writhing tendrils retrieves a curious ,[pause=.2] angular device and places it into their eager hand.[pause=.5] They advance toward you,[pause=.2] and with a deft motion they reach behind you,[pause=.2] place the device against your back,[pause=.2] and —
 label injection sound goes here
+[sound path="res://Assets/Audio/SFX/sfx_injection.wav" volume="0.0" bus="Dialogic_SFX"]
 do AudioManager.fade_music_silent(0.1)
 narrator: — pierce your form with something sharp.
 do AudioManager.fade_music_normal(3.0)

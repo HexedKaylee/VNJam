@@ -2,6 +2,7 @@ do AudioManager.init_audio()
 [style name="character"]
 [background arg="res://Assets/VN/Backgrounds/uneasy BG.PNG" fade="2.0"]
 [music fade="3.0" volume="0.0"]
+[music path="res://Assets/Audio/Music/mus_submerged_(loop).wav" fade="0.0" volume="0.0"]
 
 [wait time="1.0"]
 narrator: As voices murmur in surprise,[pause=.2] you realize that a thick and looming miasma has been crawling its way through the sea of Masks.[pause=.5] The perimeter of the crowd begins to part,[pause=.2] and a strikingly corporeal figure begins to make its way toward the center.\
@@ -45,6 +46,7 @@ leave prym [animation="Fade Out" length="1.0" wait="true" fade="Fade Cross" fade
 join prym (prym_neutral) center [animation="Fade In" length="1.0" wait="true"]
 [wait time="2.0"]
 update miasma [z_index="20"]
+[voice path="res://Assets/Audio/VO/Prym/Full Lines/vo_prym_full_lines_01.wav" volume="0.0" bus="Dialogic_VO"]
 question_mark: [i]"Foooound ~[pause=.3] youuuuu… ~ !!"[/i]
 [wait time="1.0"]
 narrator: The enigmatic stranger's figure fully revealed,[pause=.2] they close the distance between you and[pause=.2] sweep their hand languidly around to —[pause=.4] with the gentlest caress —\
@@ -66,7 +68,7 @@ label fade further toward black
 narrator: [i]This[pause=.2] is[pause=.2] fine.[/i]
 [wait time="1.0"]
 "enigmatic figure": "[i]Thaaat’s[/i] it.[pause=.5] Take it in [speed=2][i]deeply[/i],[speed=1][pause=.2] please…"
-[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_chuckle_02.wav" volume="0.0"]
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_chuckle_02.wav" volume="0.0" bus="Dialogic_VO"]
 "enigmatic figure": [speed=2]" ~♪ "
 "enigmatic figure": "Come along,[pause=.2] now…[pause=.5] [speed=2]For we have so.[pause=.5] [i]Very.[pause=.5] Much.[/i][pause] To do."
 [wait time="1.0"]
