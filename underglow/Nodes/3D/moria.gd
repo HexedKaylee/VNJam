@@ -161,6 +161,7 @@ func applySerum(serum):
 			serumMove = true
 		6:
 			UI.get_node("ImageOverlay").active = true
+			UI.get_node("ImageOverlay2").active = true
 		7:
 			#BOOKSHELVES BE GONE!
 			Global.removeShelf_set()

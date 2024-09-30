@@ -23,6 +23,14 @@ position = Vector2(958, 551)
 texture = ExtResource("1_jvn41")
 script = ExtResource("2_c34eq")
 
+[node name="ImageOverlay2" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(1924.18, 1108)
+scale = Vector2(1.43956, 1.43956)
+texture = ExtResource("1_jvn41")
+script = ExtResource("2_c34eq")
+top = true
+
 [node name="TextBox" type="Sprite2D" parent="."]
 unique_name_in_owner = true
 position = Vector2(960, 896)

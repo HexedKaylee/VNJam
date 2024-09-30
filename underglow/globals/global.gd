@@ -8,12 +8,27 @@ var saveLine = 'tl_00_prologue_intro'
 
 var current_scene = null
 var destroyShelf = false
+var canFull = true
 
 var musicLoc = 0.0
 
 func _ready():
 	var root = get_tree().root
 	current_scene = root.get_child(root.get_child_count() - 1)
+
+func _process(delta):
+	if Input.is_action_pressed("ui_enter") and Input.is_action_pressed("ui_alt"):
+		if canFull:
+			var fullscreen = DisplayServer.window_get_mode()
+			if(fullscreen != DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN):
+				DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN)
+				DisplayServer.window_set_size(Vector2i(1920, 1080))
+			else:
+				DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
+				DisplayServer.window_set_size(Vector2i(1280, 720))
+			canFull = false
+	else:
+		canFull = true
 
 func set_timeline(tl):
 	timeline = tl
