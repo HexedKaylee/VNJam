@@ -1,6 +1,7 @@
 do AudioManager.init_audio()
 [style name="character"]
-[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="0.0"]
+[background arg="res://Assets/VN/Backgrounds/library bg.png" fade="1.0" transition="Swipe Right To Left"]
+[wait time="1.0"]
 [music path="res://Assets/Audio/Music/mus_droplets_(loop).wav" fade="3.0" volume="0.0"]
 narrator: You follow this person into the doorway which they originally walked out of,[pause=.2] and come out into a space that appears both open and cramped.\
 \
@@ -11,8 +12,6 @@ narrator: You follow this person into the doorway which they originally walked o
 [n]You feel as though there's a word just in the back of your mind that you could call a place like this,[pause=.2] but you are unable to grasp it as solidly as you were the books you've just become familiar with holding.\
 \
 [n+]You look to the bookish Socialite expectantly,[pause=.2] hoping to hear an explanation.
-[wait time="1.0"]
-[background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="2.0" transition="Swipe Right To Left"]
 [wait time="2.0"]
 join "bookish socialite" center [animation="Fade In" wait="true"]
 
@@ -31,10 +30,15 @@ narrator: The Socialite appears to deem their very short,[pause=.2] not-too-deta
 \
 [n]Despite the most prominent uses of the library that were explained to you just now,[pause=.2] none of the Socialites gathered here appear to be reading or studying.[pause=.5] Instead, [pause=.2] they are simply conversing in hushed tones —[pause=.5] socializing,[pause=.2] as it were.\
 \
-[n+]It's at this moment that you remember what Prym said\:[pause=.5] that the Socialites around here like to "play 'school'".[pause=.5] You aren't sure entirely,[pause=.2] but the impression you're getting is that Socialites aren't exactly,[pause=.2] [i]literally[/i] students of the college here.
-narrator: You have trouble imagining exactly how you're supposed to learn to communicate from these people,[pause=.2] when they don't seem to actually have true purposes in mind for the things that they say.[pause=.5] You wonder vacantly about how you may actually go about learning how to speak…[pause=.5] when it occurs to you that perhaps a book on the subject of speech would be of use.\
+[n+]It's at this moment that you remember what Prym said\:[pause=.5] that the Socialites around here like to "play 'school'".[pause=.5] You aren't sure entirely,[pause=.2] but the impression you're getting is that Socialites aren't exactly,[pause=.2] [i]literally[/i] students of the college here.\
 \
-[n]You decide to wander the library for some bit,[pause=.2] looking around the various shelves,[pause=.2] before your gaze settles on one shelf that appears to have a particularly large coral formation sprouting out of it.[pause=.5] This coral is so large,[pause=.2] and shelflike in-and-of itself,[pause=.2] that it appears to have been repurposed into…[pause=.5] yet more shelving for more books.\
+[n]You have trouble imagining exactly how you're supposed to learn to communicate from these people,[pause=.2] when they don't seem to actually have true purposes in mind for the things that they say.[pause=.5] You wonder vacantly about how you may actually go about learning how to speak…[pause=.5] when it occurs to you that perhaps a book on the subject of speech would be of use.
+[wait time="1.0"]
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="2.0" transition="Swipe Right To Left"]
+[wait time="3.0"]
+[background arg="res://Assets/VN/Backgrounds/library bg.png" fade="2.0" transition="Swipe Left To Right"]
+[wait time="2.0"]
+narrator: You decide to wander the library for some bit,[pause=.2] looking around the various shelves,[pause=.2] before your gaze settles on one shelf that appears to have a particularly large coral formation sprouting out of it.[pause=.5] This coral is so large,[pause=.2] and shelflike in-and-of itself,[pause=.2] that it appears to have been repurposed into…[pause=.5] yet more shelving for more books.\
 \
 [n+]The notion of these books seemingly having no other place but on things that are ostensibly not built for books is enough to pique your interest.[pause=.5] You close the distance between yourself and the coral formation,[pause=.2] and make your selection of the books perched upon it.
 [wait time="1.0"]
@@ -78,7 +82,7 @@ narrator: [i]The radiant chandeliers baked the royal chamber in an uncomfortable
 narrator: You close the book in front of you,[pause=.2] having seen enough.[pause=.5] You do not think this is the type of text you would actually like to be reading,[pause=.2] right now.\
 \
 [n+]The idea occurs to you that it was being read by someone who was going to be back…[pause=.5] So you get up,[pause=.2] feeling somewhat flustered,[pause=.2] and angle your way towards anywhere but right in that spot.
-[background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="2.0"]
+[background arg="res://Assets/VN/Backgrounds/library bg.png" fade="2.0"]
 [music path="res://Assets/Audio/Music/mus_droplets_(loop).wav" fade="3.0" volume="0.0"]
 narrator: Well…[pause=.5] At the very least,[pause=.2] you learned that some of the books here do have contents that are comprehensible.\
 \
@@ -88,13 +92,15 @@ narrator: Well…[pause=.5] At the very least,[pause=.2] you learned that some o
 \
 [n]It doesn't take much,[pause=.2] thankfully,[pause=.2] for them to look up from their book and take notice.
 [wait time="1.0"]
-join "librarian socialite" center
+join "librarian socialite" center [animation="Fade In" wait="true"]
+[wait time="1.0"]
 "librarian socialite": " … Can I help you?"
 [wait time="0.0" hide_text="false"]
 - Gesticulate to try and convey what you need.
 	You point at the book which they are reading,[pause=.2] and then point at the whole of the vicinity behind you,[pause=.2] hoping that this gets the point across well enough.
 - Tilt your head.
 	You realize you're not quite sure how you were going to actually communicate that you need help,[pause=.2] and have to think on it for a moment…
+[wait time="1.0"]
 Luckily,[pause=.2] they don't actually seem to take long to get the gist, probably helped by the fact that this is a library.
 [wait time="1.0"]
 "librarian socialite": " … Ugh.[pause=.5] I'm guessing you need help finding a book.[pause=.5] Okay.[pause=.4] Hang on."
@@ -124,20 +130,24 @@ narrator: You realize with a start that,[pause=.2] in your frustration,[pause=.2
 \
 [n]You decidedly get up with the tome and return it to the desk of the librarian.[pause=.5] They seem to roll their eyes at this,[pause=.2] unhappy to see you return.
 [wait time="1.0"]
-"librarian socialite": *sigh* "Look,[pause=.2] if that one wasn't your cup of tea,[pause=.2] feel free to return it to a shelf.[pause=.5] Any one will do."
+"librarian socialite": "*sigh* Look,[pause=.2] if that one wasn't your cup of tea,[pause=.2] feel free to return it to a shelf.[pause=.5] Any one will do."
 "librarian socialite": "Chuck it as hard as you like,[pause=.2] for all I care. Everything here's made of stone, anyway."
 [wait time="1.0"]
 leave "librarian socialite" [animation="Fade Out Down" wait="true"]
 [music fade="5.0" volume="0.0"]
 narrator: Though you wonder what tea could possibly have to do with books,[pause=.2] you nevertheless oblige the cantankerous librarian and go to place the book haphazardly down on a shelf chosen at random.\
 \
-[n]The arcane volume lands with a now-familiar clack that,[pause=.2] though you hadn't thought to interrogate its strangeness before,[pause=.2] suddenly makes perfect sense in light of the material supposedly used for its construction.\
-\
-[n]Having little other use for the library now that you've managed to attain the goal Prym had set for your exploration of the campus,[pause=.2] you exit out through the doorway with the objective of making your way back from whence you came…[n+]\
+[n]The arcane volume lands with a now-familiar clack that,[pause=.2] though you hadn't thought to interrogate its strangeness before,[pause=.2] suddenly makes perfect sense in light of the material supposedly used for its construction.
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="2.0" transition="Swipe Left To Right"]
+[wait time="2.0"]
+narrator: Having little other use for the library now that you've managed to attain the goal Prym had set for your exploration of the campus,[pause=.2] you exit out through the doorway with the objective of making your way back from whence you came…[n+]\
 \
 … But are surprised to find Prym themself standing before you,[pause=.2] waiting,[pause=.2] sporting a disconcertingly portentous grin.
 [wait time="1.0"]
-join prym center [animation="Fade In Up" length="1.0" wait="true"]
+[background arg="res://Assets/VN/Backgrounds/college BG.PNG" fade="1.0" transition="Swipe Left To Right"]
+[wait time="1.0"]
+join prym center [animation="Fade In" length="1.0"]
+[wait time="1.0"]
 prym: "Well now![pause=.5] From the sound of it,[pause=.2] you've managed to learn quite a bit on this little excursion."
 prym: I hope you're ready for the next test,[pause=.2] my little Moira~"
 [wait time="1.0"]

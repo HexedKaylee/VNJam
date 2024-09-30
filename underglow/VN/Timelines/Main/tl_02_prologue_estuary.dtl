@@ -3,7 +3,7 @@ do AudioManager.init_audio()
 [music fade="3.0" volume="0.0"]
 [music path="res://Assets/Audio/Music/mus_droplets_(loop).wav" fade="3.0" volume="0.0"]
 [wait time="0.5"]
-[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="0.5" transition="Swipe Right To Left"]
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="1" transition="Swipe Right To Left"]
 leave --All-- [animation="Instant Out" length="0.0"]
 [wait time="1.0"]
 [background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="0.5" transition="Swipe Right To Left"]
