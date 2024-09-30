@@ -1,7 +1,9 @@
 do AudioManager.init_audio()
 [style name="character"]
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="0.0"]
 [wait time="1.0"]
 [background arg="res://Assets/VN/Backgrounds/dark BG.PNG" fade="2.0"]
+[wait time="2.0"]
 narrator: Although you were expecting another bout of exposition after that disorienting test,[pause=.2] Prym seems to regard you with much less than the usual enthusiasm you are used to seeing from them.\
 \
 [n+]Your head still foggy from the last serum you imbibed,[pause=.2] they simply prod you towards the exit of the lab and disregard the barrage of inquiries you've amassed since their prior outburst.\
@@ -21,9 +23,8 @@ leave prym [animation="Fade Out Down" length="1.0" wait="true"]
 narrator: You again find yourself urged out with haste…[pause=.5] But, to your surprise, the entrance to their lab seems to remain in its place.[pause=.5] You take this as a sign that they seem to trust that you will come back to them,[pause=.2] however little sense that really makes.[n+]\
 \
 You shake your head with a sigh and make your way outside.
-label college bg goes here instead
-[background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="2.0" transition="Swipe Left To Right"]
-[wait time="2.0"]
+[background arg="res://Assets/VN/Backgrounds/college BG.PNG" fade="5.0" transition="Swipe Left To Right"]
+[wait time="5.0"]
 [music path="res://Assets/Audio/Music/mus_droplets_(loop).wav" fade="0.0" volume="0.0"]
 narrator: It occurs to you,[pause=.2] after however many twists and turns you take around campus,[pause=.2] that you really don't actually know exactly how to leave.\
 \
@@ -76,7 +77,7 @@ join "haughty socialite" center [animation="Fade In Up" length="1.0" wait="true"
 - Leave them with a coy silence.
 - "I'll show you what else I can do."
 [wait time="1.0"]
-leave --All-- [animation="Fade Out" length="1.0" wait="true"]
+leave --All-- [animation="Fade Out" length="1.0"]
 [wait time="1.0"]
 narrator: With a flick of your wrist,[pause=.2] you reach out for your teacup,[pause=.2] still sitting prepared for you,[pause=.2] and lift it to your mask.[n+]\
 \
@@ -85,17 +86,23 @@ You drink it.[pause=.5] You don't think it tastes like much…[pause=.4] doesn't
 [n]To your approval,[pause=.2] there's a ring of sounds of awe from the onlookers you sought to impress.[pause=.5] The Socialites clap softly in delight as you perform their curious ritual with impressive dexterity.
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="5.0"]
 narrator: A sense of pride wells up within you…[pause=.5] but then,[pause=.2] at that moment,[pause=.2] your attention is seized by a sight most unfamiliar.
+do AudioManager.fade_music_quiet(3.0)
 [wait time="1.0"]
 join CG (cg_reflection_ending_1) center [animation="Fade In" length="3.0" wait="true"]
 join cg_reflection_2 (cg_reflection_2) center [animation="Fade In" length="2.0" wait="true"]
 join cg_reflection_3 (cg_reflection_3) center [animation="Fade In" length="2.0" wait="true"]
 join cg_reflection_4 (cg_reflection_4) center [animation="Fade In" length="2.0" wait="true"]
-join cg_reflection_5 (cg_reflection_5) center [animation="Fade In" length="2.0" wait="true"]
+join cg_reflection_5 (cg_reflection_5) center [animation="Fade In" length="2.0"]
+leave CG
+leave cg_reflection_2
+leave cg_reflection_3
 [wait time="5.0"]
 narrator: Your reflection in the brine.[n+]\
 \
 A gasp sounds from the group.
+do AudioManager.fade_music_normal(1.0)
 [wait time="1.0"]
+leave cg_reflection_4
 "demure socialite": "Dear…[pause=.5] Do you see…?"
 "pompous socialite": "Ah-[i]hah[/i]![pause=.5] Well-done,[pause=.2] well-done!"
 "pompous socialite": "This[pause=.2] calls[pause=.2] for a [i]celebration![/i]"
@@ -107,8 +114,9 @@ A gasp sounds from the group.
 "pompous socialite": "… to celebrate our friend's[pause=.2] new[pause=.2] [i]face![/i]"
 [wait time="1.0"]
 [music fade="10.0" volume="0.0"]
-[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="10.0"]
-[wait time="10.0"]
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="1.0"]
+leave cg_reflection_5 [animation="Fade Out" length="5.0"]
+[wait time="8.0"]
 narrator: The laughter dies down.[n+]\
 \
 The Socialites have resumed their ritual.[n+]\
@@ -119,7 +127,7 @@ It's all repeated pleasantries,[pause=.2] and cordial remarks,[pause=.2] and emp
 \
 You haven't drunk any more.[n+]\
 \
-They aren't looking to you anymore,[pause=.2] either,[pause=.2] to feign interest in their charade.[n+]\
+They aren't looking to you anymore,[pause=.2] either,[pause=.2] to feign interest in their charade.\
 \
 [n][speed=3]...\
 \
@@ -128,9 +136,9 @@ narrator: You planned to tell them all about your journey.[pause=.5] You wanted 
 \
 You wanted to tell them of the Diver who let you realize what you wanted,[pause=.2] for the very first time.\
 \
-[n]Realize that you wanted…\
-\
-[n]You wanted to have a friend.\
+[n]Realize that you wanted…
+[music path="res://Assets/Audio/Music/mus_aphos_(loop).wav" fade="1.0" volume="0.0"]
+narrator: You wanted to have a friend.\
 \
 [n]To share in the moment.[pause=.5] To share the ache.[pause=.5] To shoulder the burden together.\
 \
@@ -141,10 +149,12 @@ You wanted to tell them of the Diver who let you realize what you wanted,[pause=
 [n]You realize that these Socialites haven't reached that point.[pause=.5] Not yet.\
 \
 [n]You stand up from your seat.
-[background arg="res://Assets/VN/Backgrounds/bg_test.png" fade="1.0"]
+[background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="1.0"]
 [wait time="1.0"]
+do AudioManager.fade_music_quiet(1.0)
 join "demure socialite" right [animation="Fade In Up"]
-join "pompous socialite" left [animation="Fade In Up"]
+join "pompous socialite" left [animation="Fade In Up" wait="true"]
+[wait time="1.0"]
 "demure socialite": "Oh?[pause=.4] Did something occur to you,[pause=.2] my friend?[pause=.5] You seem far off and away from us."
 "pompous socialite": Ah,[pause=.2] dear…[pause=.5] I get the feeling maybe they have somewhere else to be."
 [wait time="0.0" hide_text="false"]
@@ -162,5 +172,6 @@ You need to get back to your —\
 [n][speed=3]. . .\
 \
 [n+]You must return to Prym.
+[music fade="1.0" volume="0.0"]
 [wait time="1.0"]
 jump tl_10_college_return/

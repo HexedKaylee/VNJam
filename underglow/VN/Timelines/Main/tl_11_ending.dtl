@@ -107,7 +107,8 @@ narrator: That's right,[pause=.2] Moira always said that it brought them such wa
 It was one way they would always find each other again —[pause=.5] there's no way it wasn't you —\
 \
 [n+]There's no way you aren't [b][i]Moira![/i][/b]
-update prym (prym_pathetic) [fade="Fade Cross"]
+update prym (prym_pathetic) [fade="Fade Cross" fade_length="1.0"]
+[wait time="1.0"]
 narrator: Ah.[pause=.5] But.[pause=.5] You. \
 \
 [n]That.[pause=.5] Face.\
@@ -115,10 +116,11 @@ narrator: Ah.[pause=.5] But.[pause=.5] You. \
 [n]You.[pause=.5] Aren't…
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="5.0"]
 [wait time="5.0"]
-update prym (prym_pensive) [fade="Fade Cross"]
+update prym [fade="Fade Cross"]
+[wait time="1.0"]
 narrator: [n]Ah.[pause=.5] Ah.[pause=.5] Ah.
 [wait time="2.0"]
-update prym (prym_pathetic) [fade="Fade Cross" fade_length="1.0"]
+update prym (prym_pensive) [fade="Fade Cross" fade_length="1.0"]
 [wait time="1.0"]
 narrator: [speed=5]. . . . .[n+]\
 \
@@ -128,9 +130,10 @@ narrator: [speed=5]. . . . .[n+]\
 \
 [n]Moira wouldn't have kept it.[pause=.5] No Spirit Fish could have kept their individuality…[n+]\
 \
-Even with their awareness intact,[pause=.2] they must have blended with the schools of Fish around them…[pause=.5] to become…\
-\
-[n] . . .\
+Even with their awareness intact,[pause=.2] they must have blended with the schools of Fish around them…[pause=.5] to become…
+update prym (prym_grieving) [fade="Fade Cross" fade_length="1.0"]
+[wait time="1.0"]
+narrator:  . . .\
 \
 [n]It's not them.
 leave prym [animation="Fade Out" length="3.0"]
@@ -178,11 +181,13 @@ label sad version of the title theme!
 "With a new chance."
 [wait time="1.0"]
 - "But I…"
-[wait time="2.0"]
+join cg_reflection_5 center [animation="Fade In" length="2.0" z_index="-1"]
+[wait time="3.0"]
 - "Didn't come out of it the same."
 [wait time="1.0"]
 "[speed=5]..."
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="3.0"]
+leave cg_reflection_5 [animation="Fade Out" length="3.0"]
 [wait time="3.0"]
 - "And I couldn't be who you wanted me to be."
 [wait time="3.0"]
@@ -225,11 +230,11 @@ narrator: I won't think about this anymore.
 narrator: In fact,[pause=.2] I would like to…[pause=.5] release it all.
 narrator: …
 [wait time="2.0"]
-join prym (prym_pathetic) center [animation="Fade In" length="1.0" wait="true"]
+join prym (prym_pathetic) center [animation="Fade In" length="2.0" wait="true"]
 [voice path="res://Assets/Audio/VO/Prym/Full Lines/vo_prym_full_lines_14.wav" volume="0.0" bus="Dialogic_VO"]
 narrator: Thank you for your contributions.
 [voice path="res://Assets/Audio/VO/Prym/Full Lines/vo_prym_full_lines_15.wav" volume="0.0" bus="Dialogic_VO"]
-narrator: Maybe…[pause=1]\
+narrator: Maybe…[pause=.5]\
 \
 There will be a next light.
 [voice path="res://Assets/Audio/VO/Prym/Full Lines/vo_prym_full_lines_18.wav" volume="0.0" bus="Dialogic_VO"]
@@ -237,8 +242,11 @@ narrator: Or our selves will mix down here,[pause=.2] in the Tow.
 narrator: Well…
 [voice path="res://Assets/Audio/VO/Prym/Full Lines/vo_prym_full_lines_19.wav" volume="0.0" bus="Dialogic_VO"]
 narrator: There is always the prospect of you finding me,[pause=.2] again.
+join  center
 [voice path="res://Assets/Audio/VO/Prym/Full Lines/vo_prym_full_lines_20.wav" volume="0.0" bus="Dialogic_VO"]
 narrator: Just don't make the same mistake I did.
+update prym (prym_pensive) [fade="Fade Cross" fade_length="1.0"]
+[wait time="1.0"]
 leave prym [animation="Fade Out" length="10.0"]
 [wait time="1.0"]
 [music fade="5.0" volume="0.0"]
