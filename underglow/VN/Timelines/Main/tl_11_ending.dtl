@@ -135,13 +135,14 @@ Even with their awareness intact,[pause=.2] they must have blended with the scho
 [n]It's not them.
 leave prym [animation="Fade Out" length="3.0"]
 [wait time="1.0"]
+[voice path="vo_prym_full_lines_06.wav" volume="0.0" bus="Dialogic_VO"]
 narrator: [n]You aren't.\
 \
-[n]My.\
+[pause=.7]My.\
 \
-[n]Moira.\
+[pause=1]Moira.\
 \
-[n]…
+[pause=.5]…
 [wait time="1.0"]
 - " … "
 [wait time="1.0"]
@@ -187,25 +188,25 @@ label sad version of the title theme!
 [wait time="3.0"]
 narrator: …\
 \
-[n][i]You feel lightheaded.[/i]\
+[n][i]You feel lightheaded.[/i]
+[voice path="res://Assets/Audio/VO/Prym/Full Lines/vo_prym_full_lines_08.wav" volume="0.0" bus="Dialogic_VO"]
+narrator: I see.[pause=1]\
 \
-[n]I see.[n+]\
+So.[pause=1]\
 \
-So.\
+Maybe I should have stayed away.
+[voice path="res://Assets/Audio/VO/Prym/Full Lines/vo_prym_full_lines_09.wav" volume="0.0" bus="Dialogic_VO"]
+narrator: I'm not…\
 \
-[n]Maybe I should have stayed away.\
+[pause=1]Prym isn't…\
 \
-[n]I'm not…\
-\
-[n]Prym isn't…\
-\
-[n]They're not…
+[pause=1]They're not…
 [wait time="1.0"]
 " … "
 [wait time="1.0"]
-narrator: Too much has changed.[n+]\
-\
-[i]You’ve changed.[/i]
+[voice path="res://Assets/Audio/VO/Prym/Full Lines/vo_prym_full_lines_10.wav" volume="0.0" bus="Dialogic_VO"]
+narrator: Too much has changed.
+narrator: [i]You’ve changed.[/i]
 [wait time="2.0"]
 - "We have."
 [wait time="1.0"]
@@ -215,45 +216,45 @@ narrator: [speed=5]. . .\
 \
 [n][i]Or is it[pause=1] hot?[/i]\
 \
-[n]. . . . .\
-\
-[n]Well,[pause=.2] it's all subjective anyway.[n+]\
-\
-I won't think about this anymore.\
-\
-[n]In fact,[pause=.2] I would like to…[pause=.5] release it all.[n+]\
-\
-…
+[n]. . . . .
+[voice path="res://Assets/Audio/VO/Prym/Full Lines/vo_prym_full_lines_11.wav" volume="0.0" bus="Dialogic_VO"]
+narrator: Well,[pause=.2] it's all subjective anyway.
+[voice path="res://Assets/Audio/VO/Prym/Full Lines/vo_prym_full_lines_12.wav" volume="0.0" bus="Dialogic_VO"]
+narrator: I won't think about this anymore.
+[voice path="res://Assets/Audio/VO/Prym/Full Lines/vo_prym_full_lines_13.wav" volume="0.0" bus="Dialogic_VO"]
+narrator: In fact,[pause=.2] I would like to…[pause=.5] release it all.
+narrator: …
 [wait time="2.0"]
 join prym (prym_pathetic) center [animation="Fade In" length="1.0" wait="true"]
-narrator: Thank you for your contributions.\
+[voice path="res://Assets/Audio/VO/Prym/Full Lines/vo_prym_full_lines_14.wav" volume="0.0" bus="Dialogic_VO"]
+narrator: Thank you for your contributions.
+[voice path="res://Assets/Audio/VO/Prym/Full Lines/vo_prym_full_lines_15.wav" volume="0.0" bus="Dialogic_VO"]
+narrator: Maybe…[pause=1]\
 \
-[n]Maybe…[n+]\
-\
-There will be a next light.\
-\
-[n]Or our selves will mix down here,[pause=.2] in the Tow.\
-\
-[n]Well…[n+]\
-\
-There is always the prospect of you finding me,[pause=.2] again.\
-\
-[n]Just don't make the same mistake I did.
+There will be a next light.
+[voice path="res://Assets/Audio/VO/Prym/Full Lines/vo_prym_full_lines_18.wav" volume="0.0" bus="Dialogic_VO"]
+narrator: Or our selves will mix down here,[pause=.2] in the Tow.
+narrator: Well…
+[voice path="res://Assets/Audio/VO/Prym/Full Lines/vo_prym_full_lines_19.wav" volume="0.0" bus="Dialogic_VO"]
+narrator: There is always the prospect of you finding me,[pause=.2] again.
+[voice path="res://Assets/Audio/VO/Prym/Full Lines/vo_prym_full_lines_20.wav" volume="0.0" bus="Dialogic_VO"]
+narrator: Just don't make the same mistake I did.
 leave prym [animation="Fade Out" length="10.0"]
 [wait time="1.0"]
-narrator: Don't…[n+]\
+[music fade="5.0" volume="0.0"]
+[voice path="res://Assets/Audio/VO/Prym/Full Lines/vo_prym_full_lines_21.wav" volume="0.0" bus="Dialogic_VO"]
+narrator: Don't…[pause=.5]\
 \
-Don't you look[n+]\
+Don't you look[pause=.7]\
 \
-for [n+]\
+for [pause=.7]\
 \
-me[n+]\
-\
-[i]…[/i]
+me
+narrator: [i]…[/i]
 [wait time="5.0"]
 label spirit fish goes here
 join CG (cg_fish_ending) center [animation="Fade In" length="5.0" wait="true"]
 [wait_input]
-label credits go here
-[wait_input]
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="5.0"]
+[wait time="5.0"]
 [signal arg="game_end"]
