@@ -51,6 +51,7 @@ directories/dch_directory={
 "mask_4": "res://VN/Characters/Throwaways/mask_4.dch",
 "miasma": "res://VN/Characters/Utility/miasma.dch",
 "narrator": "res://VN/Characters/narrator.dch",
+"overlay_darkening": "res://Assets/Audio/Music/overlay_darkening.dch",
 "pompous socialite": "res://VN/Characters/Throwaways/pompous partygoer.dch",
 "pompous voice": "res://VN/Characters/Throwaways/pompous voice.dch",
 "prym": "res://VN/Characters/prym.dch",

@@ -1,7 +1,9 @@
 do AudioManager.init_audio()
 [style name="character"]
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="0.0"]
 [wait time="1.0"]
-[background arg="res://Assets/VN/Backgrounds/dark BG.PNG" fade="0.0"]
+[background arg="res://Assets/VN/Backgrounds/dark BG.PNG" fade="2.0"]
+[wait time="2.0"]
 [music path="res://Assets/Audio/Music/mus_droplets_(loop).wav" fade="0.0" volume="0.0"]
 narrator: No longer bound to the experimental device you just used,[pause=.2] you feel an uncomfortable ache in your shoulders.[pause=.5] Good heavens,[pause=.2] getting it removed was a harrowing process.[pause=.5] You decide to put it out of your mind and see what Prym has to say about the disorienting exercise they've just put you through.\
 \
@@ -74,7 +76,7 @@ prym: "There are benefits to attaining this form —[pause=.5] for instance,[pau
 prym: "But they cannot share that [b]knowledge[/b] with the rest of us,[pause=.2] or partake in the company of others with the full awareness necessary to enjoy such things.[pause=.5] Ever the pity."
 prym: "That said,[pause=.2] Estuaries do at the very least still cling to the vestiges of individuality needed to maintain one's form."
 prym: "An Estuary who loses themself [i]entirely[/i] will thus surrender that tenuous form,[pause=.2] and become a Spirit Fish –[pause=.5] the very same type of entity you encountered during our latest experiment."
-prym: "A spirit fish is a being of pure instinct, driven only to cluster together with others of its ilk."
+prym: "A Spirit Fish is a being of pure instinct, driven only to cluster together with others of its ilk."
 prym: "It is speculated that Spirit Fish may be possessed of more raw power than any other type of being in the Underglow,[pause=.2] for reasons I'm not about to get into at this juncture."
 prym: "But such beings truly are the saddest existences I can imagine…[pause=.5] Nothing about them is all that exciting or interesting,[pause=.2] much as I may poke and prod."
 prym (prym_happy): "Do not feel too afraid for them,[pause=.2] though! Even a Spirit Fish is not a lost cause."
@@ -119,13 +121,13 @@ narrator: The last of Prym's professorial facade drains from their face.[n+]\
 You're not sure why,[pause=.2] but something tells you you've just asked the wrong question.
 [wait time="1.0"]
 prym: "[b]Get out.[/b]"
-[wait time="1.0"]
+[background arg="res://Assets/VN/Backgrounds/uneasy BG.PNG" fade="2.0"]
+[wait time="2.0"]
 Prym snatches a book from the stack with a whip of a tendril,[pause=.2] causing the whole thing to tumble over.
 They throw it as hard as they can.[pause=.5] You hear it zip by as it flies just over you.
 [wait time="1.0"]
 prym: "[b]Leave.[pause=.5] [i]Now.[/i][/b]"
 [wait time="1.0"]
-[background arg="res://Assets/VN/Backgrounds/uneasy BG.PNG" fade="2.0"]
 narrator: A veritable cloud of dark tendrils rises from behind them,[pause=.2] looming threateningly as a billow of golden dust leeches into the surrounds.
 [wait time="1.0"]
 - Leave
@@ -134,11 +136,13 @@ narrator: A veritable cloud of dark tendrils rises from behind them,[pause=.2] l
 	prym: "said…"
 	prym (prym_furious): "[b]GO!![/b]"
 [wait time="1.0"]
-leave prym [animation="Fade Out" length="1.0"]
-[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="0.0"]
-narrator: Unable to reconcile this sudden change in temperament of theirs,[pause=.2] you turn away in a panic and flee out into the corridor.[n+]\
+leave prym [animation="Fade Out"]
+[wait time="1.0"]
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="1.0" transition="Swipe Left To Right"]
+[wait time="1.0"]
+narrator: Unable to reconcile this sudden change in temperament of theirs,[pause=.2] you turn away in a panic and flee out into the corridor.\
 \
-There's a crash behind you;[pause=.4] the sounds of various flasks breaking and stone shattering.[n+]\
+[n]There's a crash behind you;[pause=.4] the sounds of various flasks breaking and stone shattering.[n+]\
 \
 You cover your head and crouch down to avoid the inevitable rain of debris you're sure is to come…[pause=.5] But the noise goes quiet.\
 \

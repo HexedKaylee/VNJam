@@ -3,9 +3,9 @@ do AudioManager.init_audio()
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="0.0"]
 [wait time="1.0"]
 [music path="res://Assets/Audio/Music/mus_droplets_(loop).wav" fade="0.0" volume="0.0"]
-narrator: Upon appearing to satisfy the curiosity of the stranger who brought you here,[pause=.2] you're startled by the sudden appearance of a familiar structure in the middle of the room.[pause=.5] [i]It has hinges[/i],[pause=.2] you think to yourself,[pause=.2] [i]and a handle…[pause=.5] Perhaps one could "open" it,[pause=.2] and step through to the other side[/i].[n+]\
+narrator: Upon appearing to satisfy the curiosity of the stranger who brought you here,[pause=.2] you're startled by the sudden appearance of a familiar structure in the middle of the room.[pause=.5] [i]It has hinges[/i],[pause=.2] you think to yourself,[pause=.2] [i]and a handle…[pause=.5] Perhaps one could "open" it,[pause=.2] and step through to the other side[/i].\
 \
-[n]You ponder this wayward thought,[pause=.2] though before you can decide whether to act upon it,[pause=.2] the structure creaks open all on its own.[n+]\
+[n]You ponder this wayward thought,[pause=.2] though before you can decide whether to act upon it,[pause=.2] the structure creaks open all on its own.\
 \
 [n]You glance around and, having explored your present surroundings as much as you care to,[pause=.2] step cautiously across this new threshold,[pause=.2] an ominous feeling washing over you as you pass through.
 [wait time="1.0"]
@@ -17,11 +17,11 @@ join prym (prym_neutral) center [animation="Fade In" length="2.0" wait="true"]
 "enigmatic figure": "Thank you [i]ever[/i][pause=.2] so much for humoring me in this little exercise —[pause=.5] it lets me [b]know[/b] that now we can move forward with more progression towards your…"
 "enigmatic figure": "Oh, do forgive me! I'm sure you're quite[pause=.4] confused[pause=.5] as to what's going on here."
 [wait time="1.0"]
-narrator: The space before you strikes you as odd,[pause=.2] even considering what you’ve seen until now.[pause=.5] Motes of sparkling gold float lazily about.[pause=.5] Myriad imposing contraptions stand haphazardly strewn amidst patches of glowing coral and golden algae,[pause=.2] and though you struggle to produce their names,[pause=.2] you intuit that you’ve somehow seen a number of them before.[n+]\
+narrator: The space before you strikes you as odd,[pause=.2] even considering what you’ve seen until now.[pause=.5] Motes of sparkling gold float lazily about.[pause=.5] Myriad imposing contraptions stand haphazardly strewn amidst patches of glowing coral and golden algae,[pause=.2] and though you struggle to produce their names,[pause=.2] you intuit that you’ve somehow seen a number of them before.\
 \
-[n]Surrounding the contents of the room are a number of disorientingly complex walls;[pause=.5] layers of perfectly horizontal surfaces support countless ornate rectangular objects alongside numerous transparent containers filled with mysterious glowing liquids.[pause=.5] [i]Bookshelves[/i],[pause=.2] you remember these structures are called.[n+]\
+[n]Surrounding the contents of the room are a number of disorientingly complex walls;[pause=.5] layers of perfectly horizontal surfaces support countless ornate rectangular objects alongside numerous transparent containers filled with mysterious glowing liquids.[pause=.5] [i]Bookshelves[/i],[pause=.2] you remember these structures are called.\
 \
-[n]Most imposing,[pause=.2] however,[pause=.2] is the figure before you\:[pause=.5] The one who stole you away from the pack of gossiping Masks stands tall,[pause=.2] gleaming eyes fixed hungrily upon you,[pause=.2] mouth twisted into an expression of pure delight.[n+]\
+[n]Most imposing,[pause=.2] however,[pause=.2] is the figure before you\:[pause=.5] The one who stole you away from the pack of gossiping Masks stands tall,[pause=.2] gleaming eyes fixed hungrily upon you,[pause=.2] mouth twisted into an expression of pure delight.\
 \
 [n]An itching feeling in the back of your mind informs you that you should be nervous,[pause=.2] and yet,[pause=.2] the subtly sweet scent of smoke puts you unnervingly at ease.
 [wait time="1.0"]

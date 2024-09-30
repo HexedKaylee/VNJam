@@ -8,12 +8,22 @@
 "sound_moods": {},
 "style": ""
 },
-"default_portrait": "",
+"default_portrait": "shadyshady",
 "description": "",
 "display_name": "Shady Disciple",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),
-"portraits": {},
+"portraits": {
+"shadyshady": {
+"export_overrides": {
+"image": "\"res://Assets/VN/Portraits/Shady Disciple/shady disciple.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
 "scale": 1.0
 }
