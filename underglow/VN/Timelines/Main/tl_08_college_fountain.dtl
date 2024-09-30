@@ -198,6 +198,7 @@ update "shady disciple" [animation="Tada"]
 [wait time="1.0"]
 leave "shady disciple" [animation="Fade Out" wait="true"]
 [wait time="1.0"]
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_laugh_01.wav" volume="0.0" bus="Dialogic_VO"]
 question_mark: "Are you stupid?"
 question_mark: "You have eyes that can see,[pause=.2] don't you?"
 question_mark: "This specimen is [i]mine.[/i]"
@@ -227,6 +228,7 @@ join prym (prym_furious) center [animation="Fade In" length="1.0" wait="true"]
 [wait time="1.0"]
 update prym (prym_anger) [fade="Fade Cross" fade_length="1.0"]
 [wait time="1.0"]
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_hmm_01.wav" volume="0.0" bus="Dialogic_VO"]
 prym: "... Hmph."
 [wait time="2.0" hide_text="false"]
 - "... Thank you?"
@@ -235,6 +237,7 @@ Prym ignores your words, grabbing you by the arm and marching forward with you a
 prym (prym_neutral): "Setup is complete.[pause=.5] We are ready for the third experiment to begin."
 [wait time="1.0"]
 join CG (bg_black) center [animation="Fade In" length="3.0" wait="true"]
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_subject_calm_04.wav" volume="0.0" bus="Dialogic_VO"]
 narrator: And you follow —[n+]\
 \
 — now —[n+]\

@@ -11,9 +11,11 @@ narrator: Although you were expecting another bout of exposition after that diso
 [n]They do,[pause=.2] however,[pause=.2] seem to be acting like you were never subject to said outburst,[pause=.2] which does nothing to set you at ease.
 [wait time="1.0"]
 join prym (prym_neutral) center [animation="Fade In" length="1.0" wait="true"]
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_nownow_01.wav" volume="0.0"]
 prym: "Now…[pause=.5] I have no shortage of things on my plate to deal with since you gave me more valuable data to sift through,[pause=.2] so I'm going to assign you more to do than usual for your next excursion."
 prym: "I think you're smart enough at this point to take care of yourself out there,[pause=.2] so why not explore more of the Underglow?[pause=.5] Glean all you can from moving about as much as your little legs can take you."
 prym: "Perhaps it will help you develop some sense of [i]purpose[/i]."
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_hmm_03.wav" volume="0.0" bus="Dialogic_VO"]
 prym (prym_happy): "Yes,[pause=.2] that ought to occupy you well enough.[pause=.5] Just come back once you feel satisfied."
 [wait time="1.0"]
 leave prym [animation="Fade Out Down" length="1.0" wait="true"]

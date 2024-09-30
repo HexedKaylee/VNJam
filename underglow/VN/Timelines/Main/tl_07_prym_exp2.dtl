@@ -12,16 +12,19 @@ narrator: No longer bound to the experimental device you just used,[pause=.2] yo
 You notice now,[pause=.2] amidst the spot where the device sits,[pause=.2] a collection of transparent containers —[pause=.5] [i]flasks[/i],[pause=.4] you realize —[pause=.5] the contents of which had previously piqued your interest. Only in this moment do you realize that the lights floating within all resemble the Spirit Fish with which you've just become acquainted.
 [wait time="1.0"]
 join prym (prym_happy) center
-[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_moira_04.wav" volume="0.0" bus="Dialogic_VO"]
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_moira_02.wav" volume="0.0" bus="Dialogic_VO"]
 prym: "Oh,[pause=.2] Moira! [i]Fantastic[/i][pause=.2] work in there![pause=.5] I'm so glad my efforts were not wasted."
 prym: "I can tell you,[pause=.2] those Spirit Fish are slippery little devils.”
 prym: "Wrangling enough to actually load the launcher is no trivial feat,[pause=.2] but it was all worth it to see you enthusiastically take to my little trial for you."
 prym: "Relatedly,[pause=.2] I’ve prepared a small reward for your continued diligence towards the pursuit of [b]Knowledge[/b]."
 [wait time="0.0" hide_text="false"]
 - "A reward?"
+	[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_moira_04.wav" volume="0.0" bus="Dialogic_VO"]
 	prym: "Yes yes,[pause=.2] my dear Moira.[pause=.4] Behold!"
 - "What are those flasks?"
+	[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_surprise_02.wav" volume="0.0" bus="Dialogic_VO"]
 	prym: "Oh,[pause=.2] taken an interest in the serums,[pause=.2] have you?[pause=.5] Well, I can't explain too much,[pause=.2] or it'll contaminate the data."
+	[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_chuckle_04.wav" volume="0.0" bus="Dialogic_VO"]
 	prym: "Don't think your curiosity has gone unnoticed,[pause=.2] though.[pause=.5] Hehe~"
 	prym: "Anyway,[pause=.2] as for your reward…"
 [wait time="1.0"]
@@ -32,6 +35,7 @@ Prym peeks out from behind the tower at you with an expression somehow more chuf
 prym: "Consider this not just a reward for your performance,[pause=.2] but a gift for relearning how to speak."
 prym: "You certainly encountered your fair share of fake books from the library,[pause=.2] but I guarantee you that [i]these[/i][pause=.2] all have perfectly coherent and linear paragraphs of information for you to peruse."
 prym: "No need to thank me.[pause=.5] This is all for improving my datasets going forward as well,[pause=.2] you [b]know[/b]."
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_chuckle_05.wav" volume="0.0" bus="Dialogic_VO"]
 prym: "Go on,[pause=.2] now —[pause=.4] study to your heart's content!"
 [wait time="1.0"]
 update prym (prym_neutral) [fade="Fade Cross" fade_length="1.0"]
@@ -42,6 +46,7 @@ update prym (prym_neutral) [fade="Fade Cross" fade_length="1.0"]
 	You feel intense pressure from Prym's stare as you remain still.[pause=.5] The expectant look in their eyes is unbearable,[pause=.2] and you find yourself sheepishly reaching up towards the top of the stack.[pause=.5] You pick up a book and begin reading…
 Not only does this book contain actual,[pause=.2] readable information,[pause=.2] but it all seems to pertain to Prym's studies.[pause=.5] Charts and equations fill your vision,[pause=.2] spinning around in your head as the mountain of information serves only to confuse you even more than the imitation-books' gibberish would have.
 [wait time="1.0"]
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_its_simple_01.wav" volume="0.0" bus="Dialogic_VO"]
 prym (prym_happy): "Don't be afraid to ask any questions if you find yourself confused!"
 [wait time="1.0"]
 narrator: [i]Easier said than done,[/i][pause=.3] you think.[pause=.5] The information is so overwhelming that you wouldn't even [b]know[/b] where to start.\
@@ -51,11 +56,13 @@ narrator: [i]Easier said than done,[/i][pause=.3] you think.[pause=.5] The infor
 - "What is an Estuary?"
 [music fade="5.0" volume="0.0"]
 [wait time="0.0"]
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_sigh_05.wav" volume="0.0" bus="Dialogic_VO"]
 prym: " ... "
 [wait time="1.0"]
 The expression on Prym's face doesn't shift,[pause=.2] but…[pause=.5] All the same,[pause=.2] there's something[pause=.2] subtly different about it.
 It unsettles you,[pause=.2] especially as you notice their voice begin to take on a tone with a darkness rivaling that of the abyss above.
 [wait time="1.0"]
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_moira_01.wav" volume="0.0" bus="Dialogic_VO"]
 prym (prym_happy): "Are you aware of the process by which we change,[pause=.2] Moira?"
 prym (prym_neutral): "How,[pause=.2] though we are all Droplets,[pause=.2] we come to take on many forms?"
 [wait time="0.0" hide_text="false"]
@@ -71,15 +78,18 @@ prym: "We become Socialites when we understand the meaning of self,[pause=.2] an
 prym: "Then,[pause=.2] after a fashion,[pause=.2] we become Divers.[pause=.5] [i]This…[/i][pause=.5] is when we gain [i]purpose.[/i]"
 prym: "We become Disciples –[pause=.3] like myself –[pause=.3] when we [i]fully devote[/i] ourselves to that purpose."
 prym: "And,[pause=.2] if we come to embody our purpose as a singular,[pause=.2] all-encompassing ideal,[pause=.2] we become [b]Gods[/b]."
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_hmm_03.wav" volume="0.0" bus="Dialogic_VO"]
 prym: "Alas,[pause=.2] there are also those unfortunate Droplets who shy away from the call of purpose."
 prym: "As they lose themselves,[pause=.2] they become Estuaries.[pause=.5] A truly pitiful form of existence brought forth by a blurring of the line between the self and all else."
 prym: "There are benefits to attaining this form —[pause=.5] for instance,[pause=.2] gaining a greater understanding of the workings of the Underglow."
 prym: "But they cannot share that [b]knowledge[/b] with the rest of us,[pause=.2] or partake in the company of others with the full awareness necessary to enjoy such things.[pause=.5] Ever the pity."
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_exhale_02.wav" volume="0.0" bus="Dialogic_VO"]
 prym: "That said,[pause=.2] Estuaries do at the very least still cling to the vestiges of individuality needed to maintain one's form."
 prym: "An Estuary who loses themself [i]entirely[/i] will thus surrender that tenuous form,[pause=.2] and become a Spirit Fish –[pause=.5] the very same type of entity you encountered during our latest experiment."
 prym: "A Spirit Fish is a being of pure instinct, driven only to cluster together with others of its ilk."
 prym: "It is speculated that Spirit Fish may be possessed of more raw power than any other type of being in the Underglow,[pause=.2] for reasons I'm not about to get into at this juncture."
 prym: "But such beings truly are the saddest existences I can imagine…[pause=.5] Nothing about them is all that exciting or interesting,[pause=.2] much as I may poke and prod."
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_nownow_01.wav" volume="0.0" bus="Dialogic_VO"]
 prym (prym_happy): "Do not feel too afraid for them,[pause=.2] though! Even a Spirit Fish is not a lost cause."
 prym (prym_neutral): "As it turns out, it may in fact be possible to [i]revert[/i] them back to their previous forms."
 prym: "For if a Fish has even the smallest gleam of transient brightness to their being…"
@@ -88,6 +98,7 @@ prym: "However,[pause=.2] if that last sliver of self leaves a Spirit Fish…[pa
 prym: "No longer a being driven by will."
 prym: "They are but a fixture."
 prym: "Un[pause=.2]moveable.[pause=.4] Un[pause=.2]inspired.[pause=.4] Un[pause=.2]motivated.[pause=.5] Un[pause=.2]aware."
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_exhale_02.wav" volume="0.0" bus="Dialogic_VO"]
 prym: "And there is no coming back from that."
 [wait time="1.0"]
 narrator: Prym pauses,[pause=.2] their voice having become quite despondent.[pause=.5] This topic appears to be difficult for them to discuss,[pause=.2] you think.[pause=.5] Nevertheless… [n+]\
@@ -101,12 +112,14 @@ prym: "For example,[pause=.2] a Diver…[pause=.5] a particularly [i]foolish[/i]
 prym: "If they can control it…[pause=.5] If they can [b]know[/b] they'll regain it later…[pause=.5] they can wield the power that comes with being an Estuary –[pause=.5] the power attained through becoming one with the Underglow."
 prym: "But if they can't… they'll be stuck that way."
 prym (prym_happy): "But but [i]but![/i]"
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_chuckle_01.wav" volume="0.0" bus="Dialogic_VO"]
 prym: "My [b]God[/b] has proffered to me a boon of enlightenment."
 prym (prym_neutral): "It stands to reason that,[pause=.2] if a Diver can become an Estuary,[pause=.2] perhaps a Spirit Fish could turn straight back into a Mask."
 prym: "That is what my research seeks to help us understand."
 prym: "Rescuing Spirit Fish.[pause=.5] Pulling them back from the brink."
 prym: "And somehow,[pause=.2] [i]you,[/i][pause=.3] my dear,[pause=.3] have exhibited signs of having already been a Droplet before becoming a Mask,[pause=.2] falling [i]completely outside[/i] of the norm of what the cycle dictates!"
 [music fade="5.0" volume="0.0"]
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_moira_04.wav" volume="0.0" bus="Dialogic_VO"]
 prym (prym_happy): "You see,[pause=.2] Moira? This is why our reunion was serendipitous!"
 [wait time="1.5"]
 - " … That name again."
@@ -121,20 +134,25 @@ narrator: The last of Prym's professorial facade drains from their face.[n+]\
 \
 You're not sure why,[pause=.2] but something tells you you've just asked the wrong question.
 [wait time="1.0"]
+[voice path="res://Assets/Audio/VO/Prym/Full Lines/vo_prym_dismissal_01.wav" volume="0.0" bus="Dialogic_VO"]
 prym: "[b]Get out.[/b]"
 [background arg="res://Assets/VN/Backgrounds/uneasy BG.PNG" fade="2.0"]
 [wait time="2.0"]
-Prym snatches a book from the stack with a whip of a tendril,[pause=.2] causing the whole thing to tumble over.
-They throw it as hard as they can.[pause=.5] You hear it zip by as it flies just over you.
+narrator: Prym snatches a book from the stack with a whip of a tendril,[pause=.2] causing the whole thing to tumble over.
+narrator: They throw it as hard as they can.[pause=.5] You hear it zip by as it flies just over you.
 [wait time="1.0"]
+[voice path="res://Assets/Audio/VO/Prym/Full Lines/vo_prym_dismissal_02.wav" volume="0.0" bus="Dialogic_VO"]
 prym: "[b]Leave.[pause=.5] [i]Now.[/i][/b]"
 [wait time="1.0"]
 narrator: A veritable cloud of dark tendrils rises from behind them,[pause=.2] looming threateningly as a billow of golden dust leeches into the surrounds.
 [wait time="1.0"]
 - Leave
 - "… I'm sorry — "
+	[voice path="res://Assets/Audio/VO/Prym/Full Lines/vo_prym_dismissal_03.wav" volume="0.0" bus="Dialogic_VO"]
 	prym: "I…"
+	[voice path="res://Assets/Audio/VO/Prym/Full Lines/vo_prym_dismissal_04.wav" volume="0.0" bus="Dialogic_VO"]
 	prym: "said…"
+	[voice path="res://Assets/Audio/VO/Prym/Full Lines/vo_prym_dismissal_05.wav" volume="0.0" bus="Dialogic_VO"]
 	prym (prym_furious): "[b]GO!![/b]"
 [wait time="1.0"]
 leave prym [animation="Fade Out"]
