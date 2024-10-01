@@ -3,7 +3,7 @@ do AudioManager.init_audio()
 [music fade="3.0" volume="0.0"]
 [music path="res://Assets/Audio/Music/mus_droplets_(loop).wav" fade="3.0" volume="0.0"]
 [wait time="0.5"]
-[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="1" transition="Swipe Right To Left"]
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="1.0" transition="Swipe Right To Left"]
 leave --All-- [animation="Instant Out" length="0.0"]
 [wait time="1.0"]
 [background arg="res://Assets/VN/Backgrounds/generic BG.PNG" fade="0.5" transition="Swipe Right To Left"]
@@ -18,11 +18,11 @@ narrator: The strange beings all turn to observe a bustling congregation of some
 [wait time="1.0"]
 narrator: As you observe the affair before you,[pause=.2] a growing interest commands your attention away from your present company.[pause=.5] Could it be curiosity that draws you in,[pause=.2] you wonder,[pause=.4] or something else?
 [wait time="1.0"]
-"flustered mask": "A-Ah –[pause=.4] hahh…[pause=.4] N-No no,[pause=.2] sorry,[pause=.2] I don’t need you all to follow me –[pause=.4] I’m just trying to find someone with –[pause=.3] ah!
+"flustered mask": "A-Ah –[pause=.4] hahh…[pause=.4] N-No no,[pause=.2] sorry,[pause=.2] I don’t need you all to follow me –[pause=.4] I’m just trying to find someone with –[pause=.3] ah!"
 "flustered mask": "Y-Y-You!"
 join "flustered mask" center [animation="Zoom In" length="1.0" z_index="20"]
 "flustered mask" (flustered_mask_neutral): "Hff…[pause=.4] hff…[pause=.4] Please,[pause=.4] you seem like a kindred soul – new in town,[pause=.2] like me,[pause=.2] right? C-Can you...[pause=.7] please,[pause=.4] tell me where this is?
-[wait time="0.0"]
+[wait time="0.0" hide_text="false"]
 - "…"
 You aren’t sure what to say in response to this Mask,[pause=.2] if you can even say anything at all.
 [wait time="1.0"]
@@ -95,11 +95,11 @@ narrator: [n]You look on in curious bemusement.\
 \
 [n]With rapt attention you watch as the body before you takes on an abstract thinness,[pause=.2] surrendering its similarity to those who surround it.\
 \
-[n+]…\
+[n]…\
 \
 [n+]He's at peace,[pause=.2] you think to yourself.\
 \
-[n+]Your fleeting encounter with this curious individual comes to a quiet end –[pause=.4] his unfamiliar form having drifted away into the unknown.
+[n]Your fleeting encounter with this curious individual comes to a quiet end –[pause=.4] his unfamiliar form having drifted away into the unknown.
 [wait time="1.0"]
 leave "flustered mask" [animation="Instant Out" length="0.0" wait="true"]
 [background arg="res://Assets/VN/Backgrounds/uneasy BG.PNG" fade="0.0"]

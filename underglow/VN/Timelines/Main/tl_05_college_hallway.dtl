@@ -6,7 +6,7 @@ narrator: Prym shoos you away,[pause=.2] and so you turn to step out the door.\
 \
 [n]As you peer out from the entrance,[pause=.2] you think to glance back at Prym one last time.\
 \
-[n+]However…[n+] you find that all that was their domain is simply[pause=.5] gone.\
+[n+]However…[pause=1] you find that all that was their domain is simply[pause=.5] gone.\
 \
 [n]Ah.\
 \
@@ -65,7 +65,7 @@ They seem to stare at you in shock for a moment,[pause=.2] before taking the boo
 [wait time="1.0"]
 narrator: The Socialite drops the remaining books upon the ground,[pause=.2] seemingly forgetting all about them.[pause=.5] You watch with some intrigue as the books slowly descend into the floor before disappearing like vapor,[pause=.2] as though their purpose has been served.
 leave "book-laden socialite" [animation="Fade Out Down" length="2.0" wait="true"]
-update CG (bg_black) [fade="Fade Cross" fade_length="5.0"]
+[background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="1.0" transition="Swipe Right To Left"]
 [music fade="3.0" volume="0.0"]
 [wait time="2.0"]
 jump tl_06_college_library/
