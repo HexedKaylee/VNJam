@@ -133,6 +133,10 @@ window/stretch/mode="canvas_items"
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
 
+[filesystem]
+
+import/blender/enabled=false
+
 [gui]
 
 theme/custom_font="res://Assets/Fonts/forgotten futurist rg.ttf"

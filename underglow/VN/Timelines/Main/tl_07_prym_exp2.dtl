@@ -103,9 +103,9 @@ prym: "And there is no coming back from that."
 [wait time="1.0"]
 narrator: Prym pauses,[pause=.2] their voice having become quite despondent.[pause=.5] This topic appears to be difficult for them to discuss,[pause=.2] you think.[pause=.5] Nevertheless… [n+]\
 \
-This information is important.[n+]\
+This information is important.\
 \
-You need Prym to continue.[pause=.5] You [i]need[/i][pause=.2] to [b]know[/b].
+[n]You need Prym to continue.[pause=.5] You [i]need[/i][pause=.2] to [b]know[/b].
 [wait time="1.0"]
 prym: "There are…[pause=.5] certain conditions,[pause=.2] rare as they may be,[pause=.3] where some stages of Droplethood are skipped entirely."
 prym: "For example,[pause=.2] a Diver…[pause=.5] a particularly [i]foolish[/i] Diver,[pause=.2] may practice learning to temporarily relinquish their sense of self."

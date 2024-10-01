@@ -130,15 +130,15 @@ narrator: You realize with a start that,[pause=.2] in your frustration,[pause=.2
 \
 [n]You decidedly get up with the tome and return it to the desk of the librarian.[pause=.5] They seem to roll their eyes at this,[pause=.2] unhappy to see you return.
 [wait time="1.0"]
-"librarian socialite": "*sigh* Look,[pause=.2] if that one wasn't your cup of tea,[pause=.2] feel free to return it to a shelf.[pause=.5] Any one will do."
+"librarian socialite": *sigh* "Look,[pause=.2] if that one wasn't your cup of tea,[pause=.2] feel free to return it to a shelf.[pause=.5] Any one will do."
 "librarian socialite": "Chuck it as hard as you like,[pause=.2] for all I care. Everything here's made of stone, anyway."
 [wait time="1.0"]
 leave "librarian socialite" [animation="Fade Out Down" wait="true"]
-[music fade="5.0" volume="0.0"]
 narrator: Though you wonder what tea could possibly have to do with books,[pause=.2] you nevertheless oblige the cantankerous librarian and go to place the book haphazardly down on a shelf chosen at random.\
 \
 [n]The arcane volume lands with a now-familiar clack that,[pause=.2] though you hadn't thought to interrogate its strangeness before,[pause=.2] suddenly makes perfect sense in light of the material supposedly used for its construction.
 [background arg="res://Assets/VN/Backgrounds/bg_black.png" fade="2.0" transition="Swipe Left To Right"]
+[music fade="2.0" volume="0.0"]
 [wait time="2.0"]
 narrator: Having little other use for the library now that you've managed to attain the goal Prym had set for your exploration of the campus,[pause=.2] you exit out through the doorway with the objective of making your way back from whence you came…[n+]\
 \

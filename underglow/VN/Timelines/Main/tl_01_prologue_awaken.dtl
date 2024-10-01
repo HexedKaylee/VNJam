@@ -125,7 +125,7 @@ Lost on what to do next,[pause=.2] you can only sit there with the cup beneath y
 "pompous socialite": "Ahhhh…[pause=.5] Well,[pause=.2] while it is nice to discover new things,[pause=.2] I fear they simply do not know how to drink it,[pause=.2] dear. Perhaps they cannot at all."
 "haughty socialite": "Oh my."
 "demure socialite": "Yes.[pause=.4] How unfortunate."
-"pompous socialite": "'Tis such a shame,[pause=.2] I thought truly that maybe this mask could be — "
+"pompous socialite": "'Tis such a shame,[pause=.2] I thought truly that maybe this Mask could be — "
 "pompous socialite": "… Oh?[pause=.4] Hmm…?[pause=.5] Do you see that commotion over there?"
 leave --All-- [animation="Fade Out"]
 [wait time="1.0"]
