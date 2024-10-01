@@ -234,10 +234,10 @@ prym: "... Hmph."
 - "... Thank you?"
 Prym ignores your words, grabbing you by the arm and marching forward with you at their side.
 [wait time="1.0"]
+[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_subject_calm_04.wav" volume="0.0" bus="Dialogic_VO"]
 prym (prym_neutral): "Setup is complete.[pause=.5] We are ready for the third experiment to begin."
 [wait time="1.0"]
 join CG (bg_black) center [animation="Fade In" length="3.0" wait="true"]
-[voice path="res://Assets/Audio/VO/Prym/Barks/vo_prym_bark_subject_calm_04.wav" volume="0.0" bus="Dialogic_VO"]
 narrator: And you follow —[n+]\
 \
 — now —[n+]\
